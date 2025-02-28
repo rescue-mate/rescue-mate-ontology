@@ -34,6 +34,20 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q811430 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q811430">
+        <rdfs:comment xml:lang="de">Konstruktion von Bauwerken und Gebäuden</rdfs:comment>
+        <rdfs:comment xml:lang="en">artificially constructed entity meant to remain at a fixed geographic location</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet physique</rdfs:comment>
+        <rdfs:label xml:lang="de">Baukonstruktion</rdfs:label>
+        <rdfs:label xml:lang="en">fixed construction</rdfs:label>
+        <rdfs:label xml:lang="fr">structure construite</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
