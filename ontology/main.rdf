@@ -28,6 +28,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/TidalBarrier -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TidalBarrier">
+        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/vocab/FixedConstruction"/>
+        <rdfs:label xml:lang="de">Sperrwerk</rdfs:label>
+        <rdfs:label xml:lang="en">Tidal barrier</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q15848142"/>
+    </owl:Class>
+    
+
+
     <!-- https://rescue-mate.de/vocab/FixedConstruction -->
 
     <owl:Class rdf:about="https://rescue-mate.de/vocab/FixedConstruction">
@@ -35,6 +46,18 @@
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q15848142 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q15848142">
+        <rdfs:comment xml:lang="de">Bauwerk, um Binnenland vor Hochwasser zu schützen</rdfs:comment>
+        <rdfs:comment xml:lang="en">hydraulic structure used to prevent tidal flooding</rdfs:comment>
+        <rdfs:label xml:lang="de">Sperrwerk</rdfs:label>
+        <rdfs:label xml:lang="en">Tidal barrier</rdfs:label>
+        <rdfs:label xml:lang="fr">barrière contre les inondations</rdfs:label>
     </owl:Class>
     
 
