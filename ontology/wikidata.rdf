@@ -160,6 +160,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q510255 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q510255">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q107589046"/>
+        <rdfs:comment xml:lang="fr">ouvrage de vidange de digue</rdfs:comment>
+        <rdfs:comment xml:lang="de">verschließbarer Gewässerdurchlass in einem Deich</rdfs:comment>
+        <rdfs:label xml:lang="de">Siel</rdfs:label>
+        <rdfs:label xml:lang="en">discharge sluice</rdfs:label>
+        <rdfs:label xml:lang="fr">écluse de chasse</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q618123 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q618123">

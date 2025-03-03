@@ -29,6 +29,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DischargeSluice -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DischargeSluice">
+        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:label xml:lang="de">Deichsiel</rdfs:label>
+        <rdfs:label xml:lang="en">Discharge sluice</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q510255"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Lock -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
