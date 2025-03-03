@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://rescue-mate.de/ontology/wikidata-bridge/"
+     xml:base="http://rescue-mate.de/ontology/wikidata-bridge/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://rescue-mate.de/ontology/wikidata-bridge">
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.1.0"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q105731 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q105731">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q333170"/>
+        <rdfs:comment xml:lang="de">Abstiegsbauwerk mit einer festen Kammer und wechselndem Wasserstand</rdfs:comment>
+        <rdfs:comment xml:lang="en">fall structure with a fixed chamber in which the water level changes</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ouvrage d&apos;art hydraulique implanté dans un canal, un cours ou une étendue d&apos;eau pour maîtriser sa profondeur ou son débit</rdfs:comment>
+        <rdfs:label xml:lang="de">Schiffsschleuse</rdfs:label>
+        <rdfs:label xml:lang="en">lock</rdfs:label>
+        <rdfs:label xml:lang="fr">écluse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q107589046 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q107589046">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q2466889"/>
+        <rdfs:comment xml:lang="en">hydraulic structure between two waterways with a different water level, which serves to transport water or ships between the waterways</rdfs:comment>
+        <rdfs:comment xml:lang="de">hydraulisches Bauwerk zwischen zwei Wasserkörpern mit unterschiedlichem Pegel, das dazu dient, Wasser oder Wasserfahrzeuge auf ein anderes Niveau zu bringen</rdfs:comment>
+        <rdfs:label xml:lang="en">sluice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q123349660 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q123349660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment xml:lang="de">Geoobjekt</rdfs:comment>
+        <rdfs:comment xml:lang="en">entity that may be assigned mostly stable geographic coordinates and/or geocoded</rdfs:comment>
+        <rdfs:comment xml:lang="fr">entité qui peut avoir des coordonnées géographiques et/ou être géocodé</rdfs:comment>
+        <rdfs:label xml:lang="fr">entité cartographiable</rdfs:label>
+        <rdfs:label xml:lang="en">geolocatable entity</rdfs:label>
+        <rdfs:label xml:lang="de">geolokalisierbares Objekt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q15848142 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q15848142">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q2466889"/>
+        <rdfs:comment xml:lang="de">Bauwerk, um Binnenland vor Hochwasser zu schützen</rdfs:comment>
+        <rdfs:comment xml:lang="en">hydraulic structure used to prevent tidal flooding</rdfs:comment>
+        <rdfs:label xml:lang="de">Sperrwerk</rdfs:label>
+        <rdfs:label xml:lang="en">Tidal barrier</rdfs:label>
+        <rdfs:label xml:lang="fr">barrière contre les inondations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q223557 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment xml:lang="de">Ansammlung von Masse, die eine Einheit bildet</rdfs:comment>
+        <rdfs:comment xml:lang="en">singular aggregation of substance(s) such as matter or radiation, with overall properties such as mass, position or momentum</rdfs:comment>
+        <rdfs:label xml:lang="de">Körper</rdfs:label>
+        <rdfs:label xml:lang="fr">objet physique</rdfs:label>
+        <rdfs:label xml:lang="en">physical object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q2466889 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2466889">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q811979"/>
+        <rdfs:comment xml:lang="de">Bauwerk, das einen natürlichen Wasserlauf verändert</rdfs:comment>
+        <rdfs:comment xml:lang="en">artificial structure which disrupts the natural flow of water</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type d&apos;ouvrage d&apos;art</rdfs:comment>
+        <rdfs:label xml:lang="en">hydraulic structure</rdfs:label>
+        <rdfs:label xml:lang="de">hydraulisches Bauwerk</rdfs:label>
+        <rdfs:label xml:lang="fr">ouvrage hydraulique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q27096213 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q27096213">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q123349660"/>
+        <rdfs:comment xml:lang="de">Ort oder Objekt</rdfs:comment>
+        <rdfs:comment xml:lang="fr">lieu ou entité susceptible de l&apos;être</rdfs:comment>
+        <rdfs:comment xml:lang="en">relatively stationary place or entity that can be geographically identified, located, or described</rdfs:comment>
+        <rdfs:label xml:lang="fr">entité géographique</rdfs:label>
+        <rdfs:label xml:lang="de">geografische Entität</rdfs:label>
+        <rdfs:label xml:lang="en">geographic entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q333170 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q333170">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q107589046"/>
+        <rdfs:comment xml:lang="de">Verkehrswasserbauwerk, das Wasserfahrzeugen das Überwinden eines Höhenunterschiedes ermöglicht</rdfs:comment>
+        <rdfs:comment xml:lang="en">structure that allows vessels to overcome a fall in a waterway</rdfs:comment>
+        <rdfs:label xml:lang="de">Abstiegsbauwerk</rdfs:label>
+        <rdfs:label xml:lang="en">fall structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q618123 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q618123">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q27096213"/>
+        <rdfs:comment xml:lang="de">Objekt, welches mittels Geodaten eindeutig referenzierbar war bzw. ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">components of planets that can be geographically located</rdfs:comment>
+        <rdfs:comment xml:lang="fr">entité identifiée de manière unique par une donnée spatiale</rdfs:comment>
+        <rdfs:label xml:lang="en">geographical feature</rdfs:label>
+        <rdfs:label xml:lang="de">geographisches Objekt</rdfs:label>
+        <rdfs:label xml:lang="fr">objet géographique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q811430 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q811430">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q618123"/>
+        <rdfs:comment xml:lang="de">Konstruktion von Bauwerken und Gebäuden</rdfs:comment>
+        <rdfs:comment xml:lang="en">artificially constructed entity meant to remain at a fixed geographic location</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet physique</rdfs:comment>
+        <rdfs:label xml:lang="de">Baukonstruktion</rdfs:label>
+        <rdfs:label xml:lang="en">fixed construction</rdfs:label>
+        <rdfs:label xml:lang="fr">structure construite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q811979 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q811979">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
+        <rdfs:comment xml:lang="de">Konstruktion mit ruhendem Kontakt zum Untergrund, z. B. Straße, Brücke, Fundament</rdfs:comment>
+        <rdfs:comment xml:lang="fr">construction dont la conception a été pensée</rdfs:comment>
+        <rdfs:comment xml:lang="en">human-designed and -made structure</rdfs:comment>
+        <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
+        <rdfs:label xml:lang="en">architectural structure</rdfs:label>
+        <rdfs:label xml:lang="fr">structure architecturale</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
