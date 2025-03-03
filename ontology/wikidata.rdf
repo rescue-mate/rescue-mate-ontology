@@ -67,6 +67,33 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1411945 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1411945">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q811979"/>
+        <rdfs:comment xml:lang="de">Bauwerk mit komplexer Baustatik</rdfs:comment>
+        <rdfs:comment xml:lang="fr">construction civile</rdfs:comment>
+        <rdfs:comment xml:lang="en">type of construction</rdfs:comment>
+        <rdfs:label xml:lang="de">Ingenieurbauwerk</rdfs:label>
+        <rdfs:label xml:lang="en">civil engineering construction</rdfs:label>
+        <rdfs:label xml:lang="fr">ouvrage d&apos;art</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q14524070 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q14524070">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1411945"/>
+        <rdfs:comment xml:lang="de">Hebevorrichtung für Wasser</rdfs:comment>
+        <rdfs:comment xml:lang="en">acility which is part of a water supply network and is used to transport water up an incline</rdfs:comment>
+        <rdfs:label xml:lang="de">Schöpfwerk</rdfs:label>
+        <rdfs:label xml:lang="fr">station de pompage des eaux</rdfs:label>
+        <rdfs:label xml:lang="en">water pumping station</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q15848142 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q15848142">

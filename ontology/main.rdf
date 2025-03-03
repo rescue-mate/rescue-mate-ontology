@@ -51,6 +51,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/WaterPumpingStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/WaterPumpingStation">
+        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:label xml:lang="de">Schöpfwerk</rdfs:label>
+        <rdfs:label xml:lang="en">Water pumping station</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q14524070"/>
+    </owl:Class>
+    
+
+
     <!-- https://rescue-mate.de/ontology/FixedConstruction -->
 
     <owl:Class rdf:about="https://rescue-mate.de/ontology/FixedConstruction">
