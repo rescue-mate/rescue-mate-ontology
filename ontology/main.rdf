@@ -29,6 +29,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Lock -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
+        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:label xml:lang="en">Lock</rdfs:label>
+        <rdfs:label xml:lang="de">Schleuse</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/TidalBarrier -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TidalBarrier">
