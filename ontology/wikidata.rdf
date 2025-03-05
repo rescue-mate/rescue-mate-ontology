@@ -120,9 +120,23 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q2345125 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2345125">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
+        <rdfs:comment xml:lang="en">adjustable gate used to control water flow</rdfs:comment>
+        <rdfs:comment xml:lang="de">bewegliches Schott zum Absperren eines niederen Wasserstandes</rdfs:comment>
+        <rdfs:label xml:lang="de">Fluttor</rdfs:label>
+        <rdfs:label xml:lang="en">floodgate</rdfs:label>
+        <rdfs:label xml:lang="fr">vanne contre les inondations</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q2466889 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2466889">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1411945"/>
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q811979"/>
         <rdfs:comment xml:lang="de">Bauwerk, das einen natürlichen Wasserlauf verändert</rdfs:comment>
         <rdfs:comment xml:lang="en">artificial structure which disrupts the natural flow of water</rdfs:comment>
