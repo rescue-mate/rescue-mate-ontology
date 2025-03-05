@@ -62,6 +62,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SlidingFloodGate -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SlidingFloodGate">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FloodGate"/>
+        <rdfs:label xml:lang="de">Schiebetor</rdfs:label>
+        <rdfs:label xml:lang="en">Sliding flood gate</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Stoplog -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
