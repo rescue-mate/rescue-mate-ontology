@@ -174,6 +174,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q446013 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q446013">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q2466889"/>
+        <rdfs:comment xml:lang="de">Anlage, mit der Wasser aus einem niedriger gelegenen Gewässer in ein höher gelegenes gepumpt wird</rdfs:comment>
+        <rdfs:comment xml:lang="en">facilities including pumps and equipment for pumping fluids from one place to another</rdfs:comment>
+        <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
+        <rdfs:label xml:lang="en">pumping station</rdfs:label>
+        <rdfs:label xml:lang="fr">station de pompage</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q510255 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q510255">

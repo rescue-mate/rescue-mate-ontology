@@ -72,6 +72,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/PumpingStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PumpingStation">
+        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:label xml:lang="en">Pumping station</rdfs:label>
+        <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q446013"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SlidingFloodGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SlidingFloodGate">
