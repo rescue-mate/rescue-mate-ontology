@@ -32,7 +32,7 @@
     <!-- http://rescue-mate.de/ontology/DischargeSluice -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DischargeSluice">
-        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="de">Deichsiel</rdfs:label>
         <rdfs:label xml:lang="en">Discharge sluice</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q510255"/>
@@ -43,7 +43,7 @@
     <!-- http://rescue-mate.de/ontology/FloodGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FloodGate">
-        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="en">Flood gate</rdfs:label>
         <rdfs:label xml:lang="de">Flutschutztor</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2345125"/>
@@ -61,10 +61,21 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
+        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:label xml:lang="en">Hydraulic structure</rdfs:label>
+        <rdfs:label xml:lang="de">Wasserbauwerk</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2466889"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Lock -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
-        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="en">Lock</rdfs:label>
         <rdfs:label xml:lang="de">Schleuse</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
@@ -75,7 +86,7 @@
     <!-- http://rescue-mate.de/ontology/PumpingStation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PumpingStation">
-        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="en">Pumping station</rdfs:label>
         <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q446013"/>
@@ -96,7 +107,7 @@
     <!-- http://rescue-mate.de/ontology/Stoplog -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
-        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="de">Dammbalken</rdfs:label>
         <rdfs:label xml:lang="en">Stoplog</rdfs:label>
     </owl:Class>
@@ -116,7 +127,7 @@
     <!-- http://rescue-mate.de/ontology/TidalBarrier -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TidalBarrier">
-        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="de">Sperrwerk</rdfs:label>
         <rdfs:label xml:lang="en">Tidal barrier</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q15848142"/>
@@ -137,7 +148,7 @@
     <!-- http://rescue-mate.de/ontology/WaterPumpingStation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/WaterPumpingStation">
-        <rdfs:subClassOf rdf:resource="https://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="de">Schöpfwerk</rdfs:label>
         <rdfs:label xml:lang="en">Water pumping station</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q14524070"/>
