@@ -21,6 +21,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
