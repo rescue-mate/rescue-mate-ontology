@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://rescue-mate.de/ontology/main/"
      xml:base="http://rescue-mate.de/ontology/main/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,10 +12,75 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/main">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.1.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.1.1"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.1.0"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:created>2025-02-12</terms:created>
+        <terms:creator>Patrick Westphal</terms:creator>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-31</terms:issued>
+        <terms:modified>2025-03-31</terms:modified>
+        <terms:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</terms:rights>
+        <terms:title xml:lang="en">RESCUE-MATE Ontology</terms:title>
+        <terms:title xml:lang="de">RESCUE-MATE-Ontologie</terms:title>
+        <rdfs:comment xml:lang="de">Haupt-Ontologie-Modul zur Unterstützung der Datenintegration im RESCUE-MATE-Projekt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Main ontology module supporting the data integration part of the RESCUE-MATE project</rdfs:comment>
+        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.1.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -26,6 +92,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -86,6 +158,17 @@
         <rdfs:label xml:lang="de">Deichsiel</rdfs:label>
         <rdfs:label xml:lang="en">Discharge sluice</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q510255"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FixedConstruction -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FixedConstruction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
+        <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
     </owl:Class>
     
 
@@ -212,17 +295,6 @@
         <rdfs:label xml:lang="de">Schöpfwerk</rdfs:label>
         <rdfs:label xml:lang="en">Water pumping station</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q14524070"/>
-    </owl:Class>
-    
-
-
-    <!-- http://rescue-mate.de/ontology/FixedConstruction -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/FixedConstruction">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
-        <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
     </owl:Class>
 </rdf:RDF>
 
