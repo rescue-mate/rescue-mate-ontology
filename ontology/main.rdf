@@ -353,6 +353,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTMultiPolygon -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTMultiPolygon">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion die eine Liste von GeoJSON-String-Representationen von Polygonen entgegennimmt und eine WKT-String-Repräsentation eines Multipolygons der Eingabedaten zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a list of string representations of GeoJSON polygons as input and returns a WKT string of the multi-polygon geometry represented by the input GeoJSON data</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT multi-polygon</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT Multi-Polygon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/geoJSONToWKTPoint -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTPoint">
