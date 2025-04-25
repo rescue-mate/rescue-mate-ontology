@@ -401,6 +401,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/geometryType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geometryType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string indicating the geometry type (point, multi-point, line string, multi-line string, polygon, multi-polygon)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der einen Geometrietyp bestimmt (Punkt, Multi-Punkt, Linienzug, Multi-Linienzug, Polygon, Multi-Polygon)</rdfs:comment>
+        <rdfs:label xml:lang="de">Geometrietyp</rdfs:label>
+        <rdfs:label xml:lang="en">Geometry type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
