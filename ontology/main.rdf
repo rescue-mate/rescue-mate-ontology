@@ -389,6 +389,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die einen Geometrietyp und eine Liste mit GeoJSON-Geometrie-Strings entgegennimmt und einen WKT-String der Geometrien zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a geometry type and a list of string representations of GeoJSON geometries and returns a WKT string representation of the geometries</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT string</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
