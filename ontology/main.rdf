@@ -317,6 +317,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/fixedConstructionTypeName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/fixedConstructionTypeName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing the fixed construction type</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der den Namen eines Bauwerkstyps enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Bauwerkstypname</rdfs:label>
+        <rdfs:label xml:lang="en">Fixed construction type name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/geoJSONToWKTLineString -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTLineString">
