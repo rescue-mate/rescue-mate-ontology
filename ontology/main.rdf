@@ -434,6 +434,18 @@
         <rdfs:label xml:lang="en">Polygon list</rdfs:label>
         <rdfs:label xml:lang="de">Polygon-Liste</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/polygonsList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/polygonsList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A list containing strings that represent polygons</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste mit String-Repräsentaionen von Polygonen</rdfs:comment>
+        <rdfs:label xml:lang="de">Polygonenliste</rdfs:label>
+        <rdfs:label xml:lang="en">Polygons list</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
