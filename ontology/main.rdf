@@ -425,6 +425,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getFixedConstructionType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFixedConstructionType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Funktion, die für einen Bauwerktypnamen eine Typ-IRI zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Given a type name as input this function returns the proper IRI of a fixed construction type</rdfs:comment>
+        <rdfs:label xml:lang="de">Bauwerkstyp-IRI von Bauwerkstyp</rdfs:label>
+        <rdfs:label xml:lang="en">Get fixed construction type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
