@@ -401,6 +401,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/geometryData -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geometryData">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">List of strings representing geometries</rdfs:comment>
+        <rdfs:comment xml:lang="de">Liste von Strings die Geometrien representieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Geometriedaten</rdfs:label>
+        <rdfs:label xml:lang="en">Geometry data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/geometryType -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geometryType">
