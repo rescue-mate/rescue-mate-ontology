@@ -410,6 +410,18 @@
         <rdfs:label xml:lang="en">Points list</rdfs:label>
         <rdfs:label xml:lang="de">Punkte-Liste</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/polygonList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/polygonList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A singleton list containing a string from a GeoJSON file which represents a polygon</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste mit einer GeoJSON-String-Repräsentation eines Polygons</rdfs:comment>
+        <rdfs:label xml:lang="en">Polygon list</rdfs:label>
+        <rdfs:label xml:lang="de">Polygon-Liste</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
