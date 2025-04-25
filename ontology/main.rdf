@@ -317,6 +317,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTMultiPoint -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTMultiPoint">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Liste mit GeoJSON-Punkt-Repräsentationen entgegennimmt und einen Multi-Punkt-WKT-String zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a list of point strings as input and returns a WKT string for the multi-point geometry represented by the input GeoJSON data.</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT multi-point</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT Multi-Punkt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/geoJSONToWKTPoint -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTPoint">
