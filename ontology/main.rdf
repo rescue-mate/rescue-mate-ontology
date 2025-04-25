@@ -350,6 +350,18 @@
         <rdfs:label xml:lang="en">Point list</rdfs:label>
         <rdfs:label xml:lang="de">Punkt-Liste</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/pointsList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointsList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A list containing strings which represent points</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste von Strings, die Punkte repräsentieren.</rdfs:comment>
+        <rdfs:label xml:lang="en">Points list</rdfs:label>
+        <rdfs:label xml:lang="de">Punkte-Liste</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
