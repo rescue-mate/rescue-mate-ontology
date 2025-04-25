@@ -381,7 +381,7 @@
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
-        <rdfs:comment xml:lang="en">A list containing strings which represent line strings</rdfs:comment>
+        <rdfs:comment xml:lang="en">A list containing strings that represent line strings</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine Liste die Strings enthält, die Linienzüge repräsentieren.</rdfs:comment>
         <rdfs:label xml:lang="en">Line strings list</rdfs:label>
         <rdfs:label xml:lang="de">Linienzüge-Liste</rdfs:label>
@@ -405,7 +405,7 @@
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointsList">
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
-        <rdfs:comment xml:lang="en">A list containing strings which represent points</rdfs:comment>
+        <rdfs:comment xml:lang="en">A list containing strings that represent points</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine Liste von Strings, die Punkte repräsentieren.</rdfs:comment>
         <rdfs:label xml:lang="en">Points list</rdfs:label>
         <rdfs:label xml:lang="de">Punkte-Liste</rdfs:label>
@@ -417,7 +417,7 @@
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/polygonList">
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
-        <rdfs:comment xml:lang="en">A singleton list containing a string from a GeoJSON file which represents a polygon</rdfs:comment>
+        <rdfs:comment xml:lang="en">A singleton list containing a string that represents a polygon</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine Liste mit einer GeoJSON-String-Repräsentation eines Polygons</rdfs:comment>
         <rdfs:label xml:lang="en">Polygon list</rdfs:label>
         <rdfs:label xml:lang="de">Polygon-Liste</rdfs:label>
