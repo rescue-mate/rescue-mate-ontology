@@ -329,6 +329,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTMultiLineString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTMultiLineString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Liste von Linienzügen aus einer GeoJSON-Datei entgegennimmt und einen WKT-Multi-Line-String zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a list of line strings as input and returns a WKT string for the multi line string geometry represented by the input GeoJSON data</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT Multi-Line String</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu Multi-Linienzug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/geoJSONToWKTMultiPoint -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTMultiPoint">
