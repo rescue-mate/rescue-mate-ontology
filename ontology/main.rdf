@@ -503,6 +503,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getValueIfNotNull -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getValueIfNotNull">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die den Eingabewert zurückgibt, sofern er nicht irgendeine Art von NULL-Wert repräsentiert. Falls die Eingabe einen NULL-Wert repräsentiert, wird das Java-null-Objekt zurückgegeben.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the input value if it is not a null value. If the input string represents any kind of null value, the built-in Java null value is returned.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get value if not null</rdfs:label>
+        <rdfs:label xml:lang="de">Gib die EIngabe zurück, sofern nicht null</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
