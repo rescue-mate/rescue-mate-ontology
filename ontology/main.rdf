@@ -548,6 +548,18 @@
         <rdfs:label xml:lang="de">Polygonenliste</rdfs:label>
         <rdfs:label xml:lang="en">Polygons list</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/propulsionTypeString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/propulsionTypeString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Der Antriebsname</rdfs:comment>
+        <rdfs:comment xml:lang="en">The propulsion type name</rdfs:comment>
+        <rdfs:label xml:lang="de">Antriebsname</rdfs:label>
+        <rdfs:label xml:lang="en">Propulsion type string</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
