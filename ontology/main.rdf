@@ -491,6 +491,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getPropulsionType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getPropulsionType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für eine Antriebsart die korrekte Klassen-IRI zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the IRI string of a propulsion type referred to by name</rdfs:comment>
+        <rdfs:label xml:lang="de">Antriebsname zu Antriebsklassen-IRI</rdfs:label>
+        <rdfs:label xml:lang="en">Get propulsion type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
