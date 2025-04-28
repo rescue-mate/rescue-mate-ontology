@@ -169,6 +169,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ElectricPropulsion -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectricPropulsion">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Propulsion"/>
+        <rdfs:label xml:lang="en">Electric propulsion</rdfs:label>
+        <rdfs:label xml:lang="de">Elektronischer Antrieb</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ElectrohydraulicPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectrohydraulicPropulsion">
