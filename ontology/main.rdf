@@ -223,6 +223,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Propulsion -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Propulsion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">Process that generates force leading to movement</rdfs:comment>
+        <rdfs:comment xml:lang="de">Prozess der zu Bewegung führt</rdfs:comment>
+        <rdfs:label xml:lang="de">Antrieb</rdfs:label>
+        <rdfs:label xml:lang="en">Propulsion</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/PumpingStation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PumpingStation">
