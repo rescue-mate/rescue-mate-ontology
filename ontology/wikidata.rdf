@@ -189,6 +189,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1639378 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1639378">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q58778"/>
+        <rdfs:comment xml:lang="de">Begriff der soziologischen Systemtheorie</rdfs:comment>
+        <rdfs:comment xml:lang="en">patterned series of interrelationships existing between individuals, groups, and institutions</rdfs:comment>
+        <rdfs:comment xml:lang="fr">terme principal en théorie de systèmes sociologiques</rdfs:comment>
+        <rdfs:label xml:lang="en">social system</rdfs:label>
+        <rdfs:label xml:lang="de">soziales System</rdfs:label>
+        <rdfs:label xml:lang="fr">système social</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q16887380 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16887380">
