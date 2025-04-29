@@ -148,6 +148,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q155076 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q155076">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3778211"/>
+        <rdfs:comment xml:lang="de">Träger von Rechten oder Pflichten</rdfs:comment>
+        <rdfs:comment xml:lang="fr">concept en droit</rdfs:comment>
+        <rdfs:comment xml:lang="en">organization recognized by law as a fictitious person</rdfs:comment>
+        <rdfs:label xml:lang="en">juridical person</rdfs:label>
+        <rdfs:label xml:lang="de">juristische Person</rdfs:label>
+        <rdfs:label xml:lang="fr">personne morale</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q15848142 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q15848142">
