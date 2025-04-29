@@ -222,6 +222,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GermanStateAgency -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateAgency">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">German state agency</rdfs:label>
+        <rdfs:label xml:lang="de">Landesbehörde (Deutschland)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HingedCrestGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HingedCrestGate">
