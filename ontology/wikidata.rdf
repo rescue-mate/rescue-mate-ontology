@@ -42,6 +42,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q106668099 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q106668099">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q131085629"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
+        <rdfs:comment xml:lang="fr">en bibliothéconomie, agent collectif composé de personnes organisées dans un but ou une activité commune; l&apos;agent collectif comprend les personnes morales et les familles</rdfs:comment>
+        <rdfs:comment xml:lang="de">in der Bibliothekswissenschaft ein Kollektivagent, der aus Personen besteht, die für einen gemeinsamen Zweck oder eine gemeinsame Tätigkeit organisiert sind; Kollektivagent umfasst Körperschaften und Familien</rdfs:comment>
+        <rdfs:comment xml:lang="en">in library science, a collective agent that is composed of persons who are organized for a common purpose or activity; collective agent includes corporate bodies and families</rdfs:comment>
+        <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
+        <rdfs:label xml:lang="fr">collectivité</rdfs:label>
+        <rdfs:label xml:lang="en">corporate body</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q107589046 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q107589046">
