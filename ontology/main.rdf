@@ -623,6 +623,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getJuridicalPerson -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getJuridicalPerson">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die die IRI zu dem Namen oder Identifikator einer juristischen Person zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a juridical person referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get juridical person</rdfs:label>
+        <rdfs:label xml:lang="de">IRI einer juristischen Person von Namen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getPropulsionType -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getPropulsionType">
