@@ -125,6 +125,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/belongsToDikeDefenseArea -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/belongsToDikeDefenseArea">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="en">belongs to dike defense area</rdfs:label>
+        <rdfs:label xml:lang="de">gehört zu Deichverteidigungsgebiet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasEndUserOrganiztaion -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasEndUserOrganiztaion">
