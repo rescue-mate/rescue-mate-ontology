@@ -175,6 +175,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q16887380 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16887380">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q28813620"/>
+        <rdfs:comment xml:lang="de">fasst Entitäten mit ähnlichen Eigenschaften zusammen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">regroupement d&apos;entités discrètes qui ont choisi ou ont été affectés à un tout</rdfs:comment>
+        <rdfs:comment xml:lang="en">well-defined, enumerable collection of discrete entities that form a collective whole</rdfs:comment>
+        <rdfs:label xml:lang="de">Gruppe</rdfs:label>
+        <rdfs:label xml:lang="en">group</rdfs:label>
+        <rdfs:label xml:lang="fr">groupe</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q223557 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
