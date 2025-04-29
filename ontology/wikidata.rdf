@@ -326,6 +326,24 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q43229 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q43229">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106559804"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106668099"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16334295"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1639378"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q854457"/>
+        <rdfs:comment xml:lang="fr">entité sociale (non nécessairement commerciale) réunissant des personnes en un groupe structuré gérant des moyens communs pour répondre à certains besoins ou poursuivre des objectifs collectifs</rdfs:comment>
+        <rdfs:comment xml:lang="en">social entity established to meet needs or pursue goals</rdfs:comment>
+        <rdfs:comment xml:lang="de">soziale Struktur mit einem gemeinsamen Ziel</rdfs:comment>
+        <rdfs:label xml:lang="de">Organisation</rdfs:label>
+        <rdfs:label xml:lang="fr">organisation</rdfs:label>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q446013 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q446013">
