@@ -391,6 +391,96 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/bisHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bisHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Inneres und Sport (BIS) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Inneres und Sport (BIS) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bjvHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bjvHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Justiz und Verbraucherschutz (BJV) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Justiz und Verbraucherschutz (BJV) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bkmHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bkmHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Kultur und Medien (BKM) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Kultur und Medien (BKM) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bswHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bswHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Stadtentwicklung und Wohnen (BSW) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Stadtentwicklung und Wohnen (BSW) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bukeaHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bukeaHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bvmHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bvmHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Verkehr und Mobilitätswende (BVM) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Verkehr und Mobilitätswende (BVM) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bwfgbHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bwfgbHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Wissenschaft, Forschung, Gleichstellung und Bezirke (BWFGB) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Wissenschaft, Forschung, Gleichstellung und Bezirke (BWFGB) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bwiHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bwiHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Wirtschaft und Innovation (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Wirtschaft und Innovation (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/finanzbehoerdeHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/finanzbehoerdeHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Finanzbehörde (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Finanzbehörde (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/fixedConstructionTypeName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/fixedConstructionTypeName">
@@ -615,6 +705,36 @@
         <rdfs:comment xml:lang="en">The propulsion type name</rdfs:comment>
         <rdfs:label xml:lang="de">Antriebsname</rdfs:label>
         <rdfs:label xml:lang="en">Propulsion type string</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/schulbehoerdeHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/schulbehoerdeHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Schulbehörde (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Schulbehörde (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/senatskanzleiHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/senatskanzleiHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Senatskanzlei (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Senatskanzlei (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/sozialbehoerdeHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/sozialbehoerdeHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
     </owl:NamedIndividual>
     
 
