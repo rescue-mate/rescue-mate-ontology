@@ -175,6 +175,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q16334295 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16334295">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16887380"/>
+        <rdfs:comment xml:lang="en">any set of human beings</rdfs:comment>
+        <rdfs:comment xml:lang="de">mehrere Menschen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">n&apos;importe quel groupe constitué d&apos;êtres humains</rdfs:comment>
+        <rdfs:label xml:lang="de">Gruppe von Menschen</rdfs:label>
+        <rdfs:label xml:lang="en">group of humans</rdfs:label>
+        <rdfs:label xml:lang="fr">groupe d&apos;humains</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q16887380 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16887380">
