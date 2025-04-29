@@ -325,6 +325,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q488383 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q488383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:comment xml:lang="de">alles, auf das ein Subjekt reagieren kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">anything that may be observed or acted upon by a subject</rdfs:comment>
+        <rdfs:comment xml:lang="fr">tout ce qui existe et qui peut être utilisé par un sujet</rdfs:comment>
+        <rdfs:label xml:lang="de">Objekt</rdfs:label>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q510255 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q510255">
