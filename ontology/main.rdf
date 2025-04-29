@@ -146,6 +146,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/dikeKilometer -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dikeKilometer">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Deichkilometer</rdfs:label>
+        <rdfs:label xml:lang="en">dike kilometer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel">
