@@ -816,6 +816,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/toBoolean -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/toBoolean">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die versucht, beliebige String-Eingaben in ein Boolean umzuwandeln</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that tries to convert any string input to a boollean value.</rdfs:comment>
+        <rdfs:label xml:lang="de">String zu Boolean</rdfs:label>
+        <rdfs:label xml:lang="en">to Boolean</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/valueString -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/valueString">
