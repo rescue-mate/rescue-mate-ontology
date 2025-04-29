@@ -413,6 +413,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q783794 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q783794">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3778211"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q43229"/>
+        <rdfs:comment xml:lang="de">Zusammenschluss von mindestens zwei natürlichen und/oder juristischen Personen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">association de personnes individuelles réelles et/ou d&apos;autres sociétés</rdfs:comment>
+        <rdfs:comment xml:lang="en">legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective</rdfs:comment>
+        <rdfs:label xml:lang="de">Gesellschaft</rdfs:label>
+        <rdfs:label xml:lang="fr">compagnie</rdfs:label>
+        <rdfs:label xml:lang="en">company</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q811430 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q811430">
