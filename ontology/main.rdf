@@ -455,6 +455,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/areaName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/areaName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">Area name</rdfs:label>
+        <rdfs:label xml:lang="de">Gebietsname</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/aurubis -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/aurubis">
