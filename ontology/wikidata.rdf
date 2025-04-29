@@ -423,6 +423,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q854457 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q854457">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q58778"/>
+        <rdfs:comment xml:lang="de">Art von System</rdfs:comment>
+        <rdfs:comment xml:lang="en">system composed of many interacting components</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type de système</rdfs:comment>
+        <rdfs:label xml:lang="en">complex system</rdfs:label>
+        <rdfs:label xml:lang="de">komplexes System</rdfs:label>
+        <rdfs:label xml:lang="fr">système complexe</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q99527517 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q99527517">
