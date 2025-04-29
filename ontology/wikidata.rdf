@@ -242,6 +242,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q3778211 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q3778211">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106559804"/>
+        <rdfs:comment xml:lang="de">Träger von (subjektiven) Rechten und Rechtspflichten</rdfs:comment>
+        <rdfs:comment xml:lang="en">any human or non-human entity that is recognized as having privileges and obligations; a legal fiction which is used to abstract away the differences between natural persons, juridical persons and other entities such as countries</rdfs:comment>
+        <rdfs:comment xml:lang="fr">aptitude à être titulaire de droits et de devoirs</rdfs:comment>
+        <rdfs:label xml:lang="de">Rechtssubjekt</rdfs:label>
+        <rdfs:label xml:lang="en">legal person</rdfs:label>
+        <rdfs:label xml:lang="fr">personnalité juridique</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q446013 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q446013">
