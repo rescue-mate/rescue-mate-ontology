@@ -352,6 +352,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q58778 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q58778">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q99527517"/>
+        <rdfs:comment xml:lang="de">Gesamtheit von wechselwirkenden Elementen einer Einheit</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ensemble d&apos;éléments interagissant entre eux selon certains principes ou règles</rdfs:comment>
+        <rdfs:comment xml:lang="en">set of interacting or interdependent components</rdfs:comment>
+        <rdfs:label xml:lang="de">System</rdfs:label>
+        <rdfs:label xml:lang="en">system</rdfs:label>
+        <rdfs:label xml:lang="fr">système</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q618123 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q618123">
