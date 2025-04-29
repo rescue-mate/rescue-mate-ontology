@@ -96,6 +96,17 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q12569864 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q12569864">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106559804"/>
+        <rdfs:comment xml:lang="en">one of the assumptions made in generally accepted accounting principles</rdfs:comment>
+        <rdfs:label xml:lang="en">economic entity</rdfs:label>
+        <rdfs:label xml:lang="fr">entité économique</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q131085629 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q131085629">
