@@ -244,6 +244,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q28813620 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q28813620">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q99527517"/>
+        <rdfs:comment xml:lang="de">Gruppe von Dingen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ensemble d&apos;éléments tenus individuellement ; analogue à un ensemble mathématique, mais permettant aussi des éléments non mathématiques</rdfs:comment>
+        <rdfs:comment xml:lang="en">group of items regarded as one</rdfs:comment>
+        <rdfs:label xml:lang="de">Gefüge</rdfs:label>
+        <rdfs:label xml:lang="fr">ensemble</rdfs:label>
+        <rdfs:label xml:lang="en">set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q333170 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q333170">
