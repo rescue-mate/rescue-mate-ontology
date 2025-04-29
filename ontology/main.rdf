@@ -212,6 +212,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DikeDefenseArea -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseArea">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:label xml:lang="de">Deichverteidigungsgebiet</rdfs:label>
+        <rdfs:label xml:lang="en">Dike defense area</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/DischargeSluice -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DischargeSluice">
