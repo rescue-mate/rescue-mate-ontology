@@ -203,6 +203,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q167037 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q167037">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q155076"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q783794"/>
+        <rdfs:comment xml:lang="de">Vereinigung, deren Bestand vom Wechsel der Mitglieder unabhängig ist</rdfs:comment>
+        <rdfs:comment xml:lang="fr">legal entity incorporated through a legislative or registration process</rdfs:comment>
+        <rdfs:comment xml:lang="fr">réunion durable de personnes poursuivant un but commun</rdfs:comment>
+        <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
+        <rdfs:label xml:lang="en">corporation</rdfs:label>
+        <rdfs:label xml:lang="fr">corporation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q16887380 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16887380">
