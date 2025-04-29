@@ -133,6 +133,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q24229398 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q24229398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:comment xml:lang="de">Entität, die Aktionen ausführen kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">distinct and identifiable entity capable of performing actions</rdfs:comment>
+        <rdfs:comment xml:lang="fr">entité individuelle et identifiable qui peut conduire des actions (comme une personne physique ou une organisation)</rdfs:comment>
+        <rdfs:label xml:lang="de">Akteur</rdfs:label>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <rdfs:label xml:lang="fr">agent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q2466889 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2466889">
