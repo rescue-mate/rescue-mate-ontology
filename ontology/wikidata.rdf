@@ -67,6 +67,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q131085629 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q131085629">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q24229398"/>
+        <rdfs:comment xml:lang="fr">agent qui est un groupement ou une association de deux ou plusieurs personnes portant un nom particulier et disposant de la faculté d’agir collectivement</rdfs:comment>
+        <rdfs:comment xml:lang="en">an agent who is a gathering or organization of two or more persons that bears a particular name and that is capable of acting as a unit</rdfs:comment>
+        <rdfs:comment xml:lang="de">ein Akteur, bei dem es sich um eine Zusammenkunft oder eine Organisation von zwei oder mehreren Personen handelt, die der einen bestimmten Namen trägt und imstande ist, als Einheit zu handeln</rdfs:comment>
+        <rdfs:label xml:lang="de">Gemeinschaftlicher Akteur</rdfs:label>
+        <rdfs:label xml:lang="fr">agent collectif</rdfs:label>
+        <rdfs:label xml:lang="en">collective agent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1411945 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1411945">
