@@ -372,6 +372,23 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q4830453 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4830453">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q12569864"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q155076"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q167037"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q43229"/>
+        <rdfs:comment xml:lang="fr">entité impliquée dans des activités commerciales, industrielles ou professionnelles</rdfs:comment>
+        <rdfs:comment xml:lang="de">gewerbliche oder kaufmännische Geschäftseinheit</rdfs:comment>
+        <rdfs:comment xml:lang="en">organization undertaking commercial, industrial, or professional activity</rdfs:comment>
+        <rdfs:label xml:lang="de">Gewerbebetrieb</rdfs:label>
+        <rdfs:label xml:lang="en">business</rdfs:label>
+        <rdfs:label xml:lang="fr">firme</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q488383 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q488383">
