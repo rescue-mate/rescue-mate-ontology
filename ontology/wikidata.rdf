@@ -239,6 +239,18 @@
         <rdfs:label xml:lang="en">architectural structure</rdfs:label>
         <rdfs:label xml:lang="fr">structure architecturale</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q99527517 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q99527517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:comment xml:lang="en">entity that is a composite of other entities</rdfs:comment>
+        <rdfs:comment xml:lang="fr">entité qui est un composite d&apos;autres entités</rdfs:comment>
+        <rdfs:label xml:lang="en">collective entity</rdfs:label>
+        <rdfs:label xml:lang="fr">entité composée</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
