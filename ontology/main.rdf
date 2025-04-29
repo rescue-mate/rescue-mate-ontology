@@ -117,6 +117,27 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasEndUserOrganiztaion -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasEndUserOrganiztaion">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:label xml:lang="en">Has end user organization</rdfs:label>
+        <rdfs:label xml:lang="de">hat Bedarfsträger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
