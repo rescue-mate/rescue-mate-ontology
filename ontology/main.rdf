@@ -659,6 +659,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/juridicalPersonName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/juridicalPersonName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Name oder Identifikator einer juristischen Person</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name or ID of a juridical person</rdfs:comment>
+        <rdfs:label xml:lang="en">Juridical person name</rdfs:label>
+        <rdfs:label xml:lang="de">Name einer juristischen Person</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
