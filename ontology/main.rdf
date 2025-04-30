@@ -896,7 +896,7 @@
         <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die versucht, beliebige String-Eingaben in ein Boolean umzuwandeln</rdfs:comment>
         <rdfs:comment xml:lang="en">Custom RML function that tries to convert any string input to a boollean value.</rdfs:comment>
         <rdfs:label xml:lang="de">String zu Boolean</rdfs:label>
-        <rdfs:label xml:lang="en">to Boolean</rdfs:label>
+        <rdfs:label xml:lang="en">To Boolean</rdfs:label>
     </owl:NamedIndividual>
     
 
