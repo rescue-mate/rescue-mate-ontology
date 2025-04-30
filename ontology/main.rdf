@@ -475,6 +475,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/bergedorfDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bergedorfDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Bergedorf (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Bergedorf (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/bisHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bisHamburg">
@@ -745,6 +755,26 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/harburgDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/harburgDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Harburg (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Harburg (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/innenstadtDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/innenstadtDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Innenstadt (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Innenstadt (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/juridicalPersonName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/juridicalPersonName">
@@ -879,6 +909,16 @@
         <rdfs:comment xml:lang="de">Beliebiger String, der einen (JSON-)Wert enthält</rdfs:comment>
         <rdfs:label xml:lang="en">Value string</rdfs:label>
         <rdfs:label xml:lang="de">Wert-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Wilhelmsburg (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Wilhelmsburg (dike defense area)</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
