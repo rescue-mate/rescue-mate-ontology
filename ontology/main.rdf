@@ -146,6 +146,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/responsibleDikeWarden -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/responsibleDikeWarden">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/DikeWarden"/>
+        <rdfs:label xml:lang="en">responsible dike warden</rdfs:label>
+        <rdfs:label xml:lang="de">zuständiger Deichwart</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
