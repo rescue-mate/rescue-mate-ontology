@@ -179,6 +179,14 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/dikeWardenID -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dikeWardenID">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/DikeWarden"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel">
