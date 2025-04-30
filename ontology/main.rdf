@@ -685,6 +685,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getDikeDefenseArea">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die die IRI eines Deichverteidigungsgebiets zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a dike defense area referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="de">Deichverteidigungsgebiet von Gebietsname</rdfs:label>
+        <rdfs:label xml:lang="en">Get dike defense area</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getFixedConstructionType -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFixedConstructionType">
