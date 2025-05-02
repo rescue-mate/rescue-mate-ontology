@@ -183,6 +183,8 @@
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dikeWardenID">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/DikeWarden"/>
+        <rdfs:label xml:lang="de">Deichwart</rdfs:label>
+        <rdfs:label xml:lang="en">dike warden</rdfs:label>
     </owl:DatatypeProperty>
     
 
