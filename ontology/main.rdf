@@ -921,6 +921,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/returnClassIfTrue -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/returnClassIfTrue">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:label xml:lang="de">Gib Klassen-IRI-String zurück, falls Wahrheitswert wahr ist</rdfs:label>
+        <rdfs:label xml:lang="en">Return class IRI if true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/schulbehoerdeHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/schulbehoerdeHamburg">
