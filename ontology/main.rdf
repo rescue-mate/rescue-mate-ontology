@@ -617,6 +617,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/classIRIString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/classIRIString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">Class IRI string</rdfs:label>
+        <rdfs:label xml:lang="de">Klassen-IRI-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/finanzbehoerdeHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/finanzbehoerdeHamburg">
