@@ -189,6 +189,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasSillHeightInMetersAboveSeaLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/hasSillHeightInMetersAboveSeaLevel">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Drempelhöhe in Metern über Normalhöhennull</rdfs:label>
+        <rdfs:label xml:lang="en">has sill height in meters above sea level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel">
