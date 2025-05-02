@@ -617,12 +617,12 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/classIRIString -->
+    <!-- http://rescue-mate.de/resource/classIRI -->
 
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/classIRIString">
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/classIRI">
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
-        <rdfs:label xml:lang="en">Class IRI string</rdfs:label>
-        <rdfs:label xml:lang="de">Klassen-IRI-String</rdfs:label>
+        <rdfs:label xml:lang="en">Class IRI</rdfs:label>
+        <rdfs:label xml:lang="de">Klassen-IRI</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -925,7 +925,7 @@
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/returnClassIfTrue">
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
-        <rdfs:label xml:lang="de">Gib Klassen-IRI-String zurück, falls Wahrheitswert wahr ist</rdfs:label>
+        <rdfs:label xml:lang="de">Gib Klassen-IRI zurück, falls Wahrheitswert wahr ist</rdfs:label>
         <rdfs:label xml:lang="en">Return class IRI if true</rdfs:label>
     </owl:NamedIndividual>
     
