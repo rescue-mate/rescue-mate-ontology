@@ -1,0 +1,51 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image:
+    name: ghcr.io/dgarijo/widoco:v1.4.25
+    entrypoint: [""]
+  script:
+    - |
+      VERSION_IRI=$(grep "owl:versionIRI" ontology/main.rdf | sed -E 's/.*resource="([^"]+)".*/\1/' | sed 's|http://rescue-mate.de/ontology/||')
+      echo "Version IRI: $VERSION_IRI"
+      mkdir -p "out/$VERSION_IRI"
+      java -jar /usr/local/widoco/widoco.jar \
+        -ontFile ontology/main.rdf \
+        -webVowl -rewriteAll -lang en-de -uniteSections \
+        -outFolder "out/$VERSION_IRI"
+  artifacts:
+    paths:
+      - out
+  only:
+    - main
+    - /^v.*/
+
+deploy:
+  variables:
+    GIT_STRATEGY: none
+  image: ubuntu
+  stage: deploy
+  before_script:
+    - apt-get -qq update
+    - apt-get -qq install -y rsync
+    - 'which ssh-agent || (apt-get update -y && apt-get install openssh-client -y)'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - >/dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan issvm2.informatik.uni-hamburg.de > ~/.ssh/known_hosts
+    #- echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - rsync -avz ./out/ www-data@issvm2.informatik.uni-hamburg.de:rescuemate-ontology
+  environment:
+    name: production
+    url: https://rescue-mate.de/ontology
+  only:
+    - main
+    - /^v.*/
+  tags:
+    - UHH-NET
