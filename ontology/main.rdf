@@ -147,6 +147,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasImplementingAgency -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasImplementingAgency">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">has implementing agency</rdfs:label>
+        <rdfs:label xml:lang="de">hat Realisierungsträger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/responsibleDikeWarden -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/responsibleDikeWarden">
