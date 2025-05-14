@@ -863,6 +863,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/hamburgPortAuthority -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/hamburgPortAuthority">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanPublicLawInstitution"/>
+        <rdfs:label xml:lang="de">Hamburg Port Authority (HPA)</rdfs:label>
+        <rdfs:label xml:lang="en">Hamburg Port Authority (HPA)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/harburgDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/harburgDikeDefenseArea">
