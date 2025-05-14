@@ -927,6 +927,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/lsbgHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lsbgHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateEnterprise"/>
+        <rdfs:label xml:lang="de">Landesbetrieb Straßen, Brücken und Gewässer (LSBG) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Landesbetrieb Straßen, Brücken und Gewässer (LSBG) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/pointList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointList">
