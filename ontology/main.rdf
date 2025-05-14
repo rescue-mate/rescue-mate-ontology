@@ -435,6 +435,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SensorReading -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SensorReading">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:comment xml:lang="en">A sensor reading is a mesurement datum that is a recording of the output of a sensor.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Sensormesswert ist ein Messwert, der auf der Ausgabe eines Sensors basiert.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor reading</rdfs:label>
+        <rdfs:label xml:lang="de">Sensormesswert</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SlidingFloodGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SlidingFloodGate">
