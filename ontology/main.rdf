@@ -563,6 +563,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/airbusOperationsGmbH -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/airbusOperationsGmbH">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/Business"/>
+        <rdfs:label xml:lang="de">Airbus Operations GmbH</rdfs:label>
+        <rdfs:label xml:lang="en">Airbus Operations GmbH</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/areaName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/areaName">
