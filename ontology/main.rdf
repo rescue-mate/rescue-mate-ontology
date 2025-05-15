@@ -626,6 +626,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/baBergedorfHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/baBergedorfHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanBoroughOffice"/>
+        <rdfs:label xml:lang="de">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/bergedorfDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bergedorfDikeDefenseArea">
