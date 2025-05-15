@@ -271,7 +271,7 @@
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">protects up to height in meters above sea level</rdfs:label>
         <rdfs:label xml:lang="de">schutzhoehe_m_ueber_nhn</rdfs:label>
     </owl:DatatypeProperty>
