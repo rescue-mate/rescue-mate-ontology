@@ -26,15 +26,15 @@
         <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:created>2025-02-12</terms:created>
         <terms:creator>Patrick Westphal</terms:creator>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-31</terms:issued>
-        <terms:modified>2025-03-31</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-15</terms:issued>
+        <terms:modified>2025-05-15</terms:modified>
         <terms:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</terms:rights>
         <terms:title xml:lang="en">RESCUE-MATE Ontology</terms:title>
         <terms:title xml:lang="de">RESCUE-MATE-Ontologie</terms:title>
         <rdfs:comment xml:lang="de">Haupt-Ontologie-Modul zur Unterstützung der Datenintegration im RESCUE-MATE-Projekt</rdfs:comment>
         <rdfs:comment xml:lang="en">Main ontology module supporting the data integration part of the RESCUE-MATE project</rdfs:comment>
-        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.1.0"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.1.1"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
     </owl:Ontology>
     
 
