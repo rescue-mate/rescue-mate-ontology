@@ -42,6 +42,35 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q106559804 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q106559804">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q24229398"/>
+        <rdfs:comment xml:lang="de">Art von Vermittler</rdfs:comment>
+        <rdfs:comment xml:lang="en">class of agents</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type d&apos;agent</rdfs:comment>
+        <rdfs:label xml:lang="de">Person oder Organisation</rdfs:label>
+        <rdfs:label xml:lang="en">person or organization</rdfs:label>
+        <rdfs:label xml:lang="fr">personne ou organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q106668099 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q106668099">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q131085629"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
+        <rdfs:comment xml:lang="fr">en bibliothéconomie, agent collectif composé de personnes organisées dans un but ou une activité commune; l&apos;agent collectif comprend les personnes morales et les familles</rdfs:comment>
+        <rdfs:comment xml:lang="de">in der Bibliothekswissenschaft ein Kollektivagent, der aus Personen besteht, die für einen gemeinsamen Zweck oder eine gemeinsame Tätigkeit organisiert sind; Kollektivagent umfasst Körperschaften und Familien</rdfs:comment>
+        <rdfs:comment xml:lang="en">in library science, a collective agent that is composed of persons who are organized for a common purpose or activity; collective agent includes corporate bodies and families</rdfs:comment>
+        <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
+        <rdfs:label xml:lang="fr">collectivité</rdfs:label>
+        <rdfs:label xml:lang="en">corporate body</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q107589046 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q107589046">
@@ -63,6 +92,31 @@
         <rdfs:label xml:lang="fr">entité cartographiable</rdfs:label>
         <rdfs:label xml:lang="en">geolocatable entity</rdfs:label>
         <rdfs:label xml:lang="de">geolokalisierbares Objekt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q12569864 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q12569864">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106559804"/>
+        <rdfs:comment xml:lang="en">one of the assumptions made in generally accepted accounting principles</rdfs:comment>
+        <rdfs:label xml:lang="en">economic entity</rdfs:label>
+        <rdfs:label xml:lang="fr">entité économique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q131085629 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q131085629">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q24229398"/>
+        <rdfs:comment xml:lang="fr">agent qui est un groupement ou une association de deux ou plusieurs personnes portant un nom particulier et disposant de la faculté d’agir collectivement</rdfs:comment>
+        <rdfs:comment xml:lang="en">an agent who is a gathering or organization of two or more persons that bears a particular name and that is capable of acting as a unit</rdfs:comment>
+        <rdfs:comment xml:lang="de">ein Akteur, bei dem es sich um eine Zusammenkunft oder eine Organisation von zwei oder mehreren Personen handelt, die der einen bestimmten Namen trägt und imstande ist, als Einheit zu handeln</rdfs:comment>
+        <rdfs:label xml:lang="de">Gemeinschaftlicher Akteur</rdfs:label>
+        <rdfs:label xml:lang="fr">agent collectif</rdfs:label>
+        <rdfs:label xml:lang="en">collective agent</rdfs:label>
     </owl:Class>
     
 
@@ -94,6 +148,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q155076 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q155076">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3778211"/>
+        <rdfs:comment xml:lang="de">Träger von Rechten oder Pflichten</rdfs:comment>
+        <rdfs:comment xml:lang="fr">concept en droit</rdfs:comment>
+        <rdfs:comment xml:lang="en">organization recognized by law as a fictitious person</rdfs:comment>
+        <rdfs:label xml:lang="en">juridical person</rdfs:label>
+        <rdfs:label xml:lang="de">juristische Person</rdfs:label>
+        <rdfs:label xml:lang="fr">personne morale</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q15848142 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q15848142">
@@ -103,6 +171,63 @@
         <rdfs:label xml:lang="de">Sperrwerk</rdfs:label>
         <rdfs:label xml:lang="en">Tidal barrier</rdfs:label>
         <rdfs:label xml:lang="fr">barrière contre les inondations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q16334295 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16334295">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16887380"/>
+        <rdfs:comment xml:lang="en">any set of human beings</rdfs:comment>
+        <rdfs:comment xml:lang="de">mehrere Menschen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">n&apos;importe quel groupe constitué d&apos;êtres humains</rdfs:comment>
+        <rdfs:label xml:lang="de">Gruppe von Menschen</rdfs:label>
+        <rdfs:label xml:lang="en">group of humans</rdfs:label>
+        <rdfs:label xml:lang="fr">groupe d&apos;humains</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1639378 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1639378">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q58778"/>
+        <rdfs:comment xml:lang="de">Begriff der soziologischen Systemtheorie</rdfs:comment>
+        <rdfs:comment xml:lang="en">patterned series of interrelationships existing between individuals, groups, and institutions</rdfs:comment>
+        <rdfs:comment xml:lang="fr">terme principal en théorie de systèmes sociologiques</rdfs:comment>
+        <rdfs:label xml:lang="en">social system</rdfs:label>
+        <rdfs:label xml:lang="de">soziales System</rdfs:label>
+        <rdfs:label xml:lang="fr">système social</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q167037 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q167037">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q155076"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q783794"/>
+        <rdfs:comment xml:lang="de">Vereinigung, deren Bestand vom Wechsel der Mitglieder unabhängig ist</rdfs:comment>
+        <rdfs:comment xml:lang="fr">legal entity incorporated through a legislative or registration process</rdfs:comment>
+        <rdfs:comment xml:lang="fr">réunion durable de personnes poursuivant un but commun</rdfs:comment>
+        <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
+        <rdfs:label xml:lang="en">corporation</rdfs:label>
+        <rdfs:label xml:lang="fr">corporation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q16887380 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16887380">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q28813620"/>
+        <rdfs:comment xml:lang="de">fasst Entitäten mit ähnlichen Eigenschaften zusammen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">regroupement d&apos;entités discrètes qui ont choisi ou ont été affectés à un tout</rdfs:comment>
+        <rdfs:comment xml:lang="en">well-defined, enumerable collection of discrete entities that form a collective whole</rdfs:comment>
+        <rdfs:label xml:lang="de">Gruppe</rdfs:label>
+        <rdfs:label xml:lang="en">group</rdfs:label>
+        <rdfs:label xml:lang="fr">groupe</rdfs:label>
     </owl:Class>
     
 
@@ -129,6 +254,20 @@
         <rdfs:label xml:lang="de">Fluttor</rdfs:label>
         <rdfs:label xml:lang="en">floodgate</rdfs:label>
         <rdfs:label xml:lang="fr">vanne contre les inondations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q24229398 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q24229398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:comment xml:lang="de">Entität, die Aktionen ausführen kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">distinct and identifiable entity capable of performing actions</rdfs:comment>
+        <rdfs:comment xml:lang="fr">entité individuelle et identifiable qui peut conduire des actions (comme une personne physique ou une organisation)</rdfs:comment>
+        <rdfs:label xml:lang="de">Akteur</rdfs:label>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <rdfs:label xml:lang="fr">agent</rdfs:label>
     </owl:Class>
     
 
@@ -162,6 +301,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q28813620 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q28813620">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q99527517"/>
+        <rdfs:comment xml:lang="de">Gruppe von Dingen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ensemble d&apos;éléments tenus individuellement ; analogue à un ensemble mathématique, mais permettant aussi des éléments non mathématiques</rdfs:comment>
+        <rdfs:comment xml:lang="en">group of items regarded as one</rdfs:comment>
+        <rdfs:label xml:lang="de">Gefüge</rdfs:label>
+        <rdfs:label xml:lang="fr">ensemble</rdfs:label>
+        <rdfs:label xml:lang="en">set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q333170 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q333170">
@@ -170,6 +323,38 @@
         <rdfs:comment xml:lang="en">structure that allows vessels to overcome a fall in a waterway</rdfs:comment>
         <rdfs:label xml:lang="de">Abstiegsbauwerk</rdfs:label>
         <rdfs:label xml:lang="en">fall structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q3778211 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q3778211">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106559804"/>
+        <rdfs:comment xml:lang="de">Träger von (subjektiven) Rechten und Rechtspflichten</rdfs:comment>
+        <rdfs:comment xml:lang="en">any human or non-human entity that is recognized as having privileges and obligations; a legal fiction which is used to abstract away the differences between natural persons, juridical persons and other entities such as countries</rdfs:comment>
+        <rdfs:comment xml:lang="fr">aptitude à être titulaire de droits et de devoirs</rdfs:comment>
+        <rdfs:label xml:lang="de">Rechtssubjekt</rdfs:label>
+        <rdfs:label xml:lang="en">legal person</rdfs:label>
+        <rdfs:label xml:lang="fr">personnalité juridique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q43229 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q43229">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106559804"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106668099"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16334295"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1639378"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q854457"/>
+        <rdfs:comment xml:lang="fr">entité sociale (non nécessairement commerciale) réunissant des personnes en un groupe structuré gérant des moyens communs pour répondre à certains besoins ou poursuivre des objectifs collectifs</rdfs:comment>
+        <rdfs:comment xml:lang="en">social entity established to meet needs or pursue goals</rdfs:comment>
+        <rdfs:comment xml:lang="de">soziale Struktur mit einem gemeinsamen Ziel</rdfs:comment>
+        <rdfs:label xml:lang="de">Organisation</rdfs:label>
+        <rdfs:label xml:lang="fr">organisation</rdfs:label>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
 
@@ -187,6 +372,37 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q4830453 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4830453">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q12569864"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q155076"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q167037"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q43229"/>
+        <rdfs:comment xml:lang="fr">entité impliquée dans des activités commerciales, industrielles ou professionnelles</rdfs:comment>
+        <rdfs:comment xml:lang="de">gewerbliche oder kaufmännische Geschäftseinheit</rdfs:comment>
+        <rdfs:comment xml:lang="en">organization undertaking commercial, industrial, or professional activity</rdfs:comment>
+        <rdfs:label xml:lang="de">Gewerbebetrieb</rdfs:label>
+        <rdfs:label xml:lang="en">business</rdfs:label>
+        <rdfs:label xml:lang="fr">firme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q488383 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q488383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:comment xml:lang="de">alles, auf das ein Subjekt reagieren kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">anything that may be observed or acted upon by a subject</rdfs:comment>
+        <rdfs:comment xml:lang="fr">tout ce qui existe et qui peut être utilisé par un sujet</rdfs:comment>
+        <rdfs:label xml:lang="de">Objekt</rdfs:label>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q510255 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q510255">
@@ -196,6 +412,21 @@
         <rdfs:label xml:lang="de">Siel</rdfs:label>
         <rdfs:label xml:lang="en">discharge sluice</rdfs:label>
         <rdfs:label xml:lang="fr">écluse de chasse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q58778 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q58778">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q99527517"/>
+        <rdfs:comment xml:lang="de">Gesamtheit von wechselwirkenden Elementen einer Einheit</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ensemble d&apos;éléments interagissant entre eux selon certains principes ou règles</rdfs:comment>
+        <rdfs:comment xml:lang="en">set of interacting or interdependent components</rdfs:comment>
+        <rdfs:label xml:lang="de">System</rdfs:label>
+        <rdfs:label xml:lang="en">system</rdfs:label>
+        <rdfs:label xml:lang="fr">système</rdfs:label>
     </owl:Class>
     
 
@@ -210,6 +441,21 @@
         <rdfs:label xml:lang="en">geographical feature</rdfs:label>
         <rdfs:label xml:lang="de">geographisches Objekt</rdfs:label>
         <rdfs:label xml:lang="fr">objet géographique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q783794 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q783794">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3778211"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q43229"/>
+        <rdfs:comment xml:lang="de">Zusammenschluss von mindestens zwei natürlichen und/oder juristischen Personen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">association de personnes individuelles réelles et/ou d&apos;autres sociétés</rdfs:comment>
+        <rdfs:comment xml:lang="en">legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective</rdfs:comment>
+        <rdfs:label xml:lang="de">Gesellschaft</rdfs:label>
+        <rdfs:label xml:lang="fr">compagnie</rdfs:label>
+        <rdfs:label xml:lang="en">company</rdfs:label>
     </owl:Class>
     
 
@@ -238,6 +484,32 @@
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">architectural structure</rdfs:label>
         <rdfs:label xml:lang="fr">structure architecturale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q854457 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q854457">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q58778"/>
+        <rdfs:comment xml:lang="de">Art von System</rdfs:comment>
+        <rdfs:comment xml:lang="en">system composed of many interacting components</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type de système</rdfs:comment>
+        <rdfs:label xml:lang="en">complex system</rdfs:label>
+        <rdfs:label xml:lang="de">komplexes System</rdfs:label>
+        <rdfs:label xml:lang="fr">système complexe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q99527517 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q99527517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:comment xml:lang="en">entity that is a composite of other entities</rdfs:comment>
+        <rdfs:comment xml:lang="fr">entité qui est un composite d&apos;autres entités</rdfs:comment>
+        <rdfs:label xml:lang="en">collective entity</rdfs:label>
+        <rdfs:label xml:lang="fr">entité composée</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

@@ -3,30 +3,38 @@
      xml:base="http://rescue-mate.de/ontology/main/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:ontology="https://w3id.org/function/ontology#">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/main">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.1.1"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.2.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.1.0"/>
+        <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:created>2025-02-12</terms:created>
         <terms:creator>Patrick Westphal</terms:creator>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-31</terms:issued>
-        <terms:modified>2025-03-31</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-15</terms:issued>
+        <terms:modified>2025-05-15</terms:modified>
         <terms:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</terms:rights>
         <terms:title xml:lang="en">RESCUE-MATE Ontology</terms:title>
         <terms:title xml:lang="de">RESCUE-MATE-Ontologie</terms:title>
         <rdfs:comment xml:lang="de">Haupt-Ontologie-Modul zur Unterstützung der Datenintegration im RESCUE-MATE-Projekt</rdfs:comment>
         <rdfs:comment xml:lang="en">Main ontology module supporting the data integration part of the RESCUE-MATE project</rdfs:comment>
-        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.1.0"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.1.1"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -110,6 +118,82 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/belongsToDikeDefenseArea -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/belongsToDikeDefenseArea">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="en">belongs to dike defense area</rdfs:label>
+        <rdfs:label xml:lang="de">gehört zu Deichverteidigungsgebiet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasEndUserOrganiztaion -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasEndUserOrganiztaion">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:label xml:lang="en">has end user organization</rdfs:label>
+        <rdfs:label xml:lang="de">hat Bedarfsträger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasImplementingAgency -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasImplementingAgency">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">has implementing agency</rdfs:label>
+        <rdfs:label xml:lang="de">hat Realisierungsträger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/maintenanceResponsibility -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/maintenanceResponsibility">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Zuständigkeit Unterhaltung</rdfs:label>
+        <rdfs:label xml:lang="en">maintenance responsibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/responsibleDikeWarden -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/responsibleDikeWarden">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/DikeWarden"/>
+        <rdfs:label xml:lang="en">responsible dike warden</rdfs:label>
+        <rdfs:label xml:lang="de">zuständiger Deichwart</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/supervisoryResponsibility -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/supervisoryResponsibility">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Zuständigkeit Aufsicht</rdfs:label>
+        <rdfs:label xml:lang="en">supervisory responsibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -118,13 +202,89 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/clearWidthInMeters -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/clearWidthInMeters">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Schartenbreite in Metern</rdfs:label>
+        <rdfs:label xml:lang="en">clear width in meters</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/closedWaterLevelInMeters -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/closedWaterLevelInMeters">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Schließwasserstand in Metern</rdfs:label>
+        <rdfs:label xml:lang="en">closed water level in meters</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/dikeKilometer -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dikeKilometer">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Deichkilometer</rdfs:label>
+        <rdfs:label xml:lang="en">dike kilometer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/dikeWardenID -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dikeWardenID">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/DikeWarden"/>
+        <rdfs:label xml:lang="de">Deichwart</rdfs:label>
+        <rdfs:label xml:lang="en">dike warden</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasSillHeightInMetersAboveSeaLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/hasSillHeightInMetersAboveSeaLevel">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Drempelhöhe in Metern über Normalhöhennull</rdfs:label>
+        <rdfs:label xml:lang="en">has sill height in meters above sea level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/openWaterLevelInMeters -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/openWaterLevelInMeters">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Offenwasserstand in Metern</rdfs:label>
+        <rdfs:label xml:lang="en">open water level in meters</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/protectsUpToHeightInMetersAboveSeaLevel">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">protects up to height in meters above sea level</rdfs:label>
         <rdfs:label xml:lang="de">schutzhoehe_m_ueber_nhn</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/secondDikeSafety -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/secondDikeSafety">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">second dike safety</rdfs:label>
+        <rdfs:label xml:lang="de">zweite Deichsicherheit</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -151,6 +311,37 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Business -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Business">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">Business</rdfs:label>
+        <rdfs:label xml:lang="de">Gewerbebetrieb</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q4830453"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DikeDefenseArea -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseArea">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:label xml:lang="de">Deichverteidigungsgebiet</rdfs:label>
+        <rdfs:label xml:lang="en">Dike defense area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DikeWarden -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeWarden">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="de">Deichwart</rdfs:label>
+        <rdfs:label xml:lang="en">Dike warden</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/DischargeSluice -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DischargeSluice">
@@ -158,6 +349,26 @@
         <rdfs:label xml:lang="de">Deichsiel</rdfs:label>
         <rdfs:label xml:lang="en">Discharge sluice</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q510255"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ElectricPropulsion -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectricPropulsion">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Propulsion"/>
+        <rdfs:label xml:lang="en">Electric propulsion</rdfs:label>
+        <rdfs:label xml:lang="de">Elektronischer Antrieb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ElectrohydraulicPropulsion -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectrohydraulicPropulsion">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Propulsion"/>
+        <rdfs:label xml:lang="en">Electrohydraulic propulsion</rdfs:label>
+        <rdfs:label xml:lang="de">Elektrohydraulischer Antrieb</rdfs:label>
     </owl:Class>
     
 
@@ -184,12 +395,62 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GermanBoroughOffice -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanBoroughOffice">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Bezirksamt</rdfs:label>
+        <rdfs:label xml:lang="en">German borough office</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanPublicLawInstitution -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanPublicLawInstitution">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Anstalt des öffentlichen Rechts</rdfs:label>
+        <rdfs:label xml:lang="en">German public law institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanStateAgency -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateAgency">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">German state agency</rdfs:label>
+        <rdfs:label xml:lang="de">Landesbehörde (Deutschland)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanStateEnterprise -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateEnterprise">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">German state enterprise</rdfs:label>
+        <rdfs:label xml:lang="de">Landesbetrieb</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HingedCrestGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HingedCrestGate">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FloodGate"/>
         <rdfs:label xml:lang="en">Hinged crest gate</rdfs:label>
         <rdfs:label xml:lang="de">Klapptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HydraulicCrossingStructure -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicCrossingStructure">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="en">Hydraulic crossing structure</rdfs:label>
+        <rdfs:label xml:lang="de">Kreuzungsbauwerk</rdfs:label>
     </owl:Class>
     
 
@@ -205,6 +466,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/JuridicalPerson -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/JuridicalPerson">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label xml:lang="en">Juridical person</rdfs:label>
+        <rdfs:label xml:lang="de">Juristische Person</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q155076"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Lock -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
@@ -212,6 +484,28 @@
         <rdfs:label xml:lang="en">Lock</rdfs:label>
         <rdfs:label xml:lang="de">Schleuse</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ManualPropulsion -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ManualPropulsion">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Propulsion"/>
+        <rdfs:label xml:lang="en">Manual propulsion</rdfs:label>
+        <rdfs:label xml:lang="de">Manueller Antrieb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Propulsion -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Propulsion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">Process that generates force leading to movement</rdfs:comment>
+        <rdfs:comment xml:lang="de">Prozess der zu Bewegung führt</rdfs:comment>
+        <rdfs:label xml:lang="de">Antrieb</rdfs:label>
+        <rdfs:label xml:lang="en">Propulsion</rdfs:label>
     </owl:Class>
     
 
@@ -233,6 +527,18 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="en">Sandbag wall</rdfs:label>
         <rdfs:label xml:lang="de">Sandsackwall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SensorReading -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SensorReading">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:comment xml:lang="en">A sensor reading is a mesurement datum that is a recording of the output of a sensor.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Sensormesswert ist ein Messwert, der auf der Ausgabe eines Sensors basiert.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor reading</rdfs:label>
+        <rdfs:label xml:lang="de">Sensormesswert</rdfs:label>
     </owl:Class>
     
 
@@ -288,6 +594,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Video -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Video">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">An information content entity that contains audiovisual information</rdfs:comment>
+        <rdfs:comment xml:lang="de">Informationsinhalt, der audiovisuelle Inhalte umfasst</rdfs:comment>
+        <rdfs:label xml:lang="en">Video</rdfs:label>
+        <rdfs:label xml:lang="de">Videoaufnahme</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/WaterPumpingStation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/WaterPumpingStation">
@@ -296,6 +614,545 @@
         <rdfs:label xml:lang="en">Water pumping station</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q14524070"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/resource/airbusOperationsGmbH -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/airbusOperationsGmbH">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/Business"/>
+        <rdfs:label xml:lang="de">Airbus Operations GmbH</rdfs:label>
+        <rdfs:label xml:lang="en">Airbus Operations GmbH</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/areaName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/areaName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">Area name</rdfs:label>
+        <rdfs:label xml:lang="de">Gebietsname</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/aurubis -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/aurubis">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/Business"/>
+        <rdfs:label xml:lang="de">Aurubis</rdfs:label>
+        <rdfs:label xml:lang="en">Aurubis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/baBergedorfHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/baBergedorfHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanBoroughOffice"/>
+        <rdfs:label xml:lang="de">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bergedorfDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bergedorfDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Bergedorf (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Bergedorf (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bisHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bisHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Inneres und Sport (BIS) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Inneres und Sport (BIS) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bjvHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bjvHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Justiz und Verbraucherschutz (BJV) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Justiz und Verbraucherschutz (BJV) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bkmHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bkmHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Kultur und Medien (BKM) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Kultur und Medien (BKM) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bswHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bswHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Stadtentwicklung und Wohnen (BSW) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Stadtentwicklung und Wohnen (BSW) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bukeaHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bukeaHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bvmHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bvmHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Verkehr und Mobilitätswende (BVM) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Verkehr und Mobilitätswende (BVM) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bwfgbHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bwfgbHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Wissenschaft, Forschung, Gleichstellung und Bezirke (BWFGB) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Wissenschaft, Forschung, Gleichstellung und Bezirke (BWFGB) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bwiHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bwiHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Wirtschaft und Innovation (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Wirtschaft und Innovation (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/classIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/classIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">Class IRI</rdfs:label>
+        <rdfs:label xml:lang="de">Klassen-IRI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/finanzbehoerdeHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/finanzbehoerdeHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Finanzbehörde (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Finanzbehörde (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/fixedConstructionTypeName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/fixedConstructionTypeName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing the fixed construction type</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der den Namen eines Bauwerkstyps enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Bauwerkstypname</rdfs:label>
+        <rdfs:label xml:lang="en">Fixed construction type name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTLineString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTLineString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Liste von Punkt-Repräsentationen einer GeoJSON-Datei entgegennimmt und einen WKT-Line-String zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a list of point strings as input and returns a WKT string for the line string geometry represented by the input GeoJSON data</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT line string</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT-Linienzug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTMultiLineString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTMultiLineString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Liste von Linienzügen aus einer GeoJSON-Datei entgegennimmt und einen WKT-Multi-Line-String zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a list of line strings as input and returns a WKT string for the multi line string geometry represented by the input GeoJSON data</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT Multi-Line String</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu Multi-Linienzug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTMultiPoint -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTMultiPoint">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Liste mit GeoJSON-Punkt-Repräsentationen entgegennimmt und einen Multi-Punkt-WKT-String zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a list of point strings as input and returns a WKT string for the multi-point geometry represented by the input GeoJSON data.</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT multi-point</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT Multi-Punkt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTMultiPolygon -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTMultiPolygon">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion die eine Liste von GeoJSON-String-Representationen von Polygonen entgegennimmt und eine WKT-String-Repräsentation eines Multipolygons der Eingabedaten zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a list of string representations of GeoJSON polygons as input and returns a WKT string of the multi-polygon geometry represented by the input GeoJSON data</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT multi-polygon</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT Multi-Polygon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTPoint -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTPoint">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Liste mit (normalerweise) einer String-Repräsentaion eines Punktes entgegennimmt und einen WKT-String für den Punkt zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a (singleton) list of point strings as input and returns a WKT string for the point geometry represented by the GeoJSON data</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT point</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT-Punkt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTPolygon -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTPolygon">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Liste mit einer GeoJSON-String-Repräsentationen von einem Polygonen entgegennimmt und eine WKT-String-Repräsentation des Polygons zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a singleton list of string representations of GeoJSON polygons as input and returns a WKT string of the polygon geometry represented by the input GeoJSON data</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT polygon</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT-Polygon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geoJSONToWKTString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die einen Geometrietyp und eine Liste mit GeoJSON-Geometrie-Strings entgegennimmt und einen WKT-String der Geometrien zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a geometry type and a list of string representations of GeoJSON geometries and returns a WKT string representation of the geometries</rdfs:comment>
+        <rdfs:label xml:lang="en">GeoJSON to WKT string</rdfs:label>
+        <rdfs:label xml:lang="de">GeoJSON zu WKT-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geometryData -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geometryData">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">List of strings representing geometries</rdfs:comment>
+        <rdfs:comment xml:lang="de">Liste von Strings die Geometrien representieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Geometriedaten</rdfs:label>
+        <rdfs:label xml:lang="en">Geometry data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/geometryType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geometryType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string indicating the geometry type (point, multi-point, line string, multi-line string, polygon, multi-polygon)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der einen Geometrietyp bestimmt (Punkt, Multi-Punkt, Linienzug, Multi-Linienzug, Polygon, Multi-Polygon)</rdfs:comment>
+        <rdfs:label xml:lang="de">Geometrietyp</rdfs:label>
+        <rdfs:label xml:lang="en">Geometry type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getDikeDefenseArea">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die die IRI eines Deichverteidigungsgebiets zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a dike defense area referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="de">Deichverteidigungsgebiet von Gebietsname</rdfs:label>
+        <rdfs:label xml:lang="en">Get dike defense area</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getFixedConstructionType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFixedConstructionType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Funktion, die für einen Bauwerktypnamen eine Typ-IRI zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Given a type name as input this function returns the proper IRI of a fixed construction type</rdfs:comment>
+        <rdfs:label xml:lang="de">Bauwerkstyp-IRI von Bauwerkstyp</rdfs:label>
+        <rdfs:label xml:lang="en">Get fixed construction type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getJuridicalPerson -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getJuridicalPerson">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die die IRI zu dem Namen oder Identifikator einer juristischen Person zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a juridical person referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get juridical person</rdfs:label>
+        <rdfs:label xml:lang="de">IRI einer juristischen Person von Namen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getPropulsionType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getPropulsionType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für eine Antriebsart die korrekte Klassen-IRI zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the IRI string of a propulsion type referred to by name</rdfs:comment>
+        <rdfs:label xml:lang="de">Antriebsname zu Antriebsklassen-IRI</rdfs:label>
+        <rdfs:label xml:lang="en">Get propulsion type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getValueIfNotNull -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getValueIfNotNull">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die den Eingabewert zurückgibt, sofern er nicht irgendeine Art von NULL-Wert repräsentiert. Falls die Eingabe einen NULL-Wert repräsentiert, wird das Java-null-Objekt zurückgegeben.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the input value if it is not a null value. If the input string represents any kind of null value, the built-in Java null value is returned.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get value if not null</rdfs:label>
+        <rdfs:label xml:lang="de">Gib die EIngabe zurück, sofern nicht null</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/hamburgPortAuthority -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/hamburgPortAuthority">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanPublicLawInstitution"/>
+        <rdfs:label xml:lang="de">Hamburg Port Authority (HPA)</rdfs:label>
+        <rdfs:label xml:lang="en">Hamburg Port Authority (HPA)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/harburgDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/harburgDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Harburg (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Harburg (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/innenstadtDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/innenstadtDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Innenstadt (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Innenstadt (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/juridicalPersonName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/juridicalPersonName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Name oder Identifikator einer juristischen Person</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name or ID of a juridical person</rdfs:comment>
+        <rdfs:label xml:lang="en">Juridical person name</rdfs:label>
+        <rdfs:label xml:lang="de">Name einer juristischen Person</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/lineStringsList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A list containing strings that represent line strings</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste die Strings enthält, die Linienzüge repräsentieren.</rdfs:comment>
+        <rdfs:label xml:lang="en">Line strings list</rdfs:label>
+        <rdfs:label xml:lang="de">Linienzüge-Liste</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/lsbgHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lsbgHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateEnterprise"/>
+        <rdfs:label xml:lang="de">Landesbetrieb Straßen, Brücken und Gewässer (LSBG) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Landesbetrieb Straßen, Brücken und Gewässer (LSBG) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/pointList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A (singleton) list that contains strings representing points</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste die normalerweise einen String enthält, der einen Punkt repräsentiert.</rdfs:comment>
+        <rdfs:label xml:lang="en">Point list</rdfs:label>
+        <rdfs:label xml:lang="de">Punkt-Liste</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/pointsList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointsList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A list containing strings that represent points</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste von Strings, die Punkte repräsentieren.</rdfs:comment>
+        <rdfs:label xml:lang="en">Points list</rdfs:label>
+        <rdfs:label xml:lang="de">Punkte-Liste</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/polygonList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/polygonList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A singleton list containing a string that represents a polygon</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste mit einer GeoJSON-String-Repräsentation eines Polygons</rdfs:comment>
+        <rdfs:label xml:lang="en">Polygon list</rdfs:label>
+        <rdfs:label xml:lang="de">Polygon-Liste</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/polygonsList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/polygonsList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A list containing strings that represent polygons</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste mit String-Repräsentaionen von Polygonen</rdfs:comment>
+        <rdfs:label xml:lang="de">Polygonenliste</rdfs:label>
+        <rdfs:label xml:lang="en">Polygons list</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/propulsionTypeString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/propulsionTypeString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Der Antriebsname</rdfs:comment>
+        <rdfs:comment xml:lang="en">The propulsion type name</rdfs:comment>
+        <rdfs:label xml:lang="de">Antriebsname</rdfs:label>
+        <rdfs:label xml:lang="en">Propulsion type string</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/returnClassIfTrue -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/returnClassIfTrue">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:label xml:lang="de">Gib Klassen-IRI zurück, falls Wahrheitswert wahr ist</rdfs:label>
+        <rdfs:label xml:lang="en">Return class IRI if true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/schulbehoerdeHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/schulbehoerdeHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Schulbehörde (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Schulbehörde (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/senatskanzleiHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/senatskanzleiHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Senatskanzlei (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Senatskanzlei (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/sozialbehoerdeHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/sozialbehoerdeHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/toBoolean -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/toBoolean">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die versucht, beliebige String-Eingaben in ein Boolean umzuwandeln</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that tries to convert any string input to a boollean value.</rdfs:comment>
+        <rdfs:label xml:lang="de">String zu Boolean</rdfs:label>
+        <rdfs:label xml:lang="en">To Boolean</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/valueString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/valueString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">Any string representing a (JSON) value</rdfs:comment>
+        <rdfs:comment xml:lang="de">Beliebiger String, der einen (JSON-)Wert enthält</rdfs:comment>
+        <rdfs:label xml:lang="en">Value string</rdfs:label>
+        <rdfs:label xml:lang="de">Wert-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Wilhelmsburg (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Wilhelmsburg (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
