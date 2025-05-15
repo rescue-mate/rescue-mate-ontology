@@ -180,6 +180,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/supervisoryResponsibility -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/supervisoryResponsibility">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Zuständigkeit Aufsicht</rdfs:label>
+        <rdfs:label xml:lang="en">supervisory responsibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
