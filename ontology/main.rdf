@@ -1270,6 +1270,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/userName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/userName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the name of a user</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der den Namen einer Nutzer:in enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Nutzername</rdfs:label>
+        <rdfs:label xml:lang="en">User name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/valueString -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/valueString">
