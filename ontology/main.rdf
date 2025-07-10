@@ -1236,6 +1236,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/socialMediaServiceName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/socialMediaServiceName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the name of a social media service</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der den Namen eines Social-Media-Services enthält</rdfs:comment>
+        <rdfs:label xml:lang="en">Social media service name</rdfs:label>
+        <rdfs:label xml:lang="de">Social-Media-Service-Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/sozialbehoerdeHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/sozialbehoerdeHamburg">
