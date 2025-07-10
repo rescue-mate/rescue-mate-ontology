@@ -171,6 +171,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/has_notification_target -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/has_notification_target">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/NotificationEvent"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:comment xml:lang="en">A relation between a notification event and a role (capturing, e.g., a group of individuals). The message, i.e., the actual notification of the notification event addresses the group of individuals having the target role.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Relation zwischen einem Benachrichtigungsereignis und einer Rolle (die z.B. eine Gruppe von Individuen zusammenfasst). Die Benachrichtigung des Benachrichtigungsereignisses ist an die Gruppe der Individuen addressiert, die die addressierte Rolle inne haben.</rdfs:comment>
+        <rdfs:label xml:lang="en">has notification target</rdfs:label>
+        <rdfs:label xml:lang="de">hat Addressat für Benachrichtigung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/maintenanceResponsibility -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/maintenanceResponsibility">
