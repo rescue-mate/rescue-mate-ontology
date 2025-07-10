@@ -641,6 +641,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SocialMediaPost -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SocialMediaPost">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="de">Veröffentlichung auf einer Social-Media-Plattform</rdfs:comment>
+        <rdfs:comment xml:lang="en">entry on a social media platform</rdfs:comment>
+        <rdfs:label xml:lang="en">Social media post</rdfs:label>
+        <rdfs:label xml:lang="de">Social-Media-Post</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Stoplog -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
