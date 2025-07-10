@@ -334,6 +334,29 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/CrisisEventWithAffectedIndividuals -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CrisisEventWithAffectedIndividuals">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/CrisisEvent"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/CrisisEvent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A crisis event which has individuals (i.e. independent continuants) as participants that are impacted by the crisis&apos; outcome</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Krisenereignis, an dem Individuen (d.h. bfo:IndipendentContinuants) beteiligt sind, die von den Auswirkungen des Krisenereignisses betroffen sind</rdfs:comment>
+        <rdfs:label xml:lang="en">Crisis event with affected individuals</rdfs:label>
+        <rdfs:label xml:lang="de">Krisenereignis mit betroffenen Individuen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/DikeDefenseArea -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseArea">
