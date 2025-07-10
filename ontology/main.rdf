@@ -559,6 +559,33 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/NotificationEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NotificationEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/has_notification"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/has_notification_target"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An occurrent describing the publication of a notification, addressed to a target group of individuals grouped by a certain role.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Ereignis, das die Veröffentlichung einer Benachrichtigung beschreibt, die an eine Gruppe von Individuen gerichtet ist, die durch eine Rolle zusammengefasst werden.</rdfs:comment>
+        <rdfs:label xml:lang="de">Benachrichtigungsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Notification event</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Propulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Propulsion">
