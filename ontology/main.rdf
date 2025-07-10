@@ -1058,6 +1058,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getSocialMediaUser -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getSocialMediaUser">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die die IRI zu dem Namen oder Identifikator einer Social-Media-Nutzer:in zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a social media user referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get social media user</rdfs:label>
+        <rdfs:label xml:lang="de">Social-Media-Nutzer:in-IRI von Social-Media-Nutzer:in-Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getValueIfNotNull -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getValueIfNotNull">
