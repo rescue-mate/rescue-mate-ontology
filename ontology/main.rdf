@@ -751,6 +751,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Mitigation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Mitigation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Reduction"/>
+        <rdfs:comment xml:lang="en">Process of reducting harm</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang der Verringerung von Schäden</rdfs:comment>
+        <rdfs:label xml:lang="en">Mitigation</rdfs:label>
+        <rdfs:label xml:lang="de">Schadensminderung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q6881760</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/NotificationEvent -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/NotificationEvent">

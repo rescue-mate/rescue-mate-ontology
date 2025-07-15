@@ -712,6 +712,18 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q6881760 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6881760">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q47496130"/>
+        <rdfs:comment xml:lang="en">reduction of harm</rdfs:comment>
+        <rdfs:label xml:lang="de">Folgenminderungsstrategie</rdfs:label>
+        <rdfs:label xml:lang="en">mitigation</rdfs:label>
+        <rdfs:label xml:lang="fr">mitigation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q783794 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q783794">
