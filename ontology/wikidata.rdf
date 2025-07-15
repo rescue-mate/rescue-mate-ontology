@@ -483,6 +483,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q47496130 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q47496130">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1150070"/>
+        <rdfs:comment xml:lang="en">decrease in a quantity</rdfs:comment>
+        <rdfs:comment xml:lang="fr">réduction d&apos;une quantité</rdfs:comment>
+        <rdfs:label xml:lang="de">Verringerung</rdfs:label>
+        <rdfs:label xml:lang="fr">diminution</rdfs:label>
+        <rdfs:label xml:lang="en">reduction</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q4830453 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4830453">
