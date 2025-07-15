@@ -374,6 +374,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Change -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Change">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Process, event or action that acts on the current state of something and generates a new state that deviates from the previous state</rdfs:comment>
+        <rdfs:comment xml:lang="de">Prozess, Ereignis oder Handlung, die auf den Zustand von etwas einwirkt und einen neuen Zustand schafft, der von dem vorherigen Zustand abweicht</rdfs:comment>
+        <rdfs:label xml:lang="en">Change</rdfs:label>
+        <rdfs:label xml:lang="de">Veränderung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1150070</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/CrisisEvent -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/CrisisEvent">

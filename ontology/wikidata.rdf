@@ -82,6 +82,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1150070 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1150070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">beschreibt Prozesse, Ereignisse oder Handlungen, welche vom Status Quo abweichen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">décrit les processus, les événements ou actions qui s&apos;écartent du statu quo</rdfs:comment>
+        <rdfs:comment xml:lang="en">process, event or action that deviates from the present state</rdfs:comment>
+        <rdfs:label xml:lang="de">Veränderung</rdfs:label>
+        <rdfs:label xml:lang="en">change</rdfs:label>
+        <rdfs:label xml:lang="fr">changement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q11858035 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11858035">
