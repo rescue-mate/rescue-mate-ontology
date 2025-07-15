@@ -259,6 +259,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1914636 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1914636">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3249551"/>
+        <rdfs:comment xml:lang="de">Handeln, kann sowohl körperliche als auch geistige Verrichtungen umfassen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">action de faire quelque chose</rdfs:comment>
+        <rdfs:comment xml:lang="en">series of actions done by an agent which results in an external change of state</rdfs:comment>
+        <rdfs:label xml:lang="de">Tätigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">activity</rdfs:label>
+        <rdfs:label xml:lang="fr">activité</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q223557 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
@@ -338,6 +352,20 @@
         <rdfs:label xml:lang="de">Gefüge</rdfs:label>
         <rdfs:label xml:lang="fr">ensemble</rdfs:label>
         <rdfs:label xml:lang="en">set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q3249551 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q3249551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">Folge von Änderungen</rdfs:comment>
+        <rdfs:comment xml:lang="en">series of events which occur over an extended period of time</rdfs:comment>
+        <rdfs:comment xml:lang="fr">série d&apos;événements qui surviennent sur une période de temps étendue</rdfs:comment>
+        <rdfs:label xml:lang="de">Vorgang</rdfs:label>
+        <rdfs:label xml:lang="en">process</rdfs:label>
+        <rdfs:label xml:lang="fr">processus</rdfs:label>
     </owl:Class>
     
 
