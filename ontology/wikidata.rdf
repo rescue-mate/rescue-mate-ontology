@@ -82,6 +82,33 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q11858035 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11858035">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q4026292"/>
+        <rdfs:comment xml:lang="en">an action to give assistance provided by emergency services, teams, or individuals</rdfs:comment>
+        <rdfs:comment xml:lang="de">eine Hilfsaktion, die von Rettungsdiensten, Teams oder Einzelpersonen durchgeführt wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Notfallmaßnahmen</rdfs:label>
+        <rdfs:label xml:lang="fr">action d&apos;urgence</rdfs:label>
+        <rdfs:label xml:lang="en">emergency response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1190554 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1190554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">Auftreten eines beobachtbaren Geschehens</rdfs:comment>
+        <rdfs:comment xml:lang="fr">occurrence d’un fait ou objet dans l’espace-temps; instanciation d&apos;une propriété dans un objet; ce qui peut être expérimenté ou enregistré par un observateur.</rdfs:comment>
+        <rdfs:comment xml:lang="en">occurrence of a fact or object in space-time; instantiation of a property in an object</rdfs:comment>
+        <rdfs:label xml:lang="de">Ereignis</rdfs:label>
+        <rdfs:label xml:lang="en">occurrence</rdfs:label>
+        <rdfs:label xml:lang="fr">occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q123349660 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q123349660">
@@ -341,6 +368,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q4026292 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4026292">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="de">absichtliche Tätigkeiten eines Menschen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ce qui peut être fait par un agent</rdfs:comment>
+        <rdfs:comment xml:lang="en">something an agent can do or perform</rdfs:comment>
+        <rdfs:label xml:lang="de">Handeln</rdfs:label>
+        <rdfs:label xml:lang="en">action</rdfs:label>
+        <rdfs:label xml:lang="fr">action</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q43229 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q43229">
@@ -427,6 +468,20 @@
         <rdfs:label xml:lang="de">System</rdfs:label>
         <rdfs:label xml:lang="en">system</rdfs:label>
         <rdfs:label xml:lang="fr">système</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q606332 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q606332">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q11858035"/>
+        <rdfs:comment xml:lang="de">Menschenansammlung bei Notfällen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">mouvement organisé, rapide et immédiat de personnes écartées d&apos;un danger</rdfs:comment>
+        <rdfs:comment xml:lang="en">urgent movement of people away from the threat or actual occurrence of a hazard</rdfs:comment>
+        <rdfs:label xml:lang="de">Evakuierung</rdfs:label>
+        <rdfs:label xml:lang="en">evacuation</rdfs:label>
+        <rdfs:label xml:lang="fr">évacuation</rdfs:label>
     </owl:Class>
     
 

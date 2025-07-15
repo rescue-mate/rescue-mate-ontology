@@ -434,6 +434,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Evacuation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Evacuation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">Bewegung von Lebewesen aus einem möglichen oder tatsächlichen Gefahrenbereich</rdfs:comment>
+        <rdfs:comment xml:lang="en">Movement of living beings away from the threat of or the actual occurrence of a hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">Evacuation</rdfs:label>
+        <rdfs:label xml:lang="de">Evakuierung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q606332</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/FixedConstruction -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FixedConstruction">
