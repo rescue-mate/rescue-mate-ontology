@@ -351,6 +351,17 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q23580581 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q23580581">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q61788060"/>
+        <rdfs:comment xml:lang="en">losing spatial reference</rdfs:comment>
+        <rdfs:label xml:lang="de">Verirren</rdfs:label>
+        <rdfs:label xml:lang="en">getting lost</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q24229398 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q24229398">
@@ -430,6 +441,19 @@
         <rdfs:comment xml:lang="en">structure that allows vessels to overcome a fall in a waterway</rdfs:comment>
         <rdfs:label xml:lang="de">Abstiegsbauwerk</rdfs:label>
         <rdfs:label xml:lang="en">fall structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q37112258 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q37112258">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1914636"/>
+        <rdfs:comment xml:lang="en">event of locating or identifying something</rdfs:comment>
+        <rdfs:comment xml:lang="fr">fait de localiser ou d&apos;identifier quelque chose</rdfs:comment>
+        <rdfs:label xml:lang="de">Finden</rdfs:label>
+        <rdfs:label xml:lang="fr">découverte</rdfs:label>
+        <rdfs:label xml:lang="en">finding</rdfs:label>
     </owl:Class>
     
 
