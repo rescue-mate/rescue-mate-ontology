@@ -496,6 +496,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q481609 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q481609">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3249551"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q47496130"/>
+        <rdfs:comment xml:lang="en">changes to a system that adversely affect its current or future performance</rdfs:comment>
+        <rdfs:comment xml:lang="de">jeder Nachteil, den eine Person oder Sache durch ein Ereignis erleidet</rdfs:comment>
+        <rdfs:comment xml:lang="fr">tout inconvénient qu&apos;une personne ou une chose souffre d&apos;un événement</rdfs:comment>
+        <rdfs:label xml:lang="de">Schaden</rdfs:label>
+        <rdfs:label xml:lang="en">damage</rdfs:label>
+        <rdfs:label xml:lang="de">dégât</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q4830453 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4830453">
