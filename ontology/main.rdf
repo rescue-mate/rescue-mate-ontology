@@ -566,6 +566,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/IntensionalHumanActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/IntensionalHumanActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HumanActivity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by purposeful motives</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einer bewussten Motivation getrieben wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Intensional human activity</rdfs:label>
+        <rdfs:label xml:lang="de">Intensionale menschliche Aktivität</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q451967</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/JuridicalPerson -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/JuridicalPerson">

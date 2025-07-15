@@ -441,6 +441,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q451967 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q451967">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q61788060"/>
+        <rdfs:comment xml:lang="fr">activité humaine basée sur un motif quelconque</rdfs:comment>
+        <rdfs:comment xml:lang="en">human activity driven by purposeful motives</rdfs:comment>
+        <rdfs:comment xml:lang="de">jede menschliche, von Motiven geleitete zielgerichtete Aktivität</rdfs:comment>
+        <rdfs:label xml:lang="fr">action humaine</rdfs:label>
+        <rdfs:label xml:lang="en">intentional human activity</rdfs:label>
+        <rdfs:label xml:lang="de">menschliche Handlung</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q4830453 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4830453">
