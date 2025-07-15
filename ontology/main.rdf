@@ -635,6 +635,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/HumanitarianActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanitarianActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntensionalHumanActivity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by humanitarian motives, involving assistance to others and improvement of conditions for humanity</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einem bewussten humanitären Ziel getrieben wird, insb. der Hilfe anderer und der Verbesserung von Lebensbedingungen von Menschen</rdfs:comment>
+        <rdfs:label xml:lang="en">Humanitarian activity</rdfs:label>
+        <rdfs:label xml:lang="de">Humanitäre Tätigkeit</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q107280686</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicCrossingStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicCrossingStructure">
