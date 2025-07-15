@@ -1254,6 +1254,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/eventCategory -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/eventCategory">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing an ID for a event category</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der die ID einer Ereigniskategorie enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Ereigniskategorie</rdfs:label>
+        <rdfs:label xml:lang="en">Event category</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/finanzbehoerdeHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/finanzbehoerdeHamburg">
