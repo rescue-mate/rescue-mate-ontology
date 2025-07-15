@@ -435,6 +435,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/CrisisMitigation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CrisisMitigation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Mitigation"/>
+        <rdfs:comment xml:lang="en">Process of reducting harm caused by a crisis</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang der Verringerung von Schäden, die duch eine Krise entstanden sind</rdfs:comment>
+        <rdfs:label xml:lang="en">Crisis mitigation</rdfs:label>
+        <rdfs:label xml:lang="de">Schadensminderung in einer Krise</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Damage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Damage">
