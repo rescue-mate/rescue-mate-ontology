@@ -617,6 +617,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/InfrastructureDamage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InfrastructureDamage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Damage"/>
+        <rdfs:comment xml:lang="de">Beschädigung von Infrastruktur wie Straßen, Brücken, Gebäuden, Netzen für die Wasser- und Stromversorgung, oder Kommunikationsnetze</rdfs:comment>
+        <rdfs:comment xml:lang="en">Damage of infrastructure elements like roads, bridges, buildings or utilities like water, electricity, and communication networks</rdfs:comment>
+        <rdfs:label xml:lang="de">Beschädigung von Infrastruktur</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure damage</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/IntensionalHumanActivity -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/IntensionalHumanActivity">
