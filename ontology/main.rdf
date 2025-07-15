@@ -440,6 +440,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DonationCampaign -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DonationCampaign">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Campaign"/>
+        <rdfs:comment xml:lang="en">A campaign with the goal of collecting money or goods for a defined purpose</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Kampagne mit dem Ziel Geld oder Güter für einen definierten Zweck zu sammeln</rdfs:comment>
+        <rdfs:label xml:lang="en">Donation campaign</rdfs:label>
+        <rdfs:label xml:lang="de">Spendenaktion</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ElectricPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectricPropulsion">
@@ -767,6 +779,18 @@
         <rdfs:comment xml:lang="de">Informationsinhalt, der audiovisuelle Inhalte umfasst</rdfs:comment>
         <rdfs:label xml:lang="en">Video</rdfs:label>
         <rdfs:label xml:lang="de">Videoaufnahme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/VolunteeringCampaign -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/VolunteeringCampaign">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Campaign"/>
+        <rdfs:comment xml:lang="en">A campaign with the goal of recruiting volunteers for a defined purpose</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Kampagne mit dem Ziel, Freiwille für einen bestimmten Zweck zu rekrutieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Freiwilligenkampagne</rdfs:label>
+        <rdfs:label xml:lang="en">Volunteering campaign</rdfs:label>
     </owl:Class>
     
 
