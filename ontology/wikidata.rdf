@@ -96,6 +96,16 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q117134054 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q117134054">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q481609"/>
+        <rdfs:comment xml:lang="en">broad term used to include injury and psychological trauma</rdfs:comment>
+        <rdfs:label xml:lang="en">trauma</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q11858035 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11858035">
@@ -301,6 +311,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q193078 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q193078">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q117134054"/>
+        <rdfs:comment xml:lang="de">Schädigung, Verletzung oder Verwundung, die durch Gewalt von außen entsteht</rdfs:comment>
+        <rdfs:comment xml:lang="fr">dommage ou choc provoqué par une blessure physique</rdfs:comment>
+        <rdfs:comment xml:lang="en">physiological wound caused by an external source</rdfs:comment>
+        <rdfs:label xml:lang="de">Trauma</rdfs:label>
+        <rdfs:label xml:lang="en">injury in humans</rdfs:label>
+        <rdfs:label xml:lang="fr">traumatisme</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q223557 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
@@ -420,6 +444,20 @@
         <rdfs:label xml:lang="de">Rechtssubjekt</rdfs:label>
         <rdfs:label xml:lang="en">legal person</rdfs:label>
         <rdfs:label xml:lang="fr">personnalité juridique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q4 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="de">endgültiger Verlust der Lebensfunktionen</rdfs:comment>
+        <rdfs:comment xml:lang="en">permanent cessation of vital functions</rdfs:comment>
+        <rdfs:comment xml:lang="fr">état de ce dont les fonctions vitales se sont arrêtées</rdfs:comment>
+        <rdfs:label xml:lang="de">Tod</rdfs:label>
+        <rdfs:label xml:lang="en">death</rdfs:label>
+        <rdfs:label xml:lang="fr">mort</rdfs:label>
     </owl:Class>
     
 

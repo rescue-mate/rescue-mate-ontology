@@ -435,6 +435,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Death -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Death">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Damage"/>
+        <rdfs:comment xml:lang="en">A damage inflicted on living organisms causing permanent cessation of vital functions</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Lebewesen zugeführt wird und zum endgültigen Verlust iherer Lebensfunktionen führt</rdfs:comment>
+        <rdfs:label xml:lang="en">Death</rdfs:label>
+        <rdfs:label xml:lang="de">Tod</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q4</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/DikeDefenseArea -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseArea">
@@ -637,6 +650,19 @@
         <rdfs:comment xml:lang="de">Eine Beschädigung die einem Lebewesen zugeführt wird und deren körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
         <rdfs:label xml:lang="en">Injury</rdfs:label>
         <rdfs:label xml:lang="de">Verletzung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/InjuryInHumans -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumans">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Injury"/>
+        <rdfs:comment xml:lang="en">A damage inflicted on living a human being impairing their physiological conditions</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Menschen zugeführt wird und dessen körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
+        <rdfs:label xml:lang="en">Injury in humans</rdfs:label>
+        <rdfs:label xml:lang="de">Verletzung beim Menschen</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193078</rdfs:seeAlso>
     </owl:Class>
     
 
