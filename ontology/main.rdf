@@ -624,6 +624,22 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GettingLostOrBeingFound -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLostOrBeingFound">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HingedCrestGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HingedCrestGate">
@@ -705,6 +721,22 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/InjuryInHumanOrDeath -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumanOrDeath">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/Death"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/InjuryInHumans"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Damage"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/InjuryInHumans -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumans">
@@ -772,6 +804,24 @@
         <rdfs:label xml:lang="en">Mitigation</rdfs:label>
         <rdfs:label xml:lang="de">Schadensminderung</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q6881760</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NotHumanitarianEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NotHumanitarianEvent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://rescue-mate.de/ontology/HumanitarianActivity"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
     </owl:Class>
     
 
