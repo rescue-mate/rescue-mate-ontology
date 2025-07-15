@@ -92,6 +92,15 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasDetectedCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasDetectedCategory">
+        <rdfs:label xml:lang="en">has detected category</rdfs:label>
+        <rdfs:label xml:lang="de">hat erkannte Kategorie</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
