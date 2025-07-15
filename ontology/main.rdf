@@ -956,6 +956,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SocialSupport -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SocialSupport">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntensionalHumanActivity"/>
+        <rdfs:comment xml:lang="en">Process of assisting and encouraging other individuals</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Beistehens und Zusprechens anderer Individuen</rdfs:comment>
+        <rdfs:label xml:lang="en">Social support</rdfs:label>
+        <rdfs:label xml:lang="de">Soziale Unterstützung</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Stoplog -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
