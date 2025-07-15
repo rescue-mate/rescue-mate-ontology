@@ -349,6 +349,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q22445448 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q22445448">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="en">act of asking politely or formally for something</rdfs:comment>
+        <rdfs:comment xml:lang="de">höflich ausgedrückter Wunsch</rdfs:comment>
+        <rdfs:label xml:lang="de">Bitte</rdfs:label>
+        <rdfs:label xml:lang="fr">demande</rdfs:label>
+        <rdfs:label xml:lang="en">request</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q2345125 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2345125">

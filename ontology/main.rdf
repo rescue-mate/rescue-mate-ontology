@@ -814,6 +814,79 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/RequestEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Act of asking for something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von etwas</rdfs:comment>
+        <rdfs:label xml:lang="de">Ersuchsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Request event</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q22445448</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForFoodEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForFoodEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for food</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Lebensmitteln</rdfs:comment>
+        <rdfs:label xml:lang="de">Lebensmittelersuchsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Request for food event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForHelpEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForHelpEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for help</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Hilfe</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeersuchsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Request for help event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForMedicalSuppliesEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForMedicalSuppliesEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for medical supplies</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von medizinischer Versorgung</rdfs:comment>
+        <rdfs:label xml:lang="de">Ersuchsereignis für medizinische Versorgung</rdfs:label>
+        <rdfs:label xml:lang="en">Request for medical supplies event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForShelterEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForShelterEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for shelter</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens einer Unterkunft</rdfs:comment>
+        <rdfs:label xml:lang="en">Request for shelter event</rdfs:label>
+        <rdfs:label xml:lang="de">Unterkunftsersuchsereignis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForWaterEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForWaterEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for drinking water</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Trinkwasser</rdfs:comment>
+        <rdfs:label xml:lang="en">Request for water event</rdfs:label>
+        <rdfs:label xml:lang="de">Trinkwasserersuchsereignis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SandbagWall -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SandbagWall">
