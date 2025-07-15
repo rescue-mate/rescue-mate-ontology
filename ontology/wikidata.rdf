@@ -514,6 +514,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q61788060 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q61788060">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1914636"/>
+        <rdfs:comment xml:lang="de">Aktivität, die von Menschen praktiziert werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">activity initiated by a human, intentionally or unintentionally</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type d&apos;áctivité</rdfs:comment>
+        <rdfs:label xml:lang="fr">activité humaine</rdfs:label>
+        <rdfs:label xml:lang="en">human activity</rdfs:label>
+        <rdfs:label xml:lang="de">menschliche Aktivität</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q618123 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q618123">
