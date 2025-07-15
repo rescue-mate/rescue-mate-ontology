@@ -1408,6 +1408,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getEventCategoryClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getEventCategoryClass">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the class IRI for an event category referred to by an ID string given as input to the function</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine benutzerdefinierte RML-Funktion die die IRI für eine Eingabe-Ereigniskategorie-ID zurückgibt</rdfs:comment>
+        <rdfs:label xml:lang="de">Ereigniskategorie-Klasse von Ereigniskategoie-ID</rdfs:label>
+        <rdfs:label xml:lang="en">Get event category class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getFixedConstructionType -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFixedConstructionType">
