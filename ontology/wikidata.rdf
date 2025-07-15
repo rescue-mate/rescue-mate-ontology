@@ -230,6 +230,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1656682 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1656682">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="en">temporary and scheduled happening, like a conference, festival, competition or similar</rdfs:comment>
+        <rdfs:comment xml:lang="de">zeitlich begrenztes und geplantes Ereignis, wie eine Konferenz, ein Festival, ein Wettbewerb oder ähnliches</rdfs:comment>
+        <rdfs:comment xml:lang="fr">événement temporaire ou prévu, comme un festival ou une compétition</rdfs:comment>
+        <rdfs:label xml:lang="de">Veranstaltung</rdfs:label>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="fr">événement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q167037 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q167037">
@@ -510,6 +524,20 @@
         <rdfs:label xml:lang="de">System</rdfs:label>
         <rdfs:label xml:lang="en">system</rdfs:label>
         <rdfs:label xml:lang="fr">système</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q6056746 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6056746">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1656682"/>
+        <rdfs:comment xml:lang="fr">action temporaire avec un objectif défini, qui est tenté par la coopération planifiée et coordonnée de plusieurs personnes ou acteurs</rdfs:comment>
+        <rdfs:comment xml:lang="en">series of operations undertaken to achieve a defined goal</rdfs:comment>
+        <rdfs:comment xml:lang="de">zeitlich befristete Aktion mit einem definierten Ziel</rdfs:comment>
+        <rdfs:label xml:lang="de">Kampagne</rdfs:label>
+        <rdfs:label xml:lang="fr">campagne</rdfs:label>
+        <rdfs:label xml:lang="en">campaign</rdfs:label>
     </owl:Class>
     
 
