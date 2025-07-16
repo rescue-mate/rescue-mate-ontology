@@ -1720,6 +1720,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/toWKTPoint -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/toWKTPoint">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die ein String-Paar mit Koordinaten entgegennimmt und einen WKT-String für den Punkt zurückgibt, der von den Eingabedaten repräsentiert wird</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a pair of coordinate strings as input and returns a WKT string for the point geometry represented by the input data</rdfs:comment>
+        <rdfs:label xml:lang="en">Longitude and latitude to WKT point literal</rdfs:label>
+        <rdfs:label xml:lang="de">Längen- und Breitengrad zu WKT-Punkt-Literal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/userName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/userName">
