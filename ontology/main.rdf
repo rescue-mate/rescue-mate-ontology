@@ -691,7 +691,7 @@
     <!-- http://rescue-mate.de/ontology/HumanitarianActivity -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanitarianActivity">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntensionalHumanActivity"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
         <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by humanitarian motives, involving assistance to others and improvement of conditions for humanity</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einem bewussten humanitären Ziel getrieben wird, insb. der Hilfe anderer und der Verbesserung von Lebensbedingungen von Menschen</rdfs:comment>
         <rdfs:label xml:lang="en">Humanitarian activity</rdfs:label>
@@ -775,14 +775,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/IntensionalHumanActivity -->
+    <!-- http://rescue-mate.de/ontology/IntentionalHumanActivity -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/IntensionalHumanActivity">
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/IntentionalHumanActivity">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HumanActivity"/>
         <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by purposeful motives</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einer bewussten Motivation getrieben wird</rdfs:comment>
-        <rdfs:label xml:lang="en">Intensional human activity</rdfs:label>
         <rdfs:label xml:lang="de">Intensionale menschliche Aktivität</rdfs:label>
+        <rdfs:label xml:lang="en">Intentional human activity</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q451967</rdfs:seeAlso>
     </owl:Class>
     
@@ -1034,7 +1034,7 @@
     <!-- http://rescue-mate.de/ontology/SocialSupport -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SocialSupport">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntensionalHumanActivity"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
         <rdfs:comment xml:lang="en">Process of assisting and encouraging other individuals</rdfs:comment>
         <rdfs:comment xml:lang="de">Vorgang des Beistehens und Zusprechens anderer Individuen</rdfs:comment>
         <rdfs:label xml:lang="en">Social support</rdfs:label>
