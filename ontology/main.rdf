@@ -1574,6 +1574,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/longitude -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/longitude">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the longitude information</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String der Längengrad-Informationen enthält</rdfs:comment>
+        <rdfs:label xml:lang="en">Longitude</rdfs:label>
+        <rdfs:label xml:lang="de">Längengrad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lsbgHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lsbgHamburg">
