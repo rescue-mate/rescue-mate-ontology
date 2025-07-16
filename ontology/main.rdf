@@ -1550,6 +1550,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/latitude -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/latitude">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the latitude information</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String der Breitengrad-Informationen enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Breitengrad</rdfs:label>
+        <rdfs:label xml:lang="en">Latitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
