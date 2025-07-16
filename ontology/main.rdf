@@ -1,40 +1,34 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://rescue-mate.de/ontology/main/"
-     xml:base="http://rescue-mate.de/ontology/main/"
+     xml:base="http://rescue-mate.de/ontology/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
-     xmlns:ontology="https://w3id.org/function/ontology#">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/main">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.2.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.3.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.1.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.3.0"/>
         <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:created>2025-02-12</terms:created>
         <terms:creator>Patrick Westphal</terms:creator>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-15</terms:issued>
-        <terms:modified>2025-05-15</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-16</terms:issued>
+        <terms:modified>2025-07-16</terms:modified>
         <terms:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</terms:rights>
         <terms:title xml:lang="en">RESCUE-MATE Ontology</terms:title>
         <terms:title xml:lang="de">RESCUE-MATE-Ontologie</terms:title>
         <rdfs:comment xml:lang="de">Haupt-Ontologie-Modul zur Unterstützung der Datenintegration im RESCUE-MATE-Projekt</rdfs:comment>
         <rdfs:comment xml:lang="en">Main ontology module supporting the data integration part of the RESCUE-MATE project</rdfs:comment>
-        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.1.1"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.2.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -89,6 +83,15 @@
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasDetectedCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasDetectedCategory">
+        <rdfs:label xml:lang="en">has detected category</rdfs:label>
+        <rdfs:label xml:lang="de">hat erkannte Kategorie</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -154,6 +157,32 @@
         <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
         <rdfs:label xml:lang="en">has implementing agency</rdfs:label>
         <rdfs:label xml:lang="de">hat Realisierungsträger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/has_notification -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/has_notification">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/NotificationEvent"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">A relation between a notification event and an information content entity containing the actual notification.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Relation zwischen einem Benachrichtigungsereignis und einem Information Content Entity, das die eigentliche Benachrichtigung trägt.</rdfs:comment>
+        <rdfs:label xml:lang="en">has notification</rdfs:label>
+        <rdfs:label xml:lang="de">hat Benachrichtigung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/has_notification_target -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/has_notification_target">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/NotificationEvent"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:comment xml:lang="en">A relation between a notification event and a role (capturing, e.g., a group of individuals). The message, i.e., the actual notification of the notification event addresses the group of individuals having the target role.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Relation zwischen einem Benachrichtigungsereignis und einer Rolle (die z.B. eine Gruppe von Individuen zusammenfasst). Die Benachrichtigung des Benachrichtigungsereignisses ist an die Gruppe der Individuen addressiert, die die addressierte Rolle inne haben.</rdfs:comment>
+        <rdfs:label xml:lang="en">has notification target</rdfs:label>
+        <rdfs:label xml:lang="de">hat Addressat für Benachrichtigung</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -311,6 +340,32 @@
     
 
 
+    <!-- http://resccue-mate.de/ontology/Finding -->
+
+    <owl:Class rdf:about="http://resccue-mate.de/ontology/Finding">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Recovery of the spatial reference of someone or something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Wiedererlangung des räumliche Bezugs zu jemanden oder etwas</rdfs:comment>
+        <rdfs:label xml:lang="de">Finden</rdfs:label>
+        <rdfs:label xml:lang="en">Finding</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q37112258</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Activity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Activity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">A process executed by an agent that has a certin outcome</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Prozess, der von einem Agenten ausgeführt wird und ein bestimmtes Ergebnis hat</rdfs:comment>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+        <rdfs:label xml:lang="de">Tätigkeit</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1914636</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Business -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Business">
@@ -318,6 +373,105 @@
         <rdfs:label xml:lang="en">Business</rdfs:label>
         <rdfs:label xml:lang="de">Gewerbebetrieb</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q4830453"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Campaign -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Campaign">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
+        <rdfs:comment xml:lang="de">Abfolge von über einen definierten Zeitraum geplanten oder tatsächlich ausgeführten Aktionen die einem gemeinsamen Zweck dienen.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Series of actions planned for or executed during a defined time period that serve a common goal</rdfs:comment>
+        <rdfs:label xml:lang="en">Campaign</rdfs:label>
+        <rdfs:label xml:lang="de">Kampagne</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q6056746</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Change -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Change">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Process, event or action that acts on the current state of something and generates a new state that deviates from the previous state</rdfs:comment>
+        <rdfs:comment xml:lang="de">Prozess, Ereignis oder Handlung, die auf den Zustand von etwas einwirkt und einen neuen Zustand schafft, der von dem vorherigen Zustand abweicht</rdfs:comment>
+        <rdfs:label xml:lang="en">Change</rdfs:label>
+        <rdfs:label xml:lang="de">Veränderung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1150070</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/CrisisEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CrisisEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">An occurrent descriping a crisis, i.e., an event potentially causing harm</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Ereignis, das eine Krise beschreibt, d.h. ein Ereignis, das Schaden anrichten kann</rdfs:comment>
+        <rdfs:label xml:lang="en">Crisis event</rdfs:label>
+        <rdfs:label xml:lang="de">Krisenereignis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/CrisisEventWithAffectedIndividuals -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CrisisEventWithAffectedIndividuals">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/CrisisEvent"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/CrisisEvent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A crisis event which has individuals (i.e. independent continuants) as participants that are impacted by the crisis&apos; outcome</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Krisenereignis, an dem Individuen (d.h. bfo:IndipendentContinuants) beteiligt sind, die von den Auswirkungen des Krisenereignisses betroffen sind</rdfs:comment>
+        <rdfs:label xml:lang="en">Crisis event with affected individuals</rdfs:label>
+        <rdfs:label xml:lang="de">Krisenereignis mit betroffenen Individuen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/CrisisMitigation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CrisisMitigation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Mitigation"/>
+        <rdfs:comment xml:lang="en">Process of reducting harm caused by a crisis</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang der Verringerung von Schäden, die duch eine Krise entstanden sind</rdfs:comment>
+        <rdfs:label xml:lang="en">Crisis mitigation</rdfs:label>
+        <rdfs:label xml:lang="de">Schadensminderung in einer Krise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Damage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Damage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Reduction"/>
+        <rdfs:comment xml:lang="en">Changes to a system or object that adversely affect its current or future use or performance</rdfs:comment>
+        <rdfs:comment xml:lang="de">Änderungen an einem System oder Objekt, die seine Nützlichkeit oder Leistungsfähigkeit negativ beeinträchtigen</rdfs:comment>
+        <rdfs:label xml:lang="de">Beschädigung</rdfs:label>
+        <rdfs:label xml:lang="en">Damage</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q481609</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Death -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Death">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Damage"/>
+        <rdfs:comment xml:lang="en">A damage inflicted on living organisms causing permanent cessation of vital functions</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Lebewesen zugeführt wird und zum endgültigen Verlust iherer Lebensfunktionen führt</rdfs:comment>
+        <rdfs:label xml:lang="en">Death</rdfs:label>
+        <rdfs:label xml:lang="de">Tod</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q4</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -353,6 +507,34 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DonationCampaign -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DonationCampaign">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Campaign"/>
+        <rdfs:comment xml:lang="en">A campaign with the goal of collecting money or goods for a defined purpose</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Kampagne mit dem Ziel Geld oder Güter für einen definierten Zweck zu sammeln</rdfs:comment>
+        <rdfs:label xml:lang="en">Donation campaign</rdfs:label>
+        <rdfs:label xml:lang="de">Spendenaktion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DonationOrVolunteeringCampaign -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DonationOrVolunteeringCampaign">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/DonationCampaign"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/VolunteeringCampaign"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Campaign"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ElectricPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectricPropulsion">
@@ -369,6 +551,19 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Propulsion"/>
         <rdfs:label xml:lang="en">Electrohydraulic propulsion</rdfs:label>
         <rdfs:label xml:lang="de">Elektrohydraulischer Antrieb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Evacuation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Evacuation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">Bewegung von Lebewesen aus einem möglichen oder tatsächlichen Gefahrenbereich</rdfs:comment>
+        <rdfs:comment xml:lang="en">Movement of living beings away from the threat of or the actual occurrence of a hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">Evacuation</rdfs:label>
+        <rdfs:label xml:lang="de">Evakuierung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q606332</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -435,12 +630,67 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GettingLost -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLost">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Losing the spatial reference of someone or something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verlust des räumlichen Bezugs zu jemanden oder etwas</rdfs:comment>
+        <rdfs:label xml:lang="en">Getting lost</rdfs:label>
+        <rdfs:label xml:lang="de">Verschwinden</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q23580581</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GettingLostOrBeingFound -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLostOrBeingFound">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HingedCrestGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HingedCrestGate">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FloodGate"/>
         <rdfs:label xml:lang="en">Hinged crest gate</rdfs:label>
         <rdfs:label xml:lang="de">Klapptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HumanActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Human activity</rdfs:label>
+        <rdfs:label xml:lang="de">Menschliche Tätigkeit</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q61788060</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HumanitarianActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanitarianActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by humanitarian motives, involving assistance to others and improvement of conditions for humanity</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einem bewussten humanitären Ziel getrieben wird, insb. der Hilfe anderer und der Verbesserung von Lebensbedingungen von Menschen</rdfs:comment>
+        <rdfs:label xml:lang="en">Humanitarian activity</rdfs:label>
+        <rdfs:label xml:lang="de">Humanitäre Tätigkeit</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q107280686</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -462,6 +712,72 @@
         <rdfs:label xml:lang="en">Hydraulic structure</rdfs:label>
         <rdfs:label xml:lang="de">Wasserbauwerk</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2466889"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/InfrastructureDamage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InfrastructureDamage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Damage"/>
+        <rdfs:comment xml:lang="de">Beschädigung von Infrastruktur wie Straßen, Brücken, Gebäuden, Netzen für die Wasser- und Stromversorgung, oder Kommunikationsnetze</rdfs:comment>
+        <rdfs:comment xml:lang="en">Damage of infrastructure elements like roads, bridges, buildings or utilities like water, electricity, and communication networks</rdfs:comment>
+        <rdfs:label xml:lang="de">Beschädigung von Infrastruktur</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Injury -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Injury">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Damage"/>
+        <rdfs:comment xml:lang="en">A damage inflicted on living organisms impairing their physiological conditions</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Lebewesen zugeführt wird und deren körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
+        <rdfs:label xml:lang="en">Injury</rdfs:label>
+        <rdfs:label xml:lang="de">Verletzung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/InjuryInHumanOrDeath -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumanOrDeath">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/Death"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/InjuryInHumans"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Damage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/InjuryInHumans -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumans">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Injury"/>
+        <rdfs:comment xml:lang="en">A damage inflicted on living a human being impairing their physiological conditions</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Menschen zugeführt wird und dessen körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
+        <rdfs:label xml:lang="en">Injury in humans</rdfs:label>
+        <rdfs:label xml:lang="de">Verletzung beim Menschen</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193078</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/IntentionalHumanActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/IntentionalHumanActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HumanActivity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by purposeful motives</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einer bewussten Motivation getrieben wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Intensionale menschliche Aktivität</rdfs:label>
+        <rdfs:label xml:lang="en">Intentional human activity</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q451967</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -498,6 +814,64 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Mitigation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Mitigation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Reduction"/>
+        <rdfs:comment xml:lang="en">Process of reducting harm</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang der Verringerung von Schäden</rdfs:comment>
+        <rdfs:label xml:lang="en">Mitigation</rdfs:label>
+        <rdfs:label xml:lang="de">Schadensminderung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q6881760</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NotHumanitarianEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NotHumanitarianEvent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://rescue-mate.de/ontology/HumanitarianActivity"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NotificationEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NotificationEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/has_notification"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/has_notification_target"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An occurrent describing the publication of a notification, addressed to a target group of individuals grouped by a certain role.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Ereignis, das die Veröffentlichung einer Benachrichtigung beschreibt, die an eine Gruppe von Individuen gerichtet ist, die durch eine Rolle zusammengefasst werden.</rdfs:comment>
+        <rdfs:label xml:lang="de">Benachrichtigungsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Notification event</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Propulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Propulsion">
@@ -517,6 +891,92 @@
         <rdfs:label xml:lang="en">Pumping station</rdfs:label>
         <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q446013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Reduction -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Reduction">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Change"/>
+        <rdfs:comment xml:lang="de">Die Verringerung einer bestimmten Beschaffenheit oder Qualität</rdfs:comment>
+        <rdfs:comment xml:lang="en">The decrease of a given quality</rdfs:comment>
+        <rdfs:label xml:lang="en">Reduction</rdfs:label>
+        <rdfs:label xml:lang="de">Verringerung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q47496130</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Act of asking for something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von etwas</rdfs:comment>
+        <rdfs:label xml:lang="de">Ersuchsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Request event</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q22445448</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForFoodEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForFoodEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for food</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Lebensmitteln</rdfs:comment>
+        <rdfs:label xml:lang="de">Lebensmittelersuchsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Request for food event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForHelpEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForHelpEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for help</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Hilfe</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeersuchsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Request for help event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForMedicalSuppliesEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForMedicalSuppliesEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for medical supplies</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von medizinischer Versorgung</rdfs:comment>
+        <rdfs:label xml:lang="de">Ersuchsereignis für medizinische Versorgung</rdfs:label>
+        <rdfs:label xml:lang="en">Request for medical supplies event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForShelterEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForShelterEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for shelter</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens einer Unterkunft</rdfs:comment>
+        <rdfs:label xml:lang="en">Request for shelter event</rdfs:label>
+        <rdfs:label xml:lang="de">Unterkunftsersuchsereignis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForWaterEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForWaterEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for drinking water</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Trinkwasser</rdfs:comment>
+        <rdfs:label xml:lang="en">Request for water event</rdfs:label>
+        <rdfs:label xml:lang="de">Trinkwasserersuchsereignis</rdfs:label>
     </owl:Class>
     
 
@@ -549,6 +1009,30 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FloodGate"/>
         <rdfs:label xml:lang="de">Schiebetor</rdfs:label>
         <rdfs:label xml:lang="en">Sliding flood gate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SocialMediaPost -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SocialMediaPost">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="de">Veröffentlichung auf einer Social-Media-Plattform</rdfs:comment>
+        <rdfs:comment xml:lang="en">entry on a social media platform</rdfs:comment>
+        <rdfs:label xml:lang="en">Social media post</rdfs:label>
+        <rdfs:label xml:lang="de">Social-Media-Post</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SocialSupport -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SocialSupport">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
+        <rdfs:comment xml:lang="en">Process of assisting and encouraging other individuals</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Beistehens und Zusprechens anderer Individuen</rdfs:comment>
+        <rdfs:label xml:lang="en">Social support</rdfs:label>
+        <rdfs:label xml:lang="de">Soziale Unterstützung</rdfs:label>
     </owl:Class>
     
 
@@ -602,6 +1086,18 @@
         <rdfs:comment xml:lang="de">Informationsinhalt, der audiovisuelle Inhalte umfasst</rdfs:comment>
         <rdfs:label xml:lang="en">Video</rdfs:label>
         <rdfs:label xml:lang="de">Videoaufnahme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/VolunteeringCampaign -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/VolunteeringCampaign">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Campaign"/>
+        <rdfs:comment xml:lang="en">A campaign with the goal of recruiting volunteers for a defined purpose</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Kampagne mit dem Ziel, Freiwille für einen bestimmten Zweck zu rekrutieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Freiwilligenkampagne</rdfs:label>
+        <rdfs:label xml:lang="en">Volunteering campaign</rdfs:label>
     </owl:Class>
     
 
@@ -768,6 +1264,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/eventCategory -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/eventCategory">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing an ID for a event category</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der die ID einer Ereigniskategorie enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Ereigniskategorie</rdfs:label>
+        <rdfs:label xml:lang="en">Event category</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/finanzbehoerdeHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/finanzbehoerdeHamburg">
@@ -910,6 +1418,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getEventCategoryClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getEventCategoryClass">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the class IRI for an event category referred to by an ID string given as input to the function</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine benutzerdefinierte RML-Funktion die die IRI für eine Eingabe-Ereigniskategorie-ID zurückgibt</rdfs:comment>
+        <rdfs:label xml:lang="de">Ereigniskategorie-Klasse von Ereigniskategoie-ID</rdfs:label>
+        <rdfs:label xml:lang="en">Get event category class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getFixedConstructionType -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFixedConstructionType">
@@ -942,6 +1462,30 @@
         <rdfs:comment xml:lang="en">Custom RML function that returns the IRI string of a propulsion type referred to by name</rdfs:comment>
         <rdfs:label xml:lang="de">Antriebsname zu Antriebsklassen-IRI</rdfs:label>
         <rdfs:label xml:lang="en">Get propulsion type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getSocialMediaService -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getSocialMediaService">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die die IRI zu dem Namen oder Identifikator eines Social-Media-Dienstes zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a social media service referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get social media service</rdfs:label>
+        <rdfs:label xml:lang="de">Social-Media-Dienst-IRI von Social-Media-Dienst-Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getSocialMediaUser -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getSocialMediaUser">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die die IRI zu dem Namen oder Identifikator einer Social-Media-Nutzer:in zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a social media user referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get social media user</rdfs:label>
+        <rdfs:label xml:lang="de">Social-Media-Nutzer:in-IRI von Social-Media-Nutzer:in-Name</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1000,6 +1544,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/latitude -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/latitude">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the latitude information</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String der Breitengrad-Informationen enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Breitengrad</rdfs:label>
+        <rdfs:label xml:lang="en">Latitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/lineStringsList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
@@ -1008,6 +1564,18 @@
         <rdfs:comment xml:lang="de">Eine Liste die Strings enthält, die Linienzüge repräsentieren.</rdfs:comment>
         <rdfs:label xml:lang="en">Line strings list</rdfs:label>
         <rdfs:label xml:lang="de">Linienzüge-Liste</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/longitude -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/longitude">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the longitude information</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String der Längengrad-Informationen enthält</rdfs:comment>
+        <rdfs:label xml:lang="en">Longitude</rdfs:label>
+        <rdfs:label xml:lang="de">Längengrad</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1112,6 +1680,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/socialMediaServiceName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/socialMediaServiceName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the name of a social media service</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der den Namen eines Social-Media-Services enthält</rdfs:comment>
+        <rdfs:label xml:lang="en">Social media service name</rdfs:label>
+        <rdfs:label xml:lang="de">Social-Media-Service-Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/sozialbehoerdeHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/sozialbehoerdeHamburg">
@@ -1130,6 +1710,30 @@
         <rdfs:comment xml:lang="en">Custom RML function that tries to convert any string input to a boollean value.</rdfs:comment>
         <rdfs:label xml:lang="de">String zu Boolean</rdfs:label>
         <rdfs:label xml:lang="en">To Boolean</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/toWKTPoint -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/toWKTPoint">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die ein String-Paar mit Koordinaten entgegennimmt und einen WKT-String für den Punkt zurückgibt, der von den Eingabedaten repräsentiert wird</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes a pair of coordinate strings as input and returns a WKT string for the point geometry represented by the input data</rdfs:comment>
+        <rdfs:label xml:lang="en">Longitude and latitude to WKT point literal</rdfs:label>
+        <rdfs:label xml:lang="de">Längen- und Breitengrad zu WKT-Punkt-Literal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/userName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/userName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A string containing the name of a user</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein String, der den Namen einer Nutzer:in enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Nutzername</rdfs:label>
+        <rdfs:label xml:lang="en">User name</rdfs:label>
     </owl:NamedIndividual>
     
 

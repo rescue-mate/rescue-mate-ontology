@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/wikidata-bridge">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.1.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.3.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
     </owl:Ontology>
     
@@ -71,6 +71,17 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q107280686 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q107280686">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q451967"/>
+        <rdfs:comment xml:lang="en">human activity involving assistance to others and improvement of conditions for humanity</rdfs:comment>
+        <rdfs:label xml:lang="fr">activité humanitaire</rdfs:label>
+        <rdfs:label xml:lang="en">humanitarian activity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q107589046 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q107589046">
@@ -78,6 +89,57 @@
         <rdfs:comment xml:lang="en">hydraulic structure between two waterways with a different water level, which serves to transport water or ships between the waterways</rdfs:comment>
         <rdfs:comment xml:lang="de">hydraulisches Bauwerk zwischen zwei Wasserkörpern mit unterschiedlichem Pegel, das dazu dient, Wasser oder Wasserfahrzeuge auf ein anderes Niveau zu bringen</rdfs:comment>
         <rdfs:label xml:lang="en">sluice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1150070 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1150070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">beschreibt Prozesse, Ereignisse oder Handlungen, welche vom Status Quo abweichen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">décrit les processus, les événements ou actions qui s&apos;écartent du statu quo</rdfs:comment>
+        <rdfs:comment xml:lang="en">process, event or action that deviates from the present state</rdfs:comment>
+        <rdfs:label xml:lang="de">Veränderung</rdfs:label>
+        <rdfs:label xml:lang="en">change</rdfs:label>
+        <rdfs:label xml:lang="fr">changement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q117134054 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q117134054">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q481609"/>
+        <rdfs:comment xml:lang="en">broad term used to include injury and psychological trauma</rdfs:comment>
+        <rdfs:label xml:lang="en">trauma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q11858035 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11858035">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q4026292"/>
+        <rdfs:comment xml:lang="en">an action to give assistance provided by emergency services, teams, or individuals</rdfs:comment>
+        <rdfs:comment xml:lang="de">eine Hilfsaktion, die von Rettungsdiensten, Teams oder Einzelpersonen durchgeführt wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Notfallmaßnahmen</rdfs:label>
+        <rdfs:label xml:lang="fr">action d&apos;urgence</rdfs:label>
+        <rdfs:label xml:lang="en">emergency response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1190554 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1190554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">Auftreten eines beobachtbaren Geschehens</rdfs:comment>
+        <rdfs:comment xml:lang="fr">occurrence d’un fait ou objet dans l’espace-temps; instanciation d&apos;une propriété dans un objet; ce qui peut être expérimenté ou enregistré par un observateur.</rdfs:comment>
+        <rdfs:comment xml:lang="en">occurrence of a fact or object in space-time; instantiation of a property in an object</rdfs:comment>
+        <rdfs:label xml:lang="de">Ereignis</rdfs:label>
+        <rdfs:label xml:lang="en">occurrence</rdfs:label>
+        <rdfs:label xml:lang="fr">occurrence</rdfs:label>
     </owl:Class>
     
 
@@ -203,6 +265,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1656682 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1656682">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="en">temporary and scheduled happening, like a conference, festival, competition or similar</rdfs:comment>
+        <rdfs:comment xml:lang="de">zeitlich begrenztes und geplantes Ereignis, wie eine Konferenz, ein Festival, ein Wettbewerb oder ähnliches</rdfs:comment>
+        <rdfs:comment xml:lang="fr">événement temporaire ou prévu, comme un festival ou une compétition</rdfs:comment>
+        <rdfs:label xml:lang="de">Veranstaltung</rdfs:label>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="fr">événement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q167037 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q167037">
@@ -232,6 +308,34 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1914636 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1914636">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3249551"/>
+        <rdfs:comment xml:lang="de">Handeln, kann sowohl körperliche als auch geistige Verrichtungen umfassen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">action de faire quelque chose</rdfs:comment>
+        <rdfs:comment xml:lang="en">series of actions done by an agent which results in an external change of state</rdfs:comment>
+        <rdfs:label xml:lang="de">Tätigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">activity</rdfs:label>
+        <rdfs:label xml:lang="fr">activité</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q193078 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q193078">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q117134054"/>
+        <rdfs:comment xml:lang="de">Schädigung, Verletzung oder Verwundung, die durch Gewalt von außen entsteht</rdfs:comment>
+        <rdfs:comment xml:lang="fr">dommage ou choc provoqué par une blessure physique</rdfs:comment>
+        <rdfs:comment xml:lang="en">physiological wound caused by an external source</rdfs:comment>
+        <rdfs:label xml:lang="de">Trauma</rdfs:label>
+        <rdfs:label xml:lang="en">injury in humans</rdfs:label>
+        <rdfs:label xml:lang="fr">traumatisme</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q223557 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
@@ -245,6 +349,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q22445448 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q22445448">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="en">act of asking politely or formally for something</rdfs:comment>
+        <rdfs:comment xml:lang="de">höflich ausgedrückter Wunsch</rdfs:comment>
+        <rdfs:label xml:lang="de">Bitte</rdfs:label>
+        <rdfs:label xml:lang="fr">demande</rdfs:label>
+        <rdfs:label xml:lang="en">request</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q2345125 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2345125">
@@ -254,6 +371,17 @@
         <rdfs:label xml:lang="de">Fluttor</rdfs:label>
         <rdfs:label xml:lang="en">floodgate</rdfs:label>
         <rdfs:label xml:lang="fr">vanne contre les inondations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q23580581 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q23580581">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q61788060"/>
+        <rdfs:comment xml:lang="en">losing spatial reference</rdfs:comment>
+        <rdfs:label xml:lang="de">Verirren</rdfs:label>
+        <rdfs:label xml:lang="en">getting lost</rdfs:label>
     </owl:Class>
     
 
@@ -315,6 +443,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q3249551 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q3249551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="de">Folge von Änderungen</rdfs:comment>
+        <rdfs:comment xml:lang="en">series of events which occur over an extended period of time</rdfs:comment>
+        <rdfs:comment xml:lang="fr">série d&apos;événements qui surviennent sur une période de temps étendue</rdfs:comment>
+        <rdfs:label xml:lang="de">Vorgang</rdfs:label>
+        <rdfs:label xml:lang="en">process</rdfs:label>
+        <rdfs:label xml:lang="fr">processus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q333170 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q333170">
@@ -323,6 +465,19 @@
         <rdfs:comment xml:lang="en">structure that allows vessels to overcome a fall in a waterway</rdfs:comment>
         <rdfs:label xml:lang="de">Abstiegsbauwerk</rdfs:label>
         <rdfs:label xml:lang="en">fall structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q37112258 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q37112258">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1914636"/>
+        <rdfs:comment xml:lang="en">event of locating or identifying something</rdfs:comment>
+        <rdfs:comment xml:lang="fr">fait de localiser ou d&apos;identifier quelque chose</rdfs:comment>
+        <rdfs:label xml:lang="de">Finden</rdfs:label>
+        <rdfs:label xml:lang="fr">découverte</rdfs:label>
+        <rdfs:label xml:lang="en">finding</rdfs:label>
     </owl:Class>
     
 
@@ -337,6 +492,34 @@
         <rdfs:label xml:lang="de">Rechtssubjekt</rdfs:label>
         <rdfs:label xml:lang="en">legal person</rdfs:label>
         <rdfs:label xml:lang="fr">personnalité juridique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q4 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="de">endgültiger Verlust der Lebensfunktionen</rdfs:comment>
+        <rdfs:comment xml:lang="en">permanent cessation of vital functions</rdfs:comment>
+        <rdfs:comment xml:lang="fr">état de ce dont les fonctions vitales se sont arrêtées</rdfs:comment>
+        <rdfs:label xml:lang="de">Tod</rdfs:label>
+        <rdfs:label xml:lang="en">death</rdfs:label>
+        <rdfs:label xml:lang="fr">mort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q4026292 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4026292">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1190554"/>
+        <rdfs:comment xml:lang="de">absichtliche Tätigkeiten eines Menschen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ce qui peut être fait par un agent</rdfs:comment>
+        <rdfs:comment xml:lang="en">something an agent can do or perform</rdfs:comment>
+        <rdfs:label xml:lang="de">Handeln</rdfs:label>
+        <rdfs:label xml:lang="en">action</rdfs:label>
+        <rdfs:label xml:lang="fr">action</rdfs:label>
     </owl:Class>
     
 
@@ -368,6 +551,48 @@
         <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
         <rdfs:label xml:lang="en">pumping station</rdfs:label>
         <rdfs:label xml:lang="fr">station de pompage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q451967 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q451967">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q61788060"/>
+        <rdfs:comment xml:lang="fr">activité humaine basée sur un motif quelconque</rdfs:comment>
+        <rdfs:comment xml:lang="en">human activity driven by purposeful motives</rdfs:comment>
+        <rdfs:comment xml:lang="de">jede menschliche, von Motiven geleitete zielgerichtete Aktivität</rdfs:comment>
+        <rdfs:label xml:lang="fr">action humaine</rdfs:label>
+        <rdfs:label xml:lang="en">intentional human activity</rdfs:label>
+        <rdfs:label xml:lang="de">menschliche Handlung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q47496130 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q47496130">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1150070"/>
+        <rdfs:comment xml:lang="en">decrease in a quantity</rdfs:comment>
+        <rdfs:comment xml:lang="fr">réduction d&apos;une quantité</rdfs:comment>
+        <rdfs:label xml:lang="de">Verringerung</rdfs:label>
+        <rdfs:label xml:lang="fr">diminution</rdfs:label>
+        <rdfs:label xml:lang="en">reduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q481609 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q481609">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q3249551"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q47496130"/>
+        <rdfs:comment xml:lang="en">changes to a system that adversely affect its current or future performance</rdfs:comment>
+        <rdfs:comment xml:lang="de">jeder Nachteil, den eine Person oder Sache durch ein Ereignis erleidet</rdfs:comment>
+        <rdfs:comment xml:lang="fr">tout inconvénient qu&apos;une personne ou une chose souffre d&apos;un événement</rdfs:comment>
+        <rdfs:label xml:lang="de">Schaden</rdfs:label>
+        <rdfs:label xml:lang="en">damage</rdfs:label>
+        <rdfs:label xml:lang="de">dégât</rdfs:label>
     </owl:Class>
     
 
@@ -431,6 +656,48 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q6056746 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6056746">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1656682"/>
+        <rdfs:comment xml:lang="fr">action temporaire avec un objectif défini, qui est tenté par la coopération planifiée et coordonnée de plusieurs personnes ou acteurs</rdfs:comment>
+        <rdfs:comment xml:lang="en">series of operations undertaken to achieve a defined goal</rdfs:comment>
+        <rdfs:comment xml:lang="de">zeitlich befristete Aktion mit einem definierten Ziel</rdfs:comment>
+        <rdfs:label xml:lang="de">Kampagne</rdfs:label>
+        <rdfs:label xml:lang="fr">campagne</rdfs:label>
+        <rdfs:label xml:lang="en">campaign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q606332 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q606332">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q11858035"/>
+        <rdfs:comment xml:lang="de">Menschenansammlung bei Notfällen</rdfs:comment>
+        <rdfs:comment xml:lang="fr">mouvement organisé, rapide et immédiat de personnes écartées d&apos;un danger</rdfs:comment>
+        <rdfs:comment xml:lang="en">urgent movement of people away from the threat or actual occurrence of a hazard</rdfs:comment>
+        <rdfs:label xml:lang="de">Evakuierung</rdfs:label>
+        <rdfs:label xml:lang="en">evacuation</rdfs:label>
+        <rdfs:label xml:lang="fr">évacuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q61788060 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q61788060">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1914636"/>
+        <rdfs:comment xml:lang="de">Aktivität, die von Menschen praktiziert werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">activity initiated by a human, intentionally or unintentionally</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type d&apos;áctivité</rdfs:comment>
+        <rdfs:label xml:lang="fr">activité humaine</rdfs:label>
+        <rdfs:label xml:lang="en">human activity</rdfs:label>
+        <rdfs:label xml:lang="de">menschliche Aktivität</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q618123 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q618123">
@@ -441,6 +708,18 @@
         <rdfs:label xml:lang="en">geographical feature</rdfs:label>
         <rdfs:label xml:lang="de">geographisches Objekt</rdfs:label>
         <rdfs:label xml:lang="fr">objet géographique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q6881760 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6881760">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q47496130"/>
+        <rdfs:comment xml:lang="en">reduction of harm</rdfs:comment>
+        <rdfs:label xml:lang="de">Folgenminderungsstrategie</rdfs:label>
+        <rdfs:label xml:lang="en">mitigation</rdfs:label>
+        <rdfs:label xml:lang="fr">mitigation</rdfs:label>
     </owl:Class>
     
 
