@@ -386,7 +386,7 @@
     <!-- http://rescue-mate.de/ontology/Campaign -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Campaign">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntensionalHumanActivity"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
         <rdfs:comment xml:lang="de">Abfolge von über einen definierten Zeitraum geplanten oder tatsächlich ausgeführten Aktionen die einem gemeinsamen Zweck dienen.</rdfs:comment>
         <rdfs:comment xml:lang="en">Series of actions planned for or executed during a defined time period that serve a common goal</rdfs:comment>
         <rdfs:label xml:lang="en">Campaign</rdfs:label>
