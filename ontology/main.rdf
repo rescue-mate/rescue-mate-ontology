@@ -1726,6 +1726,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/url -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/url">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A uniform resource locator</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Uniform Resource Locator (URL)</rdfs:comment>
+        <rdfs:label xml:lang="de">URL</rdfs:label>
+        <rdfs:label xml:lang="en">URL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/userName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/userName">
