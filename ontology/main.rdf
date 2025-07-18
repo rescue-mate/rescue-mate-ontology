@@ -1264,6 +1264,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/downloadFileAndReturnRMURL -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/downloadFileAndReturnRMURL">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion die eine Datei von einem gegebenen URL herunterlädt, sie in der RESCUE-MATE-Datenplattform speichert und einen plattforminternen URL zurückgibt, unter dem die Datei über die RESCUE-MATE-Datenplattform zu erreichen ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that downloads a file from a given URL, stores it in the RESCUE-MATE data platform, and returns the URL where to access it via the RESCUE-MATE data platform.</rdfs:comment>
+        <rdfs:label xml:lang="de">Datei herunterladen und RESCUE-MATE-URL zurückgeben</rdfs:label>
+        <rdfs:label xml:lang="en">Download file and return RESCUE-MATE URL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/eventCategory -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/eventCategory">
