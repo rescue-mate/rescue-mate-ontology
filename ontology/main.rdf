@@ -361,6 +361,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AB -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Container"/>
+        <rdfs:comment xml:lang="en">Container designed as a closed box that can accommodate specific loads (materials and tools) and/or can be used for the accommodation of people (furnished and with doors and windows)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Container, der als geschlossener Kasten ausgeführt ist und bestimmte Ladungen (Material und Werkzeug) aufnehmen oder/und für den Aufenthalt von Personen (möbliert und mit Türen und Fenstern) dienen kann</rdfs:comment>
+        <rdfs:label xml:lang="de">Abrollbehälter</rdfs:label>
+        <rdfs:label xml:lang="en">Abrollbehälter (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Activity -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Activity">
