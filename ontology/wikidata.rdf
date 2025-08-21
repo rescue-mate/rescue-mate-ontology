@@ -910,6 +910,15 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q50659049 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q50659049">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1898202"/>
+        <rdfs:label xml:lang="de">Drehleiter mit Korb 23/12</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q510255 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q510255">
