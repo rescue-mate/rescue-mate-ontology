@@ -412,6 +412,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AerialWorkPlatform -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AerialWorkPlatform">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AerialAppliance"/>
+        <rdfs:comment xml:lang="en">Aerial appliance used to provide temporary access for people or equipment to inaccessible areas, usually at height.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hubrettungsfahrzeug mit einer begehbaren und beweglichen Plattform über die Personen und Ausrüstung in die Nähe unzugänglicher Bereiche, insb. in größerer Höhe bewegt werden können</rdfs:comment>
+        <rdfs:label xml:lang="en">Aerial work platform</rdfs:label>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Business -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Business">
