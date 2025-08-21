@@ -238,6 +238,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1301433 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1301433">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:comment xml:lang="de">Fahrzeug, das sich auf festem Grund fortbewegt</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle mainly meant to move on land, including wheeled, tracked, and walking vehicles</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule conçu pour évoluer sur la surface terrestre</rdfs:comment>
+        <rdfs:label xml:lang="de">Landfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">land vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule terrestre</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q131085629 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q131085629">
