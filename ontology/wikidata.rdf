@@ -135,6 +135,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q11436 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11436">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q7194062"/>
+        <rdfs:comment xml:lang="de">Transportmittel, das innerhalb der Atmosphäre abhebt und fliegt oder fährt</rdfs:comment>
+        <rdfs:comment xml:lang="en">machine that is able to fly by gaining support from the air other than the reactions of the air against the earth’s surface</rdfs:comment>
+        <rdfs:comment xml:lang="fr">moyen de transport capable d&apos;évoluer au sein de l&apos;atmosphère terrestre</rdfs:comment>
+        <rdfs:label xml:lang="de">Luftfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">aircraft</rdfs:label>
+        <rdfs:label xml:lang="fr">aéronef</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1150070 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1150070">
@@ -145,6 +160,20 @@
         <rdfs:label xml:lang="de">Veränderung</rdfs:label>
         <rdfs:label xml:lang="en">change</rdfs:label>
         <rdfs:label xml:lang="fr">changement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q116780996 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q116780996">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q223557"/>
+        <rdfs:comment xml:lang="de">Objekt, das zum Fliegen imstande ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">object capable of flight</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet ayant la capacité de voler</rdfs:comment>
+        <rdfs:label xml:lang="de">Flugobjekt</rdfs:label>
+        <rdfs:label xml:lang="en">flying object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet volant</rdfs:label>
     </owl:Class>
     
 
@@ -401,6 +430,17 @@
         <rdfs:label xml:lang="de">Gruppe</rdfs:label>
         <rdfs:label xml:lang="en">group</rdfs:label>
         <rdfs:label xml:lang="fr">groupe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1882685 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1882685">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q11019"/>
+        <rdfs:comment xml:lang="en">device employing power to achieve desired forces and/or motion</rdfs:comment>
+        <rdfs:label xml:lang="en">mechanical device</rdfs:label>
+        <rdfs:label xml:lang="de">mechanisches Gerät</rdfs:label>
     </owl:Class>
     
 
@@ -877,6 +917,21 @@
         <rdfs:label xml:lang="de">Folgenminderungsstrategie</rdfs:label>
         <rdfs:label xml:lang="en">mitigation</rdfs:label>
         <rdfs:label xml:lang="fr">mitigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q7194062 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q7194062">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q116780996"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1882685"/>
+        <rdfs:comment xml:lang="de">eine Maschine, die in der Luft oder im Weltall fliegen kann</rdfs:comment>
+        <rdfs:comment xml:lang="fr">machine qui vole dans l&apos;air ou dans l&apos;espace</rdfs:comment>
+        <rdfs:comment xml:lang="en">machine that can fly, including aircraft, spacecraft, rockets, and missiles</rdfs:comment>
+        <rdfs:label xml:lang="de">Flugmaschine</rdfs:label>
+        <rdfs:label xml:lang="en">flying machine</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule aérospatial</rdfs:label>
     </owl:Class>
     
 
