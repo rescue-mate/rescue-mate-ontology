@@ -419,6 +419,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q216146 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q216146">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1301433"/>
+        <rdfs:comment xml:lang="de">Fahrzeug, das über eine Ladefläche, jedoch keinen eigenen Antrieb verfügt</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle that has a loading area but does not have its own propulsion</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule qui a une zone de chargement, mais pas de moteur</rdfs:comment>
+        <rdfs:label xml:lang="de">Anhänger</rdfs:label>
+        <rdfs:label xml:lang="fr">remorque</rdfs:label>
+        <rdfs:label xml:lang="en">trailer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q223557 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
