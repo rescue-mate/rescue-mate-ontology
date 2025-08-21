@@ -433,6 +433,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/BtLKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/BtLKW">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Bt"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Betreuungslastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Betreuungslastkraftwagen (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q831723</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Business -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Business">
@@ -861,15 +873,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/InjuryInHumans -->
+    <!-- http://rescue-mate.de/ontology/GW-Bt -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumans">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Injury"/>
-        <rdfs:comment xml:lang="en">A damage inflicted on living a human being impairing their physiological conditions</rdfs:comment>
-        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Menschen zugeführt wird und dessen körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
-        <rdfs:label xml:lang="en">Injury in humans</rdfs:label>
-        <rdfs:label xml:lang="de">Verletzung beim Menschen</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193078</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Bt">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment>Emergency vehicle to transport equipment and supplies for providing food to emergency personnel or those in need of assistance</rdfs:comment>
+        <rdfs:comment xml:lang="de">Geräewagen für den Transport von Ausrüstung zur Verpflegung von Einsatzkräften oder Hilfsbedürftigen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Betreuung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Betreuung (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -894,6 +905,22 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FloodGate"/>
         <rdfs:label xml:lang="en">Hinged crest gate</rdfs:label>
         <rdfs:label xml:lang="de">Klapptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/InjuryInHumans -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumans">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Injury"/>
+        <rdfs:comment xml:lang="en">A damage inflicted on living a human being impairing their physiological conditions</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Menschen zugeführt wird und dessen körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
+        <rdfs:label xml:lang="en">Injury in humans</rdfs:label>
+        <rdfs:label xml:lang="de">Verletzung beim Menschen</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193078</rdfs:seeAlso>
     </owl:Class>
     
 

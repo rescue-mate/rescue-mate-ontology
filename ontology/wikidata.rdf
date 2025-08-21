@@ -73,8 +73,8 @@
     <!-- https://www.wikidata.org/wiki/Q106668099 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q106668099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q131085629"/>
-        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
         <rdfs:comment xml:lang="fr">en bibliothéconomie, agent collectif composé de personnes organisées dans un but ou une activité commune; l&apos;agent collectif comprend les personnes morales et les familles</rdfs:comment>
         <rdfs:comment xml:lang="de">in der Bibliothekswissenschaft ein Kollektivagent, der aus Personen besteht, die für einen gemeinsamen Zweck oder eine gemeinsame Tätigkeit organisiert sind; Kollektivagent umfasst Körperschaften und Familien</rdfs:comment>
         <rdfs:comment xml:lang="en">in library science, a collective agent that is composed of persons who are organized for a common purpose or activity; collective agent includes corporate bodies and families</rdfs:comment>
@@ -336,6 +336,17 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1515989 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1515989">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">spezielle Fahrzeuge der Hilfsorganisationen in Deutschland</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q155076 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q155076">
@@ -401,6 +412,20 @@
         <rdfs:label xml:lang="de">Veranstaltung</rdfs:label>
         <rdfs:label xml:lang="en">event</rdfs:label>
         <rdfs:label xml:lang="fr">événement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q16686448 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16686448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="en">anything created by humans (either material or mental)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet matériel ou concept créé par des humains</rdfs:comment>
+        <rdfs:comment xml:lang="de">von Menschen Erschaffenes</rdfs:comment>
+        <rdfs:label xml:lang="en">artificial object</rdfs:label>
+        <rdfs:label xml:lang="fr">entité artificielle</rdfs:label>
+        <rdfs:label xml:lang="de">künstliche Entität</rdfs:label>
     </owl:Class>
     
 
@@ -811,20 +836,6 @@
     
 
 
-    <!-- https://www.wikidata.org/wiki/Q488383 -->
-
-    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q488383">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:comment xml:lang="de">alles, auf das ein Subjekt reagieren kann</rdfs:comment>
-        <rdfs:comment xml:lang="en">anything that may be observed or acted upon by a subject</rdfs:comment>
-        <rdfs:comment xml:lang="fr">tout ce qui existe et qui peut être utilisé par un sujet</rdfs:comment>
-        <rdfs:label xml:lang="de">Objekt</rdfs:label>
-        <rdfs:label xml:lang="en">object</rdfs:label>
-        <rdfs:label xml:lang="fr">objet</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://www.wikidata.org/wiki/Q510255 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q510255">
@@ -841,7 +852,7 @@
     <!-- https://www.wikidata.org/wiki/Q58778 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q58778">
-        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q99527517"/>
         <rdfs:comment xml:lang="de">Gesamtheit von wechselwirkenden Elementen einer Einheit</rdfs:comment>
         <rdfs:comment xml:lang="fr">ensemble d&apos;éléments interagissant entre eux selon certains principes ou règles</rdfs:comment>
@@ -990,6 +1001,16 @@
         <rdfs:label xml:lang="de">Artefakt</rdfs:label>
         <rdfs:label xml:lang="en">artificial physical object</rdfs:label>
         <rdfs:label xml:lang="fr">objet artificiel physique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q831723 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q831723">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1515989"/>
+        <rdfs:comment xml:lang="de">Fahrzeug des deutschen Zivil- und Katastrophenschutzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Betreuungslastkraftwagen</rdfs:label>
     </owl:Class>
     
 
