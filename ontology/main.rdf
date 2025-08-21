@@ -1591,6 +1591,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getVehicleTypeIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getVehicleTypeIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion die die IRI eines Fahrzeugtyps zu einer Typabkürzung oder -ID zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the class IRI of a vehicle referred to by an ID or abbreviation</rdfs:comment>
+        <rdfs:label xml:lang="de">Fahrzeugtyp-IRI von Typ</rdfs:label>
+        <rdfs:label xml:lang="en">Get vehicle type IRI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/hamburgPortAuthority -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/hamburgPortAuthority">
