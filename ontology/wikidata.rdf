@@ -295,6 +295,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1308813 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1308813">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">Einsatzfahrzeug zu Koordinierung des Einsatzes der Feuerwehr, der THW und der Polizei</rdfs:comment>
+        <rdfs:comment xml:lang="en">emergency vehicle to coordinate fire, ambulance, police, and technical operations</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen</rdfs:label>
+        <rdfs:label xml:lang="fr">Véhicule poste de commandement</rdfs:label>
+        <rdfs:label xml:lang="en">emergency service command vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q131085629 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q131085629">
