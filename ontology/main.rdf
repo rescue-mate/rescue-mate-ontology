@@ -399,6 +399,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AerialAppliance -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AerialAppliance">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug mit ausfahrbarer Leiter, Plattform oder ausfahrbarem Ausleger, das Feuerwehrleuten das Arbeiten in der Höhe zu Rettungs-, Lösch- und Zugangszwecken ermöglicht</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle equipped with an extendable ladder, platform, or boom that allows firefighters to work at height for rescue, firefighting, and access purposes</rdfs:comment>
+        <rdfs:label xml:lang="en">Aerial appliance</rdfs:label>
+        <rdfs:label xml:lang="de">Hubrettungsfahrzeug</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Business -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Business">
