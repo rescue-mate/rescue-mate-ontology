@@ -349,6 +349,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1515493 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1515493">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1301433"/>
+        <rdfs:comment xml:lang="de">Landfahrzeug, das vorrangig für den Betrieb auf Straßen vorgesehen ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle intended to be used on public streets and highways</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule conçu pour évoluer sur routes</rdfs:comment>
+        <rdfs:label xml:lang="de">Straßenfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">road vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule routier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1515989 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1515989">
@@ -397,6 +411,16 @@
         <rdfs:label xml:lang="de">Gruppe von Menschen</rdfs:label>
         <rdfs:label xml:lang="en">group of humans</rdfs:label>
         <rdfs:label xml:lang="fr">groupe d&apos;humains</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1633677 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1633677">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q208281"/>
+        <rdfs:comment xml:lang="de">Fahrzeug zur Menschenrettung aus großer höhe</rdfs:comment>
+        <rdfs:label xml:lang="de">Hubrettungsfahrzeug</rdfs:label>
     </owl:Class>
     
 
@@ -483,6 +507,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1898202 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1898202">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1633677"/>
+        <rdfs:comment xml:lang="de">Hubrettungsfahrzeug der Feuerwehr</rdfs:comment>
+        <rdfs:comment xml:lang="en">type of fire engine</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule des pompiers qui emporte une échelle escamotable de grande hauteur</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter</rdfs:label>
+        <rdfs:label xml:lang="en">turntable ladder</rdfs:label>
+        <rdfs:label xml:lang="fr">échelle pivotante automatique</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1914636 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1914636">
@@ -507,6 +545,20 @@
         <rdfs:label xml:lang="de">Trauma</rdfs:label>
         <rdfs:label xml:lang="en">injury in humans</rdfs:label>
         <rdfs:label xml:lang="fr">traumatisme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q208281 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q208281">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1515493"/>
+        <rdfs:comment xml:lang="de">Fahrzeug mit Sonderausstattung zum Löschen von Bränden für die Feuerwehr</rdfs:comment>
+        <rdfs:comment xml:lang="fr">camion de pompiers utilisé dans la lutte contre l&apos;incendie</rdfs:comment>
+        <rdfs:comment xml:lang="en">emergency ground vehicle intended to put out fires</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerwehrfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">fire engine</rdfs:label>
+        <rdfs:label xml:lang="fr">fourgon d&apos;incendie</rdfs:label>
     </owl:Class>
     
 

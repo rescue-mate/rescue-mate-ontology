@@ -1273,6 +1273,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/TurntableLadder -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TurntableLadder">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AerialAppliance"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug mit einer fest installierten Leiter, die sich um 360 Grad drehen lässt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle with a ladder mounted on a pivot which resembles a turntable, able to rotate 360 degrees</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter</rdfs:label>
+        <rdfs:label xml:lang="en">Turntable ladder</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1898202</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Vehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Vehicle">
