@@ -587,6 +587,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/EmergencyVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:comment xml:lang="de">Speziell ausgerüstetes Fahrzeug einer Hilfsorganisation, einer Behörde oder Organisation mit Sicherheitsaufgaben</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Emergency vehicle</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1308737</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Evacuation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Evacuation">

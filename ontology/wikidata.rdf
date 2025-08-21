@@ -252,6 +252,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1308737 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1308737">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:comment xml:lang="de">speziell ausgerüstete Fahrzeuge einer Hilfsorganisation oder einer Behörde</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type de véhicule</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle that is designated and authorized to respond to an emergency</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">emergency vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule de secours</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q131085629 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q131085629">
