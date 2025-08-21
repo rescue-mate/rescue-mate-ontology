@@ -606,6 +606,15 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q286897 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q286897">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1515989"/>
+        <rdfs:label xml:lang="de">Messfahrzeug</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q28813620 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q28813620">
@@ -1025,6 +1034,15 @@
         <rdfs:label xml:lang="en">complex system</rdfs:label>
         <rdfs:label xml:lang="de">komplexes System</rdfs:label>
         <rdfs:label xml:lang="fr">système complexe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q93978369 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q93978369">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q286897"/>
+        <rdfs:label xml:lang="de">CBRN-Erkundungswagen</rdfs:label>
     </owl:Class>
     
 
