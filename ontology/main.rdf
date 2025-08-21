@@ -373,6 +373,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AL16-4 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AL16-4">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger mit Leiter mit einer Nennrettungshöhe von 16 Metern und Nennausladung von 4 Metern.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer with a ladder with a nominal rescue height of 16 meters and a nominal outreach of 4 meters.</rdfs:comment>
+        <rdfs:label xml:lang="de">Anhängeleiter AL 16-4</rdfs:label>
+        <rdfs:label xml:lang="en">Anhängeleiter AL 16-4 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Activity -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Activity">
