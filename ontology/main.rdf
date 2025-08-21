@@ -1851,6 +1851,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/vehicleType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/vehicleType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A vehicle type given by ID or abbreviation</rdfs:comment>
+        <rdfs:comment xml:lang="de">ID oder Abkürzung eines Fahrzeugtyps</rdfs:comment>
+        <rdfs:label xml:lang="de">Fahrzeugtyp</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea">
