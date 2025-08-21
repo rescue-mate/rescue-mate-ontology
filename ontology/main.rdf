@@ -581,6 +581,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DLA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TurntableLadder"/>
+        <rdfs:comment xml:lang="de">Drehleiter mit automatisiertem Aufricht- und Abstützvorgang</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with automated erection and support process</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Damage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Damage">
