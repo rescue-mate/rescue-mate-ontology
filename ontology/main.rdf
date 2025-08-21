@@ -1100,6 +1100,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Vehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Vehicle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label xml:lang="de">Fahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q42889</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/VerticalLiftFloodGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/VerticalLiftFloodGate">

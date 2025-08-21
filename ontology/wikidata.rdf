@@ -28,6 +28,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q10273457 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q10273457">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q223557"/>
+        <rdfs:comment xml:lang="de">allgemeiner Sammelbegriff für alle Gegenstände, die benötigt werden um eine bestimmte Tätigkeit auszuüben</rdfs:comment>
+        <rdfs:comment xml:lang="en">collective term for all physical items that are required to exercise a certain activity</rdfs:comment>
+        <rdfs:comment xml:lang="fr">terme générique pour tous les objets qui sont nécessaires pour exercer une activité</rdfs:comment>
+        <rdfs:label xml:lang="de">Ausrüstung</rdfs:label>
+        <rdfs:label xml:lang="en">equipment</rdfs:label>
+        <rdfs:label xml:lang="fr">équipement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q105731 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q105731">
@@ -71,6 +85,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q106839123 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q106839123">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q10273457"/>
+        <rdfs:comment xml:lang="de">Einrichtungen oder Nutztiere, die der Beförderung von Personen und Gütern dienen</rdfs:comment>
+        <rdfs:comment xml:lang="en">any form of vehicle or system used to transport people or goods from one place to another</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule ou équipement utilisé pour le transport de personnes ou de marchandises</rdfs:comment>
+        <rdfs:label xml:lang="de">Verkehrsmittel</rdfs:label>
+        <rdfs:label xml:lang="en">means of transport</rdfs:label>
+        <rdfs:label xml:lang="fr">moyen de transport</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q107280686 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q107280686">
@@ -89,6 +117,20 @@
         <rdfs:comment xml:lang="en">hydraulic structure between two waterways with a different water level, which serves to transport water or ships between the waterways</rdfs:comment>
         <rdfs:comment xml:lang="de">hydraulisches Bauwerk zwischen zwei Wasserkörpern mit unterschiedlichem Pegel, das dazu dient, Wasser oder Wasserfahrzeuge auf ein anderes Niveau zu bringen</rdfs:comment>
         <rdfs:label xml:lang="en">sluice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q11019 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11019">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1183543"/>
+        <rdfs:comment xml:lang="de">mechanisches Gerät mit Antriebssystem</rdfs:comment>
+        <rdfs:comment xml:lang="fr">outil capable d&apos;effectuer des tâches en consommant de l&apos;énergie</rdfs:comment>
+        <rdfs:comment xml:lang="en">tool containing one or more parts that uses energy to perform an intended action</rdfs:comment>
+        <rdfs:label xml:lang="de">Maschine</rdfs:label>
+        <rdfs:label xml:lang="en">machine</rdfs:label>
+        <rdfs:label xml:lang="fr">machine</rdfs:label>
     </owl:Class>
     
 
@@ -113,6 +155,20 @@
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q481609"/>
         <rdfs:comment xml:lang="en">broad term used to include injury and psychological trauma</rdfs:comment>
         <rdfs:label xml:lang="en">trauma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1183543 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1183543">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q39546"/>
+        <rdfs:comment xml:lang="en">artificial object with which something can be worked on, manufactured or effected</rdfs:comment>
+        <rdfs:comment xml:lang="de">künstlicher Gegenstand, mit dem etwas bearbeitet, hergestellt oder bewirkt werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet artificiel avec lequel quelque chose peut être travaillé, fabriqué ou effectué</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerät</rdfs:label>
+        <rdfs:label xml:lang="en">appliance</rdfs:label>
+        <rdfs:label xml:lang="fr">dispositif</rdfs:label>
     </owl:Class>
     
 
@@ -154,6 +210,19 @@
         <rdfs:label xml:lang="fr">entité cartographiable</rdfs:label>
         <rdfs:label xml:lang="en">geolocatable entity</rdfs:label>
         <rdfs:label xml:lang="de">geolokalisierbares Objekt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q123691918 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q123691918">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="de">etwas, das zur Durchführung von etwas verwendet wird</rdfs:comment>
+        <rdfs:comment xml:lang="en">something used to perform an operation</rdfs:comment>
+        <rdfs:label xml:lang="de">Instrument</rdfs:label>
+        <rdfs:label xml:lang="fr">outil</rdfs:label>
+        <rdfs:label xml:lang="en">tool</rdfs:label>
     </owl:Class>
     
 
@@ -339,8 +408,9 @@
     <!-- https://www.wikidata.org/wiki/Q223557 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q4406616"/>
         <rdfs:comment xml:lang="de">Ansammlung von Masse, die eine Einheit bildet</rdfs:comment>
+        <rdfs:comment xml:lang="fr">agrégation singulière de substance(s) tangibles comme des matières ou des radiations, avec des propriétés globales</rdfs:comment>
         <rdfs:comment xml:lang="en">singular aggregation of substance(s) such as matter or radiation, with overall properties such as mass, position or momentum</rdfs:comment>
         <rdfs:label xml:lang="de">Körper</rdfs:label>
         <rdfs:label xml:lang="fr">objet physique</rdfs:label>
@@ -496,6 +566,22 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q39546 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q39546">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q10273457"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q123691918"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q8205328"/>
+        <rdfs:comment xml:lang="de">Arbeitsmittel, um auf Gegenstände einzuwirken</rdfs:comment>
+        <rdfs:comment xml:lang="fr">instrument physique utilisable pour exercer une action</rdfs:comment>
+        <rdfs:comment xml:lang="en">physical item that can be used to achieve a goal</rdfs:comment>
+        <rdfs:label xml:lang="de">Werkzeug</rdfs:label>
+        <rdfs:label xml:lang="fr">outil</rdfs:label>
+        <rdfs:label xml:lang="en">physical tool</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q4 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4">
@@ -524,6 +610,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q42889 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q42889">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106839123"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q11019"/>
+        <rdfs:comment xml:lang="fr">machine mobile qui transporte, qu&apos;elle soit motorisée ou non, telle qu&apos;un vélo, une voiture, un autre véhicule terrestre (y compris les véhicules à roues et à chenilles), un aéronef ou une embarcation</rdfs:comment>
+        <rdfs:comment xml:lang="en">mobile machine used for transport, whether it has an engine or not, including wheeled and tracked vehicles, air-, water-, and space-craft</rdfs:comment>
+        <rdfs:comment xml:lang="de">mobiles Transportmittel</rdfs:comment>
+        <rdfs:label xml:lang="de">Verkehrsmittel</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q43229 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q43229">
@@ -538,6 +639,20 @@
         <rdfs:label xml:lang="de">Organisation</rdfs:label>
         <rdfs:label xml:lang="fr">organisation</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q4406616 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4406616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="en">a particular or specific instance of an entity</rdfs:comment>
+        <rdfs:comment xml:lang="de">etwas mit einer physikalischen Manifestation</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet ayant une manifestation physique</rdfs:comment>
+        <rdfs:label xml:lang="en">concrete object</rdfs:label>
+        <rdfs:label xml:lang="de">konkretes Objekt</rdfs:label>
+        <rdfs:label xml:lang="fr">objet concret</rdfs:label>
     </owl:Class>
     
 
@@ -763,6 +878,21 @@
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">architectural structure</rdfs:label>
         <rdfs:label xml:lang="fr">structure architecturale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q8205328 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q8205328">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16686448"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q223557"/>
+        <rdfs:comment xml:lang="de">durch menschliche oder technische Einwirkung entstandenes Produkt</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet physique créé ou ayant subi une transformation par l’être humain</rdfs:comment>
+        <rdfs:comment xml:lang="en">physical object made or shaped by humans</rdfs:comment>
+        <rdfs:label xml:lang="de">Artefakt</rdfs:label>
+        <rdfs:label xml:lang="en">artificial physical object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet artificiel physique</rdfs:label>
     </owl:Class>
     
 
