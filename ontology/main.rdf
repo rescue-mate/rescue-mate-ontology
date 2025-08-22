@@ -972,12 +972,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GermanStateEnterprise -->
+    <!-- http://rescue-mate.de/ontology/FwA-SWW -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateEnterprise">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="en">German state enterprise</rdfs:label>
-        <rdfs:label xml:lang="de">Landesbetrieb</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-SWW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger mit Schaum-Wasserwerfer</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer with foam water cannon</rdfs:comment>
+        <rdfs:label xml:lang="de">Anhänger mit Schaum-Wasserwerfer</rdfs:label>
+        <rdfs:label xml:lang="en">Anhänger mit Schaum-Wasserwerfer (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1271,6 +1273,16 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
         <rdfs:label xml:lang="en">German state agency</rdfs:label>
         <rdfs:label xml:lang="de">Landesbehörde (Deutschland)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanStateEnterprise -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateEnterprise">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">German state enterprise</rdfs:label>
+        <rdfs:label xml:lang="de">Landesbetrieb</rdfs:label>
     </owl:Class>
     
 
