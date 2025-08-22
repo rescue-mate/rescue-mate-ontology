@@ -776,6 +776,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ELW2 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ELW2">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ELW"/>
+        <rdfs:comment xml:lang="en">Command vehicle for medium sized and larger operations; usually built on the chassis of a truck to provide space for a operational command meeting room and a radio room</rdfs:comment>
+        <rdfs:comment xml:lang="de">Einsatzleitwagen zur Koordination mittlerer und größerer Einsätze; Fahrzeug normalerweise basierend auf Fahrgestellen von Bussen oder Klein-Lkw; verfügt über einen Besprechungs- und einen Funkraum</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen 2</rdfs:label>
+        <rdfs:label xml:lang="en">Einsatzleitwagen 2 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ElectricPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectricPropulsion">
