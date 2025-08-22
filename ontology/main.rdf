@@ -1527,6 +1527,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngine"/>
+        <rdfs:comment xml:lang="de">Feuerlöschfahrzeug, das mit einer Feuerlöschpumpe nach EN 1028-1 und EN 1028-2 und im Regelfall mit einem Wasserbehälter und anderen zusätzlichen Geräten für die Brandbekämpfung ausgerüstet ist.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire engine equipped with a fire pump in accordance with EN 1028-1 and EN 1028-2 and, usually, with a water tank and other additional equipment for firefighting.</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Löschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
