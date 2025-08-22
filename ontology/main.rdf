@@ -996,18 +996,15 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GettingLostOrBeingFound -->
+    <!-- http://rescue-mate.de/ontology/GRTW -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLostOrBeingFound">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
-                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GRTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle on a bus chassis</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug auf einem Omnibus-Fahrgestell</rdfs:comment>
+        <rdfs:label xml:lang="de">Großraumrettungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">Großraumrettungswagen (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1295,6 +1292,22 @@
     </owl:Class>
     
     
+    <!-- http://rescue-mate.de/ontology/GettingLostOrBeingFound -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLostOrBeingFound">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:Class>
+    
+
+
     
     <!-- http://rescue-mate.de/ontology/GettingLost -->
 
