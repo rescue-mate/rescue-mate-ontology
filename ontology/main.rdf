@@ -1508,6 +1508,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/STA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/STA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger für den Transport von Feuerwehrschläuchen und Zubehör</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer for the transport of fire hoses and accessories</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchtransportanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchtransportanhänger (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SandbagWall -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SandbagWall">
