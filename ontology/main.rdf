@@ -1569,6 +1569,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SW2000-Tr -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SW2000-Tr">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/SW"/>
+        <rdfs:comment xml:lang="en">Schlauchwagen (Germany) that can accomodate am independent crew</rdfs:comment>
+        <rdfs:comment xml:lang="de">Schlauchwagen der einen selbständigen Trupp aufnehmen kann</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchwagen 2000 mit Truppbesatzung</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchwagen 2000 mit Truppbesatzung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SandbagWall -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SandbagWall">
