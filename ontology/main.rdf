@@ -1520,6 +1520,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug für den Nachschub von Druckschläuchen und Armaturen sowie zum Verlegen von Druckschläuchen über lange Strecken</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the supply of pressure hoses and fittings as well as for laying pressure hoses over long distances</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SandbagWall -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SandbagWall">
