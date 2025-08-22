@@ -948,12 +948,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GermanPublicLawInstitution -->
+    <!-- http://rescue-mate.de/ontology/FwA-FüLa -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanPublicLawInstitution">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="de">Anstalt des öffentlichen Rechts</rdfs:label>
-        <rdfs:label xml:lang="en">German public law institution</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-FüLa">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger für die Bereitstellung eines mobilen Führungs- und Lageraum</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer for the provision of a mobile command and situation room</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerwehranhänger Führung und Lage</rdfs:label>
+        <rdfs:label xml:lang="en">Feuerwehranhänger Führung und Lage (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1257,6 +1259,16 @@
         <rdfs:comment xml:lang="de">Ein Ereignis, das die Veröffentlichung einer Benachrichtigung beschreibt, die an eine Gruppe von Individuen gerichtet ist, die durch eine Rolle zusammengefasst werden.</rdfs:comment>
         <rdfs:label xml:lang="de">Benachrichtigungsereignis</rdfs:label>
         <rdfs:label xml:lang="en">Notification event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanPublicLawInstitution -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanPublicLawInstitution">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Anstalt des öffentlichen Rechts</rdfs:label>
+        <rdfs:label xml:lang="en">German public law institution</rdfs:label>
     </owl:Class>
     
 
