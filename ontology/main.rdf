@@ -764,6 +764,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ELW1 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ELW1">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ELW"/>
+        <rdfs:comment xml:lang="en">Command vehicle for small and medium sized operations; usually a van that provides space for the operational command</rdfs:comment>
+        <rdfs:comment xml:lang="de">Standard-Führungsfahrzeug bei Einsätzen bis zu mittlerem Umfang; normalerweise Kleintransporter zur Beherbergung der Einsatzleitung</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen 1</rdfs:label>
+        <rdfs:label xml:lang="en">Einsatzleitwagen 1 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ElectricPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectricPropulsion">
