@@ -984,15 +984,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GettingLost -->
+    <!-- http://rescue-mate.de/ontology/FwK -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLost">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:comment xml:lang="en">Losing the spatial reference of someone or something</rdfs:comment>
-        <rdfs:comment xml:lang="de">Verlust des räumlichen Bezugs zu jemanden oder etwas</rdfs:comment>
-        <rdfs:label xml:lang="en">Getting lost</rdfs:label>
-        <rdfs:label xml:lang="de">Verschwinden</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q23580581</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwK">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zur vertikalen und horizontalen Verladung oder Bewegung von Lasten; Einsatz zur technischen Hilfeleistung, Unterstützung bei der Menschenrettung und Unterstützung bei der Brandbekämpfung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting vehicle for vertical and horizontal loading or movement of loads; use for technical assistance, assistance in rescue operations, and support in firefighting</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerwehrkran</rdfs:label>
+        <rdfs:label xml:lang="en">Feuerwehrkran (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1293,6 +1292,19 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
         <rdfs:label xml:lang="de">Anstalt des öffentlichen Rechts</rdfs:label>
         <rdfs:label xml:lang="en">German public law institution</rdfs:label>
+    </owl:Class>
+    
+    
+    
+    <!-- http://rescue-mate.de/ontology/GettingLost -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLost">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Losing the spatial reference of someone or something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verlust des räumlichen Bezugs zu jemanden oder etwas</rdfs:comment>
+        <rdfs:label xml:lang="en">Getting lost</rdfs:label>
+        <rdfs:label xml:lang="de">Verschwinden</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q23580581</rdfs:seeAlso>
     </owl:Class>
     
 
