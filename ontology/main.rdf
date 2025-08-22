@@ -1378,7 +1378,13 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GW-SRHT -->
 
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-SRHT">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Spezielle Rettung aus Höhen und Tiefen</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Spezielle Rettung aus Höhen und Tiefen (Germany)</rdfs:label>
+    </owl:Class>
     
 
 
