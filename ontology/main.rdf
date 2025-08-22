@@ -1023,15 +1023,16 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/HumanActivity -->
+    <!-- http://rescue-mate.de/ontology/GW-A -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanActivity">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
-        <rdfs:comment xml:lang="en">An activity that is performed by a human being</rdfs:comment>
-        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird</rdfs:comment>
-        <rdfs:label xml:lang="en">Human activity</rdfs:label>
-        <rdfs:label xml:lang="de">Menschliche Tätigkeit</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q61788060</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-A">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Atemschutz"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for the protection of the respiratory tract</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zum Schutz der Atemwege</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1365,6 +1366,22 @@
         <rdfs:label xml:lang="de">Verringerung</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q47496130</rdfs:seeAlso>
     </owl:Class>
+    
+
+
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HumanActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Human activity</rdfs:label>
+        <rdfs:label xml:lang="de">Menschliche Tätigkeit</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q61788060</rdfs:seeAlso>
     
 
 
