@@ -948,9 +948,9 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/FwA-FüLa -->
+    <!-- http://rescue-mate.de/ontology/FwA-FueLa -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-FüLa">
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-FueLa">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
         <rdfs:comment xml:lang="de">Feuerwehranhänger für die Bereitstellung eines mobilen Führungs- und Lageraum</rdfs:comment>
         <rdfs:comment xml:lang="en">Fire service trailer for the provision of a mobile command and situation room</rdfs:comment>
