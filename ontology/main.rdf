@@ -935,12 +935,15 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GermanBoroughOffice -->
+    <!-- http://rescue-mate.de/ontology/FwA-FKH -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanBoroughOffice">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="de">Bezirksamt</rdfs:label>
-        <rdfs:label xml:lang="en">German borough office</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-FKH">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger, in dem ein oder mehrere Kessel und eine oder mehrere Feuerstellen zur Essenszubereitung integriert sind</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer with one or more boilers and one or more fireplaces for food preparation</rdfs:comment>
+        <rdfs:label xml:lang="de">Feldkochherd</rdfs:label>
+        <rdfs:label xml:lang="en">Feldkochherd (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1254,6 +1257,16 @@
         <rdfs:comment xml:lang="de">Ein Ereignis, das die Veröffentlichung einer Benachrichtigung beschreibt, die an eine Gruppe von Individuen gerichtet ist, die durch eine Rolle zusammengefasst werden.</rdfs:comment>
         <rdfs:label xml:lang="de">Benachrichtigungsereignis</rdfs:label>
         <rdfs:label xml:lang="en">Notification event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanBoroughOffice -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanBoroughOffice">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Bezirksamt</rdfs:label>
+        <rdfs:label xml:lang="en">German borough office</rdfs:label>
     </owl:Class>
     
 
