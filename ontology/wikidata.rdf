@@ -215,6 +215,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1190275 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1190275">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q35872"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q628983"/>
+        <rdfs:comment xml:lang="de">für Zwecke der Feuerwehr oder des Katastrophenschutzes konzipiertes Boot</rdfs:comment>
+        <rdfs:comment xml:lang="en">specialized watercraft and with pumps and nozzles designed for fighting shoreline and shipboard fires</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschboot</rdfs:label>
+        <rdfs:label xml:lang="fr">bateau-pompe</rdfs:label>
+        <rdfs:label xml:lang="en">fireboat</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1190554 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1190554">
@@ -748,6 +762,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q35872 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q35872">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1229765"/>
+        <rdfs:comment xml:lang="de">kleineres Wasserfahrzeug</rdfs:comment>
+        <rdfs:comment xml:lang="en">smaller watercraft</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule flottant</rdfs:comment>
+        <rdfs:label xml:lang="de">Boot</rdfs:label>
+        <rdfs:label xml:lang="fr">bateau</rdfs:label>
+        <rdfs:label xml:lang="en">boat</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q37112258 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q37112258">
@@ -1027,6 +1055,20 @@
         <rdfs:label xml:lang="en">geographical feature</rdfs:label>
         <rdfs:label xml:lang="de">geographisches Objekt</rdfs:label>
         <rdfs:label xml:lang="fr">objet géographique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q628983 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q628983">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1229765"/>
+        <rdfs:comment xml:lang="de">Schiffstyp, dessen Zweck primär die Verrichtung von Arbeiten auf dem Wasser oder vom Wasser aus ist</rdfs:comment>
+        <rdfs:comment xml:lang="fr">bateau servant principalement à travailler en mer (par opposition avec les bateaux de transport)</rdfs:comment>
+        <rdfs:comment xml:lang="en">ship or boat type that primarily does work at sea, rather than as transport</rdfs:comment>
+        <rdfs:label xml:lang="de">Arbeitsschiff</rdfs:label>
+        <rdfs:label xml:lang="fr">bateau de travail</rdfs:label>
+        <rdfs:label xml:lang="en">working vessel</rdfs:label>
     </owl:Class>
     
 

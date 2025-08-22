@@ -845,6 +845,20 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/FLB -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FLB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot zur Brandbekämpfung von der Wasserseite</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fireboat for firefighting from the waterside</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerlöschboot</rdfs:label>
+        <rdfs:label xml:lang="en">Feuerlöschboot (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1190275</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/FireFightingVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FireFightingVehicle">
