@@ -1476,6 +1476,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Watercraft -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Watercraft">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:comment xml:lang="de">Fahrzeug, das auscchließlich oder überwiegend auf dem Wasser unterwegs ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Vehicle that travels exclusively or predominantly on water</rdfs:comment>
+        <rdfs:label xml:lang="de">Wasserfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Watercraft</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1229765</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

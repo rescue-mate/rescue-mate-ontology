@@ -229,6 +229,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1229765 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1229765">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16391167"/>
+        <rdfs:comment xml:lang="en">Fahrzeuge, die zur Fortbewegung auf dem oder im Wasser bestimmt sind</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicles that are intended for locomotion on or in the water</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule destiné à la locomotion sur ou dans l&apos;eau</rdfs:comment>
+        <rdfs:label xml:lang="de">Wasserfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="fr">embarcation</rdfs:label>
+        <rdfs:label xml:lang="en">watercraft</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q123349660 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q123349660">
@@ -421,6 +435,20 @@
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q208281"/>
         <rdfs:comment xml:lang="de">Fahrzeug zur Menschenrettung aus großer höhe</rdfs:comment>
         <rdfs:label xml:lang="de">Hubrettungsfahrzeug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q16391167 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16391167">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:comment xml:lang="en">craft designed for transportation on or through air, water, or space</rdfs:comment>
+        <rdfs:comment xml:lang="fr">grand véhicule</rdfs:comment>
+        <rdfs:comment xml:lang="de">großes Landfahrzeug, Wasserfahrzeug, Boot, Raumschiff oder Schiff</rdfs:comment>
+        <rdfs:label xml:lang="de">großes Fahrzeug</rdfs:label>
+        <rdfs:label xml:lang="fr">vaisseau</rdfs:label>
+        <rdfs:label xml:lang="en">vessel</rdfs:label>
     </owl:Class>
     
 
