@@ -960,12 +960,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GermanStateAgency -->
+    <!-- http://rescue-mate.de/ontology/FwA-Lima -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateAgency">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="en">German state agency</rdfs:label>
-        <rdfs:label xml:lang="de">Landesbehörde (Deutschland)</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-Lima">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="en">A trailer providing a power generator and lighting components on one chassis</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Anhänger zum Bereitstellen eines Stromerzeugungsaggregats und Beleuchtungskomponenten auf einem Fahrgestell</rdfs:comment>
+        <rdfs:label xml:lang="de">Lichtmastanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Lichtmastanhänger (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1259,6 +1261,16 @@
         <rdfs:comment xml:lang="de">Ein Ereignis, das die Veröffentlichung einer Benachrichtigung beschreibt, die an eine Gruppe von Individuen gerichtet ist, die durch eine Rolle zusammengefasst werden.</rdfs:comment>
         <rdfs:label xml:lang="de">Benachrichtigungsereignis</rdfs:label>
         <rdfs:label xml:lang="en">Notification event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanStateAgency -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateAgency">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">German state agency</rdfs:label>
+        <rdfs:label xml:lang="de">Landesbehörde (Deutschland)</rdfs:label>
     </owl:Class>
     
 
