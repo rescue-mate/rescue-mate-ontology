@@ -1714,6 +1714,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/TLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="en">Fire engine usually with a permanently installed fire pump and a large extinguishing water tank, which allows initial fire fighting over a certain period of time without an external water supply</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschfahrzeug mit einer in der Regel fest eingebauten Feuerlöschpumpe und einem großen Löschwasserbehälter, der eine erste Brandbekämpfung über einen bestimmten Zeitraum ohne externe Löschwasserversorgung erlaubt</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/TidalBarrier -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TidalBarrier">
