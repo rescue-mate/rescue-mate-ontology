@@ -1662,6 +1662,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/StLF10-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/StLF10-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/StLF"/>
+        <rdfs:label xml:lang="de">Staffellöschfahrzeug 10/6</rdfs:label>
+        <rdfs:label xml:lang="en">Staffellöschfahrzeug 10/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Stoplog -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
