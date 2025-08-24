@@ -1037,15 +1037,15 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/HumanitarianActivity -->
+    <!-- http://rescue-mate.de/ontology/GW-ACS -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanitarianActivity">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
-        <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by humanitarian motives, involving assistance to others and improvement of conditions for humanity</rdfs:comment>
-        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einem bewussten humanitären Ziel getrieben wird, insb. der Hilfe anderer und der Verbesserung von Lebensbedingungen von Menschen</rdfs:comment>
-        <rdfs:label xml:lang="en">Humanitarian activity</rdfs:label>
-        <rdfs:label xml:lang="de">Humanitäre Tätigkeit</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q107280686</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-ACS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for the protection of the respiratory tract, harm caused by radiation or chemical hazards</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zum Schutz der Atemwege, Schutz gegen Beeinträchtigungen durch Strahlungen oder chemische Gefahren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz Chemieschutz Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz Chemieschutz Strahlenschutz (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1412,6 +1412,22 @@
         <rdfs:label xml:lang="de">Bezirksamt</rdfs:label>
         <rdfs:label xml:lang="en">German borough office</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HumanitarianActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanitarianActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/IntentionalHumanActivity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being, driven by humanitarian motives, involving assistance to others and improvement of conditions for humanity</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird und von einem bewussten humanitären Ziel getrieben wird, insb. der Hilfe anderer und der Verbesserung von Lebensbedingungen von Menschen</rdfs:comment>
+        <rdfs:label xml:lang="en">Humanitarian activity</rdfs:label>
+        <rdfs:label xml:lang="de">Humanitäre Tätigkeit</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q107280686</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
 
     </owl:Class>
     
