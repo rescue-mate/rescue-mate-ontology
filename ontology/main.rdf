@@ -1228,6 +1228,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/NAW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NAW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RTW"/>
+        <rdfs:comment xml:lang="en">A Rettungswagen (Germany) with an emergency doctor</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Rettungswagen, der mit einem Notart besetzt ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Notarztwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Notarztwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/NotHumanitarianEvent -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/NotHumanitarianEvent">
