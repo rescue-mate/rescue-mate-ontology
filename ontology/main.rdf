@@ -2075,6 +2075,54 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DLA(K) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA(K)12-9 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)12-9">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA(K)"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process that has a nominal rescue height of 12 meters, and a nominal outreach of 9 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb und einer Nennrettungshöhe von 12 Metern bei 9 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb 12/9</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb 12/9 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA(K)18-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)18-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA(K)"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process that has a nominal rescue height of 18 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb und einer Nennrettungshöhe von 18 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb 18/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA(K)23-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)23-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA(K)"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process that has a nominal rescue height of 23 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb und einer Nennrettungshöhe von 23 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb 23/12</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb 23/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany) -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany)">
