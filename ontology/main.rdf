@@ -2183,6 +2183,56 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/MZB_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MZB_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot für die Rettung und Bergung von Personen, Tieren und Gütern, notfallmedizinische Versorgung auf Booten und bewohnten Inseln, Brandbekämpfung auf dem Wasser und auf Inseln, Niederschlagen von Dämpfen, Tauchereinsatz, technische Hilfeleistungen, Schadensbekämpfung bei Ölunfällen und Transport von Personen und Einsatzmitteln</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting boat for the rescue and recovery of people, animals and goods, emergency medical care on boats and inhabited islands, firefighting on water and on islands, vapor suppression, diving operations, technical assistance, damage control in the event of oil spills and transport of people and emergency equipment</rdfs:comment>
+        <rdfs:label xml:lang="de">Mehrzweckboot (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Mehrzweckboot (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTB1_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB1_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RTB_(Feuerwehr)"/>
+        <rdfs:comment xml:lang="de">Kleines Rettungsboot der Feuerwehr mit optionaler Motorisierung für den Einsatz in stehenden Gewässern</rdfs:comment>
+        <rdfs:comment xml:lang="en">Small rescue boat with optional motorization for use in stagnant waters</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsboot Typ 1 (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungsboot Typ 1 (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTB2_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB2_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RTB_(Feuerwehr)"/>
+        <rdfs:comment xml:lang="de">Größeres Rettungsboot der Feuerwehr mit Motorisierung für den Einsatz in fließenden und offenen Gewässern</rdfs:comment>
+        <rdfs:comment xml:lang="en">Larger rescue boat with motorization for use in flowing and open waters</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsboot Typ 2 (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungsboot Typ 2 (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTB_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot zur Rettung von Menschen und Tieren</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fireboat for rescuing people and animals</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsboot (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungsboot (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
