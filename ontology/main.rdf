@@ -1847,6 +1847,31 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/TSF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TSF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPortableFirePump"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="en">A fire-fighting vehicle equipped with a portable pump</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Feuerwehrfahrzeug, das mit einer Tragkraftspritze ausgestattet ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Tragkraftspritzenfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Tragkraftspritzenfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TSF-W -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TSF-W">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TSF"/>
+        <rdfs:comment xml:lang="en">Tragkraftspritzenfahrzeug (Germany) with own water tank of at least 500 liters capacity</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tragkraftspritzenfahrzeug mit eigenem Löschwassertank von mindestens 500 Litern Fassungsvermögen</rdfs:comment>
+        <rdfs:label xml:lang="de">Tragkraftspritzenfahrzeug mit Wasser</rdfs:label>
+        <rdfs:label xml:lang="en">Tragkraftspritzenfahrzeug mit Wasser (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/TidalBarrier -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TidalBarrier">
