@@ -1822,6 +1822,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/TSA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TSA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="en">A closed trailer, usually single-axle, equipped with a portable pump.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein, in der Regel einachsiger, geschlossener Anhänger der Feuerwehr, der mit einer Tragkraftspritze ausgestattet ist.</rdfs:comment>
+        <rdfs:label xml:lang="de">Tragkraftspritzenanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Tragkraftspritzenanhänger (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/TidalBarrier -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TidalBarrier">
