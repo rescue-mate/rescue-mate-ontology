@@ -1151,6 +1151,66 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GW-G -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Gefahrgut"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrtgut</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrtgut (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-G1 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G1">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a smaller amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten kleineren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 1</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 1 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-G2 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G2">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a medium amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten mittleren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 2</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 2 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-G3 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G3">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a greater amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten größeren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 3</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 3 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Gefahrgut -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Gefahrgut">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
