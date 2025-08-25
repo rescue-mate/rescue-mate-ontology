@@ -1249,15 +1249,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/NEF -->
+    <!-- http://rescue-mate.de/ontology/GW-Licht -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/NEF">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
-        <rdfs:comment xml:lang="en">A specially equipped car for the transport of an emergency doctor</rdfs:comment>
-        <rdfs:comment xml:lang="de">Ein besonders ausgerüsteter PKW für den Transport eines Notarztes</rdfs:comment>
-        <rdfs:label xml:lang="de">Notarzteinsatzfahrzeug</rdfs:label>
-        <rdfs:label xml:lang="en">Notarzteinsatzfahrzeug (Germany)</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Licht">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport a mobile or stationary light mast for operations at night</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport eines mobilen oder stationären Lichtmastes für nächtliche Einsätze</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Licht</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Licht (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1448,8 +1447,16 @@
 
 
 
+    <!-- http://rescue-mate.de/ontology/NEF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NEF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">A specially equipped car for the transport of an emergency doctor</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein besonders ausgerüsteter PKW für den Transport eines Notarztes</rdfs:comment>
+        <rdfs:label xml:lang="de">Notarzteinsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Notarzteinsatzfahrzeug (Germany)</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- http://rescue-mate.de/ontology/Propulsion -->
