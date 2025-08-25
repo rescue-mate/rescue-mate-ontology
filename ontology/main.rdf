@@ -1456,15 +1456,15 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/Reduction -->
+    <!-- http://rescue-mate.de/ontology/RLF -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/Reduction">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Change"/>
-        <rdfs:comment xml:lang="de">Die Verringerung einer bestimmten Beschaffenheit oder Qualität</rdfs:comment>
-        <rdfs:comment xml:lang="en">The decrease of a given quality</rdfs:comment>
-        <rdfs:label xml:lang="en">Reduction</rdfs:label>
-        <rdfs:label xml:lang="de">Verringerung</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q47496130</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug, das sowohl für den technischen als auch für den Brandeinsatz ausgerüstet ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting vehicle equipped for both technical and firefighting operations</rdfs:comment>
+        <rdfs:label xml:lang="en">Rüstlöschfahrzeug (Austria)</rdfs:label>
+        <rdfs:label xml:lang="de">Rüstlöschfahrzeug (Österreich)</rdfs:label>
     </owl:Class>
     
 
@@ -1488,6 +1488,19 @@
         <rdfs:label xml:lang="en">Human activity</rdfs:label>
         <rdfs:label xml:lang="de">Menschliche Tätigkeit</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q61788060</rdfs:seeAlso>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Reduction -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Reduction">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Change"/>
+        <rdfs:comment xml:lang="de">Die Verringerung einer bestimmten Beschaffenheit oder Qualität</rdfs:comment>
+        <rdfs:comment xml:lang="en">The decrease of a given quality</rdfs:comment>
+        <rdfs:label xml:lang="en">Reduction</rdfs:label>
+        <rdfs:label xml:lang="de">Verringerung</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q47496130</rdfs:seeAlso>
+    </owl:Class>
     
 
 
