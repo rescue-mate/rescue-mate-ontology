@@ -1050,12 +1050,21 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/HydraulicCrossingStructure -->
+    <!-- http://rescue-mate.de/ontology/GW-AS -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicCrossingStructure">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
-        <rdfs:label xml:lang="en">Hydraulic crossing structure</rdfs:label>
-        <rdfs:label xml:lang="de">Kreuzungsbauwerk</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-AS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GW-A"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GW-S"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz/Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz/Strahlenschutz (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1424,6 +1433,16 @@
         <rdfs:label xml:lang="en">Humanitarian activity</rdfs:label>
         <rdfs:label xml:lang="de">Humanitäre Tätigkeit</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q107280686</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HydraulicCrossingStructure -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicCrossingStructure">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="en">Hydraulic crossing structure</rdfs:label>
+        <rdfs:label xml:lang="de">Kreuzungsbauwerk</rdfs:label>
     </owl:Class>
     
 
