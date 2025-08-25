@@ -1343,6 +1343,79 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GW-Rett -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Rett">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material for setting up and running a medical treatment facility</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material zum Errichten und Betreiben eines Behandlungsplatzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Rettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Rettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Rettungshundestaffel -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Rettungshundestaffel">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport rescue dogs, and rescue and first aid equipment</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport von Rettungshunden, und Rettungs- und Erste-Hilfe-Ausrüstung</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Rettungshundestaffel</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Rettungshundestaffel (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-S -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-S">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Strahlenschutz"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-figting vehicle to transport equipment for protection against harm caused by radiation</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung für den Schutz gegen Beeinträchtigungen durch Strahlungen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Strahlenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-SRHT -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-SRHT">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Spezielle Rettung aus Höhen und Tiefen</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Spezielle Rettung aus Höhen und Tiefen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-San -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-San">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material for setting up and running a medical treatment facility</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material zum Errichten und Betreiben eines Behandlungsplatzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Sanität</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Sanität (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-StrSpTr -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-StrSpTr">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for hazardous materials handling and monitoring the environment after an incident for radioactive contamination as well as radiation protection</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr zum Transport von Messgeräten und Ausrüstung für den Gefahrguteinsatz und die Überwachung der Umgebung nach einem Störfall auf radioaktive Kontamination sowie der Strahlenschutz</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Strahlenspürtrupp</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Strahlenspürtrupp (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
