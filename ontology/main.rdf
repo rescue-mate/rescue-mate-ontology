@@ -1080,6 +1080,77 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GW-ATF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-ATF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equiment for detecting and combating biological, chemical or radiological hazards</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung zur Erkennung und Bekämpfung biologischer, chemischer oder radiologischer Gefahren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Analytische Task Force</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Analytische Task Force (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Atemschutz -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Atemschutz">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-B -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-B">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Bt"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Betreuung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Betreuung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Beh -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Beh">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for the care of mass casualties and for the medical support of large events</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport von Ausrüstung für die Versorgung bei einem Massenanfall von Verletzten sowie für die sanitätsdienstlichen Absicherung von Grossveranstaltungen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Behandlung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Behandlung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Bt -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Bt">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment>Emergency vehicle to transport equipment and supplies for providing food to emergency personnel or those in need of assistance</rdfs:comment>
+        <rdfs:comment xml:lang="de">Geräewagen für den Transport von Ausrüstung zur Verpflegung von Einsatzkräften oder Hilfsbedürftigen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Betreuung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Betreuung (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q831723</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Dekon-P -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Dekon-P">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for setting up a decontamination area to decontaminate emergency personell and affected persons that got in contact with hazardous substances in CBRN or hazardous substance accidents</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Einrichtung eines Dekontaminationsplatzes zur Dekontamination von Einsatzkräften und Betroffenen, die in ABC-Schadenslagen bzw. Gefahrstoffunfällen mit gefährlichen Substanzen in Berührung gekommen sind</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Dekontamination Personal</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Dekontamination Personal (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
