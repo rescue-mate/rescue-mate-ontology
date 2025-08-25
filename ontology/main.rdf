@@ -1273,6 +1273,76 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GW-Logistik -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Logistik">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Logistik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Logistik (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-MANV -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-MANV">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for supoprt in cases of a mass casualty incident</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Unterstützung bei MANV (Manssenanfall von Verletzten)-Lagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Massenanfall von Verletzten</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Massenanfall von Verletzten (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Mess -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Mess">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Gerätewagen (Germany) for transporting extensive equipment for measuring and detecting</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport einer umfangreichen Ausrüstung zum Messen und Spüren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Messtechnik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Messtechnik (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-N -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-N">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material und Ausrüstung zur Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Nachschub (Germany)</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Nachschub (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Oel -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Oel">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for countering mineral oil spills</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung zur Bekämpfung von Mineralölunfällen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Öl</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Öl (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-RD -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-RD">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material for setting up and running a medical treatment facility</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material zum Errichten und Betreiben eines Behandlungsplatzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Rettungsdienst</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Rettungsdienst (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
