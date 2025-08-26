@@ -605,6 +605,18 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q2146446 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2146446">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">Art von Einsatzfahrzeug</rdfs:comment>
+        <rdfs:comment xml:lang="en">type of emergency vehicle</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsmittel</rdfs:label>
+        <rdfs:label xml:lang="en">rescue vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q216146 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q216146">
@@ -642,6 +654,18 @@
         <rdfs:label xml:lang="de">Bitte</rdfs:label>
         <rdfs:label xml:lang="fr">demande</rdfs:label>
         <rdfs:label xml:lang="en">request</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q2265780 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2265780">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">Dienstfahrzeuge der Polizei</rdfs:comment>
+        <rdfs:comment xml:lang="en">any type of vehicle used by police</rdfs:comment>
+        <rdfs:label xml:lang="de">Polizeifahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">police vehicle</rdfs:label>
     </owl:Class>
     
 
