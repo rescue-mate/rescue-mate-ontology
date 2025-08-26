@@ -1982,13 +1982,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/Lock -->
+    <!-- http://rescue-mate.de/ontology/KLF -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
-        <rdfs:label xml:lang="en">Lock</rdfs:label>
-        <rdfs:label xml:lang="de">Schleuse</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPortableFirePump"/>
+        <rdfs:comment xml:lang="de">Kleines Feuerlöschfahrzeug mit Tragkraftspritze und einem Löschwassertank mit 500 Litern Fassungsvermögen sowie 6 kg Löschpulver</rdfs:comment>
+        <rdfs:comment xml:lang="en">Small fire engine with a portable fire pump and a water tank of 500 liters capacity and 6 kg of extinguishing powder</rdfs:comment>
+        <rdfs:label xml:lang="de">Kleinlöschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Kleinlöschfahrzeug (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -2000,6 +2001,17 @@
         <rdfs:label xml:lang="en">Land vehicle</rdfs:label>
         <rdfs:label xml:lang="de">Landfahrzeug</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1301433</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Lock -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="en">Lock</rdfs:label>
+        <rdfs:label xml:lang="de">Schleuse</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
     </owl:Class>
     
 
