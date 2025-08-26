@@ -1938,6 +1938,17 @@
     </owl:Class>
     
 
+
+    <!-- http://rescue-mate.de/ontology/KEF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KEF">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/KLAF"/>
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/KLEF"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug, das für kleineren technische Hilfeleistungen eingesetzt wird, die nur wenig Personal und Material benötigen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle that is used for less extensicve technical support, which requires only a smaller amount of people and material</rdfs:comment>
+        <rdfs:label xml:lang="de">Kleineinsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Kleineinsatzfahrzeug (Germany)</rdfs:label>
     </owl:Class>
     
 
