@@ -348,7 +348,7 @@
     
 
 
-    <!-- http://resccue-mate.de/ontology/Finding -->
+    <!-- http://rescue-mate.de/ontology/Finding -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
@@ -1649,7 +1649,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/Finding"/>
                     <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
                 </owl:unionOf>
             </owl:Class>
