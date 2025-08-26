@@ -1484,6 +1484,78 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GW-Technik -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Technik">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-TuS"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport an extensive amount of materials and tools for an effective support at the incident scene</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von umfangreichem Material und Werkzeug zur effektiven Hilfeleistung am Einsatzort</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Technik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Technik (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Tier -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Tier">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Tierrettung"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:label xml:lang="de">Gerätewagen Tierrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Tierrettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Tierrettung -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Tierrettung">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for saving animals</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Rettung von Tieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Tierrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Tierrettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Trsp -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Trsp">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material und Ausrüstung zur Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Transport</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Transport (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-TuS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-TuS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Technik und Sicherheit</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Technik und Sicherheit (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-V -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-V">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Vpf"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment and supplies for setting up and running a catering point</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport von Ausrüstung und Ausstattung für den Aufbau und Betrieb einer Verpflegungsstelle</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Verpflegung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Verpflegung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
