@@ -2231,6 +2231,78 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/MLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MLF">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/StLF10-6"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="de">Ein Löschfahrzeug mit Gruppenbeladung für die Brandbekämpfung in der ersten Welle oder für technische Hilfeleistung im kleinen bis mittleren Rahmen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire engine to transport a whole group of fire fighters for fire-fighting in the first wave or for technical assistance on a small to medium scale</rdfs:comment>
+        <rdfs:label xml:lang="de">Mittleres Löschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Mittleres Löschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MLW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MLW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zum Aufspüren und Bestimmen von gefährlichen Stoffen; Führungsfahrzeug im Rahmen des ABC-Zuges</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for detecting and identifying hazardous substances; incident command vehicle within a CBRN unit</rdfs:comment>
+        <rdfs:label xml:lang="de">Messleitwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Messleitwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MTF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MTF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/MTW"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zum Transport von Personengruppen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport groups of people</rdfs:comment>
+        <rdfs:label xml:lang="de">Mannschaftstransportfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Mannschaftstransportfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Einsatzfahrzeug zum Transport von Personengruppen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport groups of people</rdfs:comment>
+        <rdfs:label xml:lang="de">Mannschaftstransportwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Mannschaftstransportwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MZF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MZF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/RescueVehicle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Entweder ein ein Feuerwehreinsatzfahrzeug, das im Einsatzfall verschiedene Aufgaben wahrnehmen kann und in aller Regel eine umfangreichere Beladung hat und eher auf den Materialtransport ausgelegt ist, oder ein Rettungswagen, der sowohl zur Notfallrettung als auch zum Krankentransport eingesetzt werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">Multipurpose emergency vehicle; either a fire-fighting vehicle that contains more equipment than a Mannschaftstransportfahrzeug (MTF), or a rescue vehicle combining the functionalities of a Rettungswagen (RTW) and a Krankentransportwagen (KTW)</rdfs:comment>
+        <rdfs:label xml:lang="de">Mehrzweckfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Mehrzweckfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ManualPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ManualPropulsion">
