@@ -350,7 +350,7 @@
 
     <!-- http://resccue-mate.de/ontology/Finding -->
 
-    <owl:Class rdf:about="http://resccue-mate.de/ontology/Finding">
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:comment xml:lang="en">Recovery of the spatial reference of someone or something</rdfs:comment>
         <rdfs:comment xml:lang="de">Wiedererlangung des räumliche Bezugs zu jemanden oder etwas</rdfs:comment>
