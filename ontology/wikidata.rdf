@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/wikidata-bridge">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.3.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.4.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
     </owl:Ontology>
     
@@ -25,6 +25,20 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q10273457 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q10273457">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q223557"/>
+        <rdfs:comment xml:lang="de">allgemeiner Sammelbegriff für alle Gegenstände, die benötigt werden um eine bestimmte Tätigkeit auszuüben</rdfs:comment>
+        <rdfs:comment xml:lang="en">collective term for all physical items that are required to exercise a certain activity</rdfs:comment>
+        <rdfs:comment xml:lang="fr">terme générique pour tous les objets qui sont nécessaires pour exercer une activité</rdfs:comment>
+        <rdfs:label xml:lang="de">Ausrüstung</rdfs:label>
+        <rdfs:label xml:lang="en">equipment</rdfs:label>
+        <rdfs:label xml:lang="fr">équipement</rdfs:label>
+    </owl:Class>
     
 
 
@@ -59,14 +73,28 @@
     <!-- https://www.wikidata.org/wiki/Q106668099 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q106668099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q131085629"/>
-        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
         <rdfs:comment xml:lang="fr">en bibliothéconomie, agent collectif composé de personnes organisées dans un but ou une activité commune; l&apos;agent collectif comprend les personnes morales et les familles</rdfs:comment>
         <rdfs:comment xml:lang="de">in der Bibliothekswissenschaft ein Kollektivagent, der aus Personen besteht, die für einen gemeinsamen Zweck oder eine gemeinsame Tätigkeit organisiert sind; Kollektivagent umfasst Körperschaften und Familien</rdfs:comment>
         <rdfs:comment xml:lang="en">in library science, a collective agent that is composed of persons who are organized for a common purpose or activity; collective agent includes corporate bodies and families</rdfs:comment>
         <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
         <rdfs:label xml:lang="fr">collectivité</rdfs:label>
         <rdfs:label xml:lang="en">corporate body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q106839123 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q106839123">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q10273457"/>
+        <rdfs:comment xml:lang="de">Einrichtungen oder Nutztiere, die der Beförderung von Personen und Gütern dienen</rdfs:comment>
+        <rdfs:comment xml:lang="en">any form of vehicle or system used to transport people or goods from one place to another</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule ou équipement utilisé pour le transport de personnes ou de marchandises</rdfs:comment>
+        <rdfs:label xml:lang="de">Verkehrsmittel</rdfs:label>
+        <rdfs:label xml:lang="en">means of transport</rdfs:label>
+        <rdfs:label xml:lang="fr">moyen de transport</rdfs:label>
     </owl:Class>
     
 
@@ -93,6 +121,35 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q11019 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11019">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1183543"/>
+        <rdfs:comment xml:lang="de">mechanisches Gerät mit Antriebssystem</rdfs:comment>
+        <rdfs:comment xml:lang="fr">outil capable d&apos;effectuer des tâches en consommant de l&apos;énergie</rdfs:comment>
+        <rdfs:comment xml:lang="en">tool containing one or more parts that uses energy to perform an intended action</rdfs:comment>
+        <rdfs:label xml:lang="de">Maschine</rdfs:label>
+        <rdfs:label xml:lang="en">machine</rdfs:label>
+        <rdfs:label xml:lang="fr">machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q11436 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q11436">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q7194062"/>
+        <rdfs:comment xml:lang="de">Transportmittel, das innerhalb der Atmosphäre abhebt und fliegt oder fährt</rdfs:comment>
+        <rdfs:comment xml:lang="en">machine that is able to fly by gaining support from the air other than the reactions of the air against the earth’s surface</rdfs:comment>
+        <rdfs:comment xml:lang="fr">moyen de transport capable d&apos;évoluer au sein de l&apos;atmosphère terrestre</rdfs:comment>
+        <rdfs:label xml:lang="de">Luftfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">aircraft</rdfs:label>
+        <rdfs:label xml:lang="fr">aéronef</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1150070 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1150070">
@@ -107,12 +164,40 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q116780996 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q116780996">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q223557"/>
+        <rdfs:comment xml:lang="de">Objekt, das zum Fliegen imstande ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">object capable of flight</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet ayant la capacité de voler</rdfs:comment>
+        <rdfs:label xml:lang="de">Flugobjekt</rdfs:label>
+        <rdfs:label xml:lang="en">flying object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet volant</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q117134054 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q117134054">
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q481609"/>
         <rdfs:comment xml:lang="en">broad term used to include injury and psychological trauma</rdfs:comment>
         <rdfs:label xml:lang="en">trauma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1183543 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1183543">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q39546"/>
+        <rdfs:comment xml:lang="en">artificial object with which something can be worked on, manufactured or effected</rdfs:comment>
+        <rdfs:comment xml:lang="de">künstlicher Gegenstand, mit dem etwas bearbeitet, hergestellt oder bewirkt werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet artificiel avec lequel quelque chose peut être travaillé, fabriqué ou effectué</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerät</rdfs:label>
+        <rdfs:label xml:lang="en">appliance</rdfs:label>
+        <rdfs:label xml:lang="fr">dispositif</rdfs:label>
     </owl:Class>
     
 
@@ -126,6 +211,20 @@
         <rdfs:label xml:lang="de">Notfallmaßnahmen</rdfs:label>
         <rdfs:label xml:lang="fr">action d&apos;urgence</rdfs:label>
         <rdfs:label xml:lang="en">emergency response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1190275 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1190275">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q35872"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q628983"/>
+        <rdfs:comment xml:lang="de">für Zwecke der Feuerwehr oder des Katastrophenschutzes konzipiertes Boot</rdfs:comment>
+        <rdfs:comment xml:lang="en">specialized watercraft and with pumps and nozzles designed for fighting shoreline and shipboard fires</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschboot</rdfs:label>
+        <rdfs:label xml:lang="fr">bateau-pompe</rdfs:label>
+        <rdfs:label xml:lang="en">fireboat</rdfs:label>
     </owl:Class>
     
 
@@ -144,6 +243,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1229765 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1229765">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16391167"/>
+        <rdfs:comment xml:lang="en">Fahrzeuge, die zur Fortbewegung auf dem oder im Wasser bestimmt sind</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicles that are intended for locomotion on or in the water</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule destiné à la locomotion sur ou dans l&apos;eau</rdfs:comment>
+        <rdfs:label xml:lang="de">Wasserfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="fr">embarcation</rdfs:label>
+        <rdfs:label xml:lang="en">watercraft</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q123349660 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q123349660">
@@ -158,6 +271,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q123691918 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q123691918">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="de">etwas, das zur Durchführung von etwas verwendet wird</rdfs:comment>
+        <rdfs:comment xml:lang="en">something used to perform an operation</rdfs:comment>
+        <rdfs:label xml:lang="de">Instrument</rdfs:label>
+        <rdfs:label xml:lang="fr">outil</rdfs:label>
+        <rdfs:label xml:lang="en">tool</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q12569864 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q12569864">
@@ -165,6 +291,47 @@
         <rdfs:comment xml:lang="en">one of the assumptions made in generally accepted accounting principles</rdfs:comment>
         <rdfs:label xml:lang="en">economic entity</rdfs:label>
         <rdfs:label xml:lang="fr">entité économique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1301433 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1301433">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:comment xml:lang="de">Fahrzeug, das sich auf festem Grund fortbewegt</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle mainly meant to move on land, including wheeled, tracked, and walking vehicles</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule conçu pour évoluer sur la surface terrestre</rdfs:comment>
+        <rdfs:label xml:lang="de">Landfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">land vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule terrestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1308737 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1308737">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:comment xml:lang="de">speziell ausgerüstete Fahrzeuge einer Hilfsorganisation oder einer Behörde</rdfs:comment>
+        <rdfs:comment xml:lang="fr">type de véhicule</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle that is designated and authorized to respond to an emergency</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">emergency vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule de secours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1308813 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1308813">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">Einsatzfahrzeug zu Koordinierung des Einsatzes der Feuerwehr, der THW und der Polizei</rdfs:comment>
+        <rdfs:comment xml:lang="en">emergency vehicle to coordinate fire, ambulance, police, and technical operations</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen</rdfs:label>
+        <rdfs:label xml:lang="fr">Véhicule poste de commandement</rdfs:label>
+        <rdfs:label xml:lang="en">emergency service command vehicle</rdfs:label>
     </owl:Class>
     
 
@@ -210,6 +377,31 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1515493 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1515493">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1301433"/>
+        <rdfs:comment xml:lang="de">Landfahrzeug, das vorrangig für den Betrieb auf Straßen vorgesehen ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle intended to be used on public streets and highways</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule conçu pour évoluer sur routes</rdfs:comment>
+        <rdfs:label xml:lang="de">Straßenfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">road vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule routier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1515989 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1515989">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">spezielle Fahrzeuge der Hilfsorganisationen in Deutschland</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q155076 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q155076">
@@ -251,6 +443,30 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1633677 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1633677">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q208281"/>
+        <rdfs:comment xml:lang="de">Fahrzeug zur Menschenrettung aus großer höhe</rdfs:comment>
+        <rdfs:label xml:lang="de">Hubrettungsfahrzeug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q16391167 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16391167">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q42889"/>
+        <rdfs:comment xml:lang="en">craft designed for transportation on or through air, water, or space</rdfs:comment>
+        <rdfs:comment xml:lang="fr">grand véhicule</rdfs:comment>
+        <rdfs:comment xml:lang="de">großes Landfahrzeug, Wasserfahrzeug, Boot, Raumschiff oder Schiff</rdfs:comment>
+        <rdfs:label xml:lang="de">großes Fahrzeug</rdfs:label>
+        <rdfs:label xml:lang="fr">vaisseau</rdfs:label>
+        <rdfs:label xml:lang="en">vessel</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1639378 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1639378">
@@ -275,6 +491,20 @@
         <rdfs:label xml:lang="de">Veranstaltung</rdfs:label>
         <rdfs:label xml:lang="en">event</rdfs:label>
         <rdfs:label xml:lang="fr">événement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q16686448 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q16686448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="en">anything created by humans (either material or mental)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet matériel ou concept créé par des humains</rdfs:comment>
+        <rdfs:comment xml:lang="de">von Menschen Erschaffenes</rdfs:comment>
+        <rdfs:label xml:lang="en">artificial object</rdfs:label>
+        <rdfs:label xml:lang="fr">entité artificielle</rdfs:label>
+        <rdfs:label xml:lang="de">künstliche Entität</rdfs:label>
     </owl:Class>
     
 
@@ -308,6 +538,31 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q1882685 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1882685">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q11019"/>
+        <rdfs:comment xml:lang="en">device employing power to achieve desired forces and/or motion</rdfs:comment>
+        <rdfs:label xml:lang="en">mechanical device</rdfs:label>
+        <rdfs:label xml:lang="de">mechanisches Gerät</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1898202 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1898202">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1633677"/>
+        <rdfs:comment xml:lang="de">Hubrettungsfahrzeug der Feuerwehr</rdfs:comment>
+        <rdfs:comment xml:lang="en">type of fire engine</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule des pompiers qui emporte une échelle escamotable de grande hauteur</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter</rdfs:label>
+        <rdfs:label xml:lang="en">turntable ladder</rdfs:label>
+        <rdfs:label xml:lang="fr">échelle pivotante automatique</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1914636 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1914636">
@@ -336,11 +591,52 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q208281 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q208281">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1515493"/>
+        <rdfs:comment xml:lang="de">Fahrzeug mit Sonderausstattung zum Löschen von Bränden für die Feuerwehr</rdfs:comment>
+        <rdfs:comment xml:lang="fr">camion de pompiers utilisé dans la lutte contre l&apos;incendie</rdfs:comment>
+        <rdfs:comment xml:lang="en">emergency ground vehicle intended to put out fires</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerwehrfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">fire engine</rdfs:label>
+        <rdfs:label xml:lang="fr">fourgon d&apos;incendie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q2146446 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2146446">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">Art von Einsatzfahrzeug</rdfs:comment>
+        <rdfs:comment xml:lang="en">type of emergency vehicle</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsmittel</rdfs:label>
+        <rdfs:label xml:lang="en">rescue vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q216146 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q216146">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1301433"/>
+        <rdfs:comment xml:lang="de">Fahrzeug, das über eine Ladefläche, jedoch keinen eigenen Antrieb verfügt</rdfs:comment>
+        <rdfs:comment xml:lang="en">vehicle that has a loading area but does not have its own propulsion</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule qui a une zone de chargement, mais pas de moteur</rdfs:comment>
+        <rdfs:label xml:lang="de">Anhänger</rdfs:label>
+        <rdfs:label xml:lang="fr">remorque</rdfs:label>
+        <rdfs:label xml:lang="en">trailer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q223557 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q223557">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q4406616"/>
         <rdfs:comment xml:lang="de">Ansammlung von Masse, die eine Einheit bildet</rdfs:comment>
+        <rdfs:comment xml:lang="fr">agrégation singulière de substance(s) tangibles comme des matières ou des radiations, avec des propriétés globales</rdfs:comment>
         <rdfs:comment xml:lang="en">singular aggregation of substance(s) such as matter or radiation, with overall properties such as mass, position or momentum</rdfs:comment>
         <rdfs:label xml:lang="de">Körper</rdfs:label>
         <rdfs:label xml:lang="fr">objet physique</rdfs:label>
@@ -358,6 +654,18 @@
         <rdfs:label xml:lang="de">Bitte</rdfs:label>
         <rdfs:label xml:lang="fr">demande</rdfs:label>
         <rdfs:label xml:lang="en">request</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q2265780 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2265780">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1308737"/>
+        <rdfs:comment xml:lang="de">Dienstfahrzeuge der Polizei</rdfs:comment>
+        <rdfs:comment xml:lang="en">any type of vehicle used by police</rdfs:comment>
+        <rdfs:label xml:lang="de">Polizeifahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">police vehicle</rdfs:label>
     </owl:Class>
     
 
@@ -429,6 +737,15 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q286897 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q286897">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1515989"/>
+        <rdfs:label xml:lang="de">Messfahrzeug</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q28813620 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q28813620">
@@ -469,6 +786,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q35872 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q35872">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1229765"/>
+        <rdfs:comment xml:lang="de">kleineres Wasserfahrzeug</rdfs:comment>
+        <rdfs:comment xml:lang="en">smaller watercraft</rdfs:comment>
+        <rdfs:comment xml:lang="fr">véhicule flottant</rdfs:comment>
+        <rdfs:label xml:lang="de">Boot</rdfs:label>
+        <rdfs:label xml:lang="fr">bateau</rdfs:label>
+        <rdfs:label xml:lang="en">boat</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q37112258 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q37112258">
@@ -492,6 +823,22 @@
         <rdfs:label xml:lang="de">Rechtssubjekt</rdfs:label>
         <rdfs:label xml:lang="en">legal person</rdfs:label>
         <rdfs:label xml:lang="fr">personnalité juridique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q39546 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q39546">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q10273457"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q123691918"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q8205328"/>
+        <rdfs:comment xml:lang="de">Arbeitsmittel, um auf Gegenstände einzuwirken</rdfs:comment>
+        <rdfs:comment xml:lang="fr">instrument physique utilisable pour exercer une action</rdfs:comment>
+        <rdfs:comment xml:lang="en">physical item that can be used to achieve a goal</rdfs:comment>
+        <rdfs:label xml:lang="de">Werkzeug</rdfs:label>
+        <rdfs:label xml:lang="fr">outil</rdfs:label>
+        <rdfs:label xml:lang="en">physical tool</rdfs:label>
     </owl:Class>
     
 
@@ -524,6 +871,21 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q42889 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q42889">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q106839123"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q11019"/>
+        <rdfs:comment xml:lang="fr">machine mobile qui transporte, qu&apos;elle soit motorisée ou non, telle qu&apos;un vélo, une voiture, un autre véhicule terrestre (y compris les véhicules à roues et à chenilles), un aéronef ou une embarcation</rdfs:comment>
+        <rdfs:comment xml:lang="en">mobile machine used for transport, whether it has an engine or not, including wheeled and tracked vehicles, air-, water-, and space-craft</rdfs:comment>
+        <rdfs:comment xml:lang="de">mobiles Transportmittel</rdfs:comment>
+        <rdfs:label xml:lang="de">Verkehrsmittel</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q43229 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q43229">
@@ -538,6 +900,20 @@
         <rdfs:label xml:lang="de">Organisation</rdfs:label>
         <rdfs:label xml:lang="fr">organisation</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q4406616 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q4406616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="en">a particular or specific instance of an entity</rdfs:comment>
+        <rdfs:comment xml:lang="de">etwas mit einer physikalischen Manifestation</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet ayant une manifestation physique</rdfs:comment>
+        <rdfs:label xml:lang="en">concrete object</rdfs:label>
+        <rdfs:label xml:lang="de">konkretes Objekt</rdfs:label>
+        <rdfs:label xml:lang="fr">objet concret</rdfs:label>
     </owl:Class>
     
 
@@ -614,16 +990,11 @@
     
 
 
-    <!-- https://www.wikidata.org/wiki/Q488383 -->
+    <!-- https://www.wikidata.org/wiki/Q50659049 -->
 
-    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q488383">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:comment xml:lang="de">alles, auf das ein Subjekt reagieren kann</rdfs:comment>
-        <rdfs:comment xml:lang="en">anything that may be observed or acted upon by a subject</rdfs:comment>
-        <rdfs:comment xml:lang="fr">tout ce qui existe et qui peut être utilisé par un sujet</rdfs:comment>
-        <rdfs:label xml:lang="de">Objekt</rdfs:label>
-        <rdfs:label xml:lang="en">object</rdfs:label>
-        <rdfs:label xml:lang="fr">objet</rdfs:label>
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q50659049">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1898202"/>
+        <rdfs:label xml:lang="de">Drehleiter mit Korb 23/12</rdfs:label>
     </owl:Class>
     
 
@@ -644,7 +1015,7 @@
     <!-- https://www.wikidata.org/wiki/Q58778 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q58778">
-        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q99527517"/>
         <rdfs:comment xml:lang="de">Gesamtheit von wechselwirkenden Elementen einer Einheit</rdfs:comment>
         <rdfs:comment xml:lang="fr">ensemble d&apos;éléments interagissant entre eux selon certains principes ou règles</rdfs:comment>
@@ -712,6 +1083,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q628983 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q628983">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1229765"/>
+        <rdfs:comment xml:lang="de">Schiffstyp, dessen Zweck primär die Verrichtung von Arbeiten auf dem Wasser oder vom Wasser aus ist</rdfs:comment>
+        <rdfs:comment xml:lang="fr">bateau servant principalement à travailler en mer (par opposition avec les bateaux de transport)</rdfs:comment>
+        <rdfs:comment xml:lang="en">ship or boat type that primarily does work at sea, rather than as transport</rdfs:comment>
+        <rdfs:label xml:lang="de">Arbeitsschiff</rdfs:label>
+        <rdfs:label xml:lang="fr">bateau de travail</rdfs:label>
+        <rdfs:label xml:lang="en">working vessel</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q6881760 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6881760">
@@ -720,6 +1105,21 @@
         <rdfs:label xml:lang="de">Folgenminderungsstrategie</rdfs:label>
         <rdfs:label xml:lang="en">mitigation</rdfs:label>
         <rdfs:label xml:lang="fr">mitigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q7194062 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q7194062">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q116780996"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1882685"/>
+        <rdfs:comment xml:lang="de">eine Maschine, die in der Luft oder im Weltall fliegen kann</rdfs:comment>
+        <rdfs:comment xml:lang="fr">machine qui vole dans l&apos;air ou dans l&apos;espace</rdfs:comment>
+        <rdfs:comment xml:lang="en">machine that can fly, including aircraft, spacecraft, rockets, and missiles</rdfs:comment>
+        <rdfs:label xml:lang="de">Flugmaschine</rdfs:label>
+        <rdfs:label xml:lang="en">flying machine</rdfs:label>
+        <rdfs:label xml:lang="fr">véhicule aérospatial</rdfs:label>
     </owl:Class>
     
 
@@ -767,6 +1167,31 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q8205328 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q8205328">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q16686448"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q223557"/>
+        <rdfs:comment xml:lang="de">durch menschliche oder technische Einwirkung entstandenes Produkt</rdfs:comment>
+        <rdfs:comment xml:lang="fr">objet physique créé ou ayant subi une transformation par l’être humain</rdfs:comment>
+        <rdfs:comment xml:lang="en">physical object made or shaped by humans</rdfs:comment>
+        <rdfs:label xml:lang="de">Artefakt</rdfs:label>
+        <rdfs:label xml:lang="en">artificial physical object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet artificiel physique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q831723 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q831723">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q1515989"/>
+        <rdfs:comment xml:lang="de">Fahrzeug des deutschen Zivil- und Katastrophenschutzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Betreuungslastkraftwagen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q854457 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q854457">
@@ -777,6 +1202,15 @@
         <rdfs:label xml:lang="en">complex system</rdfs:label>
         <rdfs:label xml:lang="de">komplexes System</rdfs:label>
         <rdfs:label xml:lang="fr">système complexe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q93978369 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q93978369">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q286897"/>
+        <rdfs:label xml:lang="de">CBRN-Erkundungswagen</rdfs:label>
     </owl:Class>
     
 

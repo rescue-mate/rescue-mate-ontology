@@ -1,34 +1,42 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://rescue-mate.de/ontology/main/"
+<rdf:RDF xmlns="http://rescue-mate.de/ontology/"
      xml:base="http://rescue-mate.de/ontology/"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:fno="https://w3id.org/function/ontology#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/main">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.3.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.4.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.3.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.4.0"/>
         <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
-        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:created>2025-02-12</terms:created>
-        <terms:creator>Patrick Westphal</terms:creator>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-16</terms:issued>
-        <terms:modified>2025-07-16</terms:modified>
-        <terms:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</terms:rights>
-        <terms:title xml:lang="en">RESCUE-MATE Ontology</terms:title>
-        <terms:title xml:lang="de">RESCUE-MATE-Ontologie</terms:title>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:created>2025-02-12</dct:created>
+        <dct:creator>Patrick Westphal</dct:creator>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-26</dct:issued>
+        <dct:modified>2025-08-26</dct:modified>
+        <dct:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</dct:rights>
+        <dct:title xml:lang="en">RESCUE-MATE Ontology</dct:title>
+        <dct:title xml:lang="de">RESCUE-MATE-Ontologie</dct:title>
         <rdfs:comment xml:lang="de">Haupt-Ontologie-Modul zur Unterstützung der Datenintegration im RESCUE-MATE-Projekt</rdfs:comment>
         <rdfs:comment xml:lang="en">Main ontology module supporting the data integration part of the RESCUE-MATE project</rdfs:comment>
-        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.2.0"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.3.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -342,13 +350,38 @@
 
     <!-- http://resccue-mate.de/ontology/Finding -->
 
-    <owl:Class rdf:about="http://resccue-mate.de/ontology/Finding">
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:comment xml:lang="en">Recovery of the spatial reference of someone or something</rdfs:comment>
         <rdfs:comment xml:lang="de">Wiedererlangung des räumliche Bezugs zu jemanden oder etwas</rdfs:comment>
         <rdfs:label xml:lang="de">Finden</rdfs:label>
         <rdfs:label xml:lang="en">Finding</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q37112258</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AB -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Container"/>
+        <rdfs:comment xml:lang="en">Container designed as a closed box that can accommodate specific loads (materials and tools) and/or can be used for the accommodation of people (furnished and with doors and windows)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Container, der als geschlossener Kasten ausgeführt ist und bestimmte Ladungen (Material und Werkzeug) aufnehmen oder/und für den Aufenthalt von Personen (möbliert und mit Türen und Fenstern) dienen kann</rdfs:comment>
+        <rdfs:label xml:lang="de">Abrollbehälter</rdfs:label>
+        <rdfs:label xml:lang="en">Abrollbehälter (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AL16-4 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AL16-4">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger mit Leiter mit einer Nennrettungshöhe von 16 Metern und Nennausladung von 4 Metern.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer with a ladder with a nominal rescue height of 16 meters and a nominal outreach of 4 meters.</rdfs:comment>
+        <rdfs:label xml:lang="de">Anhängeleiter AL 16-4</rdfs:label>
+        <rdfs:label xml:lang="en">Anhängeleiter AL 16-4 (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -366,6 +399,52 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AerialAppliance -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AerialAppliance">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug mit ausfahrbarer Leiter, Plattform oder ausfahrbarem Ausleger, das Feuerwehrleuten das Arbeiten in der Höhe zu Rettungs-, Lösch- und Zugangszwecken ermöglicht</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle equipped with an extendable ladder, platform, or boom that allows firefighters to work at height for rescue, firefighting, and access purposes</rdfs:comment>
+        <rdfs:label xml:lang="en">Aerial appliance</rdfs:label>
+        <rdfs:label xml:lang="de">Hubrettungsfahrzeug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AerialWorkPlatform -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AerialWorkPlatform">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AerialAppliance"/>
+        <rdfs:comment xml:lang="en">Aerial appliance used to provide temporary access for people or equipment to inaccessible areas, usually at height.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hubrettungsfahrzeug mit einer begehbaren und beweglichen Plattform über die Personen und Ausrüstung in die Nähe unzugänglicher Bereiche, insb. in größerer Höhe bewegt werden können</rdfs:comment>
+        <rdfs:label xml:lang="en">Aerial work platform</rdfs:label>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Aircraft -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Aircraft">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q11436</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/BtLKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/BtLKW">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Bt"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Betreuungslastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Betreuungslastkraftwagen (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q831723</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Business -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Business">
@@ -373,6 +452,20 @@
         <rdfs:label xml:lang="en">Business</rdfs:label>
         <rdfs:label xml:lang="de">Gewerbebetrieb</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q4830453"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/CBRN-ErkW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CBRN-ErkW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zur Detektion von radiologischen und chemischen Kontaminationen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting vehicle for the detection of radiological and chemical contamination</rdfs:comment>
+        <rdfs:label xml:lang="de">CBRN-Erkundungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">CBRN-Erkundungswagen (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q93978369</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -399,6 +492,31 @@
         <rdfs:label xml:lang="en">Change</rdfs:label>
         <rdfs:label xml:lang="de">Veränderung</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1150070</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/CommandVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CommandVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:comment xml:lang="de">Einsatzfahrzeug zu Koordinierung des Einsatzes</rdfs:comment>
+        <rdfs:comment xml:lang="en">emergency vehicle to coordinate fire, ambulance, police, and technical operations</rdfs:comment>
+        <rdfs:label xml:lang="en">Command vehicle</rdfs:label>
+        <rdfs:label xml:lang="de">Einsatzleitfahrzeug</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1308813</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Container -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Container">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="de">Großraum-Behälter zur Lagerung und zum Transport von Gütern</rdfs:comment>
+        <rdfs:comment xml:lang="en">Large-capacity freight unit for the storage and transport of goods</rdfs:comment>
+        <rdfs:label xml:lang="de">Container</rdfs:label>
+        <rdfs:label xml:lang="en">Container</rdfs:label>
     </owl:Class>
     
 
@@ -446,6 +564,92 @@
         <rdfs:comment xml:lang="de">Vorgang der Verringerung von Schäden, die duch eine Krise entstanden sind</rdfs:comment>
         <rdfs:label xml:lang="en">Crisis mitigation</rdfs:label>
         <rdfs:label xml:lang="de">Schadensminderung in einer Krise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DL -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DL">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug mit einer fest installierten Leiter, die sich um 360 Grad drehen lässt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle with a ladder mounted on a pivot which resembles a turntable, able to rotate 360 degrees</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter mit Handbetrieb</rdfs:label>
+        <rdfs:label xml:lang="en">Drehleiter mit Handbetrieb (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TurntableLadder"/>
+        <rdfs:comment xml:lang="de">Drehleiter mit automatisiertem Aufricht- und Abstützvorgang</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with automated erection and support process</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLK -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLK">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TurntableLadder"/>
+        <rdfs:comment xml:lang="de">Drehleiter mit einem Korb</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with basket</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter mit Korb</rdfs:label>
+        <rdfs:label xml:lang="en">Drehleiter mit Korb (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLK12-9 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLK12-9">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLK"/>
+        <rdfs:comment xml:lang="de">Drehleiter mit Korb und einer Nennrettungshöhe von 12 Metern bei 9 Metern Nennausladung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket, a nominal rescue height of 12 meters, and a nominal outreach of 9 meters</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter mit Korb 12/9</rdfs:label>
+        <rdfs:label xml:lang="en">Drehleiter mit Korb 12/9 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLK18-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLK18-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLK"/>
+        <rdfs:comment xml:lang="de">Drehleiter mit Korb und einer Nennrettungshöhe von 18 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket, a nominal rescue height of 18 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter mit Korb 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Drehleiter mit Korb 18/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLK23-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLK23-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLK"/>
+        <rdfs:comment xml:lang="de">Drehleiter mit Korb und einer Nennrettungshöhe von 23 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket, a nominal rescue height of 23 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter mit Korb 23/12</rdfs:label>
+        <rdfs:label xml:lang="en">Drehleiter mit Korb 23/12 (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q50659049</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TurntableLadder"/>
+        <rdfs:comment xml:lang="de">Drehleiter, die nur eine Bewegung zur selben Zeit ausführen kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder that can only perform one movement at a time</rdfs:comment>
+        <rdfs:label xml:lang="de">Sequenzielle (halbautomatische) Drehleiter</rdfs:label>
+        <rdfs:label xml:lang="en">Sequenzielle (halbautomatische) Drehleiter (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -535,6 +739,55 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ELW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ELW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/CommandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="en">Command vehicle</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Einsatzleitwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ELW-ABC -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ELW-ABC">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ELW"/>
+        <rdfs:comment xml:lang="en">Command vehicle within a CBRN unit for detecting and identifying hazardous substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Einsatzleitwagen im Rahmen des ABC-Zuges zum Aufspüren und Bestimmen von gefährlichen Stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen ABC</rdfs:label>
+        <rdfs:label xml:lang="en">Einsatzleitwagen ABC (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ELW1 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ELW1">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ELW"/>
+        <rdfs:comment xml:lang="en">Command vehicle for small and medium sized operations; usually a van that provides space for the operational command</rdfs:comment>
+        <rdfs:comment xml:lang="de">Standard-Führungsfahrzeug bei Einsätzen bis zu mittlerem Umfang; normalerweise Kleintransporter zur Beherbergung der Einsatzleitung</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen 1</rdfs:label>
+        <rdfs:label xml:lang="en">Einsatzleitwagen 1 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ELW2 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ELW2">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ELW"/>
+        <rdfs:comment xml:lang="en">Command vehicle for medium sized and larger operations; usually built on the chassis of a truck to provide space for a operational command meeting room and a radio room</rdfs:comment>
+        <rdfs:comment xml:lang="de">Einsatzleitwagen zur Koordination mittlerer und größerer Einsätze; Fahrzeug normalerweise basierend auf Fahrgestellen von Bussen oder Klein-Lkw; verfügt über einen Besprechungs- und einen Funkraum</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzleitwagen 2</rdfs:label>
+        <rdfs:label xml:lang="en">Einsatzleitwagen 2 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ElectricPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ElectricPropulsion">
@@ -555,6 +808,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/EmergencyVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:comment xml:lang="de">Speziell ausgerüstetes Fahrzeug einer Hilfsorganisation, einer Behörde oder Organisation mit Sicherheitsaufgaben</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Emergency vehicle</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1308737</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Evacuation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Evacuation">
@@ -564,6 +829,97 @@
         <rdfs:label xml:lang="en">Evacuation</rdfs:label>
         <rdfs:label xml:lang="de">Evakuierung</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q606332</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FKH -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FKH">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Anhänger, in dem ein oder mehrere Kessel und eine oder mehrere Feuerstellen zur Essenszubereitung integriert sind</rdfs:comment>
+        <rdfs:comment xml:lang="en">Trailer with one or more boilers and one or more fireplaces for food preparation</rdfs:comment>
+        <rdfs:label xml:lang="de">Feldkochherd</rdfs:label>
+        <rdfs:label xml:lang="en">Feldkochherd (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FLB -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FLB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot zur Brandbekämpfung von der Wasserseite</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fireboat for firefighting from the waterside</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerlöschboot</rdfs:label>
+        <rdfs:label xml:lang="en">Feuerlöschboot (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1190275</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FLMF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FLMF">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Licht"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Flutlichtmastfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Flutlichtmastfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FMSMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FMSMessage">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="de">Status-Nachricht, die über das Funkmeldesystem (FMS) gesendet oder empfangen wurde</rdfs:comment>
+        <rdfs:label xml:lang="en">FMS message</rdfs:label>
+        <rdfs:label xml:lang="de">FMS-Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FireEngine -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FireEngine">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug mit einer fest eingebauten Feuerlöschpumpe oder einer Tragkraftspritze</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle with a permanently installed or portable fire pump</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerlöschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Fire engine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany)"/>
+        <rdfs:label xml:lang="de">Feuerlöschfahrzeug mit fest eingebauter Feuerlöschpumpe</rdfs:label>
+        <rdfs:label xml:lang="en">Fire engine with permanently installed fire pump</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FireEngineWithPortableFirePump -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FireEngineWithPortableFirePump">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany)"/>
+        <rdfs:label xml:lang="de">Feuerlöschfahrzeug mit mobiler Feuerlöschpumpe</rdfs:label>
+        <rdfs:label xml:lang="en">Fire engine with portable fire pump</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FireFightingVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FireFightingVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:label xml:lang="de">Feuerwehrfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Fire-fighting vehicle</rdfs:label>
     </owl:Class>
     
 
@@ -586,6 +942,650 @@
         <rdfs:label xml:lang="en">Flood gate</rdfs:label>
         <rdfs:label xml:lang="de">Flutschutztor</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2345125"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FwA-FKH -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-FKH">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger, in dem ein oder mehrere Kessel und eine oder mehrere Feuerstellen zur Essenszubereitung integriert sind</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer with one or more boilers and one or more fireplaces for food preparation</rdfs:comment>
+        <rdfs:label xml:lang="de">Feldkochherd</rdfs:label>
+        <rdfs:label xml:lang="en">Feldkochherd (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FwA-FueLa -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-FueLa">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger für die Bereitstellung eines mobilen Führungs- und Lageraum</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer for the provision of a mobile command and situation room</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerwehranhänger Führung und Lage</rdfs:label>
+        <rdfs:label xml:lang="en">Feuerwehranhänger Führung und Lage (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FwA-Lima -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-Lima">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="en">A trailer providing a power generator and lighting components on one chassis</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Anhänger zum Bereitstellen eines Stromerzeugungsaggregats und Beleuchtungskomponenten auf einem Fahrgestell</rdfs:comment>
+        <rdfs:label xml:lang="de">Lichtmastanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Lichtmastanhänger (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FwA-SWW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwA-SWW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger mit Schaum-Wasserwerfer</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer with foam water cannon</rdfs:comment>
+        <rdfs:label xml:lang="de">Anhänger mit Schaum-Wasserwerfer</rdfs:label>
+        <rdfs:label xml:lang="en">Anhänger mit Schaum-Wasserwerfer (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FwK -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FwK">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zur vertikalen und horizontalen Verladung oder Bewegung von Lasten; Einsatz zur technischen Hilfeleistung, Unterstützung bei der Menschenrettung und Unterstützung bei der Brandbekämpfung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting vehicle for vertical and horizontal loading or movement of loads; use for technical assistance, assistance in rescue operations, and support in firefighting</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuerwehrkran</rdfs:label>
+        <rdfs:label xml:lang="en">Feuerwehrkran (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GRTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GRTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle on a bus chassis</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug auf einem Omnibus-Fahrgestell</rdfs:comment>
+        <rdfs:label xml:lang="de">Großraumrettungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">Großraumrettungswagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Einsatzfahrzeug für den Transport von Gerät zur Einsatzstelle</rdfs:comment>
+        <rdfs:comment xml:lang="en">Emergency vehicle for transporting equipment to the incident scene</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1515989</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-A -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-A">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Atemschutz"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for the protection of the respiratory tract</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zum Schutz der Atemwege</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-ACS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-ACS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for the protection of the respiratory tract, harm caused by radiation or chemical hazards</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zum Schutz der Atemwege, Schutz gegen Beeinträchtigungen durch Strahlungen oder chemische Gefahren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz Chemieschutz Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz Chemieschutz Strahlenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-AS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-AS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GW-A"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GW-S"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz/Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz/Strahlenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-ATF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-ATF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equiment for detecting and combating biological, chemical or radiological hazards</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung zur Erkennung und Bekämpfung biologischer, chemischer oder radiologischer Gefahren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Analytische Task Force</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Analytische Task Force (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Atemschutz -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Atemschutz">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Atemschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Atemschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-B -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-B">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Bt"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Betreuung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Betreuung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Beh -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Beh">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for the care of mass casualties and for the medical support of large events</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport von Ausrüstung für die Versorgung bei einem Massenanfall von Verletzten sowie für die sanitätsdienstlichen Absicherung von Grossveranstaltungen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Behandlung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Behandlung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Bt -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Bt">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment>Emergency vehicle to transport equipment and supplies for providing food to emergency personnel or those in need of assistance</rdfs:comment>
+        <rdfs:comment xml:lang="de">Geräewagen für den Transport von Ausrüstung zur Verpflegung von Einsatzkräften oder Hilfsbedürftigen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Betreuung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Betreuung (Germany)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q831723</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Dekon-P -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Dekon-P">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for setting up a decontamination area to decontaminate emergency personell and affected persons that got in contact with hazardous substances in CBRN or hazardous substance accidents</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Einrichtung eines Dekontaminationsplatzes zur Dekontamination von Einsatzkräften und Betroffenen, die in ABC-Schadenslagen bzw. Gefahrstoffunfällen mit gefährlichen Substanzen in Berührung gekommen sind</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Dekontamination Personal</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Dekontamination Personal (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-G -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Gefahrgut"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrtgut</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrtgut (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-G1 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G1">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a smaller amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten kleineren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 1</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 1 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-G2 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G2">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a medium amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten mittleren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 2</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 2 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-G3 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G3">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a greater amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten größeren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 3</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 3 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Gefahrgut -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Gefahrgut">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-H -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-H">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-SRHT"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for rescue from heights and depths</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Rettung aus Höhen und Tiefen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Höhenrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Höhenrettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-L -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-L">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Logistik"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material und Ausrüstung zur Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Logistik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Logistik (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-L1 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-L1">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-L"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle in the German weight category L (Leicht - 2.0 - 7.5 tons) to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Kraftfahrzeug-Gewichtsklasse L (Leicht - 2,0 - 7,5 Tonnen) für den Transport von Material und Ausrüstung für die Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Logistik 1</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Logistik 1 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-L2 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-L2">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-L"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle in the German weight category M (Mittel - 7.5 - 14.0 tons) to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Kraftfahrzeug-Gewichtsklasse M (Mittel - 7,5 - 14,0 Tonnen) für den Transport von Material und Ausrüstung für die Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Logistik 2</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Logistik 2 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Licht -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Licht">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport a mobile or stationary light mast for operations at night</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport eines mobilen oder stationären Lichtmastes für nächtliche Einsätze</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Licht</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Licht (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Logistik -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Logistik">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Logistik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Logistik (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-MANV -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-MANV">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for supoprt in cases of a mass casualty incident</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Unterstützung bei MANV (Manssenanfall von Verletzten)-Lagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Massenanfall von Verletzten</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Massenanfall von Verletzten (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Mess -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Mess">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Gerätewagen (Germany) for transporting extensive equipment for measuring and detecting</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport einer umfangreichen Ausrüstung zum Messen und Spüren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Messtechnik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Messtechnik (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-N -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-N">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material und Ausrüstung zur Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Nachschub (Germany)</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Nachschub (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Oel -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Oel">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for countering mineral oil spills</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung zur Bekämpfung von Mineralölunfällen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Öl</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Öl (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-RD -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-RD">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material for setting up and running a medical treatment facility</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material zum Errichten und Betreiben eines Behandlungsplatzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Rettungsdienst</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Rettungsdienst (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Rett -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Rett">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material for setting up and running a medical treatment facility</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material zum Errichten und Betreiben eines Behandlungsplatzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Rettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Rettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Rettungshundestaffel -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Rettungshundestaffel">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport rescue dogs, and rescue and first aid equipment</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport von Rettungshunden, und Rettungs- und Erste-Hilfe-Ausrüstung</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Rettungshundestaffel</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Rettungshundestaffel (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-S -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-S">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Strahlenschutz"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-figting vehicle to transport equipment for protection against harm caused by radiation</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung für den Schutz gegen Beeinträchtigungen durch Strahlungen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Strahlenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-SRHT -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-SRHT">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for rescue from heights and depths</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Rettung aus Höhen und Tiefen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Spezielle Rettung aus Höhen und Tiefen</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Spezielle Rettung aus Höhen und Tiefen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-San -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-San">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material for setting up and running a medical treatment facility</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material zum Errichten und Betreiben eines Behandlungsplatzes</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Sanität</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Sanität (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-StrSpTr -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-StrSpTr">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for hazardous materials handling and monitoring the environment after an incident for radioactive contamination as well as radiation protection</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr zum Transport von Messgeräten und Ausrüstung für den Gefahrguteinsatz und die Überwachung der Umgebung nach einem Störfall auf radioaktive Kontamination sowie der Strahlenschutz</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Strahlenspürtrupp</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Strahlenspürtrupp (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Strahlenschutz -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Strahlenschutz">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Strahlenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-T -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-T">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Tauchen"/>
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/TEF"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/RescueVehicle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport rescue divers and their equipment to the incident scene</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Rettungstauchern und ihrer Ausrüstung zum Einsatzort</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Tauchen</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Tauchen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-TS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-TS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for transporting equipment similar to the gear of a Tragkraftspritzenanhänger (TSA)</rdfs:comment>
+        <rdfs:comment>Gerätewagen, der in Bezug auf seine Ausrüstung wie ein Tragkraftspritzenanhänger (TSA) ausgelegt ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Tragkraftspritze</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Tragkraftspritze (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Tauchen -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Tauchen">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="en">Geräteagen Tauchen (Germany)</rdfs:label>
+        <rdfs:label xml:lang="de">Gerätewagen Tauchen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-TeSi -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-TeSi">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Technik"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Technik und Sicherheit</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Technik und Sicherheit (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Technik -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Technik">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-TuS"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport an extensive amount of materials and tools for an effective support at the incident scene</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von umfangreichem Material und Werkzeug zur effektiven Hilfeleistung am Einsatzort</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Technik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Technik (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Tier -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Tier">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Tierrettung"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:label xml:lang="de">Gerätewagen Tierrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Tierrettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Tierrettung -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Tierrettung">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for saving animals</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Rettung von Tieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Tierrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Tierrettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Trsp -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Trsp">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Material und Ausrüstung zur Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Transport</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Transport (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-TuS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-TuS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Technik und Sicherheit</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Technik und Sicherheit (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-V -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-V">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Vpf"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment and supplies for setting up and running a catering point</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport von Ausrüstung und Ausstattung für den Aufbau und Betrieb einer Verpflegungsstelle</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Verpflegung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Verpflegung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Vpf -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Vpf">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Verpflegung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Verpflegung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-W -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-W">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Wasserrettung"/>
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/WRW"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">An emergency vehicle for transporting equipment for water rescue operations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Gerätewagen für den Transport von Wasserrettungsausrüstung</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Wasserrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Wasserrettung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Wasserrettung -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Wasserrettung">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Wasserrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Wasserrettung (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -659,6 +1659,125 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GruKw -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GruKw">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/PoliceVehicle"/>
+        <rdfs:comment xml:lang="en">Police vehicle to transport groups of people</rdfs:comment>
+        <rdfs:comment xml:lang="de">Polizeifahrzeug zum Transport von Personengruppen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gruppenkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Gruppenkraftwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HAB -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HAB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AerialWorkPlatform"/>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne</rdfs:label>
+        <rdfs:label xml:lang="en">Hubarbeitsbühne (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HAB18-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HAB18-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HAB"/>
+        <rdfs:comment xml:lang="en">Aerial work platform with a nominal height of 18 meters and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hubarbeitsbühne mit einer Nennhöhe von 18 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Hubarbeitsbühne 18/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HAB23-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HAB23-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HAB"/>
+        <rdfs:comment xml:lang="en">Aerial work platform with a nominal height of 23 meters and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hubarbeitsbühne mit einer Nennhöhe von 23 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Hubarbeitsbühne 23/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehr-Fahrzeug für den Transport von Besatzung und Ausrüstung zur Brandbekämpfung sowie umfangreicher Ausrüstung für die technische Hilfeleistung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of crew and equipment for fire-fighting as well as extensive equipment for technical assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug</rdfs:label>
+        <rdfs:label>Hilfeleistungslöschgruppenfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF10 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF10">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 1000 liters capacity and a supply of 120 liters of foam agent, and a fire extinguishing centrifugal pump with a flow rate of 1,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von 1000 Litern Inhalt sowie einem Vorrat von 120 Liter Schaummittel, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 10</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 10 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF10-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF10-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 600 liters capacity and a fire extinguishing centrifugal pump with a flow rate of 1,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von 600 Litern Inhalt und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 10/6</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 10/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF20 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF20">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 1,600 liters capacity, a supply of 120 liters of foam agent as well as 12 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von mindestens 1.600 Litern Inhalt, einem Vorrat von 120 Liter Schaummittel sowie 12 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 20</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 20 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF20-16 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF20-16">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 1,600 liters capacity, a supply of 120 liters of foam agent as well as 12 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von mindestens 1.600 Litern Inhalt, einem Vorrat von 120 Liter Schaummittel sowie 12 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 20/16</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 20/16 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF24-14-S -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF24-14-S">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) that can also drive on rails and is therefore particularly suitable for fire-fighting in tunnels and technical accident assistance on the rails</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug das zusätzlich auch auf Schienen fahren kann und sich daher besonders für die Brandbekämpfung in Tunneln und die technische Unfallhilfe auf der Schiene eignet</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 24/14-Schiene</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 24/14-Schiene (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HingedCrestGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HingedCrestGate">
@@ -712,6 +1831,33 @@
         <rdfs:label xml:lang="en">Hydraulic structure</rdfs:label>
         <rdfs:label xml:lang="de">Wasserbauwerk</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2466889"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/I-RTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/I-RTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle for the transport of highly infectious or highly contagious persons, in which the patient compartment is completely sealed off from the outside world and the driver&apos;s cab</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug für die Beförderung hochinfektiöser bzw. hochkontagiöser Personen, bei dem der Patientenraum im Aufbau komplett zur Außenwelt sowie zum Führerhaus hin abgedichtet ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Infektionsrettungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">Infektionsrettungswagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ITW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ITW">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/MICU"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle specially equipped to transport patients requiring intensive care between intensive care units from hospital to hospital</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug, das speziell ausgestattet ist, um intensivpflichtige Patienten zwischen Intensivstationen von Krankenhaus zu Krankenhaus zu transportieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Intensivtransportwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Intensivtransportwagen (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -793,6 +1939,276 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/KEF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KEF">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/KLAF"/>
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/KLEF"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug, das für kleineren technische Hilfeleistungen eingesetzt wird, die nur wenig Personal und Material benötigen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle that is used for less extensicve technical support, which requires only a smaller amount of people and material</rdfs:comment>
+        <rdfs:label xml:lang="de">Kleineinsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Kleineinsatzfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/KLAF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLAF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/KLB -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot für den Transport von Ausrüstung für die Wasserrettung, und optional Löschgeräten</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fireboat for the transport of equipment for water rescue, and optional firefighting equipment</rdfs:comment>
+        <rdfs:label xml:lang="de">Klein(lösch)boot</rdfs:label>
+        <rdfs:label xml:lang="en">Klein(lösch)boot (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/KLEF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLEF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/KLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPortableFirePump"/>
+        <rdfs:comment xml:lang="de">Kleines Feuerlöschfahrzeug mit Tragkraftspritze und einem Löschwassertank mit 500 Litern Fassungsvermögen sowie 6 kg Löschpulver</rdfs:comment>
+        <rdfs:comment xml:lang="en">Small fire engine with a portable fire pump and a water tank of 500 liters capacity and 6 kg of extinguishing powder</rdfs:comment>
+        <rdfs:label xml:lang="de">Kleinlöschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Kleinlöschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/KTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle for the transport and care of non-acutely injured or ill persons</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug für den Transport und die Betreuung von nicht-akut verletzten oder erkrankten Personen</rdfs:comment>
+        <rdfs:label xml:lang="de">Krankentransportwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Krankentransportwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/KdoW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KdoW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/CommandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="en">Command vehicle for small operations; usually a passenger car for transporting the operational command</rdfs:comment>
+        <rdfs:comment xml:lang="de">Einsatzleitfahrzeug für kleinere Einsätze; in der Regel ein Pkw oder Kombi für den Transport der Führungskräfte</rdfs:comment>
+        <rdfs:label xml:lang="de">Kommandowagen</rdfs:label>
+        <rdfs:label xml:lang="en">Kommandowagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug für den Transport von Besatzung und Ausrüstung zur Brandbekämpfung und für technische Hilfeleistung einfachen Umfangs</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of crew and equipment for fire-fighting and for simple technical assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF-KatS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF-KatS">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/LF16-TS"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) primarily used for disaster protection</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug das vorrangig für den Katstrophenschutz eingesetzt wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug für den Katastrophenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug für den Katastrophenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF10 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF10">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 1,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 10</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 10 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF10-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF10-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of at least 600 liters and a fire-fighting centrifugal pump with a capacity of 1000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1000 Liter Wasser in der Minute und einem Löschwasservorrat von mindestens 600 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 10/6</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 10/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF16 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF16">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 1,600 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.600 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 16</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 16 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF16-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF16-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of 1,200 liters and a fire-fighting centrifugal pump with a capacity of 1,600 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.600 Liter Wasser in der Minute und einem Löschwasservorrat von 1.200 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 16/12</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 16/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF16-TS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF16-TS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 16 TS</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 16 TS (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF20 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF20">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 2,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 20</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 20 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF20-16 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF20-16">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of 1,600 liters and a fire-fighting centrifugal pump with a capacity of 2,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute und einem Löschwasservorrat von 1.600 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 20/16</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 20/16 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF20-KatS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF20-KatS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF-KatS"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug für den Katastrophenschutz (Germany) with a fire-fighting centrifugal pump with a capacity of 2,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug für den Katastrophenschutz mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 20 für den Katastrophenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 20 für den Katastrophenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF24 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF24">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 2,400 liters of water per minute</rdfs:comment>
+        <rdfs:comment>Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.400 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 24</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 24 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF8 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF8">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 800 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 800 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 8</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 8 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF8-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF8-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of at least 600 liters and a fire-fighting centrifugal pump with a capacity of 800 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 800 Liter Wasser in der Minute und einem Löschwasservorrat von 600 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 8/6</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 8/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LKW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:label xml:lang="de">Lastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Lorry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LandVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LandVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:label xml:lang="en">Land vehicle</rdfs:label>
+        <rdfs:label xml:lang="de">Landfahrzeug</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1301433</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LiMaKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LiMaKW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/PoliceVehicle"/>
+        <rdfs:comment xml:lang="en">Police vehicle to transport a mobile or stationary light mast for operations at night</rdfs:comment>
+        <rdfs:comment xml:lang="de">Polizeifahrzeug zum Transport eines mobilen oder stationären Lichtmastes für nächtliche Einsätze</rdfs:comment>
+        <rdfs:label xml:lang="de">Lichtmastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Lichtmastkraftwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Lock -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
@@ -800,6 +2216,101 @@
         <rdfs:label xml:lang="en">Lock</rdfs:label>
         <rdfs:label xml:lang="de">Schleuse</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MICU -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MICU">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:label xml:lang="de">Mobile Intensive Care Unit</rdfs:label>
+        <rdfs:label xml:lang="en">Mobile Intensive Care Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MLF">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/StLF10-6"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="de">Ein Löschfahrzeug mit Gruppenbeladung für die Brandbekämpfung in der ersten Welle oder für technische Hilfeleistung im kleinen bis mittleren Rahmen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire engine to transport a whole group of fire fighters for fire-fighting in the first wave or for technical assistance on a small to medium scale</rdfs:comment>
+        <rdfs:label xml:lang="de">Mittleres Löschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Mittleres Löschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MLW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MLW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zum Aufspüren und Bestimmen von gefährlichen Stoffen; Führungsfahrzeug im Rahmen des ABC-Zuges</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for detecting and identifying hazardous substances; incident command vehicle within a CBRN unit</rdfs:comment>
+        <rdfs:label xml:lang="de">Messleitwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Messleitwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MTF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MTF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/MTW"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zum Transport von Personengruppen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport groups of people</rdfs:comment>
+        <rdfs:label xml:lang="de">Mannschaftstransportfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Mannschaftstransportfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Einsatzfahrzeug zum Transport von Personengruppen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport groups of people</rdfs:comment>
+        <rdfs:label xml:lang="de">Mannschaftstransportwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Mannschaftstransportwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MZA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MZA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Anhänger der flexibel je nach Einsatzlage verschiedenste Materialien transportieren kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">Trailer that can flexibly transport a variety of materials depending on the application</rdfs:comment>
+        <rdfs:label xml:lang="de">Mehrzweckanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Mehrzweckanhänger (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MZF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MZF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/RescueVehicle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Entweder ein ein Feuerwehreinsatzfahrzeug, das im Einsatzfall verschiedene Aufgaben wahrnehmen kann und in aller Regel eine umfangreichere Beladung hat und eher auf den Materialtransport ausgelegt ist, oder ein Rettungswagen, der sowohl zur Notfallrettung als auch zum Krankentransport eingesetzt werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">Multipurpose emergency vehicle; either a fire-fighting vehicle that contains more equipment than a Mannschaftstransportfahrzeug (MTF), or a rescue vehicle combining the functionalities of a Rettungswagen (RTW) and a Krankentransportwagen (KTW)</rdfs:comment>
+        <rdfs:label xml:lang="de">Mehrzweckfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Mehrzweckfahrzeug (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -823,6 +2334,69 @@
         <rdfs:label xml:lang="en">Mitigation</rdfs:label>
         <rdfs:label xml:lang="de">Schadensminderung</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q6881760</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NAW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NAW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RTW"/>
+        <rdfs:comment xml:lang="en">A Rettungswagen (Germany) with an emergency doctor</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Rettungswagen, der mit einem Notart besetzt ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Notarztwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Notarztwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NEF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NEF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">A specially equipped car for the transport of an emergency doctor</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein besonders ausgerüsteter PKW für den Transport eines Notarztes</rdfs:comment>
+        <rdfs:label xml:lang="de">Notarzteinsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Notarzteinsatzfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NEH -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NEH">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Aircraft"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue air vehicle to transport an emergency doctor</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsluftfahrzeug für den Transport eines Notarztes</rdfs:comment>
+        <rdfs:label xml:lang="de">Notarzteinsatzhubschrauber</rdfs:label>
+        <rdfs:label xml:lang="en">Notarzteinsatzhubschrauber (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NKTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NKTW">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/NTW"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle for the transport, first aid and monitoring of patients</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug für den Transport, die Erstversorgung und die Überwachung von Patienten</rdfs:comment>
+        <rdfs:label xml:lang="de">Notfallkrankentransportwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Notfallkrankentransportwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/NTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/NTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:label xml:lang="de">Notfalltransportwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Notfalltransportwagen (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -872,6 +2446,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/PoliceVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:label xml:lang="en">Police vehicle</rdfs:label>
+        <rdfs:label xml:lang="de">Polizeifahrzeug</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2265780</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Propulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Propulsion">
@@ -891,6 +2476,105 @@
         <rdfs:label xml:lang="en">Pumping station</rdfs:label>
         <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q446013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug, das sowohl für den technischen als auch für den Brandeinsatz ausgerüstet ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting vehicle equipped for both technical and firefighting operations</rdfs:comment>
+        <rdfs:label xml:lang="en">Rüstlöschfahrzeug (Austria)</rdfs:label>
+        <rdfs:label xml:lang="de">Rüstlöschfahrzeug (Österreich)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTH -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTH">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AirCraft"/>
+        <rdfs:comment xml:lang="en">Rescue air vehicle specially equipped for air rescue and the transfer of hospital patients</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsluftfahrzeug speziell ausgerüstete für die Luftrettung und die Verlegung von Klinikpatienten</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungstransporthubschrauber</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungstransporthubschrauber (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle with crew and medical equipment for the care, monitoring and transport of emergency patients</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug mit Besatzung und medizinisch-technischer Ausstattung für die Versorgung, Überwachung und den Transport von Notfallpatienten</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungswagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zur Bereitstellung von umfangreichen Werkzeug und Spezialgerät zum Befreien von Personen nach Unfällen, Auffangen von umweltschädigende Substanzen, ausleuchten von Einsatzstellen und für diverse andere Aufgaben</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fightung vehicle for the provision of extensive tools and special equipment for freeing people after accidents, collecting environmentally harmful substances, illuminating emergency sites and for various other tasks</rdfs:comment>
+        <rdfs:label xml:lang="de">Rüstwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Rüstwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RW-G -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW-G">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
+        <rdfs:comment xml:lang="en">Rüstwagen (Germany) with an extensive equipment for hazardous materials</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rüstwagen mit umfangreicher Gefahrgutausrüstung</rdfs:comment>
+        <rdfs:label xml:lang="de">Rüstwagen mit Sonderbeladung Gefahrgut</rdfs:label>
+        <rdfs:label xml:lang="en">Rüstwagen mit Sonderbeladung Gefahrgut (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RW1 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW1">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
+        <rdfs:comment xml:lang="en">Rüstwagen (Germany) with maximum permissible weight of 9 tons</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rüstwagen mit zulässigem Gesamtgewicht von 9 Tonnen</rdfs:comment>
+        <rdfs:label xml:lang="de">Rüstwagen 1</rdfs:label>
+        <rdfs:label xml:lang="en">Rüstwagen 1 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RW2 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW2">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
+        <rdfs:comment xml:lang="en">Rüstwagen (Germany) with maximum permissible weight of 12 tons</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rüstwagen mit zulässigem Gesamtgewicht von 12 Tonnen</rdfs:comment>
+        <rdfs:label xml:lang="de">Rüstwagen 2</rdfs:label>
+        <rdfs:label xml:lang="en">Rüstwagen 2 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RW3 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW3">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
+        <rdfs:comment xml:lang="de">Ein Rüstwagen, der größer ist als der Rüstwagen 2</rdfs:comment>
+        <rdfs:comment xml:lang="en">Rüstwagen (Germany) that is bigger than a Rüstwagen 2 (Germany)</rdfs:comment>
+        <rdfs:label xml:lang="de">Rüstwagen 3</rdfs:label>
+        <rdfs:label xml:lang="en">Rüstwagen 3 (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -981,6 +2665,127 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/RescueAppliance -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RescueAppliance">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:label xml:lang="en">Rescue appliance</rdfs:label>
+        <rdfs:label xml:lang="de">Rüstfahrzeug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RescueVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RescueVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:label xml:lang="en">Rescue vehicle</rdfs:label>
+        <rdfs:label xml:lang="de">Rettungsfahrzeug</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2146446</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/S-RTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/S-RTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle for the transport of overweight patients</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug für den Transport von übergewichtigen Patienten</rdfs:comment>
+        <rdfs:label xml:lang="de">Schwerlast-Rettungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">Schwerlast-Rettungswagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/STA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/STA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Feuerwehranhänger für den Transport von Feuerwehrschläuchen und Zubehör</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire service trailer for the transport of fire hoses and accessories</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchtransportanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchtransportanhänger (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug für den Nachschub von Druckschläuchen und Armaturen sowie zum Verlegen von Druckschläuchen über lange Strecken</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the supply of pressure hoses and fittings as well as for laying pressure hoses over long distances</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SW-KatS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SW-KatS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/SW"/>
+        <rdfs:comment xml:lang="en">Schlauchwagen (Germany) equipped with a portable pump with a nominal flow rate of 1500 litres per minute at 10 bar nominal pressure, for use primarily in disaster control (especially in conjunction with the Löschgruppenfahrzeug 20 für den Katastrophenschutz (Germany))</rdfs:comment>
+        <rdfs:comment xml:lang="de">Schlauchwagen mit einer Tragkraftspritze mit einer Nennförderleistung von 1500 Litern pro Minute bei 10 bar Nennförderdruck für den Einsatz, der vorrangig für den Katstrophenschutz eingesetzt wird (insb. in Verbindung mit dem Löschgruppenfahrzeug 20 für den Katastrophenschutz)</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchwagen für den Katastrophenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchwagen für den Katastrophenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SW1000 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SW1000">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/SW"/>
+        <rdfs:comment xml:lang="de">Kleinere Ausführung eines Schlauchwagens</rdfs:comment>
+        <rdfs:comment xml:lang="en">Smaller version of a Schlauchwagen (Germany)</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchwagen 1000</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchwagen 1000 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SW2000 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SW2000">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/SW"/>
+        <rdfs:comment xml:lang="en">Bigger version of a Schlauchwagen (Germany)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Größere Ausführung eines Schlauchwagens</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchwagen 2000</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchwagen 2000 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SW2000-Tr -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SW2000-Tr">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/SW"/>
+        <rdfs:comment xml:lang="en">Schlauchwagen (Germany) that can accomodate am independent crew</rdfs:comment>
+        <rdfs:comment xml:lang="de">Schlauchwagen der einen selbständigen Trupp aufnehmen kann</rdfs:comment>
+        <rdfs:label xml:lang="de">Schlauchwagen 2000 mit Truppbesatzung</rdfs:label>
+        <rdfs:label xml:lang="en">Schlauchwagen 2000 mit Truppbesatzung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SWA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SWA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Anhänger für den Transport eines Schaum-Wasserwerfers und 220 l Schaummittel</rdfs:comment>
+        <rdfs:comment xml:lang="en">Trailer for transporting a foam water cannon and 220 liters of foam agent</rdfs:comment>
+        <rdfs:label xml:lang="de">Anhänger mit Schaum-Wasserwerfer</rdfs:label>
+        <rdfs:label xml:lang="en">Anhänger mit Schaum-Wasserwerfer (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SandbagWall -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SandbagWall">
@@ -1037,6 +2842,40 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/StLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/StLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="de">Ein Löschfahrzeug mit Gruppenbeladung für die Brandbekämpfung in der ersten Welle oder für technische Hilfeleistung im kleinen bis mittleren Rahmen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire engine to transport a whole group of fire fighters for fire-fighting in the first wave or for technical assistance on a small to medium scale</rdfs:comment>
+        <rdfs:label xml:lang="de">Staffellöschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Staffellöschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/StLF10-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/StLF10-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/StLF"/>
+        <rdfs:label xml:lang="de">Staffellöschfahrzeug 10/6</rdfs:label>
+        <rdfs:label xml:lang="en">Staffellöschfahrzeug 10/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/StLF20 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/StLF20">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/StLF"/>
+        <rdfs:comment xml:lang="en">Staffellöschfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 2,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Staffellöschfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Staffellöschfahrzeug 20</rdfs:label>
+        <rdfs:label xml:lang="en">Staffellöschfahrzeug 20 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Stoplog -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
@@ -1057,6 +2896,162 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/TEF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TEF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Taucheinsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Taucheinsatzfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="en">Fire engine usually with a permanently installed fire pump and a large extinguishing water tank, which allows initial fire fighting over a certain period of time without an external water supply</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschfahrzeug mit einer in der Regel fest eingebauten Feuerlöschpumpe und einem großen Löschwasserbehälter, der eine erste Brandbekämpfung über einen bestimmten Zeitraum ohne externe Löschwasserversorgung erlaubt</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF16-24-Tr -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF16-24-Tr">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) that can accommodate an independent crew</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug das einen selbstständigen Trupp aufnehmen kann</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 16/24 mit Truppbesatzung</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 16/24 mit Truppbesatzung (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF16-25 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF16-25">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of 2,400 liters capacity</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 2.400 Litern Inhalt</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 16/25</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 16/25 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF20-40 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF20-40">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of at least 4,000 liters capacity, a supply of 120 liters of foam agent, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 4.000 Litern Inhalt, einem Vorrat von mindestens 120 Liter Schaummittel und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 20/40</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 20/40 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF20-40-SL -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF20-40-SL">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of at least 4,000 liters capacity, a supply of at least 500 liters of foam agent, a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar, and a foam water canon</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 4.000 Litern Inhalt, einem Vorrat von mindestens 500 Liter Schaummittel, einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar, und einem Schaum-Wasserwerfer</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 20/40 mit Sonderlöschmittel</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 20/40 mit Sonderlöschmittel (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF2000 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF2000">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of 2,000 liters capacity, a supply of 6 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 1,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 2.000 Litern Inhalt, 6 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 2000</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 2000 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF24-50 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF24-50">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of 5,000 liters capacity, a supply of 500 liters of foam agent, and a foam water canon</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 5.000 Litern Inhalt, einem Vorrat von 500 Liter Schaummittel und einem Schaum-Wasserwerfer</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 24/50</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 24/50 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF3000 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF3000">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of 3,000 liters capacity, a supply of 120 liters of foam agent as well as 12 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 3.000 Litern Inhalt, einem Vorrat von 120 Liter Schaummittel sowie 12 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 3000</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 3000 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF4000 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF4000">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of at least 4,000 liters capacity, a supply of at least 500 liters of foam agent as well as 12 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 4.000 Litern Inhalt, einem Vorrat von mindestens 500 Liter Schaummittel sowie 12 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 4000</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 4000 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TSA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TSA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="en">A closed trailer, usually single-axle, equipped with a portable pump.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein, in der Regel einachsiger, geschlossener Anhänger der Feuerwehr, der mit einer Tragkraftspritze ausgestattet ist.</rdfs:comment>
+        <rdfs:label xml:lang="de">Tragkraftspritzenanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Tragkraftspritzenanhänger (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TSF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TSF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPortableFirePump"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="en">A fire-fighting vehicle equipped with a portable pump</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Feuerwehrfahrzeug, das mit einer Tragkraftspritze ausgestattet ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Tragkraftspritzenfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Tragkraftspritzenfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TSF-W -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TSF-W">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TSF"/>
+        <rdfs:comment xml:lang="en">Tragkraftspritzenfahrzeug (Germany) with own water tank of at least 500 liters capacity</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tragkraftspritzenfahrzeug mit eigenem Löschwassertank von mindestens 500 Litern Fassungsvermögen</rdfs:comment>
+        <rdfs:label xml:lang="de">Tragkraftspritzenfahrzeug mit Wasser</rdfs:label>
+        <rdfs:label xml:lang="en">Tragkraftspritzenfahrzeug mit Wasser (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/TidalBarrier -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TidalBarrier">
@@ -1064,6 +3059,66 @@
         <rdfs:label xml:lang="de">Sperrwerk</rdfs:label>
         <rdfs:label xml:lang="en">Tidal barrier</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q15848142"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Trailer -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Trailer">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:label xml:lang="de">Anhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Trailer</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q216146</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TurntableLadder -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TurntableLadder">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AerialAppliance"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug mit einer fest installierten Leiter, die sich um 360 Grad drehen lässt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle with a ladder mounted on a pivot which resembles a turntable, able to rotate 360 degrees</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehleiter</rdfs:label>
+        <rdfs:label xml:lang="en">Turntable ladder</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1898202</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/V-LKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/V-LKW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Material und Ausrüstung zur Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Versorgungslastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Versorgungslastkraftwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/VSA -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/VSA">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
+        <rdfs:comment xml:lang="de">Anhänger für den Transport von Verkehrsleitkegeln, Leitkegelleuchten, Winkerkellen usw. um Verkehrsteilnehmer zu warnen oder den Verkehr umzuleiten oder zu stoppen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Trailer for the transport of traffic cones, traffic cone lights, signal lights, etc. to warn road users or to divert or stop traffic</rdfs:comment>
+        <rdfs:label xml:lang="de">Verkehrssicherungsanhänger</rdfs:label>
+        <rdfs:label xml:lang="en">Verkehrssicherungsanhänger (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Vehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Vehicle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label xml:lang="de">Fahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q42889</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1102,6 +3157,29 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/WLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/WLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug für den Transport von in oder auf austauschbaren Abrollbehältern verlasteten, feuerwehrtechnischen Einsatzmitteln</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting vehicle for the transport of firefighting equipment loaded in or on interchangeable roll-off containers</rdfs:comment>
+        <rdfs:label xml:lang="de">Wechselladerfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Wechselladerfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/WRW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/WRW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Wasserrettungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">Wasserrettungswagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/WaterPumpingStation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/WaterPumpingStation">
@@ -1109,6 +3187,177 @@
         <rdfs:label xml:lang="de">Schöpfwerk</rdfs:label>
         <rdfs:label xml:lang="en">Water pumping station</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q14524070"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Watercraft -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Watercraft">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:comment xml:lang="de">Fahrzeug, das auscchließlich oder überwiegend auf dem Wasser unterwegs ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Vehicle that travels exclusively or predominantly on water</rdfs:comment>
+        <rdfs:label xml:lang="de">Wasserfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Watercraft</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1229765</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA(K) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA(K)12-9 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)12-9">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA(K)"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process that has a nominal rescue height of 12 meters, and a nominal outreach of 9 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb und einer Nennrettungshöhe von 12 Metern bei 9 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb 12/9</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb 12/9 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA(K)18-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)18-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA(K)"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process that has a nominal rescue height of 18 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb und einer Nennrettungshöhe von 18 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb 18/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLA(K)23-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLA(K)23-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLA(K)"/>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket and an automated erection and support process that has a nominal rescue height of 23 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vollautomatische Drehleiter mit Korb und einer Nennrettungshöhe von 23 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Vollautomatische Drehleiter mit Korb 23/12</rdfs:label>
+        <rdfs:label xml:lang="en">Vollautomatische Drehleiter mit Korb 23/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLS(K) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLS(K)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLS"/>
+        <rdfs:comment xml:lang="de">Sequentielle Drehleiter mit Korb</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket that can only perform one movement at a time</rdfs:comment>
+        <rdfs:label xml:lang="de">Sequentielle Drehleiter mit Korb</rdfs:label>
+        <rdfs:label xml:lang="en">Sequentielle Drehleiter mit Korb (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLS(K)12-9 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLS(K)12-9">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLS(K)"/>
+        <rdfs:comment xml:lang="de">Sequentielle Drehleiter mit Korb und einer Nennrettungshöhe von 12 Metern bei 9 Metern Nennausladung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket that can only perform one movement at a time, and which has a nominal rescue height of 12 meters, and a nominal outreach of 9 meters</rdfs:comment>
+        <rdfs:label xml:lang="de">Sequentielle Drehleiter mit Korb 12/9</rdfs:label>
+        <rdfs:label xml:lang="en">Sequentielle Drehleiter mit Korb 12/9 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLS(K)18-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLS(K)18-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLS(K)"/>
+        <rdfs:comment xml:lang="de">Sequentielle Drehleiter mit Korb und einer Nennrettungshöhe von 18 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket that can only perform one movement at a time, and which has a nominal rescue height of 18 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:label xml:lang="de">Sequentielle Drehleiter mit Korb 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Sequentielle Drehleiter mit Korb 18/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DLS(K)23-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DLS(K)23-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/DLS(K)"/>
+        <rdfs:comment xml:lang="de">Sequentielle Drehleiter mit Korb und einer Nennrettungshöhe von 23 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turntable ladder with a basket that can only perform one movement at a time, and which has a nominal rescue height of 23 meters, and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:label xml:lang="de">Sequentielle Drehleiter mit Korb 23/12</rdfs:label>
+        <rdfs:label xml:lang="en">Sequentielle Drehleiter mit Korb 23/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Loeschfahrzeug_(Germany)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngine"/>
+        <rdfs:comment xml:lang="de">Feuerlöschfahrzeug, das mit einer Feuerlöschpumpe nach EN 1028-1 und EN 1028-2 und im Regelfall mit einem Wasserbehälter und anderen zusätzlichen Geräten für die Brandbekämpfung ausgerüstet ist.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire engine equipped with a fire pump in accordance with EN 1028-1 and EN 1028-2 and, usually, with a water tank and other additional equipment for firefighting.</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Löschfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MZB_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MZB_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot für die Rettung und Bergung von Personen, Tieren und Gütern, notfallmedizinische Versorgung auf Booten und bewohnten Inseln, Brandbekämpfung auf dem Wasser und auf Inseln, Niederschlagen von Dämpfen, Tauchereinsatz, technische Hilfeleistungen, Schadensbekämpfung bei Ölunfällen und Transport von Personen und Einsatzmitteln</rdfs:comment>
+        <rdfs:comment xml:lang="en">Firefighting boat for the rescue and recovery of people, animals and goods, emergency medical care on boats and inhabited islands, firefighting on water and on islands, vapor suppression, diving operations, technical assistance, damage control in the event of oil spills and transport of people and emergency equipment</rdfs:comment>
+        <rdfs:label xml:lang="de">Mehrzweckboot (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Mehrzweckboot (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTB1_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB1_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RTB_(Feuerwehr)"/>
+        <rdfs:comment xml:lang="de">Kleines Rettungsboot der Feuerwehr mit optionaler Motorisierung für den Einsatz in stehenden Gewässern</rdfs:comment>
+        <rdfs:comment xml:lang="en">Small rescue boat with optional motorization for use in stagnant waters</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsboot Typ 1 (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungsboot Typ 1 (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTB2_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB2_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RTB_(Feuerwehr)"/>
+        <rdfs:comment xml:lang="de">Größeres Rettungsboot der Feuerwehr mit Motorisierung für den Einsatz in fließenden und offenen Gewässern</rdfs:comment>
+        <rdfs:comment xml:lang="en">Larger rescue boat with motorization for use in flowing and open waters</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsboot Typ 2 (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungsboot Typ 2 (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RTB_(Feuerwehr) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB_(Feuerwehr)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot zur Rettung von Menschen und Tieren</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fireboat for rescuing people and animals</rdfs:comment>
+        <rdfs:label xml:lang="de">Rettungsboot (Feuerwehr)</rdfs:label>
+        <rdfs:label xml:lang="en">Rettungsboot (Feuerwehr) (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1260,6 +3509,18 @@
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
         <rdfs:label xml:lang="en">Class IRI</rdfs:label>
         <rdfs:label xml:lang="de">Klassen-IRI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/downloadFileAndReturnRMURL -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/downloadFileAndReturnRMURL">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion die eine Datei von einem gegebenen URL herunterlädt, sie in der RESCUE-MATE-Datenplattform speichert und einen plattforminternen URL zurückgibt, unter dem die Datei über die RESCUE-MATE-Datenplattform zu erreichen ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that downloads a file from a given URL, stores it in the RESCUE-MATE data platform, and returns the URL where to access it via the RESCUE-MATE data platform.</rdfs:comment>
+        <rdfs:label xml:lang="de">Datei herunterladen und RESCUE-MATE-URL zurückgeben</rdfs:label>
+        <rdfs:label xml:lang="en">Download file and return RESCUE-MATE URL</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1502,6 +3763,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getVehicleTypeIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getVehicleTypeIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion die die IRI eines Fahrzeugtyps zu einer Typabkürzung oder -ID zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the class IRI of a vehicle referred to by an ID or abbreviation</rdfs:comment>
+        <rdfs:label xml:lang="de">Fahrzeugtyp-IRI von Typ</rdfs:label>
+        <rdfs:label xml:lang="en">Get vehicle type IRI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/hamburgPortAuthority -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/hamburgPortAuthority">
@@ -1726,6 +3999,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/url -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/url">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A uniform resource locator</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Uniform Resource Locator (URL)</rdfs:comment>
+        <rdfs:label xml:lang="de">URL</rdfs:label>
+        <rdfs:label xml:lang="en">URL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/userName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/userName">
@@ -1746,6 +4031,18 @@
         <rdfs:comment xml:lang="de">Beliebiger String, der einen (JSON-)Wert enthält</rdfs:comment>
         <rdfs:label xml:lang="en">Value string</rdfs:label>
         <rdfs:label xml:lang="de">Wert-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/vehicleType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/vehicleType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A vehicle type given by ID or abbreviation</rdfs:comment>
+        <rdfs:comment xml:lang="de">ID oder Abkürzung eines Fahrzeugtyps</rdfs:comment>
+        <rdfs:label xml:lang="de">Fahrzeugtyp</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle type</rdfs:label>
     </owl:NamedIndividual>
     
 
