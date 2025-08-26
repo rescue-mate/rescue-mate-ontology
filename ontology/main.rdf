@@ -1902,14 +1902,15 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GW-Bt -->
+    <!-- http://rescue-mate.de/ontology/InjuryInHumans -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Bt">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
-        <rdfs:comment>Emergency vehicle to transport equipment and supplies for providing food to emergency personnel or those in need of assistance</rdfs:comment>
-        <rdfs:comment xml:lang="de">Geräewagen für den Transport von Ausrüstung zur Verpflegung von Einsatzkräften oder Hilfsbedürftigen</rdfs:comment>
-        <rdfs:label xml:lang="de">Gerätewagen Betreuung</rdfs:label>
-        <rdfs:label xml:lang="en">Gerätewagen Betreuung (Germany)</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumans">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Injury"/>
+        <rdfs:comment xml:lang="en">A damage inflicted on living a human being impairing their physiological conditions</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Menschen zugeführt wird und dessen körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
+        <rdfs:label xml:lang="en">Injury in humans</rdfs:label>
+        <rdfs:label xml:lang="de">Verletzung beim Menschen</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193078</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1953,15 +1954,15 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/InjuryInHumans -->
+    <!-- http://rescue-mate.de/ontology/KLB -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/InjuryInHumans">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Injury"/>
-        <rdfs:comment xml:lang="en">A damage inflicted on living a human being impairing their physiological conditions</rdfs:comment>
-        <rdfs:comment xml:lang="de">Eine Beschädigung die einem Menschen zugeführt wird und dessen körperliche Verfasssung negativ beeinträchtigt</rdfs:comment>
-        <rdfs:label xml:lang="en">Injury in humans</rdfs:label>
-        <rdfs:label xml:lang="de">Verletzung beim Menschen</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193078</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:comment xml:lang="de">Feuerwehrboot für den Transport von Ausrüstung für die Wasserrettung, und optional Löschgeräten</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fireboat for the transport of equipment for water rescue, and optional firefighting equipment</rdfs:comment>
+        <rdfs:label xml:lang="de">Klein(lösch)boot</rdfs:label>
+        <rdfs:label xml:lang="en">Klein(lösch)boot (Germany)</rdfs:label>
     </owl:Class>
     
 
