@@ -1671,6 +1671,40 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/HAB -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HAB">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AerialWorkPlatform"/>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne</rdfs:label>
+        <rdfs:label xml:lang="en">Hubarbeitsbühne (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HAB18-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HAB18-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HAB"/>
+        <rdfs:comment xml:lang="en">Aerial work platform with a nominal height of 18 meters and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hubarbeitsbühne mit einer Nennhöhe von 18 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Hubarbeitsbühne 18/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HAB23-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HAB23-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HAB"/>
+        <rdfs:comment xml:lang="en">Aerial work platform with a nominal height of 23 meters and a nominal outreach of 12 meters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hubarbeitsbühne mit einer Nennhöhe von 23 Metern bei 12 Metern Nennausladung</rdfs:comment>
+        <rdfs:label xml:lang="de">Hubarbeitsbühne 18/12</rdfs:label>
+        <rdfs:label xml:lang="en">Hubarbeitsbühne 23/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
