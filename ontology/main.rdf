@@ -2020,6 +2020,161 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/LF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug für den Transport von Besatzung und Ausrüstung zur Brandbekämpfung und für technische Hilfeleistung einfachen Umfangs</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of crew and equipment for fire-fighting and for simple technical assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF-KatS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF-KatS">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/LF16-TS"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) primarily used for disaster protection</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug das vorrangig für den Katstrophenschutz eingesetzt wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug für den Katastrophenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug für den Katastrophenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF10 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF10">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 1,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 10</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 10 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF10-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF10-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of at least 600 liters and a fire-fighting centrifugal pump with a capacity of 1000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1000 Liter Wasser in der Minute und einem Löschwasservorrat von mindestens 600 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 10/6</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 10/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF16 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF16">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 1,600 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.600 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 16</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 16 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF16-12 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF16-12">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of 1,200 liters and a fire-fighting centrifugal pump with a capacity of 1,600 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.600 Liter Wasser in der Minute und einem Löschwasservorrat von 1.200 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 16/12</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 16/12 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF16-TS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF16-TS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 16 TS</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 16 TS (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF20 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF20">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 2,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 20</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 20 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF20-16 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF20-16">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of 1,600 liters and a fire-fighting centrifugal pump with a capacity of 2,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute und einem Löschwasservorrat von 1.600 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 20/16</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 20/16 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF20-KatS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF20-KatS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF-KatS"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug für den Katastrophenschutz (Germany) with a fire-fighting centrifugal pump with a capacity of 2,000 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug für den Katastrophenschutz mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 20 für den Katastrophenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 20 für den Katastrophenschutz (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF24 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF24">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 2,400 liters of water per minute</rdfs:comment>
+        <rdfs:comment>Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.400 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 24</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 24 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF8 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF8">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 800 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 800 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 8</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 8 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF8-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF8-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of at least 600 liters and a fire-fighting centrifugal pump with a capacity of 800 liters of water per minute</rdfs:comment>
+        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 800 Liter Wasser in der Minute und einem Löschwasservorrat von 600 Litern</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 8/6</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 8/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/LandVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/LandVehicle">
