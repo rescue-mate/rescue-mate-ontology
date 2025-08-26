@@ -1835,6 +1835,33 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/I-RTW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/I-RTW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle for the transport of highly infectious or highly contagious persons, in which the patient compartment is completely sealed off from the outside world and the driver&apos;s cab</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug für die Beförderung hochinfektiöser bzw. hochkontagiöser Personen, bei dem der Patientenraum im Aufbau komplett zur Außenwelt sowie zum Führerhaus hin abgedichtet ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Infektionsrettungswagen</rdfs:label>
+        <rdfs:label xml:lang="en">Infektionsrettungswagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ITW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ITW">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/MICU"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:comment xml:lang="en">Rescue vehicle specially equipped to transport patients requiring intensive care between intensive care units from hospital to hospital</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rettungsfahrzeug, das speziell ausgestattet ist, um intensivpflichtige Patienten zwischen Intensivstationen von Krankenhaus zu Krankenhaus zu transportieren</rdfs:comment>
+        <rdfs:label xml:lang="de">Intensivtransportwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Intensivtransportwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/InfrastructureDamage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/InfrastructureDamage">
