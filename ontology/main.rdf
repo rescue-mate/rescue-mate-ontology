@@ -1788,6 +1788,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/HumanActivity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanActivity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
+        <rdfs:comment xml:lang="en">An activity that is performed by a human being</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Human activity</rdfs:label>
+        <rdfs:label xml:lang="de">Menschliche Tätigkeit</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q61788060</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
@@ -2178,15 +2191,15 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/HumanActivity -->
+    <!-- http://rescue-mate.de/ontology/RW3 -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/HumanActivity">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
-        <rdfs:comment xml:lang="en">An activity that is performed by a human being</rdfs:comment>
-        <rdfs:comment xml:lang="de">Eine Tätigkeit, die von einem Menschen ausgeführt wird</rdfs:comment>
-        <rdfs:label xml:lang="en">Human activity</rdfs:label>
-        <rdfs:label xml:lang="de">Menschliche Tätigkeit</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q61788060</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW3">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
+        <rdfs:comment xml:lang="de">Ein Rüstwagen, der größer ist als der Rüstwagen 2</rdfs:comment>
+        <rdfs:comment xml:lang="en">Rüstwagen (Germany) that is bigger than a Rüstwagen 2 (Germany)</rdfs:comment>
+        <rdfs:label xml:lang="de">Rüstwagen 3</rdfs:label>
+        <rdfs:label xml:lang="en">Rüstwagen 3 (Germany)</rdfs:label>
+    </owl:Class>
     
 
 
