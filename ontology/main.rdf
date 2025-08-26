@@ -1643,6 +1643,34 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GettingLostOrBeingFound -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLostOrBeingFound">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GruKw -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GruKw">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/PoliceVehicle"/>
+        <rdfs:comment xml:lang="en">Police vehicle to transport groups of people</rdfs:comment>
+        <rdfs:comment xml:lang="de">Polizeifahrzeug zum Transport von Personengruppen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gruppenkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Gruppenkraftwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
@@ -1918,23 +1946,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GettingLostOrBeingFound -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLostOrBeingFound">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
-                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </owl:Class>
-    
-
-
-    
     <!-- http://rescue-mate.de/ontology/PoliceVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceVehicle">
