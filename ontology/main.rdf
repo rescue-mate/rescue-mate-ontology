@@ -1590,6 +1590,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GermanBoroughOffice -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanBoroughOffice">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Bezirksamt</rdfs:label>
+        <rdfs:label xml:lang="en">German borough office</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
@@ -1934,12 +1944,13 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GermanBoroughOffice -->
+    <!-- http://rescue-mate.de/ontology/PumpingStation -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanBoroughOffice">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="de">Bezirksamt</rdfs:label>
-        <rdfs:label xml:lang="en">German borough office</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PumpingStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="en">Pumping station</rdfs:label>
+        <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q446013"/>
     </owl:Class>
     
 
@@ -1992,13 +2003,14 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/PumpingStation -->
+    <!-- http://rescue-mate.de/ontology/RW-G -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/PumpingStation">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
-        <rdfs:label xml:lang="en">Pumping station</rdfs:label>
-        <rdfs:label xml:lang="de">Pumpwerk</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q446013"/>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW-G">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
+        <rdfs:comment xml:lang="en">Rüstwagen (Germany) with an extensive equipment for hazardous materials</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rüstwagen mit umfangreicher Gefahrgutausrüstung</rdfs:comment>
+        <rdfs:label xml:lang="de">Rüstwagen mit Sonderbeladung Gefahrgut</rdfs:label>
+        <rdfs:label xml:lang="en">Rüstwagen mit Sonderbeladung Gefahrgut (Germany)</rdfs:label>
     </owl:Class>
     
 
