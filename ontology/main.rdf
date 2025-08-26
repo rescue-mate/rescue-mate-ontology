@@ -1705,6 +1705,79 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/HLF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:comment xml:lang="de">Feuerwehr-Fahrzeug für den Transport von Besatzung und Ausrüstung zur Brandbekämpfung sowie umfangreicher Ausrüstung für die technische Hilfeleistung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of crew and equipment for fire-fighting as well as extensive equipment for technical assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug</rdfs:label>
+        <rdfs:label>Hilfeleistungslöschgruppenfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF10 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF10">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 1000 liters capacity and a supply of 120 liters of foam agent, and a fire extinguishing centrifugal pump with a flow rate of 1,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von 1000 Litern Inhalt sowie einem Vorrat von 120 Liter Schaummittel, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 10</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 10 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF10-6 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF10-6">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 600 liters capacity and a fire extinguishing centrifugal pump with a flow rate of 1,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von 600 Litern Inhalt und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 10/6</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 10/6 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF20 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF20">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 1,600 liters capacity, a supply of 120 liters of foam agent as well as 12 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von mindestens 1.600 Litern Inhalt, einem Vorrat von 120 Liter Schaummittel sowie 12 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 20</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 20 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF20-16 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF20-16">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 1,600 liters capacity, a supply of 120 liters of foam agent as well as 12 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von mindestens 1.600 Litern Inhalt, einem Vorrat von 120 Liter Schaummittel sowie 12 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 20/16</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 20/16 (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF24-14-S -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF24-14-S">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) that can also drive on rails and is therefore particularly suitable for fire-fighting in tunnels and technical accident assistance on the rails</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug das zusätzlich auch auf Schienen fahren kann und sich daher besonders für die Brandbekämpfung in Tunneln und die technische Unfallhilfe auf der Schiene eignet</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 24/14-Schiene</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 24/14-Schiene (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
