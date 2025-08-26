@@ -2175,6 +2175,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/LKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LKW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:label xml:lang="de">Lastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Lorry</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/LandVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/LandVehicle">
@@ -2186,6 +2197,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/LiMaKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LiMaKW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/PoliceVehicle"/>
+        <rdfs:comment xml:lang="en">Police vehicle to transport a mobile or stationary light mast for operations at night</rdfs:comment>
+        <rdfs:comment xml:lang="de">Polizeifahrzeug zum Transport eines mobilen oder stationären Lichtmastes für nächtliche Einsätze</rdfs:comment>
+        <rdfs:label xml:lang="de">Lichtmastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Lichtmastkraftwagen (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Lock -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
@@ -2193,6 +2216,17 @@
         <rdfs:label xml:lang="en">Lock</rdfs:label>
         <rdfs:label xml:lang="de">Schleuse</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MICU -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MICU">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
+        <rdfs:label xml:lang="de">Mobile Intensive Care Unit</rdfs:label>
+        <rdfs:label xml:lang="en">Mobile Intensive Care Unit</rdfs:label>
     </owl:Class>
     
 
