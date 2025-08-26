@@ -1600,6 +1600,49 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GermanPublicLawInstitution -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanPublicLawInstitution">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Anstalt des öffentlichen Rechts</rdfs:label>
+        <rdfs:label xml:lang="en">German public law institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanStateAgency -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateAgency">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">German state agency</rdfs:label>
+        <rdfs:label xml:lang="de">Landesbehörde (Deutschland)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanStateEnterprise -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateEnterprise">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">German state enterprise</rdfs:label>
+        <rdfs:label xml:lang="de">Landesbetrieb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GettingLost -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLost">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Losing the spatial reference of someone or something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verlust des räumlichen Bezugs zu jemanden oder etwas</rdfs:comment>
+        <rdfs:label xml:lang="en">Getting lost</rdfs:label>
+        <rdfs:label xml:lang="de">Verschwinden</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q23580581</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
@@ -1875,35 +1918,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GermanStateAgency -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateAgency">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="en">German state agency</rdfs:label>
-        <rdfs:label xml:lang="de">Landesbehörde (Deutschland)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://rescue-mate.de/ontology/GermanStateEnterprise -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateEnterprise">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="en">German state enterprise</rdfs:label>
-        <rdfs:label xml:lang="de">Landesbetrieb</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://rescue-mate.de/ontology/GermanPublicLawInstitution -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanPublicLawInstitution">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="de">Anstalt des öffentlichen Rechts</rdfs:label>
-        <rdfs:label xml:lang="en">German public law institution</rdfs:label>
-    </owl:Class>
-    
-    
     <!-- http://rescue-mate.de/ontology/GettingLostOrBeingFound -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLostOrBeingFound">
@@ -1921,15 +1935,13 @@
 
 
     
-    <!-- http://rescue-mate.de/ontology/GettingLost -->
+    <!-- http://rescue-mate.de/ontology/PoliceVehicle -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLost">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:comment xml:lang="en">Losing the spatial reference of someone or something</rdfs:comment>
-        <rdfs:comment xml:lang="de">Verlust des räumlichen Bezugs zu jemanden oder etwas</rdfs:comment>
-        <rdfs:label xml:lang="en">Getting lost</rdfs:label>
-        <rdfs:label xml:lang="de">Verschwinden</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q23580581</rdfs:seeAlso>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:label xml:lang="en">Police vehicle</rdfs:label>
+        <rdfs:label xml:lang="de">Polizeifahrzeug</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2265780</rdfs:seeAlso>
     </owl:Class>
     
 
