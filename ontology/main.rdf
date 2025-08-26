@@ -1953,14 +1953,10 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GW-G1 -->
+    <!-- http://rescue-mate.de/ontology/KLAF -->
 
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G1">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
-        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a smaller amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
-        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten kleineren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
-        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 1</rdfs:label>
-        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 1 (Germany)</rdfs:label>
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLAF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
     </owl:Class>
     
 
