@@ -103,6 +103,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasResourceType -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasResourceType">
+        <rdfs:comment xml:lang="en">Informally annotates an operational resource with a resource type</rdfs:comment>
+        <rdfs:comment xml:lang="de">Informelle Annotation einer Einsatzressource mit einem Ressourcentyp</rdfs:comment>
+        <rdfs:label xml:lang="en">has resource type</rdfs:label>
+        <rdfs:label xml:lang="de">hat Ressourcen-Typ</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
