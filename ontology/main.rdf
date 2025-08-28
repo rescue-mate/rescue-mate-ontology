@@ -348,19 +348,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/Finding -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:comment xml:lang="en">Recovery of the spatial reference of someone or something</rdfs:comment>
-        <rdfs:comment xml:lang="de">Wiedererlangung des räumliche Bezugs zu jemanden oder etwas</rdfs:comment>
-        <rdfs:label xml:lang="de">Finden</rdfs:label>
-        <rdfs:label xml:lang="en">Finding</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q37112258</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/AB -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/AB">
@@ -877,6 +864,19 @@
         <rdfs:comment xml:lang="de">Status-Nachricht, die über das Funkmeldesystem (FMS) gesendet oder empfangen wurde</rdfs:comment>
         <rdfs:label xml:lang="en">FMS message</rdfs:label>
         <rdfs:label xml:lang="de">FMS-Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Finding -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Recovery of the spatial reference of someone or something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Wiedererlangung des räumliche Bezugs zu jemanden oder etwas</rdfs:comment>
+        <rdfs:label xml:lang="de">Finden</rdfs:label>
+        <rdfs:label xml:lang="en">Finding</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q37112258</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -2496,8 +2496,8 @@
     <!-- http://rescue-mate.de/ontology/RTH -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RTH">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Aircraft"/>
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AirCraft"/>
         <rdfs:comment xml:lang="en">Rescue air vehicle specially equipped for air rescue and the transfer of hospital patients</rdfs:comment>
         <rdfs:comment xml:lang="de">Rettungsluftfahrzeug speziell ausgerüstete für die Luftrettung und die Verlegung von Klinikpatienten</rdfs:comment>
         <rdfs:label xml:lang="de">Rettungstransporthubschrauber</rdfs:label>
