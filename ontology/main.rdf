@@ -3795,6 +3795,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/idString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/idString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String holding an ID or name</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der eine ID oder einen Name beinhaltet</rdfs:comment>
+        <rdfs:label xml:lang="en">ID string</rdfs:label>
+        <rdfs:label xml:lang="de">ID-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/innenstadtDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/innenstadtDikeDefenseArea">
