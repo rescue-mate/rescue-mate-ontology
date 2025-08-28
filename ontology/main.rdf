@@ -110,6 +110,8 @@
         <rdfs:comment xml:lang="de">Informelle Annotation einer Einsatzressource mit einem Ressourcentyp</rdfs:comment>
         <rdfs:label xml:lang="en">has resource type</rdfs:label>
         <rdfs:label xml:lang="de">hat Ressourcen-Typ</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/OperationalResource"/>
     </owl:AnnotationProperty>
     
 
@@ -2453,6 +2455,18 @@
         <rdfs:comment xml:lang="de">Ein Ereignis, das die Veröffentlichung einer Benachrichtigung beschreibt, die an eine Gruppe von Individuen gerichtet ist, die durch eine Rolle zusammengefasst werden.</rdfs:comment>
         <rdfs:label xml:lang="de">Benachrichtigungsereignis</rdfs:label>
         <rdfs:label xml:lang="en">Notification event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/OperationalResource -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OperationalResource">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:comment xml:lang="de">Alle Ressourcen, die in einem Einsatz administriert werden können, seien sie menschlicher, technischer, infrastruktureller oder materieller Natur</rdfs:comment>
+        <rdfs:comment xml:lang="en">Any resource that can be deployed in an emergency response, whether human, technical, infrastructural, or material</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzmittel</rdfs:label>
+        <rdfs:label xml:lang="en">Operational resource</rdfs:label>
     </owl:Class>
     
 
