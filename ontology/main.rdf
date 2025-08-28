@@ -3559,6 +3559,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/generateResourceIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/generateResourceIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine IRI im RESCUE-MATE-Ressourcen-Namensraum für eine ID oder einen Namen generiert</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that generates a proper IRI in the RESCUE-MATE resource namespace for an input ID string</rdfs:comment>
+        <rdfs:label xml:lang="en">Generate resource IRI</rdfs:label>
+        <rdfs:label xml:lang="de">Name zu Ressourcen-IRI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/geoJSONToWKTLineString -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/geoJSONToWKTLineString">
