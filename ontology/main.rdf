@@ -875,6 +875,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/EmergencyCall -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyCall">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/PrioritizedRequestToTalk"/>
+        <obo:IAO_0000116>status 0 (rd/fw)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Emergency call</rdfs:label>
+        <rdfs:label xml:lang="de">Notruf</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/EmergencyVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyVehicle">
