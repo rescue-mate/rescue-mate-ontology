@@ -433,6 +433,73 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ArrivedOnScene -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ArrivedOnScene">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 4 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Am Einsatzort eingetroffen</rdfs:label>
+        <rdfs:label xml:lang="en">Arrived on scene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AtDestination -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AtDestination">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 8 (fw)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Am Zielort</rdfs:label>
+        <rdfs:label xml:lang="en">At destination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AtHospitalOrOtherDestination -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AtHospitalOrOtherDestination">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AtDestination"/>
+        <obo:IAO_0000116>status 8 (rd)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">At hospital or other destination</rdfs:label>
+        <rdfs:label xml:lang="de">Im Krankenhaus/am Transportziel angekommen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AtOtherLocation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AtOtherLocation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AtDestination"/>
+        <obo:IAO_0000116>status 8 (pol)</obo:IAO_0000116>
+        <rdfs:comment xml:lang="en">Patrol is committed at some other defined location, e.g. courthouse, duty point, escort assignment</rdfs:comment>
+        <rdfs:label xml:lang="de">An anderem Einsatz-/Sprechort</rdfs:label>
+        <rdfs:label xml:lang="en">At other location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AvailableAtStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AvailableAtStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 2 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Available at station</rdfs:label>
+        <rdfs:label xml:lang="de">Einsatzbereit auf Wache</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AvailableOnRadio -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AvailableOnRadio">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 1 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Available on radio</rdfs:label>
+        <rdfs:label xml:lang="de">Einsatzbereit über Funk</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/BtLKW -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/BtLKW">
@@ -816,6 +883,38 @@
         <rdfs:label xml:lang="de">Einsatzfahrzeug</rdfs:label>
         <rdfs:label xml:lang="en">Emergency vehicle</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1308737</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EmergencyVehicleStatus -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyVehicleStatus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="de">Einsatzfahrzeugszustand</rdfs:label>
+        <rdfs:label xml:lang="en">Emergency vehicle status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EnRoute -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EnRoute">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 3 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Auf dem Weg zum Einsatzort</rdfs:label>
+        <rdfs:label xml:lang="en">En route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EnRouteToHospital -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EnRouteToHospital">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 7 (san)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Auf dem Weg ins Krankenhaus mit Patient</rdfs:label>
+        <rdfs:label xml:lang="en">En route to hospital</rdfs:label>
     </owl:Class>
     
 
@@ -2328,6 +2427,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ManualACK_RemoteLogin -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ManualACK_RemoteLogin">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116 xml:lang="de">status 9 (pol/feu/san)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Handquittung/Fremdanmeldung</rdfs:label>
+        <rdfs:label xml:lang="en">Manual ACK / Remote Login</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ManualPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ManualPropulsion">
@@ -2471,6 +2581,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/OutOfServiceAtStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OutOfServiceAtStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 6 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Nicht einsatzbereit auf Wache</rdfs:label>
+        <rdfs:label xml:lang="en">Out of service at station</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/PoliceVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceVehicle">
@@ -2478,6 +2599,17 @@
         <rdfs:label xml:lang="en">Police vehicle</rdfs:label>
         <rdfs:label xml:lang="de">Polizeifahrzeug</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2265780</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/PrioritizedRequestToTalk -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PrioritizedRequestToTalk">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 0 (pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Priorisierter Sprechwunsch</rdfs:label>
+        <rdfs:label xml:lang="en">Proritized request to talk</rdfs:label>
     </owl:Class>
     
 
@@ -2690,6 +2822,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/RequestToTalk -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestToTalk">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 5 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Request to talk</rdfs:label>
+        <rdfs:label xml:lang="de">Sprechwunsch</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/RescueAppliance -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RescueAppliance">
@@ -2708,6 +2851,17 @@
         <rdfs:label xml:lang="en">Rescue vehicle</rdfs:label>
         <rdfs:label xml:lang="de">Rettungsfahrzeug</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2146446</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ReturningToStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ReturningToStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 9 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Returning to station</rdfs:label>
+        <rdfs:label xml:lang="de">Wachanfahrt/Rückfahrt</rdfs:label>
     </owl:Class>
     
 
@@ -3346,6 +3500,18 @@
         <rdfs:comment xml:lang="en">Firefighting boat for the rescue and recovery of people, animals and goods, emergency medical care on boats and inhabited islands, firefighting on water and on islands, vapor suppression, diving operations, technical assistance, damage control in the event of oil spills and transport of people and emergency equipment</rdfs:comment>
         <rdfs:label xml:lang="de">Mehrzweckboot (Feuerwehr)</rdfs:label>
         <rdfs:label xml:lang="en">Mehrzweckboot (Feuerwehr) (Germany)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/OutOfService_(Mobile) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OutOfService_(Mobile)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 7 (fw/pol)</obo:IAO_0000116>
+        <rdfs:comment xml:lang="en">Not operational, away from station (e.g. technical defect)</rdfs:comment>
+        <rdfs:label xml:lang="de">Nicht einsatzbereit über Funk</rdfs:label>
+        <rdfs:label xml:lang="en">Out of service (mobile)</rdfs:label>
     </owl:Class>
     
 
