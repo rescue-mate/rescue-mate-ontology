@@ -278,6 +278,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/vehicleHasState -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/vehicleHasState">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <rdfs:label xml:lang="de">Fahrzeug ist in Zustand</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle has state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
