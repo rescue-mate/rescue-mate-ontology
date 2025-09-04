@@ -232,6 +232,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasPosition">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:comment xml:lang="de">Beziehung zwischen einem Objekt und einer Position (d.h. einem Raum-Zeit-Punkt)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation between an object and a position (being a point in space-time)</rdfs:comment>
+        <rdfs:label xml:lang="en">has position</rdfs:label>
+        <rdfs:label xml:lang="de">hat Position</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/maintenanceResponsibility -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/maintenanceResponsibility">
