@@ -4369,6 +4369,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/vehicleTypeIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/vehicleTypeIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">IRI des Fahrzeugtyps</rdfs:comment>
+        <rdfs:comment xml:lang="en">The IRI of the vehicle type</rdfs:comment>
+        <rdfs:label xml:lang="de">Fahrzeug-Typ-IRI</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle type IRI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea">
