@@ -114,6 +114,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasFMSStatusCode -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasFMSStatusCode">
+        <rdfs:comment xml:lang="en">Annotates a FMS status message with its status code</rdfs:comment>
+        <rdfs:comment xml:lang="de">Annotiert eine FMS-Status-Nachricht mit dem entsprechenden FMS-Status-Wert</rdfs:comment>
+        <rdfs:label xml:lang="en">has FMS status code</rdfs:label>
+        <rdfs:label xml:lang="de">hat FMS-Status-Wert</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FMSMessage"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasResourceType -->
 
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasResourceType">
