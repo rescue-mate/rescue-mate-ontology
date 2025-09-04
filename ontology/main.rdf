@@ -2674,6 +2674,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Position -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Position">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <rdfs:comment xml:lang="en">A spatiotemporal region that has a zero-dimensional temporal component, i.e., a time instant, and a zero-dimensional spatial component, i.e., a point, hence forming a point in space-time</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Raum-Zeit-Bereich mit einem nulldimensionalen temporalen Anteil (d.h., einem Zeitpunkt) und einem nulldimensionalen räumlichen Anteil (d.h. ein räumlicher Punkt), der also insgesamt einen Raum-Zeit-Punkt darstellt.</rdfs:comment>
+        <rdfs:label xml:lang="de">Position</rdfs:label>
+        <rdfs:label xml:lang="en">Position</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/PrioritizedRequestToTalk -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PrioritizedRequestToTalk">
