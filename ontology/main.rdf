@@ -103,6 +103,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasExternalID -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasExternalID">
+        <rdfs:comment xml:lang="en">Assigns an ID that is external to the RESCUE-MATE data ecosystem</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weist eine ID zu, die außerhalb des RESCUE-MATE-Datenökosystems verwendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">has external ID</rdfs:label>
+        <rdfs:label xml:lang="de">hat externe ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasResourceType -->
 
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasResourceType">
