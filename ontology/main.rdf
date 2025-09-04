@@ -3787,6 +3787,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/dateTimeStampString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/dateTimeStampString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Date-Time-Stamp-String mit oder ohne Zeitzoneninformation</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date-time stamp string with or without time zone information</rdfs:comment>
+        <rdfs:label xml:lang="de">Date-Time-Stamp-String</rdfs:label>
+        <rdfs:label xml:lang="en">Date-time stamp string</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/downloadFileAndReturnRMURL -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/downloadFileAndReturnRMURL">
