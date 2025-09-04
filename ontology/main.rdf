@@ -4185,6 +4185,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/makeCompleteDateTimeStamp -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/makeCompleteDateTimeStamp">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen beliebigen Eingabe-Date-Time-Stamp-String einen Date-Time-Stamp-String mit vollständiger Zeitzoneninformation zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns a complete time stamp string, i.e., with time zone information, for an arbitrary input date-time stamp string</rdfs:comment>
+        <rdfs:label xml:lang="de">Date-Time-Stamp zu Date-Time-Stamp mit Zeitzoneninformation</rdfs:label>
+        <rdfs:label xml:lang="en">Make complete date-time stamp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/pointList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointList">
