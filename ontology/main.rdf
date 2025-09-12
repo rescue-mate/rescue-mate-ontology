@@ -1055,6 +1055,8 @@
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Facility">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:comment xml:lang="en">Geographic entity that was created to support a specific function</rdfs:comment>
+        <rdfs:comment xml:lang="de">Geographische Entität, die für einen bestimmten Zweck angelegt wurde</rdfs:comment>
         <rdfs:label xml:lang="de">Anlage</rdfs:label>
         <rdfs:label xml:lang="en">Facility</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q13226383</rdfs:seeAlso>
