@@ -1051,6 +1051,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Facility -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Facility">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:label xml:lang="de">Anlage</rdfs:label>
+        <rdfs:label xml:lang="en">Facility</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q13226383</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Finding -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
