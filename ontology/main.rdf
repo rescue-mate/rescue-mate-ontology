@@ -1110,7 +1110,7 @@
     <!-- http://rescue-mate.de/ontology/FixedConstruction -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FixedConstruction">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
