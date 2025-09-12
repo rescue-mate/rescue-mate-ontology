@@ -1155,6 +1155,19 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q67140121 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q67140121">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q13226383"/>
+        <rdfs:comment xml:lang="de">Pflegeeinrichtung</rdfs:comment>
+        <rdfs:comment xml:lang="en">long-term care facility providing supervision and assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Wohnanlage</rdfs:label>
+        <rdfs:label xml:lang="en">residential facility</rdfs:label>
+        <rdfs:label xml:lang="fr">établissement de soins de long séjour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q6881760 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6881760">

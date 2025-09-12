@@ -2964,6 +2964,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ResidentialFacility -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ResidentialFacility">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:comment xml:lang="de">Anlage für die Langzeitpflege und Betreuung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Long-term care facility providing supervision and assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Pflegeeinrichtung</rdfs:label>
+        <rdfs:label xml:lang="en">Residential facility</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ReturningToStation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ReturningToStation">
