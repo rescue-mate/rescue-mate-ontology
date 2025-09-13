@@ -3861,6 +3861,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/eMailAddressString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/eMailAddressString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing an e-mail address</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der eine E-Mail-Adresse enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">E-Mail-Adress-String</rdfs:label>
+        <rdfs:label xml:lang="en">E-mail address string</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/eventCategory -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/eventCategory">
@@ -4023,6 +4035,18 @@
         <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a dike defense area referred to by name.</rdfs:comment>
         <rdfs:label xml:lang="de">Deichverteidigungsgebiet von Gebietsname</rdfs:label>
         <rdfs:label xml:lang="en">Get dike defense area</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getEMailAddressIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getEMailAddressIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für eine Eingabe-E-Mail-Adresse eine vollstandige IRI zurückgibt, sofern die E-Mail-Adresse nicht leer ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns a proper IRI for an input e-mail address string if it is not empty</rdfs:comment>
+        <rdfs:label xml:lang="de">E-Mail-Adresse zu E-Mail-Adress-IRI</rdfs:label>
+        <rdfs:label xml:lang="en">Get e-mail address IRI</rdfs:label>
     </owl:NamedIndividual>
     
 
