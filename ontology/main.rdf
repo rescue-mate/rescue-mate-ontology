@@ -3685,6 +3685,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/split -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/ontology/split">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die einen Eingabe-String entgegen nimmt und ihn n mal an Leerzeichen splittet (wobei n ein Eingabeparameter ist), und den i-ten Teil zurück gibt (wobei i ein weiterer Eingabeparameter ist und 0 den ersten Teilstring addressiert).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes an input sting, splits it on white spaces n times (where n is a call parameter), and returns the i-th part (where i is another call parameter and 0 refers to the first part).</rdfs:comment>
+        <rdfs:label xml:lang="en">Split</rdfs:label>
+        <rdfs:label xml:lang="de">Splitte auf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/airbusOperationsGmbH -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/airbusOperationsGmbH">
@@ -4235,6 +4247,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/numSplits -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/numSplits">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">An integer which refers to the number of times a string shall be split (from left to right)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine natürliche Zahl, die angibt, die oft ein String an Leerzeichen aufgesplittet werden soll</rdfs:comment>
+        <rdfs:label xml:lang="de">Anzahl der Teilungen</rdfs:label>
+        <rdfs:label xml:lang="en">Number of Splits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/pointList -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointList">
@@ -4301,6 +4325,18 @@
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
         <rdfs:label xml:lang="de">Gib Klassen-IRI zurück, falls Wahrheitswert wahr ist</rdfs:label>
         <rdfs:label xml:lang="en">Return class IRI if true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/returnIndex -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/returnIndex">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Für eine gegebene Liste addressiert dieser Parameter den n-ten Eintrag, beginnend bei 0</rdfs:comment>
+        <rdfs:comment xml:lang="en">Given an array of entries, this parameter addresses the n-th entry starting at 0</rdfs:comment>
+        <rdfs:label xml:lang="en">Return index</rdfs:label>
+        <rdfs:label xml:lang="de">Rückgabeindex</rdfs:label>
     </owl:NamedIndividual>
     
 
