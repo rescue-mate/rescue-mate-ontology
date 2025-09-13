@@ -20,23 +20,23 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/main">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.4.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.5.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.4.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.5.0"/>
         <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dct:created>2025-02-12</dct:created>
         <dct:creator>Patrick Westphal</dct:creator>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-26</dct:issued>
-        <dct:modified>2025-08-26</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-13</dct:issued>
+        <dct:modified>2025-09-13</dct:modified>
         <dct:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</dct:rights>
         <dct:title xml:lang="en">RESCUE-MATE Ontology</dct:title>
         <dct:title xml:lang="de">RESCUE-MATE-Ontologie</dct:title>
         <rdfs:comment xml:lang="de">Haupt-Ontologie-Modul zur Unterstützung der Datenintegration im RESCUE-MATE-Projekt</rdfs:comment>
         <rdfs:comment xml:lang="en">Main ontology module supporting the data integration part of the RESCUE-MATE project</rdfs:comment>
-        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.3.0"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.4.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -99,6 +99,43 @@
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasDetectedCategory">
         <rdfs:label xml:lang="en">has detected category</rdfs:label>
         <rdfs:label xml:lang="de">hat erkannte Kategorie</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasExternalID -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasExternalID">
+        <rdfs:comment xml:lang="en">Assigns an ID that is external to the RESCUE-MATE data ecosystem</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weist eine ID zu, die außerhalb des RESCUE-MATE-Datenökosystems verwendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">has external ID</rdfs:label>
+        <rdfs:label xml:lang="de">hat externe ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasFMSStatusCode -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasFMSStatusCode">
+        <rdfs:comment xml:lang="en">Annotates a FMS status message with its status code</rdfs:comment>
+        <rdfs:comment xml:lang="de">Annotiert eine FMS-Status-Nachricht mit dem entsprechenden FMS-Status-Wert</rdfs:comment>
+        <rdfs:label xml:lang="en">has FMS status code</rdfs:label>
+        <rdfs:label xml:lang="de">hat FMS-Status-Wert</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FMSMessage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasResourceType -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasResourceType">
+        <rdfs:comment xml:lang="en">Informally annotates an operational resource with a resource type</rdfs:comment>
+        <rdfs:comment xml:lang="de">Informelle Annotation einer Einsatzressource mit einem Ressourcentyp</rdfs:comment>
+        <rdfs:label xml:lang="en">has resource type</rdfs:label>
+        <rdfs:label xml:lang="de">hat Ressourcen-Typ</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/OperationalResource"/>
     </owl:AnnotationProperty>
     
 
@@ -169,9 +206,9 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/has_notification -->
+    <!-- http://rescue-mate.de/ontology/hasNotification -->
 
-    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/has_notification">
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasNotification">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/NotificationEvent"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:comment xml:lang="en">A relation between a notification event and an information content entity containing the actual notification.</rdfs:comment>
@@ -182,15 +219,39 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/has_notification_target -->
+    <!-- http://rescue-mate.de/ontology/hasNotificationTarget -->
 
-    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/has_notification_target">
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasNotificationTarget">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/NotificationEvent"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:comment xml:lang="en">A relation between a notification event and a role (capturing, e.g., a group of individuals). The message, i.e., the actual notification of the notification event addresses the group of individuals having the target role.</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine Relation zwischen einem Benachrichtigungsereignis und einer Rolle (die z.B. eine Gruppe von Individuen zusammenfasst). Die Benachrichtigung des Benachrichtigungsereignisses ist an die Gruppe der Individuen addressiert, die die addressierte Rolle inne haben.</rdfs:comment>
         <rdfs:label xml:lang="en">has notification target</rdfs:label>
         <rdfs:label xml:lang="de">hat Addressat für Benachrichtigung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasOperator -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasOperator">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">has operator</rdfs:label>
+        <rdfs:label xml:lang="de">hat Betreiber</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasPosition">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:comment xml:lang="de">Beziehung zwischen einem Objekt und einer Position (d.h. einem Raum-Zeit-Punkt)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation between an object and a position (being a point in space-time)</rdfs:comment>
+        <rdfs:label xml:lang="en">has position</rdfs:label>
+        <rdfs:label xml:lang="de">hat Position</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -224,6 +285,17 @@
         <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
         <rdfs:label xml:lang="de">Zuständigkeit Aufsicht</rdfs:label>
         <rdfs:label xml:lang="en">supervisory responsibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/vehicleHasState -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/vehicleHasState">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicle"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <rdfs:label xml:lang="de">Fahrzeug ist in Zustand</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle has state</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -293,6 +365,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/maximumOccupancy -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/maximumOccupancy">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="de">maximale Belegung</rdfs:label>
+        <rdfs:label xml:lang="en">maximum occupancy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/openWaterLevelInMeters -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/openWaterLevelInMeters">
@@ -326,6 +408,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/sentFromDeviceWithIndividualShortSubscriberIdentity -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/sentFromDeviceWithIndividualShortSubscriberIdentity">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FMSMessage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="de">gesendet von Gerät mit Individual Short Subscriber Identity (ISSI)</rdfs:label>
+        <rdfs:label xml:lang="en">sent from device with individual short subscriber identity (ISSI)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/yearOfConstruction -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/yearOfConstruction">
@@ -345,19 +438,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://resccue-mate.de/ontology/Finding -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:comment xml:lang="en">Recovery of the spatial reference of someone or something</rdfs:comment>
-        <rdfs:comment xml:lang="de">Wiedererlangung des räumliche Bezugs zu jemanden oder etwas</rdfs:comment>
-        <rdfs:label xml:lang="de">Finden</rdfs:label>
-        <rdfs:label xml:lang="en">Finding</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q37112258</rdfs:seeAlso>
-    </owl:Class>
     
 
 
@@ -429,6 +509,73 @@
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Aircraft">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q11436</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ArrivedOnScene -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ArrivedOnScene">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 4 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Am Einsatzort eingetroffen</rdfs:label>
+        <rdfs:label xml:lang="en">Arrived on scene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AtDestination -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AtDestination">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 8 (fw)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Am Zielort</rdfs:label>
+        <rdfs:label xml:lang="en">At destination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AtHospitalOrOtherDestination -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AtHospitalOrOtherDestination">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AtDestination"/>
+        <obo:IAO_0000116>status 8 (rd)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">At hospital or other destination</rdfs:label>
+        <rdfs:label xml:lang="de">Im Krankenhaus/am Transportziel angekommen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AtOtherLocation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AtOtherLocation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AtDestination"/>
+        <obo:IAO_0000116>status 8 (pol)</obo:IAO_0000116>
+        <rdfs:comment xml:lang="en">Patrol is committed at some other defined location, e.g. courthouse, duty point, escort assignment</rdfs:comment>
+        <rdfs:label xml:lang="de">An anderem Einsatz-/Sprechort</rdfs:label>
+        <rdfs:label xml:lang="en">At other location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AvailableAtStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AvailableAtStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 2 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Available at station</rdfs:label>
+        <rdfs:label xml:lang="de">Einsatzbereit auf Wache</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AvailableOnRadio -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AvailableOnRadio">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 1 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Available on radio</rdfs:label>
+        <rdfs:label xml:lang="de">Einsatzbereit über Funk</rdfs:label>
     </owl:Class>
     
 
@@ -680,6 +827,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DementiaCareLivingArea -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DementiaCareLivingArea">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:comment xml:lang="de">Anlage für das betreute Wohnen von Demenzpatienten</rdfs:comment>
+        <rdfs:comment xml:lang="en">Facility providing assisted living for dementia patients</rdfs:comment>
+        <rdfs:label xml:lang="en">Dementia care living area</rdfs:label>
+        <rdfs:label xml:lang="de">Wohnbereich Demenz</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/DikeDefenseArea -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseArea">
@@ -808,6 +967,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/EmergencyCall -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyCall">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/PrioritizedRequestToTalk"/>
+        <obo:IAO_0000116>status 0 (rd/fw)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Emergency call</rdfs:label>
+        <rdfs:label xml:lang="de">Notruf</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/EmergencyVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyVehicle">
@@ -816,6 +986,38 @@
         <rdfs:label xml:lang="de">Einsatzfahrzeug</rdfs:label>
         <rdfs:label xml:lang="en">Emergency vehicle</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1308737</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EmergencyVehicleStatus -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyVehicleStatus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="de">Einsatzfahrzeugszustand</rdfs:label>
+        <rdfs:label xml:lang="en">Emergency vehicle status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EnRoute -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EnRoute">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 3 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Auf dem Weg zum Einsatzort</rdfs:label>
+        <rdfs:label xml:lang="en">En route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EnRouteToHospital -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EnRouteToHospital">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 7 (san)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Auf dem Weg ins Krankenhaus mit Patient</rdfs:label>
+        <rdfs:label xml:lang="en">En route to hospital</rdfs:label>
     </owl:Class>
     
 
@@ -874,9 +1076,36 @@
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FMSMessage">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">Status message received or sent via the  German Funkmeldesystem (FMS)</rdfs:comment>
         <rdfs:comment xml:lang="de">Status-Nachricht, die über das Funkmeldesystem (FMS) gesendet oder empfangen wurde</rdfs:comment>
         <rdfs:label xml:lang="en">FMS message</rdfs:label>
         <rdfs:label xml:lang="de">FMS-Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Facility -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Facility">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:comment xml:lang="en">Geographic entity that was created to support a specific function</rdfs:comment>
+        <rdfs:comment xml:lang="de">Geographische Entität, die für einen bestimmten Zweck angelegt wurde</rdfs:comment>
+        <rdfs:label xml:lang="de">Anlage</rdfs:label>
+        <rdfs:label xml:lang="en">Facility</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q13226383</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Finding -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Finding">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">Recovery of the spatial reference of someone or something</rdfs:comment>
+        <rdfs:comment xml:lang="de">Wiedererlangung des räumliche Bezugs zu jemanden oder etwas</rdfs:comment>
+        <rdfs:label xml:lang="de">Finden</rdfs:label>
+        <rdfs:label xml:lang="en">Finding</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q37112258</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -927,7 +1156,7 @@
     <!-- http://rescue-mate.de/ontology/FixedConstruction -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FixedConstruction">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
@@ -1590,6 +1819,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GeographicEntity -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GeographicEntity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="en">An object that is stationary, can be described and located at a geographical position</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Objekt, das sich stationär an einer geographischen Position befindet, lokalisiert und beschrieben werden kann</rdfs:comment>
+        <rdfs:label xml:lang="en">Geographic entity</rdfs:label>
+        <rdfs:label xml:lang="de">Geographische Entität</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q27096213</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/GermanBoroughOffice -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanBoroughOffice">
@@ -1649,7 +1891,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://resccue-mate.de/ontology/Finding"/>
+                    <rdf:Description rdf:about="http://rescue-mate.de/ontology/Finding"/>
                     <rdf:Description rdf:about="http://rescue-mate.de/ontology/GettingLost"/>
                 </owl:unionOf>
             </owl:Class>
@@ -2315,6 +2557,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ManualACK_RemoteLogin -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ManualACK_RemoteLogin">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116 xml:lang="de">status 9 (pol/feu/san)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Handquittung/Fremdanmeldung</rdfs:label>
+        <rdfs:label xml:lang="en">Manual ACK / Remote Login</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ManualPropulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ManualPropulsion">
@@ -2428,11 +2681,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/has_notification"/>
+                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/hasNotification"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/has_notification_target"/>
+                        <owl:onProperty rdf:resource="http://rescue-mate.de/ontology/hasNotificationTarget"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2446,6 +2699,40 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/OperationalResource -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OperationalResource">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:comment xml:lang="de">Alle Ressourcen, die in einem Einsatz administriert werden können, seien sie menschlicher, technischer, infrastruktureller oder materieller Natur</rdfs:comment>
+        <rdfs:comment xml:lang="en">Any resource that can be deployed in an emergency response, whether human, technical, infrastructural, or material</rdfs:comment>
+        <rdfs:label xml:lang="de">Einsatzmittel</rdfs:label>
+        <rdfs:label xml:lang="en">Operational resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/OutOfServiceAtStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OutOfServiceAtStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 6 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Nicht einsatzbereit auf Wache</rdfs:label>
+        <rdfs:label xml:lang="en">Out of service at station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/PVSPatientCareUnit -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PVSPatientCareUnit">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:comment xml:lang="en">Facility that is specialized in care for patients in a persistent vegetative state (PVS)</rdfs:comment>
+        <rdfs:label xml:lang="en">PVS patient care unit</rdfs:label>
+        <rdfs:label xml:lang="de">Versorgung von Wachkomapatienten</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/PoliceVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceVehicle">
@@ -2453,6 +2740,29 @@
         <rdfs:label xml:lang="en">Police vehicle</rdfs:label>
         <rdfs:label xml:lang="de">Polizeifahrzeug</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2265780</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Position -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Position">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <rdfs:comment xml:lang="en">A spatiotemporal region that has a zero-dimensional temporal component, i.e., a time instant, and a zero-dimensional spatial component, i.e., a point, hence forming a point in space-time</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Raum-Zeit-Bereich mit einem nulldimensionalen temporalen Anteil (d.h., einem Zeitpunkt) und einem nulldimensionalen räumlichen Anteil (d.h. ein räumlicher Punkt), der also insgesamt einen Raum-Zeit-Punkt darstellt.</rdfs:comment>
+        <rdfs:label xml:lang="de">Position</rdfs:label>
+        <rdfs:label xml:lang="en">Position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/PrioritizedRequestToTalk -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PrioritizedRequestToTalk">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 0 (pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Priorisierter Sprechwunsch</rdfs:label>
+        <rdfs:label xml:lang="en">Proritized request to talk</rdfs:label>
     </owl:Class>
     
 
@@ -2496,8 +2806,8 @@
     <!-- http://rescue-mate.de/ontology/RTH -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RTH">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Aircraft"/>
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AirCraft"/>
         <rdfs:comment xml:lang="en">Rescue air vehicle specially equipped for air rescue and the transfer of hospital patients</rdfs:comment>
         <rdfs:comment xml:lang="de">Rettungsluftfahrzeug speziell ausgerüstete für die Luftrettung und die Verlegung von Klinikpatienten</rdfs:comment>
         <rdfs:label xml:lang="de">Rettungstransporthubschrauber</rdfs:label>
@@ -2665,6 +2975,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/RequestToTalk -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestToTalk">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 5 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Request to talk</rdfs:label>
+        <rdfs:label xml:lang="de">Sprechwunsch</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/RescueAppliance -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RescueAppliance">
@@ -2683,6 +3004,29 @@
         <rdfs:label xml:lang="en">Rescue vehicle</rdfs:label>
         <rdfs:label xml:lang="de">Rettungsfahrzeug</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2146446</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ResidentialFacility -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ResidentialFacility">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:comment xml:lang="de">Anlage für die Langzeitpflege und Betreuung</rdfs:comment>
+        <rdfs:comment xml:lang="en">Long-term care facility providing supervision and assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Pflegeeinrichtung</rdfs:label>
+        <rdfs:label xml:lang="en">Residential facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ReturningToStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ReturningToStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 9 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Returning to station</rdfs:label>
+        <rdfs:label xml:lang="de">Wachanfahrt/Rückfahrt</rdfs:label>
     </owl:Class>
     
 
@@ -2792,6 +3136,16 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
         <rdfs:label xml:lang="en">Sandbag wall</rdfs:label>
         <rdfs:label xml:lang="de">Sandsackwall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/SecureResidentialUnit -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SecureResidentialUnit">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:label xml:lang="de">Geschlossener Wohnbereich</rdfs:label>
+        <rdfs:label xml:lang="en">Secure residential unit</rdfs:label>
     </owl:Class>
     
 
@@ -3325,6 +3679,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/OutOfService_(Mobile) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OutOfService_(Mobile)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 7 (fw/pol)</obo:IAO_0000116>
+        <rdfs:comment xml:lang="en">Not operational, away from station (e.g. technical defect)</rdfs:comment>
+        <rdfs:label xml:lang="de">Nicht einsatzbereit über Funk</rdfs:label>
+        <rdfs:label xml:lang="en">Out of service (mobile)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/RTB1_(Feuerwehr) -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB1_(Feuerwehr)">
@@ -3370,6 +3736,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://rescue-mate.de/ontology/split -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/ontology/split">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die einen Eingabe-String entgegen nimmt und ihn n mal an Leerzeichen splittet (wobei n ein Eingabeparameter ist), und den i-ten Teil zurück gibt (wobei i ein weiterer Eingabeparameter ist und 0 den ersten Teilstring addressiert).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes an input sting, splits it on white spaces n times (where n is a call parameter), and returns the i-th part (where i is another call parameter and 0 refers to the first part).</rdfs:comment>
+        <rdfs:label xml:lang="en">Split</rdfs:label>
+        <rdfs:label xml:lang="de">Splitte auf</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -3513,6 +3891,30 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/csvString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/csvString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing multiple values, separated by commas</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der mehrere Werte enthält, die durch Kommas abgetrennt sind</rdfs:comment>
+        <rdfs:label xml:lang="en">CSV string</rdfs:label>
+        <rdfs:label xml:lang="de">CSV-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/dateTimeStampString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/dateTimeStampString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Date-Time-Stamp-String mit oder ohne Zeitzoneninformation</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date-time stamp string with or without time zone information</rdfs:comment>
+        <rdfs:label xml:lang="de">Date-Time-Stamp-String</rdfs:label>
+        <rdfs:label xml:lang="en">Date-time stamp string</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/downloadFileAndReturnRMURL -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/downloadFileAndReturnRMURL">
@@ -3521,6 +3923,18 @@
         <rdfs:comment xml:lang="en">Custom RML function that downloads a file from a given URL, stores it in the RESCUE-MATE data platform, and returns the URL where to access it via the RESCUE-MATE data platform.</rdfs:comment>
         <rdfs:label xml:lang="de">Datei herunterladen und RESCUE-MATE-URL zurückgeben</rdfs:label>
         <rdfs:label xml:lang="en">Download file and return RESCUE-MATE URL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/eMailAddressString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/eMailAddressString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing an e-mail address</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der eine E-Mail-Adresse enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">E-Mail-Adress-String</rdfs:label>
+        <rdfs:label xml:lang="en">E-mail address string</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3555,6 +3969,18 @@
         <rdfs:comment xml:lang="de">String, der den Namen eines Bauwerkstyps enthält</rdfs:comment>
         <rdfs:label xml:lang="de">Bauwerkstypname</rdfs:label>
         <rdfs:label xml:lang="en">Fixed construction type name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/generateResourceIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/generateResourceIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine IRI im RESCUE-MATE-Ressourcen-Namensraum für eine ID oder einen Namen generiert</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that generates a proper IRI in the RESCUE-MATE resource namespace for an input ID string</rdfs:comment>
+        <rdfs:label xml:lang="en">Generate resource IRI</rdfs:label>
+        <rdfs:label xml:lang="de">Name zu Ressourcen-IRI</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3679,6 +4105,30 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getEMailAddressIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getEMailAddressIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für eine Eingabe-E-Mail-Adresse eine vollstandige IRI zurückgibt, sofern die E-Mail-Adresse nicht leer ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns a proper IRI for an input e-mail address string if it is not empty</rdfs:comment>
+        <rdfs:label xml:lang="de">E-Mail-Adresse zu E-Mail-Adress-IRI</rdfs:label>
+        <rdfs:label xml:lang="en">Get e-mail address IRI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getEmergencyVehicleStatus -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getEmergencyVehicleStatus">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für ein Eingabe-Fahrzeugtyp und einen FMS-Code die IRI der Zusatndsklasse des Fahrzeugs zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the state concept IRI given an FMS state code and a vehicle class</rdfs:comment>
+        <rdfs:label xml:lang="de">FMS-Code zu Fahrzeugstatus</rdfs:label>
+        <rdfs:label xml:lang="en">Get emergency vehicle status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getEventCategoryClass -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getEventCategoryClass">
@@ -3691,6 +4141,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getFacilityTypeIRIs -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFacilityTypeIRIs">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen Eingabe-String mit komma-separierten Einrichtungstypen eine Liste von Einrichtungstyp-IRIs zurück gibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns class IRIs for a comma-separated values input string with facility type names</rdfs:comment>
+        <rdfs:label xml:lang="de">Einrichtungstyp-IRIs für Einrichtungstypenliste</rdfs:label>
+        <rdfs:label xml:lang="en">Get facility type IRIs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getFixedConstructionType -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFixedConstructionType">
@@ -3699,6 +4161,18 @@
         <rdfs:comment xml:lang="en">Given a type name as input this function returns the proper IRI of a fixed construction type</rdfs:comment>
         <rdfs:label xml:lang="de">Bauwerkstyp-IRI von Bauwerkstyp</rdfs:label>
         <rdfs:label xml:lang="en">Get fixed construction type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getHashURI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getHashURI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen  beliebigen Eingabe-String einen URI im RESCUE-MATE-Ressource-Namensraum generiert, mit einem optionalen Präfix für den Local Part des URI</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes an arbitrary string and generates a URI in the RESCUE-MATE resource namespace with an optional prefix for the local part.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get hash URI</rdfs:label>
+        <rdfs:label xml:lang="de">Hash-URI für Eingabestring</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3795,6 +4269,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/idString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/idString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String holding an ID or name</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der eine ID oder einen Name beinhaltet</rdfs:comment>
+        <rdfs:label xml:lang="en">ID string</rdfs:label>
+        <rdfs:label xml:lang="de">ID-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/innenstadtDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/innenstadtDikeDefenseArea">
@@ -3841,6 +4327,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/localPartPrefix -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/localPartPrefix">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A prefix for the local part of a URI</rdfs:comment>
+        <rdfs:comment xml:lang="de">Präfix des Local Parts eines URI</rdfs:comment>
+        <rdfs:label xml:lang="en">Local part prefix</rdfs:label>
+        <rdfs:label xml:lang="de">Local-Part-Präfix</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/longitude -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/longitude">
@@ -3859,6 +4357,30 @@
         <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateEnterprise"/>
         <rdfs:label xml:lang="de">Landesbetrieb Straßen, Brücken und Gewässer (LSBG) (Hamburg)</rdfs:label>
         <rdfs:label xml:lang="en">Landesbetrieb Straßen, Brücken und Gewässer (LSBG) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/makeCompleteDateTimeStamp -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/makeCompleteDateTimeStamp">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen beliebigen Eingabe-Date-Time-Stamp-String einen Date-Time-Stamp-String mit vollständiger Zeitzoneninformation zurückgibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns a complete time stamp string, i.e., with time zone information, for an arbitrary input date-time stamp string</rdfs:comment>
+        <rdfs:label xml:lang="de">Date-Time-Stamp zu Date-Time-Stamp mit Zeitzoneninformation</rdfs:label>
+        <rdfs:label xml:lang="en">Make complete date-time stamp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/numSplits -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/numSplits">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">An integer which refers to the number of times a string shall be split (from left to right)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine natürliche Zahl, die angibt, die oft ein String an Leerzeichen aufgesplittet werden soll</rdfs:comment>
+        <rdfs:label xml:lang="de">Anzahl der Teilungen</rdfs:label>
+        <rdfs:label xml:lang="en">Number of Splits</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3929,6 +4451,18 @@
         <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
         <rdfs:label xml:lang="de">Gib Klassen-IRI zurück, falls Wahrheitswert wahr ist</rdfs:label>
         <rdfs:label xml:lang="en">Return class IRI if true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/returnIndex -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/returnIndex">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">Für eine gegebene Liste addressiert dieser Parameter den n-ten Eintrag, beginnend bei 0</rdfs:comment>
+        <rdfs:comment xml:lang="en">Given an array of entries, this parameter addresses the n-th entry starting at 0</rdfs:comment>
+        <rdfs:label xml:lang="en">Return index</rdfs:label>
+        <rdfs:label xml:lang="de">Rückgabeindex</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4043,6 +4577,18 @@
         <rdfs:comment xml:lang="de">ID oder Abkürzung eines Fahrzeugtyps</rdfs:comment>
         <rdfs:label xml:lang="de">Fahrzeugtyp</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/vehicleTypeIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/vehicleTypeIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="de">IRI des Fahrzeugtyps</rdfs:comment>
+        <rdfs:comment xml:lang="en">The IRI of the vehicle type</rdfs:comment>
+        <rdfs:label xml:lang="de">Fahrzeug-Typ-IRI</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle type IRI</rdfs:label>
     </owl:NamedIndividual>
     
 

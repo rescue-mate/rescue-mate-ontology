@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/wikidata-bridge">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.4.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.5.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
     </owl:Ontology>
     
@@ -243,6 +243,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q121359 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q121359">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q6671777"/>
+        <rdfs:comment xml:lang="fr">comprend tout le matériel d&apos;équipement durable ou la nature institutionnelle qui favorise le fonctionnement d&apos;une division de l&apos;économie du travail</rdfs:comment>
+        <rdfs:comment xml:lang="en">fundamental facilities and systems serving a country, city, or other areas</rdfs:comment>
+        <rdfs:comment xml:lang="de">langlebige materielle oder institutionelle Einrichtungen einer Volkswirtschaft</rdfs:comment>
+        <rdfs:label xml:lang="de">Infrastruktur</rdfs:label>
+        <rdfs:label xml:lang="en">infrastructure</rdfs:label>
+        <rdfs:label xml:lang="fr">infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q1229765 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q1229765">
@@ -346,6 +360,22 @@
         <rdfs:label xml:lang="de">Gemeinschaftlicher Akteur</rdfs:label>
         <rdfs:label xml:lang="fr">agent collectif</rdfs:label>
         <rdfs:label xml:lang="en">collective agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q13226383 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q13226383">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q121359"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q27096235"/>
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q8205328"/>
+        <rdfs:comment xml:lang="fr">emplacement aménagé pour faire quelque chose</rdfs:comment>
+        <rdfs:comment xml:lang="de">für einen Zweck angelegte Örtlichkeit</rdfs:comment>
+        <rdfs:comment xml:lang="en">place, equipment, or service to support a specific function</rdfs:comment>
+        <rdfs:label xml:lang="de">Anlage</rdfs:label>
+        <rdfs:label xml:lang="en">facility</rdfs:label>
+        <rdfs:label xml:lang="fr">équipement</rdfs:label>
     </owl:Class>
     
 
@@ -737,6 +767,20 @@
     
 
 
+    <!-- https://www.wikidata.org/wiki/Q27096235 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q27096235">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q27096213"/>
+        <rdfs:comment xml:lang="en">non-natural geographic entities such as settlements, infrastructure, and excavations</rdfs:comment>
+        <rdfs:comment xml:lang="de">ortsfeste Elemente am Boden oder im Untergrund, die stark durch Menschen überformt wurden</rdfs:comment>
+        <rdfs:comment xml:lang="fr">élément du sol ou du sous-sol substantiellement modifié par l&apos;être humain (route, maison, ...)</rdfs:comment>
+        <rdfs:label xml:lang="en">artificial geographic entity</rdfs:label>
+        <rdfs:label xml:lang="fr">entité géographique artificielle</rdfs:label>
+        <rdfs:label xml:lang="de">künstliche geografische Entität</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Q286897 -->
 
     <owl:Class rdf:about="https://www.wikidata.org/wiki/Q286897">
@@ -1093,6 +1137,33 @@
         <rdfs:label xml:lang="de">Arbeitsschiff</rdfs:label>
         <rdfs:label xml:lang="fr">bateau de travail</rdfs:label>
         <rdfs:label xml:lang="en">working vessel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q6671777 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6671777">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q99527517"/>
+        <rdfs:comment xml:lang="en">arrangement and organization of interrelated elements in an object or system, or the object or system so organized</rdfs:comment>
+        <rdfs:comment xml:lang="fr">arrangement et organisation des éléments mutuellement liés d&apos;un objet ou d&apos;un système, ou bien l&apos;objet ou le système ainsi arrangé</rdfs:comment>
+        <rdfs:comment xml:lang="de">innerer Aufbau eines Systems</rdfs:comment>
+        <rdfs:label xml:lang="de">Struktur</rdfs:label>
+        <rdfs:label xml:lang="en">structure</rdfs:label>
+        <rdfs:label xml:lang="fr">structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q67140121 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q67140121">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/Q13226383"/>
+        <rdfs:comment xml:lang="de">Pflegeeinrichtung</rdfs:comment>
+        <rdfs:comment xml:lang="en">long-term care facility providing supervision and assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Wohnanlage</rdfs:label>
+        <rdfs:label xml:lang="en">residential facility</rdfs:label>
+        <rdfs:label xml:lang="fr">établissement de soins de long séjour</rdfs:label>
     </owl:Class>
     
 
