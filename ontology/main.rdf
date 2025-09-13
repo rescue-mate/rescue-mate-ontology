@@ -3858,6 +3858,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/csvString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/csvString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing multiple values, separated by commas</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der mehrere Werte enthält, die durch Kommas abgetrennt sind</rdfs:comment>
+        <rdfs:label xml:lang="en">CSV string</rdfs:label>
+        <rdfs:label xml:lang="de">CSV-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/dateTimeStampString -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/dateTimeStampString">
@@ -4092,6 +4104,18 @@
         <rdfs:comment xml:lang="de">Eine benutzerdefinierte RML-Funktion die die IRI für eine Eingabe-Ereigniskategorie-ID zurückgibt</rdfs:comment>
         <rdfs:label xml:lang="de">Ereigniskategorie-Klasse von Ereigniskategoie-ID</rdfs:label>
         <rdfs:label xml:lang="en">Get event category class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/getFacilityTypeIRIs -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFacilityTypeIRIs">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen Eingabe-String mit komma-separierten Einrichtungstypen eine Liste von Einrichtungstyp-IRIs zurück gibt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns class IRIs for a comma-separated values input string with facility type names</rdfs:comment>
+        <rdfs:label xml:lang="de">Einrichtungstyp-IRIs für Einrichtungstypenliste</rdfs:label>
+        <rdfs:label xml:lang="en">Get facility type IRIs</rdfs:label>
     </owl:NamedIndividual>
     
 
