@@ -2722,6 +2722,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/PVSPatientCareUnit -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PVSPatientCareUnit">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:comment xml:lang="en">Facility that is specialized in care for patients in a persistent vegetative state (PVS)</rdfs:comment>
+        <rdfs:label xml:lang="en">PVS patient care unit</rdfs:label>
+        <rdfs:label xml:lang="de">Versorgung von Wachkomapatienten</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/PoliceVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceVehicle">
