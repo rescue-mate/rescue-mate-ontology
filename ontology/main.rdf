@@ -4087,6 +4087,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getHashURI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getHashURI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen  beliebigen Eingabe-String einen URI im RESCUE-MATE-Ressource-Namensraum generiert, mit einem optionalen Präfix für den Local Part des URI</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes an arbitrary string and generates a URI in the RESCUE-MATE resource namespace with an optional prefix for the local part.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get hash URI</rdfs:label>
+        <rdfs:label xml:lang="de">Hash-URI für Eingabestring</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getJuridicalPerson -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getJuridicalPerson">
@@ -4233,6 +4245,18 @@
         <rdfs:comment xml:lang="de">Eine Liste die Strings enthält, die Linienzüge repräsentieren.</rdfs:comment>
         <rdfs:label xml:lang="en">Line strings list</rdfs:label>
         <rdfs:label xml:lang="de">Linienzüge-Liste</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/localPartPrefix -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/localPartPrefix">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A prefix for the local part of a URI</rdfs:comment>
+        <rdfs:comment xml:lang="de">Präfix des Local Parts eines URI</rdfs:comment>
+        <rdfs:label xml:lang="en">Local part prefix</rdfs:label>
+        <rdfs:label xml:lang="de">Local-Part-Präfix</rdfs:label>
     </owl:NamedIndividual>
     
 
