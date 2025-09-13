@@ -232,6 +232,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasOperator -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasOperator">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="en">has operator</rdfs:label>
+        <rdfs:label xml:lang="de">hat Betreiber</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasPosition -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasPosition">
