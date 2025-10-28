@@ -700,6 +700,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ChatVideoMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ChatVideoMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ChatMessage"/>
+        <rdfs:label xml:lang="en">Chat video message</rdfs:label>
+        <rdfs:label xml:lang="de">Chat-Videonachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/CommandVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/CommandVehicle">
