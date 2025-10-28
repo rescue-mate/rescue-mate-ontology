@@ -3743,6 +3743,14 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/prov#Agent -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
