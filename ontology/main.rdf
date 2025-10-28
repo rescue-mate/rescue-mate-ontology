@@ -2605,6 +2605,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Message -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Message">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:label xml:lang="en">Message</rdfs:label>
+        <rdfs:label xml:lang="de">Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Mitigation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Mitigation">
