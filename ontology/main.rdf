@@ -658,6 +658,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Chat -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Chat">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">An activity involving agents sending and receiving messages and/or media content</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Aktivität, bei der sich Agenten gegenseitig Nachrichten und/oder Medien senden und diese empfangen</rdfs:comment>
+        <rdfs:label xml:lang="de">Chat</rdfs:label>
+        <rdfs:label xml:lang="en">Chat</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/CommandVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/CommandVehicle">
