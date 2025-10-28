@@ -3759,6 +3759,14 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#Organization -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Organization">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
