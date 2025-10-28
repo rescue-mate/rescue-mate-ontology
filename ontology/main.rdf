@@ -670,6 +670,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ChatMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ChatMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Message"/>
+        <rdfs:label xml:lang="en">Chat message</rdfs:label>
+        <rdfs:label xml:lang="de">Chat-Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/CommandVehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/CommandVehicle">
