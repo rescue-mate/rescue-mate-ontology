@@ -2518,6 +2518,24 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/LocationMention -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LocationMention">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Eine textuelle Entität, die auf einen Ort verweist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Textual entity that refers to a location</rdfs:comment>
+        <rdfs:label xml:lang="de">Erwähnung eines Ortes</rdfs:label>
+        <rdfs:label xml:lang="en">Location mention</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Lock -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
