@@ -190,6 +190,15 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/messageAuthorRole -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/messageAuthorRole">
+        <rdfs:label xml:lang="de">Autorenrolle der Nachricht</rdfs:label>
+        <rdfs:label xml:lang="en">message author role</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
