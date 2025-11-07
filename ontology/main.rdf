@@ -97,6 +97,15 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasCategory">
+        <rdfs:label xml:lang="en">has category</rdfs:label>
+        <rdfs:label xml:lang="de">hat Kategorie</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasDetectedCategory -->
 
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasDetectedCategory">
