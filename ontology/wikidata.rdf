@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/wikidata-bridge">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.5.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.6.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
     </owl:Ontology>
     
