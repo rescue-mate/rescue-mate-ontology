@@ -106,6 +106,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasClientMessageId -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasClientMessageId">
+        <rdfs:label xml:lang="en">has client message ID</rdfs:label>
+        <rdfs:label xml:lang="de">hat Client-Nachrichten-ID</rdfs:label>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Message"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasDetectedCategory -->
 
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasDetectedCategory">
