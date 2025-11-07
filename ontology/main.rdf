@@ -3977,6 +3977,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/base64String -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/base64String">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing content encoded in the base64 format</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, mit base6-encodierten Inhalt</rdfs:comment>
+        <rdfs:label xml:lang="en">Base-64 string</rdfs:label>
+        <rdfs:label xml:lang="de">Base-64-String</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/bergedorfDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bergedorfDikeDefenseArea">
@@ -4691,6 +4703,18 @@
         <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
         <rdfs:label xml:lang="de">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
         <rdfs:label xml:lang="en">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/storeFileAndReturnRMURL -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/storeFileAndReturnRMURL">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die base64-enkodierten Dateiinhalt, einen Dateinamen und Dateityp entgegennimmt, den Dateiinhalt in einer Datei in der RESCUE-MATE-Plattform speichert und einen URL zurückgibt, unter dem auf die Datei zugegriffen werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that gets base64-encoded file content, a file name, and a file type, stores the file in the RESCUE-MATE data platform, and returns the URL where to access it via the RESCUE-MATE data platform.</rdfs:comment>
+        <rdfs:label xml:lang="de">Speichere Datei und gebe RESCUE-MATE URL zurück</rdfs:label>
+        <rdfs:label xml:lang="en">Store file and return RM URL</rdfs:label>
     </owl:NamedIndividual>
     
 
