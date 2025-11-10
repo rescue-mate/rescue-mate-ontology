@@ -12,7 +12,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -20,23 +22,24 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://rescue-mate.de/ontology/main">
-        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.5.0"/>
+        <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.6.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.5.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.6.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
         <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dct:created>2025-02-12</dct:created>
         <dct:creator>Patrick Westphal</dct:creator>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-13</dct:issued>
-        <dct:modified>2025-09-13</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-07</dct:issued>
+        <dct:modified>2025-11-07</dct:modified>
         <dct:rights xml:lang="en">CC BY 4.0 - RESCUE-MATE Project</dct:rights>
         <dct:title xml:lang="en">RESCUE-MATE Ontology</dct:title>
         <dct:title xml:lang="de">RESCUE-MATE-Ontologie</dct:title>
         <rdfs:comment xml:lang="de">Haupt-Ontologie-Modul zur Unterstützung der Datenintegration im RESCUE-MATE-Projekt</rdfs:comment>
         <rdfs:comment xml:lang="en">Main ontology module supporting the data integration part of the RESCUE-MATE project</rdfs:comment>
-        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.4.0"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.5.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -94,6 +97,25 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasCategory">
+        <rdfs:label xml:lang="en">has category</rdfs:label>
+        <rdfs:label xml:lang="de">hat Kategorie</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasClientMessageId -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasClientMessageId">
+        <rdfs:label xml:lang="en">has client message ID</rdfs:label>
+        <rdfs:label xml:lang="de">hat Client-Nachrichten-ID</rdfs:label>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Message"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasDetectedCategory -->
 
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasDetectedCategory">
@@ -127,6 +149,15 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasIncidentNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasIncidentNumber">
+        <rdfs:label xml:lang="en">has incident number</rdfs:label>
+        <rdfs:label xml:lang="de">hat Vorfall-Nummer</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasResourceType -->
 
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasResourceType">
@@ -136,6 +167,34 @@
         <rdfs:label xml:lang="de">hat Ressourcen-Typ</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/OperationalResource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasSubCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasSubCategory">
+        <rdfs:label xml:lang="en">has sub-category</rdfs:label>
+        <rdfs:label xml:lang="de">hat Subkategorie</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasThreadID -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasThreadID">
+        <rdfs:label xml:lang="en">has thread ID</rdfs:label>
+        <rdfs:label xml:lang="de">hat Thread-ID</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/messageAuthorRole -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/messageAuthorRole">
+        <rdfs:label xml:lang="de">Autorenrolle der Nachricht</rdfs:label>
+        <rdfs:label xml:lang="en">message author role</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -354,6 +413,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/hasPriority">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">has priority</rdfs:label>
+        <rdfs:label xml:lang="de">hat Priorität</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasSillHeightInMetersAboveSeaLevel -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/hasSillHeightInMetersAboveSeaLevel">
@@ -504,6 +573,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Agent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:comment xml:lang="en">An independent continuant that bears some form of responsibility for an activity taking place</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein independent continuant der eine gewisse Verantwortlichkeit in Bezug auf eine Aktivität hat</rdfs:comment>
+        <rdfs:label xml:lang="de">Agent</rdfs:label>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Aircraft -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Aircraft">
@@ -639,6 +720,58 @@
         <rdfs:label xml:lang="en">Change</rdfs:label>
         <rdfs:label xml:lang="de">Veränderung</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1150070</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Chat -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Chat">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">An activity involving agents sending and receiving messages and/or media content</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Aktivität, bei der sich Agenten gegenseitig Nachrichten und/oder Medien senden und diese empfangen</rdfs:comment>
+        <rdfs:label xml:lang="de">Chat</rdfs:label>
+        <rdfs:label xml:lang="en">Chat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ChatImageMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ChatImageMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ChatMessage"/>
+        <rdfs:label xml:lang="en">Chat image message</rdfs:label>
+        <rdfs:label xml:lang="de">Chat-Bildnachricht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ChatMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ChatMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Message"/>
+        <rdfs:label xml:lang="en">Chat message</rdfs:label>
+        <rdfs:label xml:lang="de">Chat-Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ChatTextMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ChatTextMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ChatMessage"/>
+        <rdfs:label xml:lang="en">Chat text message</rdfs:label>
+        <rdfs:label xml:lang="de">Chat-Textnachricht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ChatVideoMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ChatVideoMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ChatMessage"/>
+        <rdfs:label xml:lang="en">Chat video message</rdfs:label>
+        <rdfs:label xml:lang="de">Chat-Videonachricht</rdfs:label>
     </owl:Class>
     
 
@@ -1075,7 +1208,7 @@
     <!-- http://rescue-mate.de/ontology/FMSMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FMSMessage">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Message"/>
         <rdfs:comment xml:lang="en">Status message received or sent via the  German Funkmeldesystem (FMS)</rdfs:comment>
         <rdfs:comment xml:lang="de">Status-Nachricht, die über das Funkmeldesystem (FMS) gesendet oder empfangen wurde</rdfs:comment>
         <rdfs:label xml:lang="en">FMS message</rdfs:label>
@@ -2451,6 +2584,24 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/LocationMention -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LocationMention">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Eine textuelle Entität, die auf einen Ort verweist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Textual entity that refers to a location</rdfs:comment>
+        <rdfs:label xml:lang="de">Erwähnung eines Ortes</rdfs:label>
+        <rdfs:label xml:lang="en">Location mention</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Lock -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Lock">
@@ -2574,6 +2725,17 @@
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Propulsion"/>
         <rdfs:label xml:lang="en">Manual propulsion</rdfs:label>
         <rdfs:label xml:lang="de">Manueller Antrieb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Message -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Message">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:label xml:lang="en">Message</rdfs:label>
+        <rdfs:label xml:lang="de">Nachricht</rdfs:label>
     </owl:Class>
     
 
@@ -3728,6 +3890,30 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Organization -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Organization">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -3787,6 +3973,18 @@
         <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanBoroughOffice"/>
         <rdfs:label xml:lang="de">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
         <rdfs:label xml:lang="en">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/base64String -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/base64String">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing content encoded in the base64 format</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, mit base6-encodierten Inhalt</rdfs:comment>
+        <rdfs:label xml:lang="en">Base-64 string</rdfs:label>
+        <rdfs:label xml:lang="de">Base-64-String</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4505,6 +4703,18 @@
         <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
         <rdfs:label xml:lang="de">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
         <rdfs:label xml:lang="en">Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/storeFileAndReturnRMURL -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/storeFileAndReturnRMURL">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die base64-enkodierten Dateiinhalt, einen Dateinamen und Dateityp entgegennimmt, den Dateiinhalt in einer Datei in der RESCUE-MATE-Plattform speichert und einen URL zurückgibt, unter dem auf die Datei zugegriffen werden kann</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that gets base64-encoded file content, a file name, and a file type, stores the file in the RESCUE-MATE data platform, and returns the URL where to access it via the RESCUE-MATE data platform.</rdfs:comment>
+        <rdfs:label xml:lang="de">Speichere Datei und gebe RESCUE-MATE URL zurück</rdfs:label>
+        <rdfs:label xml:lang="en">Store file and return RM URL</rdfs:label>
     </owl:NamedIndividual>
     
 
