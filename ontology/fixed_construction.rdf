@@ -230,6 +230,16 @@
         <rdfs:label xml:lang="de">Deichkilometer</rdfs:label>
         <rdfs:label xml:lang="en">dike kilometer</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/dikeWardenID -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dikeWardenID">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/DikeWarden"/>
+        <rdfs:label xml:lang="de">Deichwart</rdfs:label>
+        <rdfs:label xml:lang="en">dike warden</rdfs:label>
+    </owl:DatatypeProperty>
 </rdf:RDF>
 
 
