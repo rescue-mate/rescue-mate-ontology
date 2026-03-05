@@ -186,6 +186,28 @@
         <rdfs:label xml:lang="de">Zuständigkeit Aufsicht</rdfs:label>
         <rdfs:label xml:lang="en">supervisory responsibility</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/clearWidthInMeters -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/clearWidthInMeters">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Schartenbreite in Metern</rdfs:label>
+        <rdfs:label xml:lang="en">clear width in meters</rdfs:label>
+    </owl:DatatypeProperty>
 </rdf:RDF>
 
 
