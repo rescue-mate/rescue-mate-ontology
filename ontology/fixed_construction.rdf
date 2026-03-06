@@ -749,6 +749,16 @@
         <rdfs:label xml:lang="de">Harburg (Deichverteidigungsgebiet)</rdfs:label>
         <rdfs:label xml:lang="en">Harburg (dike defense area)</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/innenstadtDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/innenstadtDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Innenstadt (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Innenstadt (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
