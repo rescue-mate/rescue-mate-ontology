@@ -1732,16 +1732,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GermanStateEnterprise -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanStateEnterprise">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
-        <rdfs:label xml:lang="en">German state enterprise</rdfs:label>
-        <rdfs:label xml:lang="de">Landesbetrieb</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/GettingLost -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GettingLost">
