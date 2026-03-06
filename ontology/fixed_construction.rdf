@@ -629,6 +629,16 @@
         <rdfs:label xml:lang="de">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
         <rdfs:label xml:lang="en">Bezirksamt Bergedorf (Hamburg)</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bergedorfDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bergedorfDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Bergedorf (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Bergedorf (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
