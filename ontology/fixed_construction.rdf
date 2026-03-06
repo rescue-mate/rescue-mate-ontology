@@ -609,6 +609,16 @@
         <rdfs:label xml:lang="de">Airbus Operations GmbH</rdfs:label>
         <rdfs:label xml:lang="en">Airbus Operations GmbH</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/aurubis -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/aurubis">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/Business"/>
+        <rdfs:label xml:lang="de">Aurubis</rdfs:label>
+        <rdfs:label xml:lang="en">Aurubis</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
