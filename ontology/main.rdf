@@ -3598,16 +3598,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/finanzbehoerdeHamburg -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/finanzbehoerdeHamburg">
-        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
-        <rdfs:label xml:lang="de">Finanzbehörde (Hamburg)</rdfs:label>
-        <rdfs:label xml:lang="en">Finanzbehörde (Hamburg)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/fixedConstructionTypeName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/fixedConstructionTypeName">
