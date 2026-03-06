@@ -4181,16 +4181,6 @@
         <rdfs:label xml:lang="de">Fahrzeug-Typ-IRI</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle type IRI</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea">
-        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
-        <rdfs:label xml:lang="de">Wilhelmsburg (Deichverteidigungsgebiet)</rdfs:label>
-        <rdfs:label xml:lang="en">Wilhelmsburg (dike defense area)</rdfs:label>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
