@@ -450,6 +450,17 @@
         <rdfs:label xml:lang="en">Hydraulic crossing structure</rdfs:label>
         <rdfs:label xml:lang="de">Kreuzungsbauwerk</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HydraulicStructure -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HydraulicStructure">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:label xml:lang="en">Hydraulic structure</rdfs:label>
+        <rdfs:label xml:lang="de">Wasserbauwerk</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2466889"/>
+    </owl:Class>
 </rdf:RDF>
 
 
