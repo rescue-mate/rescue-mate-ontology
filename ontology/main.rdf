@@ -3528,16 +3528,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/bisHamburg -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bisHamburg">
-        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
-        <rdfs:label xml:lang="de">Behörde für Inneres und Sport (BIS) (Hamburg)</rdfs:label>
-        <rdfs:label xml:lang="en">Behörde für Inneres und Sport (BIS) (Hamburg)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/bjvHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bjvHamburg">
