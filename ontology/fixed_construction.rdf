@@ -390,6 +390,16 @@
         <rdfs:label xml:lang="de">Flutschutztor</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2345125"/>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GermanBoroughOffice -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GermanBoroughOffice">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/JuridicalPerson"/>
+        <rdfs:label xml:lang="de">Bezirksamt</rdfs:label>
+        <rdfs:label xml:lang="en">German borough office</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
