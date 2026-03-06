@@ -3013,16 +3013,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/Stoplog -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
-        <rdfs:label xml:lang="de">Dammbalken</rdfs:label>
-        <rdfs:label xml:lang="en">Stoplog</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/Swing-hingedFloodGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Swing-hingedFloodGate">
