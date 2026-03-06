@@ -379,6 +379,17 @@
         <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FloodGate -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FloodGate">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="en">Flood gate</rdfs:label>
+        <rdfs:label xml:lang="de">Flutschutztor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2345125"/>
+    </owl:Class>
 </rdf:RDF>
 
 
