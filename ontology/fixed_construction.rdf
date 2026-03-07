@@ -582,16 +582,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/schulbehoerdeHamburg -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/schulbehoerdeHamburg">
-        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
-        <rdfs:label xml:lang="de">Schulbehörde (Hamburg)</rdfs:label>
-        <rdfs:label xml:lang="en">Schulbehörde (Hamburg)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/senatskanzleiHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/senatskanzleiHamburg">
