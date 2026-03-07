@@ -562,16 +562,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/bkmHamburg -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bkmHamburg">
-        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
-        <rdfs:label xml:lang="de">Behörde für Kultur und Medien (BKM) (Hamburg)</rdfs:label>
-        <rdfs:label xml:lang="en">Behörde für Kultur und Medien (BKM) (Hamburg)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/bswHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bswHamburg">
