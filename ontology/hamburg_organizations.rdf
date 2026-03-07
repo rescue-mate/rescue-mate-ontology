@@ -264,6 +264,16 @@
         <rdfs:label xml:lang="de">Behörde für Stadtentwicklung und Wohnen (BSW) (Hamburg)</rdfs:label>
         <rdfs:label xml:lang="en">Behörde für Stadtentwicklung und Wohnen (BSW) (Hamburg)</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bukeaHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bukeaHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
