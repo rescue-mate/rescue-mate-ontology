@@ -562,16 +562,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/bwfgbHamburg -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bwfgbHamburg">
-        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
-        <rdfs:label xml:lang="de">Behörde für Wissenschaft, Forschung, Gleichstellung und Bezirke (BWFGB) (Hamburg)</rdfs:label>
-        <rdfs:label xml:lang="en">Behörde für Wissenschaft, Forschung, Gleichstellung und Bezirke (BWFGB) (Hamburg)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/bwiHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bwiHamburg">
