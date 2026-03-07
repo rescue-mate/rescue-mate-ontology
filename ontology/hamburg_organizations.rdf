@@ -274,6 +274,16 @@
         <rdfs:label xml:lang="de">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
         <rdfs:label xml:lang="en">Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA) (Hamburg)</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/bvmHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bvmHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanStateAgency"/>
+        <rdfs:label xml:lang="de">Behörde für Verkehr und Mobilitätswende (BVM) (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Behörde für Verkehr und Mobilitätswende (BVM) (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
