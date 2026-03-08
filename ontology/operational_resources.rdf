@@ -934,6 +934,19 @@
         <rdfs:label xml:lang="de">Gerätewagen Gefahrgut</rdfs:label>
         <rdfs:label xml:lang="en">Gerätewagen Gefahrgut (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-H -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-H">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-SRHT"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for rescue from heights and depths</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Rettung aus Höhen und Tiefen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Höhenrettung</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Höhenrettung (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
