@@ -1090,6 +1090,20 @@
         <rdfs:label xml:lang="de">Gerätewagen Rettungshundestaffel</rdfs:label>
         <rdfs:label xml:lang="en">Gerätewagen Rettungshundestaffel (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-S -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-S">
+        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Strahlenschutz"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-figting vehicle to transport equipment for protection against harm caused by radiation</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung für den Schutz gegen Beeinträchtigungen durch Strahlungen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Strahlenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Strahlenschutz (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
