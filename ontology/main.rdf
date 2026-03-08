@@ -832,18 +832,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/RW-G -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW-G">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
-        <rdfs:comment xml:lang="en">Rüstwagen (Germany) with an extensive equipment for hazardous materials</rdfs:comment>
-        <rdfs:comment xml:lang="de">Rüstwagen mit umfangreicher Gefahrgutausrüstung</rdfs:comment>
-        <rdfs:label xml:lang="de">Rüstwagen mit Sonderbeladung Gefahrgut</rdfs:label>
-        <rdfs:label xml:lang="en">Rüstwagen mit Sonderbeladung Gefahrgut (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/RW1 -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RW1">
