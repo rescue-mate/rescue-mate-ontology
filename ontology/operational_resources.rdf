@@ -2313,6 +2313,18 @@
         <rdfs:label xml:lang="de">Tanklöschfahrzeug 24/50</rdfs:label>
         <rdfs:label xml:lang="en">Tanklöschfahrzeug 24/50 (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF3000 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF3000">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of 3,000 liters capacity, a supply of 120 liters of foam agent as well as 12 kg of extinguishing powder, and a fire extinguishing centrifugal pump with a flow rate of 2,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 3.000 Litern Inhalt, einem Vorrat von 120 Liter Schaummittel sowie 12 kg Löschpulver, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 3000</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 3000 (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
