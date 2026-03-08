@@ -1256,6 +1256,16 @@
         <rdfs:label xml:lang="de">Gerätewagen Transport</rdfs:label>
         <rdfs:label xml:lang="en">Gerätewagen Transport (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-TuS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-TuS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Technik und Sicherheit</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Technik und Sicherheit (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
