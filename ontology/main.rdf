@@ -740,19 +740,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/MLF -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/MLF">
-        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/StLF10-6"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
-        <rdfs:comment xml:lang="de">Ein Löschfahrzeug mit Gruppenbeladung für die Brandbekämpfung in der ersten Welle oder für technische Hilfeleistung im kleinen bis mittleren Rahmen</rdfs:comment>
-        <rdfs:comment xml:lang="en">Fire engine to transport a whole group of fire fighters for fire-fighting in the first wave or for technical assistance on a small to medium scale</rdfs:comment>
-        <rdfs:label xml:lang="de">Mittleres Löschfahrzeug</rdfs:label>
-        <rdfs:label xml:lang="en">Mittleres Löschfahrzeug (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/MLW -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/MLW">
