@@ -832,18 +832,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/RW -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/RW">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueAppliance"/>
-        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zur Bereitstellung von umfangreichen Werkzeug und Spezialgerät zum Befreien von Personen nach Unfällen, Auffangen von umweltschädigende Substanzen, ausleuchten von Einsatzstellen und für diverse andere Aufgaben</rdfs:comment>
-        <rdfs:comment xml:lang="en">Fire-fightung vehicle for the provision of extensive tools and special equipment for freeing people after accidents, collecting environmentally harmful substances, illuminating emergency sites and for various other tasks</rdfs:comment>
-        <rdfs:label xml:lang="de">Rüstwagen</rdfs:label>
-        <rdfs:label xml:lang="en">Rüstwagen (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/RW-G -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RW-G">
