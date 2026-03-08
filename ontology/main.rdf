@@ -700,18 +700,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/LF10-6 -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF10-6">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
-        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a water tank capacity of at least 600 liters and a fire-fighting centrifugal pump with a capacity of 1000 liters of water per minute</rdfs:comment>
-        <rdfs:comment xml:lang="de">Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1000 Liter Wasser in der Minute und einem Löschwasservorrat von mindestens 600 Litern</rdfs:comment>
-        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 10/6</rdfs:label>
-        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 10/6 (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/LF16 -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/LF16">
