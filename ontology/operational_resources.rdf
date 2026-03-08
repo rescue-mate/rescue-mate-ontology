@@ -1766,6 +1766,19 @@
         <rdfs:label xml:lang="de">Messleitwagen</rdfs:label>
         <rdfs:label xml:lang="en">Messleitwagen (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MTF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MTF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/MTW"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug zum Transport von Personengruppen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport groups of people</rdfs:comment>
+        <rdfs:label xml:lang="de">Mannschaftstransportfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Mannschaftstransportfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
