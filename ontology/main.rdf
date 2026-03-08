@@ -1035,19 +1035,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/RTB_(Feuerwehr) -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB_(Feuerwehr)">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
-        <rdfs:comment xml:lang="de">Feuerwehrboot zur Rettung von Menschen und Tieren</rdfs:comment>
-        <rdfs:comment xml:lang="en">Fireboat for rescuing people and animals</rdfs:comment>
-        <rdfs:label xml:lang="de">Rettungsboot (Feuerwehr)</rdfs:label>
-        <rdfs:label xml:lang="en">Rettungsboot (Feuerwehr) (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/ns/prov#Activity -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
