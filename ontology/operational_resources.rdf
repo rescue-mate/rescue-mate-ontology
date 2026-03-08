@@ -1824,6 +1824,17 @@
         <rdfs:label xml:lang="de">Mehrzweckfahrzeug</rdfs:label>
         <rdfs:label xml:lang="en">Mehrzweckfahrzeug (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/ManualACK_RemoteLogin -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ManualACK_RemoteLogin">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116 xml:lang="de">status 9 (pol/feu/san)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Handquittung/Fremdanmeldung</rdfs:label>
+        <rdfs:label xml:lang="en">Manual ACK / Remote Login</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
