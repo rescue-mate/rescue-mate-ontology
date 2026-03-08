@@ -1910,6 +1910,17 @@
         <rdfs:label xml:lang="de">Einsatzmittel</rdfs:label>
         <rdfs:label xml:lang="en">Operational resource</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/OutOfServiceAtStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OutOfServiceAtStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 6 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Nicht einsatzbereit auf Wache</rdfs:label>
+        <rdfs:label xml:lang="en">Out of service at station</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
