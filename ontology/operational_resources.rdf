@@ -291,6 +291,17 @@
         <rdfs:label xml:lang="de">Am Zielort</rdfs:label>
         <rdfs:label xml:lang="en">At destination</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AtHospitalOrOtherDestination -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AtHospitalOrOtherDestination">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AtDestination"/>
+        <obo:IAO_0000116>status 8 (rd)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">At hospital or other destination</rdfs:label>
+        <rdfs:label xml:lang="de">Im Krankenhaus/am Transportziel angekommen</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
