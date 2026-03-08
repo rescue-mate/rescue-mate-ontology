@@ -545,6 +545,27 @@
         <rdfs:label xml:lang="en">Emergency vehicle</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1308737</rdfs:seeAlso>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EmergencyVehicleStatus -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EmergencyVehicleStatus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="de">Einsatzfahrzeugszustand</rdfs:label>
+        <rdfs:label xml:lang="en">Emergency vehicle status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/EnRoute -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EnRoute">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
+        <obo:IAO_0000116>status 3 (rd/fw/pol)</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Auf dem Weg zum Einsatzort</rdfs:label>
+        <rdfs:label xml:lang="en">En route</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
