@@ -566,18 +566,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GW-G2 -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G2">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-G"/>
-        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of a medium amount of special equipment for biological, chemical, radiological hazards, and equipment for measuring/detecting, collecting, transferring and sealing hazardous goods or substances</rdfs:comment>
-        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport einer ABC-Sonderausrüstung und von Geräten mittleren Umfangs zum Messen/Nachweisen, Auffangen, Umfüllen und Abdichten von Gefahrgütern bzw. -stoffen</rdfs:comment>
-        <rdfs:label xml:lang="de">Gerätewagen Gefahrgut 2</rdfs:label>
-        <rdfs:label xml:lang="en">Gerätewagen Gefahrgut 2 (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/GW-G3 -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-G3">
