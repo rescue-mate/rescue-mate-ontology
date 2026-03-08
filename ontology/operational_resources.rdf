@@ -1659,6 +1659,18 @@
         <rdfs:label xml:lang="de">Löschgruppenfahrzeug 20 für den Katastrophenschutz</rdfs:label>
         <rdfs:label xml:lang="en">Löschgruppenfahrzeug 20 für den Katastrophenschutz (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF24 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF24">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LF"/>
+        <rdfs:comment xml:lang="en">Löschgruppenfahrzeug (Germany) with a fire-fighting centrifugal pump with a capacity of 2,400 liters of water per minute</rdfs:comment>
+        <rdfs:comment>Löschgruppenfahrzeug mit einer Feuerlöschkreiselpumpe mit einer Förderleistung von 2.400 Liter Wasser in der Minute</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug 24</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug 24 (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
