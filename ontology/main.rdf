@@ -566,20 +566,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GW-A -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-A">
-        <owl:equivalentClass rdf:resource="http://rescue-mate.de/ontology/GW-Atemschutz"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
-        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equipment for the protection of the respiratory tract</rdfs:comment>
-        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zum Schutz der Atemwege</rdfs:comment>
-        <rdfs:label xml:lang="de">Gerätewagen Atemschutz</rdfs:label>
-        <rdfs:label xml:lang="en">Gerätewagen Atemschutz (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/GW-ACS -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-ACS">
