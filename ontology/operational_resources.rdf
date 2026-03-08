@@ -1540,6 +1540,18 @@
         <rdfs:label xml:lang="de">Kommandowagen</rdfs:label>
         <rdfs:label xml:lang="en">Kommandowagen (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/LF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireEngineWithPermanentlyInstalledFirePump"/>
+        <rdfs:comment xml:lang="de">Feuerwehrfahrzeug für den Transport von Besatzung und Ausrüstung zur Brandbekämpfung und für technische Hilfeleistung einfachen Umfangs</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for the transport of crew and equipment for fire-fighting and for simple technical assistance</rdfs:comment>
+        <rdfs:label xml:lang="de">Löschgruppenfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Löschgruppenfahrzeug (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
