@@ -987,18 +987,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/VSA -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/VSA">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
-        <rdfs:comment xml:lang="de">Anhänger für den Transport von Verkehrsleitkegeln, Leitkegelleuchten, Winkerkellen usw. um Verkehrsteilnehmer zu warnen oder den Verkehr umzuleiten oder zu stoppen</rdfs:comment>
-        <rdfs:comment xml:lang="en">Trailer for the transport of traffic cones, traffic cone lights, signal lights, etc. to warn road users or to divert or stop traffic</rdfs:comment>
-        <rdfs:label xml:lang="de">Verkehrssicherungsanhänger</rdfs:label>
-        <rdfs:label xml:lang="en">Verkehrssicherungsanhänger (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/Vehicle -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Vehicle">
