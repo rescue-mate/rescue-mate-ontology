@@ -1035,18 +1035,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/RTB1_(Feuerwehr) -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB1_(Feuerwehr)">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RTB_(Feuerwehr)"/>
-        <rdfs:comment xml:lang="de">Kleines Rettungsboot der Feuerwehr mit optionaler Motorisierung für den Einsatz in stehenden Gewässern</rdfs:comment>
-        <rdfs:comment xml:lang="en">Small rescue boat with optional motorization for use in stagnant waters</rdfs:comment>
-        <rdfs:label xml:lang="de">Rettungsboot Typ 1 (Feuerwehr)</rdfs:label>
-        <rdfs:label xml:lang="en">Rettungsboot Typ 1 (Feuerwehr) (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/RTB2_(Feuerwehr) -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB2_(Feuerwehr)">
