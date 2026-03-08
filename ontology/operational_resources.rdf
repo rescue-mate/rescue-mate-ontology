@@ -1698,6 +1698,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/LKW -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LKW">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:label xml:lang="de">Lastkraftwagen</rdfs:label>
+        <rdfs:label xml:lang="en">Lorry</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/LiMaKW -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/LiMaKW">
