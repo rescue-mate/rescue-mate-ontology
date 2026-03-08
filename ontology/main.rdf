@@ -930,19 +930,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/SWA -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/SWA">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Trailer"/>
-        <rdfs:comment xml:lang="de">Anhänger für den Transport eines Schaum-Wasserwerfers und 220 l Schaummittel</rdfs:comment>
-        <rdfs:comment xml:lang="en">Trailer for transporting a foam water cannon and 220 liters of foam agent</rdfs:comment>
-        <rdfs:label xml:lang="de">Anhänger mit Schaum-Wasserwerfer</rdfs:label>
-        <rdfs:label xml:lang="en">Anhänger mit Schaum-Wasserwerfer (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/SecureResidentialUnit -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SecureResidentialUnit">
