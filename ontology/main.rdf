@@ -976,18 +976,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/TLF16-25 -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF16-25">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
-        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of 2,400 liters capacity</rdfs:comment>
-        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 2.400 Litern Inhalt</rdfs:comment>
-        <rdfs:label xml:lang="de">Tanklöschfahrzeug 16/25</rdfs:label>
-        <rdfs:label xml:lang="en">Tanklöschfahrzeug 16/25 (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/TLF20-40 -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF20-40">
