@@ -1473,6 +1473,14 @@
         <rdfs:label xml:lang="de">Kleineinsatzfahrzeug</rdfs:label>
         <rdfs:label xml:lang="en">Kleineinsatzfahrzeug (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/KLAF -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/KLAF">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+    </owl:Class>
 </rdf:RDF>
 
 
