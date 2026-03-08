@@ -566,19 +566,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/GW-ATF -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-ATF">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
-        <rdfs:comment xml:lang="en">Fire-fighting vehicle to transport equiment for detecting and combating biological, chemical or radiological hazards</rdfs:comment>
-        <rdfs:comment xml:lang="de">Gerätewagen der Feuerwehr für den Transport von Ausrüstung zur Erkennung und Bekämpfung biologischer, chemischer oder radiologischer Gefahren</rdfs:comment>
-        <rdfs:label xml:lang="de">Gerätewagen Analytische Task Force</rdfs:label>
-        <rdfs:label xml:lang="en">Gerätewagen Analytische Task Force (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/GW-Atemschutz -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Atemschutz">
