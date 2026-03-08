@@ -1078,6 +1078,18 @@
         <rdfs:label xml:lang="de">Gerätewagen Rettung</rdfs:label>
         <rdfs:label xml:lang="en">Gerätewagen Rettung (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Rettungshundestaffel -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Rettungshundestaffel">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport rescue dogs, and rescue and first aid equipment</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen zum Transport von Rettungshunden, und Rettungs- und Erste-Hilfe-Ausrüstung</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Rettungshundestaffel</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Rettungshundestaffel (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
