@@ -1173,6 +1173,19 @@
         <rdfs:label xml:lang="de">Gerätewagen Tauchen</rdfs:label>
         <rdfs:label xml:lang="en">Gerätewagen Tauchen (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-TS -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-TS">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Fire-fighting vehicle for transporting equipment similar to the gear of a Tragkraftspritzenanhänger (TSA)</rdfs:comment>
+        <rdfs:comment>Gerätewagen, der in Bezug auf seine Ausrüstung wie ein Tragkraftspritzenanhänger (TSA) ausgelegt ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Tragkraftspritze</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Tragkraftspritze (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
