@@ -832,19 +832,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/RTW -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/RTW">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/LandVehicle"/>
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RescueVehicle"/>
-        <rdfs:comment xml:lang="en">Rescue vehicle with crew and medical equipment for the care, monitoring and transport of emergency patients</rdfs:comment>
-        <rdfs:comment xml:lang="de">Rettungsfahrzeug mit Besatzung und medizinisch-technischer Ausstattung für die Versorgung, Überwachung und den Transport von Notfallpatienten</rdfs:comment>
-        <rdfs:label xml:lang="de">Rettungswagen</rdfs:label>
-        <rdfs:label xml:lang="en">Rettungswagen (Germany)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/RW -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RW">
