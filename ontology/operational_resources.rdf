@@ -2301,6 +2301,18 @@
         <rdfs:label xml:lang="de">Tanklöschfahrzeug 2000</rdfs:label>
         <rdfs:label xml:lang="en">Tanklöschfahrzeug 2000 (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TLF24-50 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TLF24-50">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/TLF"/>
+        <rdfs:comment xml:lang="en">Tanklöschfahrzeug (Germany) with a water tank of 5,000 liters capacity, a supply of 500 liters of foam agent, and a foam water canon</rdfs:comment>
+        <rdfs:comment xml:lang="de">Tanklöschfahrzeug mit einen Wassertank von mindestens 5.000 Litern Inhalt, einem Vorrat von 500 Liter Schaummittel und einem Schaum-Wasserwerfer</rdfs:comment>
+        <rdfs:label xml:lang="de">Tanklöschfahrzeug 24/50</rdfs:label>
+        <rdfs:label xml:lang="en">Tanklöschfahrzeug 24/50 (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
