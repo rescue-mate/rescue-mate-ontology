@@ -996,6 +996,16 @@
         <rdfs:label xml:lang="de">Gerätewagen Licht</rdfs:label>
         <rdfs:label xml:lang="en">Gerätewagen Licht (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Logistik -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Logistik">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:label xml:lang="de">Gerätewagen Logistik</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Logistik (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
