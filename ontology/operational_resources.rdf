@@ -862,6 +862,18 @@
         <rdfs:label xml:lang="en">Gerätewagen Betreuung (Germany)</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q831723</rdfs:seeAlso>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-Dekon-P -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-Dekon-P">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle to transport equipment for setting up a decontamination area to decontaminate emergency personell and affected persons that got in contact with hazardous substances in CBRN or hazardous substance accidents</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen für den Transport von Ausrüstung zur Einrichtung eines Dekontaminationsplatzes zur Dekontamination von Einsatzkräften und Betroffenen, die in ABC-Schadenslagen bzw. Gefahrstoffunfällen mit gefährlichen Substanzen in Berührung gekommen sind</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Dekontamination Personal</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Dekontamination Personal (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
