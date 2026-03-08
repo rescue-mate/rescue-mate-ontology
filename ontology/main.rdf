@@ -1035,18 +1035,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/OutOfService_(Mobile) -->
-
-    <owl:Class rdf:about="http://rescue-mate.de/ontology/OutOfService_(Mobile)">
-        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/EmergencyVehicleStatus"/>
-        <obo:IAO_0000116>status 7 (fw/pol)</obo:IAO_0000116>
-        <rdfs:comment xml:lang="en">Not operational, away from station (e.g. technical defect)</rdfs:comment>
-        <rdfs:label xml:lang="de">Nicht einsatzbereit über Funk</rdfs:label>
-        <rdfs:label xml:lang="en">Out of service (mobile)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://rescue-mate.de/ontology/RTB1_(Feuerwehr) -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RTB1_(Feuerwehr)">
