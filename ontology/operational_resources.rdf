@@ -1372,6 +1372,18 @@
         <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug</rdfs:label>
         <rdfs:label>Hilfeleistungslöschgruppenfahrzeug (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/HLF10 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/HLF10">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HLF"/>
+        <rdfs:comment xml:lang="en">Hilfeleistungslöschgruppenfahrzeug (Germany) with a water tank of 1000 liters capacity and a supply of 120 liters of foam agent, and a fire extinguishing centrifugal pump with a flow rate of 1,000 liters of water per minute at an output pressure of 10 bar</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hilfeleistungslöschgruppenfahrzeug mit einen Wassertank von 1000 Litern Inhalt sowie einem Vorrat von 120 Liter Schaummittel, und einer Feuerlöschkreiselpumpe mit einer Förderleistung von 1.000 Liter Wasser in der Minute bei einem Ausgangsdruck von 10 bar</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeleistungslöschgruppenfahrzeug 10</rdfs:label>
+        <rdfs:label xml:lang="en">Hilfeleistungslöschgruppenfahrzeug 10 (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
