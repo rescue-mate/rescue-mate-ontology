@@ -972,6 +972,18 @@
         <rdfs:label xml:lang="de">Gerätewagen Logistik 1</rdfs:label>
         <rdfs:label xml:lang="en">Gerätewagen Logistik 1 (Germany)</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/GW-L2 -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GW-L2">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GW-L"/>
+        <rdfs:comment xml:lang="en">Emergency vehicle in the German weight category M (Mittel - 7.5 - 14.0 tons) to transport material and equipment to provide support in various operational situations</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gerätewagen der Kraftfahrzeug-Gewichtsklasse M (Mittel - 7,5 - 14,0 Tonnen) für den Transport von Material und Ausrüstung für die Bewältigung verschiedener Einsatzlagen</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätewagen Logistik 2</rdfs:label>
+        <rdfs:label xml:lang="en">Gerätewagen Logistik 2 (Germany)</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
