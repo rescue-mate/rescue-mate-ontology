@@ -186,6 +186,18 @@
         <rdfs:label xml:lang="de">Datei herunterladen und RESCUE-MATE-URL zurückgeben</rdfs:label>
         <rdfs:label xml:lang="en">Download file and return RESCUE-MATE URL</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/eMailAddressString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/eMailAddressString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing an e-mail address</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, der eine E-Mail-Adresse enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">E-Mail-Adress-String</rdfs:label>
+        <rdfs:label xml:lang="en">E-mail address string</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
