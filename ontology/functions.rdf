@@ -546,6 +546,18 @@
         <rdfs:label xml:lang="de">Breitengrad</rdfs:label>
         <rdfs:label xml:lang="en">Latitude</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/lineStringsList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/lineStringsList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A list containing strings that represent line strings</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste die Strings enthält, die Linienzüge repräsentieren.</rdfs:comment>
+        <rdfs:label xml:lang="en">Line strings list</rdfs:label>
+        <rdfs:label xml:lang="de">Linienzüge-Liste</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
