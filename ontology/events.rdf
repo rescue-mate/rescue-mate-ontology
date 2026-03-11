@@ -250,6 +250,18 @@
         <rdfs:label xml:lang="de">Lebensmittelersuchsereignis</rdfs:label>
         <rdfs:label xml:lang="en">Request for food event</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForHelpEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForHelpEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for help</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Hilfe</rdfs:comment>
+        <rdfs:label xml:lang="de">Hilfeersuchsereignis</rdfs:label>
+        <rdfs:label xml:lang="en">Request for help event</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
