@@ -594,6 +594,18 @@
         <rdfs:label xml:lang="de">Date-Time-Stamp zu Date-Time-Stamp mit Zeitzoneninformation</rdfs:label>
         <rdfs:label xml:lang="en">Make complete date-time stamp</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/numSplits -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/numSplits">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">An integer which refers to the number of times a string shall be split (from left to right)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine natürliche Zahl, die angibt, die oft ein String an Leerzeichen aufgesplittet werden soll</rdfs:comment>
+        <rdfs:label xml:lang="de">Anzahl der Teilungen</rdfs:label>
+        <rdfs:label xml:lang="en">Number of Splits</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
