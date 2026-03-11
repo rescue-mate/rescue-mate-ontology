@@ -606,6 +606,18 @@
         <rdfs:label xml:lang="de">Anzahl der Teilungen</rdfs:label>
         <rdfs:label xml:lang="en">Number of Splits</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/pointList -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/pointList">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A (singleton) list that contains strings representing points</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Liste die normalerweise einen String enthält, der einen Punkt repräsentiert.</rdfs:comment>
+        <rdfs:label xml:lang="en">Point list</rdfs:label>
+        <rdfs:label xml:lang="de">Punkt-Liste</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
