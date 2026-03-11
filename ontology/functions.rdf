@@ -222,6 +222,18 @@
         <rdfs:label xml:lang="de">Bauwerkstypname</rdfs:label>
         <rdfs:label xml:lang="en">Fixed construction type name</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/generateRandomResourceIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/generateRandomResourceIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine zufällige IRI im RESCUE-MATE &quot;resource&quot;-Namensraum generiert.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that generates a random IRI in the RESCUE-MATE resource namespace.</rdfs:comment>
+        <rdfs:label xml:lang="de">Erstelle zufällige Ressourcen-IRI</rdfs:label>
+        <rdfs:label xml:lang="en">Generate random resource IRI</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
