@@ -134,6 +134,29 @@
         <rdfs:label xml:lang="en">has notification target</rdfs:label>
         <rdfs:label xml:lang="de">hat Addressat für Benachrichtigung</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/CrisisEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CrisisEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">An occurrent descriping a crisis, i.e., an event potentially causing harm</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Ereignis, das eine Krise beschreibt, d.h. ein Ereignis, das Schaden anrichten kann</rdfs:comment>
+        <rdfs:label xml:lang="en">Crisis event</rdfs:label>
+        <rdfs:label xml:lang="de">Krisenereignis</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
