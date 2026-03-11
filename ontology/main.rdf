@@ -1071,18 +1071,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/getFacilityTypeIRIs -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFacilityTypeIRIs">
-        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
-        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen Eingabe-String mit komma-separierten Einrichtungstypen eine Liste von Einrichtungstyp-IRIs zurück gibt</rdfs:comment>
-        <rdfs:comment xml:lang="en">Custom RML function that returns class IRIs for a comma-separated values input string with facility type names</rdfs:comment>
-        <rdfs:label xml:lang="de">Einrichtungstyp-IRIs für Einrichtungstypenliste</rdfs:label>
-        <rdfs:label xml:lang="en">Get facility type IRIs</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/getFixedConstructionType -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getFixedConstructionType">
