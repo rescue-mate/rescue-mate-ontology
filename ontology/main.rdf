@@ -1071,18 +1071,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/returnIndex -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/returnIndex">
-        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
-        <rdfs:comment xml:lang="de">Für eine gegebene Liste addressiert dieser Parameter den n-ten Eintrag, beginnend bei 0</rdfs:comment>
-        <rdfs:comment xml:lang="en">Given an array of entries, this parameter addresses the n-th entry starting at 0</rdfs:comment>
-        <rdfs:label xml:lang="en">Return index</rdfs:label>
-        <rdfs:label xml:lang="de">Rückgabeindex</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/socialMediaServiceName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/socialMediaServiceName">
