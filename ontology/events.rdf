@@ -286,6 +286,18 @@
         <rdfs:label xml:lang="en">Request for shelter event</rdfs:label>
         <rdfs:label xml:lang="de">Unterkunftsersuchsereignis</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RequestForWaterEvent -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RequestForWaterEvent">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/RequestForHelpEvent"/>
+        <rdfs:comment xml:lang="en">Act of asking for drinking water</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorgang des Erbittens von Trinkwasser</rdfs:comment>
+        <rdfs:label xml:lang="en">Request for water event</rdfs:label>
+        <rdfs:label xml:lang="de">Trinkwasserersuchsereignis</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
