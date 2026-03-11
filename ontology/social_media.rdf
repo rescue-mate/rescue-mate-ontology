@@ -162,6 +162,27 @@
         <rdfs:label xml:lang="de">Autorenrolle der Nachricht</rdfs:label>
         <rdfs:label xml:lang="en">message author role</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/hasPriority">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">has priority</rdfs:label>
+        <rdfs:label xml:lang="de">hat Priorität</rdfs:label>
+    </owl:DatatypeProperty>
 </rdf:RDF>
 
 
