@@ -558,6 +558,18 @@
         <rdfs:label xml:lang="en">Line strings list</rdfs:label>
         <rdfs:label xml:lang="de">Linienzüge-Liste</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/localPartPrefix -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/localPartPrefix">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">A prefix for the local part of a URI</rdfs:comment>
+        <rdfs:comment xml:lang="de">Präfix des Local Parts eines URI</rdfs:comment>
+        <rdfs:label xml:lang="en">Local part prefix</rdfs:label>
+        <rdfs:label xml:lang="de">Local-Part-Präfix</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
