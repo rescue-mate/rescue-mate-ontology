@@ -1071,18 +1071,6 @@
     
 
 
-    <!-- http://rescue-mate.de/resource/getHashURI -->
-
-    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getHashURI">
-        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
-        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die für einen  beliebigen Eingabe-String einen URI im RESCUE-MATE-Ressource-Namensraum generiert, mit einem optionalen Präfix für den Local Part des URI</rdfs:comment>
-        <rdfs:comment xml:lang="en">Custom RML function that takes an arbitrary string and generates a URI in the RESCUE-MATE resource namespace with an optional prefix for the local part.</rdfs:comment>
-        <rdfs:label xml:lang="en">Get hash URI</rdfs:label>
-        <rdfs:label xml:lang="de">Hash-URI für Eingabestring</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://rescue-mate.de/resource/getJuridicalPerson -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getJuridicalPerson">
