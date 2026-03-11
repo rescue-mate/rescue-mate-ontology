@@ -43,6 +43,28 @@
         <owl:priorVersion rdf:resource="http://rescue-mate.de/ontology/main/0.5.0"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</owl:versionInfo>
     </owl:Ontology>
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/split -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/ontology/split">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die einen Eingabe-String entgegen nimmt und ihn n mal an Leerzeichen splittet (wobei n ein Eingabeparameter ist), und den i-ten Teil zurück gibt (wobei i ein weiterer Eingabeparameter ist und 0 den ersten Teilstring addressiert).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that takes an input sting, splits it on white spaces n times (where n is a call parameter), and returns the i-th part (where i is another call parameter and 0 refers to the first part).</rdfs:comment>
+        <rdfs:label xml:lang="en">Split</rdfs:label>
+        <rdfs:label xml:lang="de">Splitte auf</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
