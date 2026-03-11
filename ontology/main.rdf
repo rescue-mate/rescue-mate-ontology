@@ -101,15 +101,6 @@
     
 
 
-    <!-- http://rescue-mate.de/ontology/hasIncidentNumber -->
-
-    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasIncidentNumber">
-        <rdfs:label xml:lang="en">has incident number</rdfs:label>
-        <rdfs:label xml:lang="de">hat Vorfall-Nummer</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://rescue-mate.de/ontology/hasSubCategory -->
 
     <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/hasSubCategory">
