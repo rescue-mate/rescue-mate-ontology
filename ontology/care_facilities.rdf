@@ -94,6 +94,26 @@
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/DementiaCareLivingArea -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DementiaCareLivingArea">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:comment xml:lang="de">Anlage für das betreute Wohnen von Demenzpatienten</rdfs:comment>
+        <rdfs:comment xml:lang="en">Facility providing assisted living for dementia patients</rdfs:comment>
+        <rdfs:label xml:lang="en">Dementia care living area</rdfs:label>
+        <rdfs:label xml:lang="de">Wohnbereich Demenz</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
