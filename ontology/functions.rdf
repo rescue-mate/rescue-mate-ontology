@@ -140,6 +140,16 @@
         <rdfs:label xml:lang="en">Base-64 string</rdfs:label>
         <rdfs:label xml:lang="de">Base-64-String</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/classIRI -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/classIRI">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">Class IRI</rdfs:label>
+        <rdfs:label xml:lang="de">Klassen-IRI</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
