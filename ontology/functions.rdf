@@ -128,6 +128,18 @@
         <rdfs:label xml:lang="en">Area name</rdfs:label>
         <rdfs:label xml:lang="de">Gebietsname</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/base64String -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/base64String">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">String containing content encoded in the base64 format</rdfs:comment>
+        <rdfs:comment xml:lang="de">String, mit base6-encodierten Inhalt</rdfs:comment>
+        <rdfs:label xml:lang="en">Base-64 string</rdfs:label>
+        <rdfs:label xml:lang="de">Base-64-String</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
