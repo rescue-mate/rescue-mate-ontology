@@ -125,6 +125,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/OSMWaySegment -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OSMWaySegment">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/WaySegment"/>
+        <rdfs:comment xml:lang="en">A way segment that is defined in the free geo database OpenStreetMap</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Streckenabschnitt der in der freien Geo-Datenbank OpenStreetMap definiert ist</rdfs:comment>
+        <rdfs:label xml:lang="en">OpenStreetMap way segment</rdfs:label>
+        <rdfs:label xml:lang="de">Streckenabschnitt in OpenStreetMap</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/RoadClosure -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/RoadClosure">
