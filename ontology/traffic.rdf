@@ -41,6 +41,15 @@
         <rdfs:label xml:lang="en">direction</rdfs:label>
         <rdfs:label xml:lang="de">himmelsrichtung</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/responsible -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/responsible">
+        <rdfs:label xml:lang="en">responsible</rdfs:label>
+        <rdfs:label xml:lang="de">zuständig</rdfs:label>
+    </owl:AnnotationProperty>
 </rdf:RDF>
 
 
