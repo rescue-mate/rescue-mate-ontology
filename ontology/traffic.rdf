@@ -111,6 +111,29 @@
         <rdfs:label xml:lang="en">to be implemented at water level mark 4</rdfs:label>
         <rdfs:label xml:lang="de">umzusetzen bei Wasserstandstufe 4</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RoadClosure -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RoadClosure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:comment xml:lang="de">Der Zustand einer Straße, der eine Durchfahrt verbietet</rdfs:comment>
+        <rdfs:comment xml:lang="en">The disposition of a road of not permitting passing</rdfs:comment>
+        <rdfs:label xml:lang="en">Road closure</rdfs:label>
+        <rdfs:label xml:lang="de">Straßensperrung</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
