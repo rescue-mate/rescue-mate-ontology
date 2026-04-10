@@ -490,7 +490,7 @@
         <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die den Eingabewert zurückgibt, sofern er nicht irgendeine Art von NULL-Wert repräsentiert. Falls die Eingabe einen NULL-Wert repräsentiert, wird das Java-null-Objekt zurückgegeben.</rdfs:comment>
         <rdfs:comment xml:lang="en">Custom RML function that returns the input value if it is not a null value. If the input string represents any kind of null value, the built-in Java null value is returned.</rdfs:comment>
         <rdfs:label xml:lang="en">Get value if not null</rdfs:label>
-        <rdfs:label xml:lang="de">Gib die EIngabe zurück, sofern nicht null</rdfs:label>
+        <rdfs:label xml:lang="de">Gib die Eingabe zurück, sofern nicht null</rdfs:label>
     </owl:NamedIndividual>
     
 
