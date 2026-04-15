@@ -1480,6 +1480,8 @@
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/KLAF">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:label xml:lang="de">Kleinalarmfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Kleinalarmfahrzeug (Germany)</rdfs:label>
     </owl:Class>
     
 
@@ -1501,6 +1503,8 @@
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/KLEF">
         <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireFightingVehicle"/>
+        <rdfs:label xml:lang="de">Kleineinsatzfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Kleineinsatzfahrzeug (Germany)</rdfs:label>
     </owl:Class>
     
 
