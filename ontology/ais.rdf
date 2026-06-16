@@ -49,6 +49,12 @@
         <rdfs:label xml:lang="en">AIS message</rdfs:label>
         <rdfs:label>AIS-Nachricht</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Message -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Message"/>
 </rdf:RDF>
 
 
