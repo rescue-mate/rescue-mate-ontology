@@ -214,6 +214,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/MultipleSlotBinaryMessageWithCommunicationsState -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MultipleSlotBinaryMessageWithCommunicationsState">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message for binary data transmission that is scheduled and sent via broadcast or addressed</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die mit zeitlicher Vorplanung als Broadcast oder direkt adressiert versendet wird und Binärdaten enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Multi-Zeitschlitzbinärnachricht mit gespeicherten Kommunikationszustand</rdfs:label>
+        <rdfs:label xml:lang="en">Multiple slot binary message with communications state</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/PositionReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PositionReportMessage">
