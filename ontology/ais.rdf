@@ -124,6 +124,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DataLinkManagementMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DataLinkManagementMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message used by a base station to manage the AIS slots</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die von Basisstationen zur Verwaltung von AIS-Zeitschlitzen verwendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Data link management message</rdfs:label>
+        <rdfs:label xml:lang="de">Nachricht zur Verwaltung von Datenverbindungen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/ExtendedClassBEquipmentPositionReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/ExtendedClassBEquipmentPositionReportMessage">
