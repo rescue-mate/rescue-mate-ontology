@@ -64,6 +64,15 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/BinaryAddressedMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/BinaryAddressedMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is addressed point-to-point with unspecified binary payload</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die punkt-zu-punkt-adressiert ist und nicht näher spezifizierten Binär-Inhalt hat</rdfs:comment>
+        <rdfs:label xml:lang="en">Binary addressed message</rdfs:label>
+        <rdfs:label xml:lang="de">addressierte Binärnachricht</rdfs:label>
+    </owl:Class>
     <!-- http://rescue-mate.de/ontology/Message -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Message"/>
