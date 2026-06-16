@@ -130,6 +130,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SafetyRelatedAcknowledgeMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SafetyRelatedAcknowledgeMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is sent in response to an addressed safety-related message</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die als Antwort auf eine addressierte, sicherheitsbezogene Nachricht gesendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Safety-related acknowledge message</rdfs:label>
+        <rdfs:label xml:lang="de">sicherheitsbezogene Empfangsbestätigungsnachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage">
