@@ -124,6 +124,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GlobalNavigationSatelliteSystemBroadcastBinaryMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GlobalNavigationSatelliteSystemBroadcastBinaryMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is sent by a base station to broadcast differential corrections for GPS</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die von Basisstationen zur differentiellen Korrektur des Global Positioning System versendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Global navigation satellite system broadcast binary message</rdfs:label>
+        <rdfs:label xml:lang="de">Navigationssatelliten-Binär-Broadcast-Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/InterrogationMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/InterrogationMessage">
