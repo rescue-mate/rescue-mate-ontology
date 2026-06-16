@@ -190,6 +190,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/StandardClassBEquipmentPositionReportMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/StandardClassBEquipmentPositionReportMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that contains a less detailed report than normal position reports (types 1-3) for vessels using Class B transmitters</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die einen weniger detaillierten Positionsreport enthält als die normalen Positionsreportnachrichten (Typ 1-3), normalerweise gesendet von Wasserfahrzeugen mit Transmittern der Klasse B</rdfs:comment>
+        <rdfs:label xml:lang="de">Positionsreportnachricht für Ausrüstung der Klasse B</rdfs:label>
+        <rdfs:label xml:lang="en">Standard class B equipment position report message</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage">
