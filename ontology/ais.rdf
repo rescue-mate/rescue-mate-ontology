@@ -64,6 +64,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AssignedModeCommandMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AssignedModeCommandMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is used by base stations to assign a specific report bahavior</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht die von Basisstationen genutzt wird, um anderen AIS-Geräten bestimmte Meldeverhalten zuzuweisen</rdfs:comment>
+        <rdfs:label xml:lang="en">Assigned mode command message</rdfs:label>
+        <rdfs:label xml:lang="de">Nachricht zur Zuweisung eines Modus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/BaseStationReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/BaseStationReportMessage">
