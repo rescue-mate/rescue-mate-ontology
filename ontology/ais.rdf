@@ -208,6 +208,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/LongRangeAutomaticIdentificationSystemBroadcastMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/LongRangeAutomaticIdentificationSystemBroadcastMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is used for long-range detection of AIS Class A and Class B vessels (typically by satellite)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die zum Auffinden von Wasserfahrzeugen mit Transceivern der Klassen A und B verwendet wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Broadcast-Nachricht für weiträumliches automatisches Identifikationssystem</rdfs:label>
+        <rdfs:label xml:lang="en">Long-range automatic identification system broadcast message</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Message -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Message"/>
