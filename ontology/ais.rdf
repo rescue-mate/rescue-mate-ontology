@@ -55,6 +55,18 @@
     <!-- http://rescue-mate.de/ontology/Message -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Message"/>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/PositionReportMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PositionReportMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that reports navigational information</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die Navigationsinformationen übermittelt</rdfs:comment>
+        <rdfs:label xml:lang="en">Position report message</rdfs:label>
+        <rdfs:label xml:lang="de">Positionsreportnachricht</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
