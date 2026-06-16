@@ -124,6 +124,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ExtendedClassBEquipmentPositionReportMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ExtendedClassBEquipmentPositionReportMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message used for position reports of class B legacy equipment</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht für Positionsreports von veralteter Ausrüstung der Klasse B</rdfs:comment>
+        <rdfs:label xml:lang="en">Extended class B equipment position report message</rdfs:label>
+        <rdfs:label xml:lang="de">Nachricht für erweiterte Positionsreports von Ausrüstung der Klasse B</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/GlobalNavigationSatelliteSystemBroadcastBinaryMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GlobalNavigationSatelliteSystemBroadcastBinaryMessage">
