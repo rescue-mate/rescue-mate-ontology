@@ -184,6 +184,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GroupAssignmentCommandMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GroupAssignmentCommandMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message sent by a base station to assign a specific report behaviour to a specific group of mobiles</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die von Basisstationen gesendet wird, um einer Gruppe von mobilen Endgeräten ein bestimmtes Reportverhalten zuzuweisen</rdfs:comment>
+        <rdfs:label xml:lang="en">Group assignment command message</rdfs:label>
+        <rdfs:label xml:lang="de">Gruppenzuweisungsnachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/InterrogationMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/InterrogationMessage">
