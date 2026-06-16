@@ -52,6 +52,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AddressedSafetyRelatedMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AddressedSafetyRelatedMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is used to send text messages to a specified vessel</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die verwendet wird, um Textnachrichten an ein bestimmtes Wasserfahrzeug zu senden</rdfs:comment>
+        <rdfs:label xml:lang="en">Addressed safety-related message</rdfs:label>
+        <rdfs:label xml:lang="de">addressierte, sicherheitsbezogene Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/BaseStationReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/BaseStationReportMessage">
@@ -152,6 +164,18 @@
 Eine AIS-Nachricht zur Abfrage von Zeit und Datum von einer Basisstation</rdfs:comment>
         <rdfs:label xml:lang="de">Anfrage von koordinierter Weltzeit/Datum</rdfs:label>
         <rdfs:label xml:lang="en">UTC/date inquiry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/UTC_DateResponse -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/UTC_DateResponse">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is sent as a response to a UTC/date inquiry</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht die als Antwort auf eine Anfrage von koordinierter Weltzeit/Datum gesendet wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Mitteilung von koordinierter Weltzeit/Datum</rdfs:label>
+        <rdfs:label xml:lang="en">UTC/date response</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
