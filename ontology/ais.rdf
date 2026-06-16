@@ -64,6 +64,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/BinaryAcknowledgeMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/BinaryAcknowledgeMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is sent to acknowledge the reception of a binary addressed message</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die als Empfangsbestätigung auf eine adressierte Binärnachricht gesendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Binary acknowledge message</rdfs:label>
+        <rdfs:label xml:lang="de">binäre Bestätigungsnachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/BinaryAddressedMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/BinaryAddressedMessage">
