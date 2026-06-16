@@ -64,6 +64,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/AidsToNavigationReportMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AidsToNavigationReportMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message used by an (AtN) aid to navigation device</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die von einem Navigationsunterstützungsgerät verwendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Aids-to-navigation report message</rdfs:label>
+        <rdfs:label xml:lang="de">Nachricht zur Navigationsunterstützung</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/AssignedModeCommandMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/AssignedModeCommandMessage">
