@@ -85,6 +85,21 @@
         <rdfs:label xml:lang="en">Binary addressed message</rdfs:label>
         <rdfs:label xml:lang="de">addressierte Binärnachricht</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/BinaryBroadcastMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/BinaryBroadcastMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS-message with unspecified binary payload that is broadcast</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht mit nicht näher spezifiziertem binären Inhalt, die als Broadcast versendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Binary broadcast message</rdfs:label>
+        <rdfs:label xml:lang="de">binäre Broadcast-Nachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Message -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Message"/>
