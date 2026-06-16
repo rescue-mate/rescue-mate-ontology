@@ -142,6 +142,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SafetyRelatedBroadcastMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SafetyRelatedBroadcastMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is used to send text messages as a broadcast</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die zum Versenden von textuellen Inhalten als Broadcast-Nachricht verwendet wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Broadcast-Nachricht mit Sicherheitsbezug</rdfs:label>
+        <rdfs:label xml:lang="en">Safety-related broadcast message</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage">
