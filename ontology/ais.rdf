@@ -286,6 +286,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/StaticDataReportMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/StaticDataReportMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that gives information on a ship and its trip</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die Informationen zu einem Schiff und dessen Reise enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Nachricht für statischen Datenreport</rdfs:label>
+        <rdfs:label xml:lang="en">Static data report message</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/UTC_DateInquiry -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/UTC_DateInquiry">
