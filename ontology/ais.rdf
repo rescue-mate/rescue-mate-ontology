@@ -136,6 +136,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ChannelManagementMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ChannelManagementMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message sent by a base station to manage channels and transceiver modes</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die von einer Basisstation zur Verwaltung von Funkkanälen und Transceiver-Modi gesendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Channel management message</rdfs:label>
+        <rdfs:label xml:lang="de">Funkkanalverwaltungsnachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/DataLinkManagementMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DataLinkManagementMessage">
