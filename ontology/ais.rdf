@@ -52,6 +52,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/BaseStationReportMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/BaseStationReportMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message sent by base stations to indicate their presence</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die von Basisstationen versendet wird, um deren Anwesenheit anzuzeigen</rdfs:comment>
+        <rdfs:label xml:lang="en">Base station report message</rdfs:label>
+        <rdfs:label xml:lang="de">Basisstationsreportnachricht</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Message -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Message"/>
