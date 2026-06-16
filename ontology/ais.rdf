@@ -250,6 +250,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SingleSlotBinaryMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SingleSlotBinaryMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message that is short, unscheduled and contains binary data transmitted as a broadcast or addressed</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine kurze AIS-Nachricht, die ohne zeitliche Vorplanung als Broadcast oder direkt adressiert versendet wird und Binärdaten enthält</rdfs:comment>
+        <rdfs:label xml:lang="de">Einzelzeitschlitzbinärnachricht</rdfs:label>
+        <rdfs:label xml:lang="en">Single slot binary message</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/StandardClassBEquipmentPositionReportMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/StandardClassBEquipmentPositionReportMessage">
