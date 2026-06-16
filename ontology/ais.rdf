@@ -26,6 +26,29 @@
         <owl:imports rdf:resource="http://rescue-mate.de/ontology/main/0.6.0"/>
         <owl:imports rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/AISMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/AISMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Message"/>
+        <rdfs:comment xml:lang="en">A message sent or received via the automatic identification system (AIS)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Nachricht, die über das Automatic Identification System (AIS) empfangen oder gesendet wurde</rdfs:comment>
+        <rdfs:label xml:lang="en">AIS message</rdfs:label>
+        <rdfs:label>AIS-Nachricht</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
