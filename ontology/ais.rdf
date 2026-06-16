@@ -32,6 +32,30 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/aisMessageType -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/aisMessageType">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Assigns the integer number representing the AIS message type (e.g. 24 for rmo:Resource StaticDataReportMessage) to an AIS message</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weist einer AIS-Nachricht die Nummer des AIS-Nachrichtentyps zu (z.B. 24 für den Typ rmo:Resource StaticDataReportMessage)</rdfs:comment>
+        <rdfs:label xml:lang="en">AIS message type</rdfs:label>
+        <rdfs:label xml:lang="de">AIS-Nachrichtentyp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
