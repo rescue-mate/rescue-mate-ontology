@@ -118,6 +118,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/StandardSearchAndRescueAircraftPositionReportMessage">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+        <rdfs:comment xml:lang="en">An AIS message used by an aircraft (helicopter or airplane) which is involved in a search and rescue operation on the sea (i.e. search for and recovery of survivors of an accident at sea)</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine AIS-Nachricht, die von Luftfahrzeugen (Hubschrauber oder Flugzeug) in einem Such- und Rettungseinsatz (zum Finden und Retten von Überlebenden eines Unfalls) auf See verwendet wird</rdfs:comment>
+        <rdfs:label xml:lang="en">Standard search and rescue aircraft position report message</rdfs:label>
+        <rdfs:label xml:lang="de">Standard-Report-Nachricht für Such- und Rettungsluftfahrzeuge</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/StaticAndVoyageRelatedDataMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/StaticAndVoyageRelatedDataMessage">
