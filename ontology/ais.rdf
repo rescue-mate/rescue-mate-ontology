@@ -32,6 +32,29 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/aisVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/aisVersion">
+        <rdfs:comment xml:lang="de">Die Version der AIS-Spezifikation, die zur Beschreibung einer AIS-Nachricht verwendet wird</rdfs:comment>
+        <rdfs:comment xml:lang="en">The AIS specification version used to describe an AIS message</rdfs:comment>
+        <rdfs:label xml:lang="en">AIS version</rdfs:label>
+        <rdfs:label xml:lang="de">AIS-Version</rdfs:label>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/AISMessage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
