@@ -76,6 +76,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/aisShipTypeCode -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/aisShipTypeCode">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Watercraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="de">AIS Schiffstyp-Code</rdfs:label>
+        <rdfs:label xml:lang="en">AIS ship type code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
