@@ -55,6 +55,28 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rescue-mate.de/ontology/capturedByElectronicPositionFixingDevice -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/capturedByElectronicPositionFixingDevice">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/ElectronicPositionFixingDevice"/>
+        <rdfs:label xml:lang="en">captured by electronic position fixing device</rdfs:label>
+        <rdfs:label xml:lang="de">erfasst von elektronischem Gerät zur Standortbestimmung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
