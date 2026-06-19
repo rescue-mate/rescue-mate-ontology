@@ -99,6 +99,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/receivedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/receivedAt">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Message"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="de">empfangen am</rdfs:label>
+        <rdfs:label xml:lang="en">received at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
