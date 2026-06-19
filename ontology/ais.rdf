@@ -293,6 +293,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/GPSDevice -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/GPSDevice">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/ElectronicPositionFixingDevice"/>
+        <rdfs:label xml:lang="en">GPS device</rdfs:label>
+        <rdfs:label xml:lang="de">GPS-Gerät</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/GlobalNavigationSatelliteSystemBroadcastBinaryMessage -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GlobalNavigationSatelliteSystemBroadcastBinaryMessage">
