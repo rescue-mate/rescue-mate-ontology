@@ -87,6 +87,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/estimatedTimeOfArrival -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/estimatedTimeOfArrival">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <obo:IAO_0000116 xml:lang="en">Maybe the domain get be set to something more general than rmo:Vehicle</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">estimated time of arrival</rdfs:label>
+        <rdfs:label xml:lang="de">geschätzte Ankunftszeit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
