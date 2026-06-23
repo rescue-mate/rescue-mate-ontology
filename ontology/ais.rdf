@@ -121,6 +121,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/positionAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/positionAccuracy">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="de">Positionsgenauigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">position accuracy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/positionIndex -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/positionIndex">
