@@ -131,6 +131,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/rateOfTurn -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/rateOfTurn">
+        <rdfs:comment xml:lang="en">Indicates how quickly the vessel is turning. A negative value indicates a port turn, a positive value indicates turning starboard.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Zeigt an, wie schnell ein Schiff dreht. Ein negativer Wert bedeutet eine Drehung nach Backbord, ein positiver Wert eine Drehung nach Steuerbord.</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehrate</rdfs:label>
+        <rdfs:label xml:lang="en">rate of turn</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/receivedAt -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/receivedAt">
