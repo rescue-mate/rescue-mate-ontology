@@ -121,6 +121,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/positionIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/positionIndex">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label xml:lang="de">Positionsindex</rdfs:label>
+        <rdfs:label xml:lang="en">position index</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/receivedAt -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/receivedAt">
