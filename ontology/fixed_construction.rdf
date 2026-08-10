@@ -348,6 +348,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DikeDefenseSection -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseSection">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:label xml:lang="de">Deichverteidigungsabschnitt</rdfs:label>
+        <rdfs:label xml:lang="en">Dike defense section</rdfs:label>
+        <rdfs:comment xml:lang="de">Abschnitt des Deiches, für den ein bestimmter Deichwart zuständig ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Section of the dike a particular dike warden is responsible for</rdfs:comment>
+    </owl:Class>
+
+
+
     <!-- http://rescue-mate.de/ontology/DikeKilometerMarker -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeKilometerMarker">
@@ -560,6 +572,18 @@
         <rdfs:label xml:lang="en">Sliding flood gate</rdfs:label>
     </owl:Class>
     
+
+
+    <!-- http://rescue-mate.de/ontology/SeniorDikeWardenDistrict -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:label xml:lang="de">Oberdeichwart-Bezirk</rdfs:label>
+        <rdfs:label xml:lang="en">Senior dike warden district</rdfs:label>
+        <rdfs:comment xml:lang="de">Organisatorische Untergliederung eines Deichverteidigungsgebietes</rdfs:comment>
+        <rdfs:comment xml:lang="en">Organisational subdivision of a dike defense area</rdfs:comment>
+    </owl:Class>
+
 
 
     <!-- http://rescue-mate.de/ontology/Stoplog -->
