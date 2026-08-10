@@ -128,12 +128,23 @@
     <!-- http://rescue-mate.de/ontology/belongsToDikeDefenseArea -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/belongsToDikeDefenseArea">
-        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
         <rdfs:range rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
         <rdfs:label xml:lang="en">belongs to dike defense area</rdfs:label>
         <rdfs:label xml:lang="de">gehört zu Deichverteidigungsgebiet</rdfs:label>
     </owl:ObjectProperty>
-    
+
+
+
+    <!-- http://rescue-mate.de/ontology/belongsToSeniorDikeWardenDistrict -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/belongsToSeniorDikeWardenDistrict">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="en">belongs to senior dike warden district</rdfs:label>
+        <rdfs:label xml:lang="de">gehört zu Oberdeichwart-Bezirk</rdfs:label>
+    </owl:ObjectProperty>
+
 
 
     <!-- http://rescue-mate.de/ontology/hasEndUserOrganization -->
