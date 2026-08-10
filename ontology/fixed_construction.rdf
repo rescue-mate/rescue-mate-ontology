@@ -128,12 +128,23 @@
     <!-- http://rescue-mate.de/ontology/belongsToDikeDefenseArea -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/belongsToDikeDefenseArea">
-        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
         <rdfs:range rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
         <rdfs:label xml:lang="en">belongs to dike defense area</rdfs:label>
         <rdfs:label xml:lang="de">gehört zu Deichverteidigungsgebiet</rdfs:label>
     </owl:ObjectProperty>
-    
+
+
+
+    <!-- http://rescue-mate.de/ontology/belongsToSeniorDikeWardenDistrict -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/belongsToSeniorDikeWardenDistrict">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="en">belongs to senior dike warden district</rdfs:label>
+        <rdfs:label xml:lang="de">gehört zu Oberdeichwart-Bezirk</rdfs:label>
+    </owl:ObjectProperty>
+
 
 
     <!-- http://rescue-mate.de/ontology/hasEndUserOrganization -->
@@ -226,7 +237,7 @@
     <!-- http://rescue-mate.de/ontology/dikeKilometer -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dikeKilometer">
-        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FixedConstruction"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="de">Deichkilometer</rdfs:label>
         <rdfs:label xml:lang="en">dike kilometer</rdfs:label>
@@ -242,6 +253,20 @@
         <rdfs:label xml:lang="en">dike warden ID</rdfs:label>
     </owl:DatatypeProperty>
     
+
+
+    <!-- http://rescue-mate.de/ontology/fromDikeKilometer -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/fromDikeKilometer">
+        <rdfs:subPropertyOf rdf:resource="http://rescue-mate.de/ontology/dikeKilometer"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">von Deichkilometer</rdfs:label>
+        <rdfs:label xml:lang="en">from dike kilometer</rdfs:label>
+        <rdfs:comment xml:lang="de">Deichkilometer, an dem ein Abschnitt beginnt</rdfs:comment>
+        <rdfs:comment xml:lang="en">Dike kilometer at which a section starts</rdfs:comment>
+    </owl:DatatypeProperty>
+
 
 
     <!-- http://rescue-mate.de/ontology/hasSillHeightInMetersAboveSeaLevel -->
@@ -288,6 +313,20 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/toDikeKilometer -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/toDikeKilometer">
+        <rdfs:subPropertyOf rdf:resource="http://rescue-mate.de/ontology/dikeKilometer"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">bis Deichkilometer</rdfs:label>
+        <rdfs:label xml:lang="en">to dike kilometer</rdfs:label>
+        <rdfs:comment xml:lang="de">Deichkilometer, an dem ein Abschnitt endet</rdfs:comment>
+        <rdfs:comment xml:lang="en">Dike kilometer at which a section ends</rdfs:comment>
+    </owl:DatatypeProperty>
+
+
+
     <!-- http://rescue-mate.de/ontology/yearOfConstruction -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/yearOfConstruction">
@@ -318,6 +357,30 @@
         <rdfs:label xml:lang="en">Dike defense area</rdfs:label>
     </owl:Class>
     
+
+
+    <!-- http://rescue-mate.de/ontology/DikeDefenseSection -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseSection">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:label xml:lang="de">Deichverteidigungsabschnitt</rdfs:label>
+        <rdfs:label xml:lang="en">Dike defense section</rdfs:label>
+        <rdfs:comment xml:lang="de">Abschnitt des Deiches, für den ein bestimmter Deichwart zuständig ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Section of the dike a particular dike warden is responsible for</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- http://rescue-mate.de/ontology/DikeKilometerMarker -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeKilometerMarker">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:label xml:lang="de">Deichkilometer-Marke</rdfs:label>
+        <rdfs:label xml:lang="en">Dike kilometer marker</rdfs:label>
+        <rdfs:comment xml:lang="de">Punkt der Kilometrierung entlang der Hauptdeichlinie</rdfs:comment>
+        <rdfs:comment xml:lang="en">Chainage point along the main dike line</rdfs:comment>
+    </owl:Class>
+
 
 
     <!-- http://rescue-mate.de/ontology/DikeWarden -->
@@ -372,6 +435,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/EarthDike -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/EarthDike">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="de">Erddeich</rdfs:label>
+        <rdfs:label xml:lang="en">Earth dike</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q158438"/>
+    </owl:Class>
+
+
+
     <!-- http://rescue-mate.de/ontology/FloodGate -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/FloodGate">
@@ -381,6 +455,16 @@
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2345125"/>
     </owl:Class>
     
+
+
+    <!-- http://rescue-mate.de/ontology/FloodProtectionWall -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FloodProtectionWall">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="de">Hochwasserschutzwand</rdfs:label>
+        <rdfs:label xml:lang="en">Flood protection wall</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://rescue-mate.de/ontology/HingedCrestGate -->
@@ -446,6 +530,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/MainDikeLine -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MainDikeLine">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="de">Hauptdeichlinie</rdfs:label>
+        <rdfs:label xml:lang="en">Main dike line</rdfs:label>
+        <rdfs:comment xml:lang="de">Abschnitt der durchgehenden Hauptdeichlinie. Instanzen sind die einzelnen kilometrierten Abschnitte, nicht die Linie als Ganzes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Section of the continuous main dike line. Instances are the individual chainaged sections, not the line as a whole.</rdfs:comment>
+    </owl:Class>
+
+
+
     <!-- http://rescue-mate.de/ontology/Propulsion -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Propulsion">
@@ -489,6 +585,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SeniorDikeWardenDistrict -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:label xml:lang="de">Oberdeichwart-Bezirk</rdfs:label>
+        <rdfs:label xml:lang="en">Senior dike warden district</rdfs:label>
+        <rdfs:comment xml:lang="de">Organisatorische Untergliederung eines Deichverteidigungsgebietes</rdfs:comment>
+        <rdfs:comment xml:lang="en">Organisational subdivision of a dike defense area</rdfs:comment>
+    </owl:Class>
+
+
+
     <!-- http://rescue-mate.de/ontology/Stoplog -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Stoplog">
@@ -528,6 +636,16 @@
         <rdfs:label xml:lang="en">Vertical-lift flood gate</rdfs:label>
     </owl:Class>
     
+
+
+    <!-- http://rescue-mate.de/ontology/WaterManagementFacility -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/WaterManagementFacility">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/HydraulicStructure"/>
+        <rdfs:label xml:lang="de">Wasserwirtschaftliche Anlage</rdfs:label>
+        <rdfs:label xml:lang="en">Water management facility</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://rescue-mate.de/ontology/WaterPumpingStation -->
@@ -582,6 +700,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/veddelDikeDefenseArea -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/veddelDikeDefenseArea">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/DikeDefenseArea"/>
+        <rdfs:label xml:lang="de">Veddel (Deichverteidigungsgebiet)</rdfs:label>
+        <rdfs:label xml:lang="en">Veddel (dike defense area)</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
     <!-- http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea">
@@ -589,6 +717,66 @@
         <rdfs:label xml:lang="de">Wilhelmsburg (Deichverteidigungsgebiet)</rdfs:label>
         <rdfs:label xml:lang="en">Wilhelmsburg (dike defense area)</rdfs:label>
     </owl:NamedIndividual>
+
+
+    <!-- http://rescue-mate.de/resource/finkenwerderSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/finkenwerderSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Finkenwerder (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Finkenwerder (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/marschlandeSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/marschlandeSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Marschlande (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Marschlande (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/mitteSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/mitteSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Mitte (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Mitte (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/suederelbeSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/suederelbeSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Süderelbe (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Süderelbe (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/vierlandeSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/vierlandeSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Vierlande (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Vierlande (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/wilhelmsburgSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Wilhelmsburg (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Wilhelmsburg (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
