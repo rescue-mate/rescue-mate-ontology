@@ -320,6 +320,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DikeKilometerMarker -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeKilometerMarker">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/GeographicEntity"/>
+        <rdfs:label xml:lang="de">Deichkilometer-Marke</rdfs:label>
+        <rdfs:label xml:lang="en">Dike kilometer marker</rdfs:label>
+        <rdfs:comment xml:lang="de">Punkt der Kilometrierung entlang der Hauptdeichlinie</rdfs:comment>
+        <rdfs:comment xml:lang="en">Chainage point along the main dike line</rdfs:comment>
+    </owl:Class>
+
+
+
     <!-- http://rescue-mate.de/ontology/DikeWarden -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeWarden">
