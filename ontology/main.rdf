@@ -254,6 +254,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasFlight -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasFlight">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Aircraft"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/Flight"/>
+        <rdfs:comment xml:lang="de">Beziehung zwischen einem Luftfahrzeug und einem von ihm durchgeführten Flug</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation between an aircraft and a flight performed by it</rdfs:comment>
+        <rdfs:label xml:lang="en">has flight</rdfs:label>
+        <rdfs:label xml:lang="de">hat Flug</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasImplementingAgency -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasImplementingAgency">
@@ -311,6 +324,18 @@
         <rdfs:comment xml:lang="en">Relation between an object and a position (being a point in space-time)</rdfs:comment>
         <rdfs:label xml:lang="en">has position</rdfs:label>
         <rdfs:label xml:lang="de">hat Position</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/hasTrajectory -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasTrajectory">
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/Trajectory"/>
+        <rdfs:comment xml:lang="de">Beziehung zwischen einem Objekt oder einer Tätigkeit und dem dabei zurückgelegten Weg. Ohne Definitionsbereich, da sowohl Fahrzeuge als auch Tätigkeiten wie ein Flug eine Trajektorie haben können.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation between an object or an activity and the path travelled. Without a domain, since both vehicles and activities such as a flight can have a trajectory.</rdfs:comment>
+        <rdfs:label xml:lang="en">has trajectory</rdfs:label>
+        <rdfs:label xml:lang="de">hat Trajektorie</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -383,6 +408,45 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/altitudeInMetersAboveSeaLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/altitudeInMetersAboveSeaLevel">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="de">Höhe einer Position über Normalhöhennull. Die einzige Höhenangabe, die sich unmittelbar mit Gelände-, Deich- und Pegeldaten vergleichen lässt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Altitude of a position above sea level. The only altitude that can be compared directly with terrain, dike and water level data.</rdfs:comment>
+        <rdfs:label xml:lang="de">Höhe in Metern über Normalhöhennull</rdfs:label>
+        <rdfs:label xml:lang="en">altitude in meters above sea level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/altitudeInMetersAboveTakeoff -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/altitudeInMetersAboveTakeoff">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="de">Höhe einer Position über dem Startpunkt des Fluges. Anschaulich für die Flughöhe, aber ohne Kenntnis des Startpunktes nicht mit Kartendaten vergleichbar.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Altitude of a position above the take-off point of the flight. Intuitive as a flight altitude, but not comparable with map data unless the take-off point is known.</rdfs:comment>
+        <rdfs:label xml:lang="de">Höhe in Metern über dem Startpunkt</rdfs:label>
+        <rdfs:label xml:lang="en">altitude in meters above takeoff</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/batteryRemainingInPercent -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/batteryRemainingInPercent">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="de">Verbleibende Akkuladung eines Fahrzeugs in Prozent. Bestimmt bei unbemannten Systemen die verbleibende Einsatzdauer.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Remaining battery charge of a vehicle in percent. For unmanned systems this determines the remaining time of operation.</rdfs:comment>
+        <rdfs:label xml:lang="de">verbleibende Akkuladung in Prozent</rdfs:label>
+        <rdfs:label xml:lang="en">battery remaining in percent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/clearWidthInMeters -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/clearWidthInMeters">
@@ -426,6 +490,32 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/elapsedTimeSinceBootInSeconds -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/elapsedTimeSinceBootInSeconds">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="de">Zeit seit dem Start des aufzeichnenden Systems. Monoton und unabhängig von der Systemuhr, daher als Ordnungskriterium auch dann tragfähig, wenn die Uhr nachträglich korrigiert wird.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Time elapsed since the recording system was started. Monotonic and independent of the system clock, hence usable for ordering even when the clock is corrected afterwards.</rdfs:comment>
+        <rdfs:label xml:lang="de">verstrichene Zeit seit Systemstart in Sekunden</rdfs:label>
+        <rdfs:label xml:lang="en">elapsed time since boot in seconds</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/gnssFixTypeCode -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/gnssFixTypeCode">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="de">Art der satellitengestützten Ortung als Code gemäß MAVLink GPS_FIX_TYPE, etwa 3 für dreidimensionale Ortung oder 6 für RTK mit fester Mehrdeutigkeitslösung. Beschreibt die Verlässlichkeit der Position.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of satellite based positioning as a code according to MAVLink GPS_FIX_TYPE, e.g. 3 for a three dimensional fix or 6 for RTK with fixed ambiguity resolution. Describes how reliable the position is.</rdfs:comment>
+        <rdfs:label xml:lang="de">Art der GNSS-Ortung als Code</rdfs:label>
+        <rdfs:label xml:lang="en">GNSS fix type code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasPriority -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/hasPriority">
@@ -447,12 +537,38 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/headingAtPositionInDegrees -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/headingAtPositionInDegrees">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="de">Ausrichtung des Fahrzeugs an einer Position in Grad, rechtweisend von Nord.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Orientation of the vehicle at a position in degrees, true bearing from north.</rdfs:comment>
+        <rdfs:label xml:lang="de">Kurs an der Position in Grad</rdfs:label>
+        <rdfs:label xml:lang="en">heading at position in degrees</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/maximumOccupancy -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/maximumOccupancy">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label xml:lang="de">maximale Belegung</rdfs:label>
         <rdfs:label xml:lang="en">maximum occupancy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/numberOfVisibleSatellites -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/numberOfVisibleSatellites">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="de">Anzahl der zum Zeitpunkt der Ortung sichtbaren Navigationssatelliten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Number of navigation satellites visible at the time of positioning.</rdfs:comment>
+        <rdfs:label xml:lang="de">Anzahl sichtbarer Satelliten</rdfs:label>
+        <rdfs:label xml:lang="en">number of visible satellites</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -479,6 +595,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/receivedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/receivedAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="de">Zeitpunkt, zu dem eine Angabe empfangen wurde. Ohne Definitionsbereich, da sowohl Nachrichten als auch beobachtete Objekte einen Empfangszeitpunkt tragen können.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Point in time at which a piece of information was received. Without a domain, since both messages and observed objects can carry a time of receipt.</rdfs:comment>
+        <rdfs:label xml:lang="de">empfangen am</rdfs:label>
+        <rdfs:label xml:lang="en">received at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/secondDikeSafety -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/secondDikeSafety">
@@ -497,6 +625,19 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="de">gesendet von Gerät mit Individual Short Subscriber Identity (ISSI)</rdfs:label>
         <rdfs:label xml:lang="en">sent from device with individual short subscriber identity (ISSI)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/speedOverGroundInMetersPerSecond -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/speedOverGroundInMetersPerSecond">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="de">Geschwindigkeit über Grund an einer Position in Metern je Sekunde. Die Einheit steht bewusst im Namen, da Geschwindigkeiten je nach Quelle auch in Knoten geführt werden.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Speed over ground at a position in meters per second. The unit is part of the name on purpose, since depending on the source speeds are also given in knots.</rdfs:comment>
+        <rdfs:label xml:lang="de">Geschwindigkeit über Grund in Metern je Sekunde</rdfs:label>
+        <rdfs:label xml:lang="en">speed over ground in meters per second</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1306,6 +1447,19 @@
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">Fixed construction</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q811430"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Flight -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Flight">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Activity"/>
+        <rdfs:comment xml:lang="de">Tätigkeit eines Luftfahrzeugs vom Abheben bis zur Landung. Fasst die zugehörigen Positionen unabhängig davon zusammen, über wie viele Aufzeichnungsabschnitte sie verteilt sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity of an aircraft from take-off until landing. Groups the associated positions regardless of how many recording segments they are spread over.</rdfs:comment>
+        <rdfs:label xml:lang="de">Flug</rdfs:label>
+        <rdfs:label xml:lang="en">Flight</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q206021</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3603,6 +3757,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Trajectory -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Trajectory">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <rdfs:comment xml:lang="de">Der von einem bewegten Objekt zurückgelegte Weg, gegeben als zeitlich geordnete Folge von Positionen</rdfs:comment>
+        <rdfs:comment xml:lang="en">The path travelled by a moving object, given as a temporally ordered sequence of positions</rdfs:comment>
+        <rdfs:label xml:lang="de">Trajektorie</rdfs:label>
+        <rdfs:label xml:lang="en">Trajectory</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193139</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/TurntableLadder -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/TurntableLadder">
@@ -3612,6 +3779,19 @@
         <rdfs:label xml:lang="de">Drehleiter</rdfs:label>
         <rdfs:label xml:lang="en">Turntable ladder</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1898202</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/UnmannedAerialVehicle -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/UnmannedAerialVehicle">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Aircraft"/>
+        <rdfs:comment xml:lang="de">Luftfahrzeug ohne Besatzung an Bord, ferngesteuert oder autonom fliegend</rdfs:comment>
+        <rdfs:comment xml:lang="en">Aircraft without crew on board, either remotely piloted or flying autonomously</rdfs:comment>
+        <rdfs:label xml:lang="de">Unbemanntes Luftfahrzeug</rdfs:label>
+        <rdfs:label xml:lang="en">Unmanned aerial vehicle</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q484000</rdfs:seeAlso>
     </owl:Class>
     
 
