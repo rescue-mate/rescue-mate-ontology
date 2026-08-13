@@ -150,6 +150,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/hasFlightStatus -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasFlightStatus">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Aircraft"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/FlightStatus"/>
+        <rdfs:comment xml:lang="de">Beziehung zwischen einem Luftfahrzeug und seinem gegenwaertigen Flugzustand</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation between an aircraft and its current flight status</rdfs:comment>
+        <rdfs:label xml:lang="en">has flight status</rdfs:label>
+        <rdfs:label xml:lang="de">hat Flugzustand</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/hasOperator -->
 
     <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/hasOperator">
@@ -517,6 +530,56 @@
         <rdfs:label xml:lang="en">Way segment</rdfs:label>
     </owl:Class>
 
+
+
+    <!-- http://rescue-mate.de/ontology/videoStreamUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/videoStreamUrl">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="de">Adresse, unter der das Bild abgerufen werden kann. Ohne Definitionsbereich, da sowohl ein Fahrzeug einen laufenden Strom haben kann als auch ein einzelner Flug seine Aufzeichnung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Address at which the imagery can be retrieved. Without a domain, since a vehicle can have a running stream just as a single flight can have its recording.</rdfs:comment>
+        <rdfs:label xml:lang="de">Adresse des Videostroms</rdfs:label>
+        <rdfs:label xml:lang="en">video stream URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/flightModeName -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/flightModeName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">Der vom Autopiloten gemeldete Flugmodus als Text, etwa POSCTL oder AUTO.RTL. Bewusst ein Literal und keine Klassenhierarchie, da die Modi herstellerspezifisch sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The flight mode reported by the autopilot as text, e.g. POSCTL or AUTO.RTL. Deliberately a literal rather than a class hierarchy, since the modes are vendor specific.</rdfs:comment>
+        <rdfs:label xml:lang="de">Bezeichnung des Flugmodus</rdfs:label>
+        <rdfs:label xml:lang="en">flight mode name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/startedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/startedAt">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="de">Zeitpunkt, zu dem ein Flug begann. Bei einem aufgezeichneten Flug der Zeitpunkt der Aufzeichnung, nicht der der Wiedergabe. Bewusst xsd:dateTime und nicht dateTimeStamp: Virtuoso kennt dateTimeStamp nicht und laesst Zeitfilter darauf stillschweigend durchlaufen.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Point in time at which a flight began. For a recorded flight this is the time of recording, not of replay. Deliberately xsd:dateTime rather than dateTimeStamp: Virtuoso does not know dateTimeStamp and silently lets time filters on it pass everything.</rdfs:comment>
+        <rdfs:label xml:lang="de">begonnen am</rdfs:label>
+        <rdfs:label xml:lang="en">started at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/endedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/endedAt">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="de">Zeitpunkt, zu dem ein Flug endete. Fehlt, solange der Flug andauert -- daran laesst sich ein laufender von einem abgeschlossenen Flug unterscheiden.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Point in time at which a flight ended. Absent while the flight is ongoing, which is what distinguishes a running flight from a completed one.</rdfs:comment>
+        <rdfs:label xml:lang="de">beendet am</rdfs:label>
+        <rdfs:label xml:lang="en">ended at</rdfs:label>
+    </owl:DatatypeProperty>
+    
 
 
     <!-- http://rescue-mate.de/ontology/restrictsAccess -->
@@ -1063,6 +1126,74 @@
         <rdfs:label xml:lang="de">Flug</rdfs:label>
         <rdfs:label xml:lang="en">Flight</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q206021</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/RecordedFlight -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RecordedFlight">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Flight"/>
+        <rdfs:comment xml:lang="de">Ein Flug, der aufgezeichnet wurde und zur Wiedergabe bereitsteht. Seine Zeitstempel bleiben die der Aufzeichnung; ob und wie eine Darstellung sie auf die Gegenwart abbildet, entscheidet die Darstellungsschicht.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A flight that has been recorded and is available for replay. Its timestamps remain those of the recording; whether and how a presentation maps them onto the present is decided by the presentation layer.</rdfs:comment>
+        <rdfs:label xml:lang="de">Aufgezeichneter Flug</rdfs:label>
+        <rdfs:label xml:lang="en">Recorded flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/FlightStatus -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FlightStatus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:comment xml:lang="de">Zustand eines Luftfahrzeugs bezogen auf Boden und Luft</rdfs:comment>
+        <rdfs:comment xml:lang="en">State of an aircraft with respect to ground and air</rdfs:comment>
+        <rdfs:label xml:lang="de">Flugzustand</rdfs:label>
+        <rdfs:label xml:lang="en">Flight status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/OnGround -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/OnGround">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FlightStatus"/>
+        <obo:IAO_0000116>MAV_LANDED_STATE 1</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Am Boden</rdfs:label>
+        <rdfs:label xml:lang="en">On ground</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/InAir -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/InAir">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FlightStatus"/>
+        <obo:IAO_0000116>MAV_LANDED_STATE 2</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">In der Luft</rdfs:label>
+        <rdfs:label xml:lang="en">In air</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/TakingOff -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/TakingOff">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FlightStatus"/>
+        <obo:IAO_0000116>MAV_LANDED_STATE 3</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Im Start</rdfs:label>
+        <rdfs:label xml:lang="en">Taking off</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/Landing -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Landing">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FlightStatus"/>
+        <obo:IAO_0000116>MAV_LANDED_STATE 4</obo:IAO_0000116>
+        <rdfs:label xml:lang="de">Im Landeanflug</rdfs:label>
+        <rdfs:label xml:lang="en">Landing</rdfs:label>
     </owl:Class>
     
 
