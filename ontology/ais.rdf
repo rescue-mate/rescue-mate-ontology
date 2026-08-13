@@ -156,6 +156,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/rateOfTurnAtPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/rateOfTurnAtPosition">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="de">Drehrate an einer Position. Ein negativer Wert bedeutet eine Drehung nach Backbord, ein positiver nach Steuerbord. Anders als rateOfTurn, das eine Eigenschaft des Fahrzeugs ist, gehoert dieser Wert zu einem einzelnen Bahnpunkt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Rate of turn at a position. A negative value indicates a turn to port, a positive one to starboard. Unlike rateOfTurn, which is a property of the vehicle, this value belongs to a single track point.</rdfs:comment>
+        <rdfs:label xml:lang="de">Drehrate an der Position</rdfs:label>
+        <rdfs:label xml:lang="en">rate of turn at position</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/receivedAt -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/receivedAt">

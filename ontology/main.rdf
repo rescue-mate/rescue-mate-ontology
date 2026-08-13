@@ -197,6 +197,32 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/latestPosition -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/latestPosition">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:comment xml:lang="de">Verweist auf die juengste bekannte Position eines Objekts. Abkuerzung, damit der aktuelle Standort ohne Sortierung ueber alle Positionen zu finden ist.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Points to the most recent known position of an object. A shortcut, so that the current location can be found without sorting over all positions.</rdfs:comment>
+        <rdfs:label xml:lang="en">latest position</rdfs:label>
+        <rdfs:label xml:lang="de">juengste Position</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/oldestPosition -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/oldestPosition">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:comment xml:lang="de">Verweist auf die aelteste noch vorgehaltene Position eines Objekts und markiert damit den Anfang der bekannten Spur.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Points to the oldest position still held for an object, marking the beginning of the known track.</rdfs:comment>
+        <rdfs:label xml:lang="en">oldest position</rdfs:label>
+        <rdfs:label xml:lang="de">aelteste Position</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/headingAtPositionInDegrees -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/headingAtPositionInDegrees">
@@ -237,7 +263,7 @@
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/altitudeInMetersAboveSeaLevel">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="de">Höhe einer Position über Normalhöhennull. Die einzige Höhenangabe, die sich unmittelbar mit Gelände-, Deich- und Pegeldaten vergleichen lässt.</rdfs:comment>
         <rdfs:comment xml:lang="en">Altitude of a position above sea level. The only altitude that can be compared directly with terrain, dike and water level data.</rdfs:comment>
         <rdfs:label xml:lang="de">Höhe in Metern über Normalhöhennull</rdfs:label>
@@ -250,7 +276,7 @@
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/altitudeInMetersAboveTakeoff">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="de">Höhe einer Position über dem Startpunkt des Fluges. Anschaulich als Flughöhe, ohne Kenntnis des Startpunktes aber nicht mit Kartendaten vergleichbar.</rdfs:comment>
         <rdfs:comment xml:lang="en">Altitude of a position above the take-off point of the flight. Intuitive as a flight altitude, but not comparable with map data unless the take-off point is known.</rdfs:comment>
         <rdfs:label xml:lang="de">Höhe in Metern über dem Startpunkt</rdfs:label>
@@ -276,7 +302,7 @@
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/elapsedTimeSinceBootInSeconds">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="de">Zeit seit dem Start des aufzeichnenden Systems. Monoton und unabhängig von der Systemuhr, daher als Ordnungskriterium auch dann tragfähig, wenn die Uhr nachträglich korrigiert wird.</rdfs:comment>
         <rdfs:comment xml:lang="en">Time elapsed since the recording system was started. Monotonic and independent of the system clock, hence usable for ordering even when the clock is corrected afterwards.</rdfs:comment>
         <rdfs:label xml:lang="de">verstrichene Zeit seit Systemstart in Sekunden</rdfs:label>
@@ -472,7 +498,7 @@
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/speedOverGroundInMetersPerSecond">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="de">Geschwindigkeit über Grund an einer Position in Metern je Sekunde. Die Einheit steht bewusst im Namen, da Geschwindigkeiten je nach Quelle auch in Knoten geführt werden.</rdfs:comment>
         <rdfs:comment xml:lang="en">Speed over ground at a position in meters per second. The unit is part of the name on purpose, since depending on the source speeds are also given in knots.</rdfs:comment>
         <rdfs:label xml:lang="de">Geschwindigkeit über Grund in Metern je Sekunde</rdfs:label>
