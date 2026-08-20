@@ -32,6 +32,7 @@
         <owl:imports rdf:resource="http://rescue-mate.de/ontology/social_media/0.6.0"/>
         <owl:imports rdf:resource="http://rescue-mate.de/ontology/events/0.6.0"/>
         <owl:imports rdf:resource="http://rescue-mate.de/ontology/care_facilities/0.6.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/measurements/0.6.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
         <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1779,7 +1780,7 @@
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SensorReading">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:comment xml:lang="en">A sensor reading is a mesurement datum that is a recording of the output of a sensor.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A sensor reading is a measurement datum that is a recording of the output of a sensor.</rdfs:comment>
         <rdfs:comment xml:lang="de">Ein Sensormesswert ist ein Messwert, der auf der Ausgabe eines Sensors basiert.</rdfs:comment>
         <rdfs:label xml:lang="en">Sensor reading</rdfs:label>
         <rdfs:label xml:lang="de">Sensormesswert</rdfs:label>
