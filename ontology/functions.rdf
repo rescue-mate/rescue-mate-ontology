@@ -39,6 +39,7 @@
     </owl:Ontology>
     
 
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -717,6 +718,18 @@
         <rdfs:comment xml:lang="en">Custom RML function that tries to convert any string input to a boollean value.</rdfs:comment>
         <rdfs:label xml:lang="de">String zu Boolean</rdfs:label>
         <rdfs:label xml:lang="en">To Boolean</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/toDecimalString -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/toDecimalString">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine Dezimalzahl in deutscher Komma-Notation in einen XSD-Decimal-String mit Punkt als Dezimal-Trenner umwandelt. Eingaben, die bereits die Punkt-Notation verwenden, werden unverändert ausgegeben.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that converts a decimal number written with a German decimal comma into the XSD decimal notation using a point as decimal separator. Input that already uses a point is passed through unchanged.</rdfs:comment>
+        <rdfs:label xml:lang="de">In Dezimal-String umwandeln</rdfs:label>
+        <rdfs:label xml:lang="en">To decimal string</rdfs:label>
     </owl:NamedIndividual>
     
 
