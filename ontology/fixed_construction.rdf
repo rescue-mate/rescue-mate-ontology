@@ -320,6 +320,7 @@
     <!-- http://rescue-mate.de/ontology/DikeKilometerMarker -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeKilometerMarker">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:comment xml:lang="en">A geographic feature representing a chainage point along the main dike line</rdfs:comment>
         <rdfs:comment xml:lang="de">Ein georgaphisches Feature, das einen Punkt der Kilometrierung entlang der Hauptdeichlinie beschreibt</rdfs:comment>
@@ -461,6 +462,19 @@
         <rdfs:label xml:lang="en">Lock</rdfs:label>
         <rdfs:label xml:lang="de">Schleuse</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q105731"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/MainDikeLine -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/MainDikeLine">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="de">Abschnitt der durchgehenden Hauptdeichlinie. Instanzen sind die einzelnen kilometrierten Abschnitte, nicht die Linie als Ganzes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Section of the continuous main dike line. Instances are the individual chainaged sections, not the line as a whole.</rdfs:comment>
+        <rdfs:label xml:lang="de">Hauptdeichlinie</rdfs:label>
+        <rdfs:label xml:lang="en">Main dike line</rdfs:label>
     </owl:Class>
     
 
