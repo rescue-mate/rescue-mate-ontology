@@ -235,6 +235,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/baMitteHamburg -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/baMitteHamburg">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/GermanBoroughOffice"/>
+        <rdfs:label xml:lang="de">Bezirksamt Hamburg-Mitte (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="en">Bezirksamt Hamburg-Mitte (Hamburg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/bisHamburg -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/bisHamburg">
