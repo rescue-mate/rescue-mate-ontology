@@ -24,6 +24,7 @@
         <owl:imports rdf:resource="http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql#1.1"/>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor>Heiko Bornholdt</dct:contributor>
         <dct:created>2025-02-12</dct:created>
         <dct:creator>Patrick Westphal</dct:creator>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-07</dct:issued>
