@@ -397,6 +397,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/FireStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/FireStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/Facility"/>
+        <rdfs:label xml:lang="de">Feuerwache</rdfs:label>
+        <rdfs:label xml:lang="en">Fire station</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1195942</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/GeographicEntity -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/GeographicEntity">
@@ -613,6 +624,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/ProfessionalFireStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/ProfessionalFireStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireStation"/>
+        <rdfs:comment xml:lang="de">Feuerwache, die von der Berufsfeuerwehr besetzt ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire station staffed by the professional fire brigade</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuer- und Rettungswache der Berufsfeuerwehr</rdfs:label>
+        <rdfs:label xml:lang="en">Professional fire station</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Reduction -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Reduction">
@@ -680,6 +703,18 @@
         <rdfs:comment xml:lang="de">Informationsinhalt, der audiovisuelle Inhalte umfasst</rdfs:comment>
         <rdfs:label xml:lang="en">Video</rdfs:label>
         <rdfs:label xml:lang="de">Videoaufnahme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rescue-mate.de/ontology/VolunteerFireStation -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/VolunteerFireStation">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/FireStation"/>
+        <rdfs:comment xml:lang="de">Feuerwache, die von einer Freiwilligen Feuerwehr besetzt ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire station staffed by a volunteer fire brigade</rdfs:comment>
+        <rdfs:label xml:lang="de">Gerätehaus der Freiwilligen Feuerwehr</rdfs:label>
+        <rdfs:label xml:lang="en">Volunteer fire station</rdfs:label>
     </owl:Class>
     
 
