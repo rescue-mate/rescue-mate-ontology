@@ -495,6 +495,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion die für ein Oberdeichwartgebiet die correkte IRI zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the IRI of the senior dike warden district referred to by name</rdfs:comment>
+        <rdfs:label xml:lang="en">Get senior dike warden district</rdfs:label>
+        <rdfs:label xml:lang="de">Oberdeichwartgebiet-IRI von Gebietsname</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getSocialMediaService -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getSocialMediaService">
