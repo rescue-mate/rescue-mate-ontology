@@ -770,6 +770,16 @@
         <rdfs:label xml:lang="de">Wilhelmsburg (Deichverteidigungsgebiet)</rdfs:label>
         <rdfs:label xml:lang="en">Wilhelmsburg (dike defense area)</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://rescue-mate.de/resource/wilhelmsburgSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Wilhelmsburg (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Wilhelmsburg (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
