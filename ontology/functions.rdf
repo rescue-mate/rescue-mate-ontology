@@ -127,6 +127,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/areaNames -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/areaNames">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">Area names</rdfs:label>
+        <rdfs:label xml:lang="de">Gebietsnamen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/base64String -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/base64String">
