@@ -753,6 +753,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/vierlandeSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/vierlandeSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Vierlande (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Vierlande (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/wilhelmsburgDikeDefenseArea">
