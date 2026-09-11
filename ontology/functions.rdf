@@ -183,6 +183,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/districtName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/districtName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">District name</rdfs:label>
+        <rdfs:label xml:lang="de">Gebietsname</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/downloadFileAndReturnRMURL -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/downloadFileAndReturnRMURL">
