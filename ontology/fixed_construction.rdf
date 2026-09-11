@@ -343,6 +343,19 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DikeDefenseSection -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeDefenseSection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">A spatial region that marks a section of a dike a particular dike warden is responsible for</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein räumlicher Bereich, der den Abschnitt eines Deiches beschreibt, für den ein bestimmter Deichwart zuständig ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Deichverteidigungsabschnitt</rdfs:label>
+        <rdfs:label xml:lang="en">Dike defense section</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/DikeKilometerMarker -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/DikeKilometerMarker">
