@@ -713,6 +713,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/marschlandeSeniorDikeWardenDistrict -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/marschlandeSeniorDikeWardenDistrict">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/SeniorDikeWardenDistrict"/>
+        <rdfs:label xml:lang="de">Marschlande (Oberdeichwart-Bezirk)</rdfs:label>
+        <rdfs:label xml:lang="en">Marschlande (senior dike warden district)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/veddelDikeDefenseArea -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/veddelDikeDefenseArea">
