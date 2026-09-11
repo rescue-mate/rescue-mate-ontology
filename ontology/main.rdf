@@ -25,16 +25,17 @@
         <owl:versionIRI rdf:resource="http://rescue-mate.de/ontology/main/0.6.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.6.0"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/fixed_construction/0.6.0"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/operational_resources/0.6.0"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/functions/0.6.0"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/social_media/0.6.0"/>
-        <owl:imports rdf:resource="http://rescue-mate.de/ontology/events/0.6.0"/>
         <owl:imports rdf:resource="http://rescue-mate.de/ontology/care_facilities/0.6.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/events/0.6.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/fixed_construction/0.6.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/functions/0.6.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/operational_resources/0.6.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/social_media/0.6.0"/>
+        <owl:imports rdf:resource="http://rescue-mate.de/ontology/wikidata-bridge/0.6.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
         <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor>Heiko Bornholdt</dct:contributor>
         <dct:created>2025-02-12</dct:created>
         <dct:creator>Patrick Westphal</dct:creator>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-07</dct:issued>
