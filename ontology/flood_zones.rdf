@@ -149,8 +149,8 @@
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/maxDepthInMeters">
         <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="de">Obergrenze des Tiefenbandes in Metern (ausschließlich). Das offene Endband („&gt; 10,0 m“) trägt keine Obergrenze.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Upper bound of the depth band in meters (exclusive). The open-ended band ("&gt; 10.0 m") carries no upper bound.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Obergrenze des Tiefenbandes in Metern (ausschließlich). Die offenen Endbänder („&gt; 3,0 m“ bis „&gt; 10,0 m“) tragen keine Obergrenze.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Upper bound of the depth band in meters (exclusive). The open-ended bands ("&gt; 3.0 m" through "&gt; 10.0 m") carry no upper bound.</rdfs:comment>
         <rdfs:label xml:lang="de">maximale Tiefe in Metern</rdfs:label>
         <rdfs:label xml:lang="en">maximum depth in meters</rdfs:label>
     </owl:DatatypeProperty>
@@ -569,6 +569,83 @@
         <maxDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</maxDepthInMeters>
         <rdfs:label xml:lang="de">9,5 – 10,0 m</rdfs:label>
         <rdfs:label xml:lang="en">9.5 – 10.0 m</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/floodDepthAbove3mClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/floodDepthAbove3mClass">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
+        <minDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</minDepthInMeters>
+        <rdfs:label xml:lang="de">&gt; 3,0 m</rdfs:label>
+        <rdfs:label xml:lang="en">&gt; 3.0 m</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/floodDepthAbove4mClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/floodDepthAbove4mClass">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
+        <minDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</minDepthInMeters>
+        <rdfs:label xml:lang="de">&gt; 4,0 m</rdfs:label>
+        <rdfs:label xml:lang="en">&gt; 4.0 m</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/floodDepthAbove5mClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/floodDepthAbove5mClass">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
+        <minDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</minDepthInMeters>
+        <rdfs:label xml:lang="de">&gt; 5,0 m</rdfs:label>
+        <rdfs:label xml:lang="en">&gt; 5.0 m</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/floodDepthAbove6mClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/floodDepthAbove6mClass">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
+        <minDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</minDepthInMeters>
+        <rdfs:label xml:lang="de">&gt; 6,0 m</rdfs:label>
+        <rdfs:label xml:lang="en">&gt; 6.0 m</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/floodDepthAbove7mClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/floodDepthAbove7mClass">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
+        <minDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</minDepthInMeters>
+        <rdfs:label xml:lang="de">&gt; 7,0 m</rdfs:label>
+        <rdfs:label xml:lang="en">&gt; 7.0 m</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/floodDepthAbove8mClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/floodDepthAbove8mClass">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
+        <minDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</minDepthInMeters>
+        <rdfs:label xml:lang="de">&gt; 8,0 m</rdfs:label>
+        <rdfs:label xml:lang="en">&gt; 8.0 m</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://rescue-mate.de/resource/floodDepthAbove9mClass -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/floodDepthAbove9mClass">
+        <rdf:type rdf:resource="http://rescue-mate.de/ontology/FloodDepthClass"/>
+        <minDepthInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</minDepthInMeters>
+        <rdfs:label xml:lang="de">&gt; 9,0 m</rdfs:label>
+        <rdfs:label xml:lang="en">&gt; 9.0 m</rdfs:label>
     </owl:NamedIndividual>
 
 
