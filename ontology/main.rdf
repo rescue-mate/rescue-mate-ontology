@@ -189,6 +189,20 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/isPositionOf -->
+
+    <owl:ObjectProperty rdf:about="http://rescue-mate.de/ontology/isPositionOf">
+        <owl:inverseOf rdf:resource="http://rescue-mate.de/ontology/hasPosition"/>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Position"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="de">Beziehung zwischen einer Position und dem Objekt, dessen Position sie ist (Umkehrung von hasPosition)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation between a position and the object whose position it is (inverse of hasPosition)</rdfs:comment>
+        <rdfs:label xml:lang="en">is position of</rdfs:label>
+        <rdfs:label xml:lang="de">ist Position von</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
