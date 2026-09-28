@@ -682,6 +682,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/RescuePoint -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/RescuePoint">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:comment xml:lang="de">Festgelegter, ausgeschilderter Treffpunkt, an dem Rettungskräfte Verletzte übernehmen</rdfs:comment>
+        <rdfs:comment xml:lang="en">Signposted meeting point where rescue services take over casualties</rdfs:comment>
+        <rdfs:label xml:lang="en">Rescue point</rdfs:label>
+        <rdfs:label xml:lang="de">Rettungspunkt</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SensorReading -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SensorReading">
