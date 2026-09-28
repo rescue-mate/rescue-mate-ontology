@@ -854,6 +854,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/DistrictSchool_(Hamburg) -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/DistrictSchool_(Hamburg)">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/SecondarySchool"/>
+        <rdfs:comment xml:lang="en">Secondary school in Hamburg leading up to the general qualification for university entrance</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weiterführende Schule in Hamburg, die alle Abschlüsse bis zum Abitur ermöglicht</rdfs:comment>
+        <rdfs:label xml:lang="en">District school (Hamburg)</rdfs:label>
+        <rdfs:label xml:lang="de">Stadtteilschule (Hamburg)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/ns/prov#Activity -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
