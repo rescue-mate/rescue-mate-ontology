@@ -505,6 +505,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/getSchoolType -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getSchoolType">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die eine IRI zu einem Schultyp-Namen zurückgibt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that returns the proper IRI of a school type referred to by name.</rdfs:comment>
+        <rdfs:label xml:lang="en">Get school type IRI</rdfs:label>
+        <rdfs:label xml:lang="de">Schultyp-IRI von Typnamen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/getSeniorDikeWardenDistrict -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/getSeniorDikeWardenDistrict">
