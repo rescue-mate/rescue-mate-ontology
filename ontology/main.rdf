@@ -450,6 +450,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/Gymnasium -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/Gymnasium">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/School"/>
+        <rdfs:seeAlso xml:lang="de">Gymnasium</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">Gymnasium</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/HigherEducationInstitution -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/HigherEducationInstitution">
