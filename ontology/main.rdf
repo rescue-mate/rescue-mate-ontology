@@ -726,6 +726,16 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/SecondarySchool -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/SecondarySchool">
+        <rdfs:subClassOf rdf:resource="http://rescue-mate.de/ontology/School"/>
+        <rdfs:label xml:lang="en">Secondary school</rdfs:label>
+        <rdfs:label xml:lang="de">Weiterführunde Schule</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/SensorReading -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/SensorReading">
