@@ -755,6 +755,16 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/schoolTypeName -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/schoolTypeName">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:label xml:lang="en">School type name</rdfs:label>
+        <rdfs:label xml:lang="de">Schultyp-Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/socialMediaServiceName -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/socialMediaServiceName">
