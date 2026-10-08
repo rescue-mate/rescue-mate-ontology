@@ -813,6 +813,18 @@
     
 
 
+    <!-- http://rescue-mate.de/resource/toISODate -->
+
+    <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/toISODate">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment xml:lang="de">Benutzerdefinierte RML-Funktion, die einen Eingabe-Datums-String in deutscher Notation (Tag-Monat-Jahr) in einen ISO-formatierten Datumsstring umwandelt, z.B.,  &quot;01.04.2020&quot; in &quot;2020-04-01&quot;. Bereits im ISO-Format vorliegende Eingabe-Datums-Strings werden unverändert zurückkgegeben.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Custom RML function that converts a date written in the German day-first notation into the XSD date notation, e.g. &quot;01.04.2020&quot; into &quot;2020-04-01&quot;. Input that is already ISO formatted is passed through.</rdfs:comment>
+        <rdfs:label xml:lang="de">In ISO-Datum umwandeln</rdfs:label>
+        <rdfs:label xml:lang="en">To ISO date</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://rescue-mate.de/resource/toWKTPoint -->
 
     <owl:NamedIndividual rdf:about="http://rescue-mate.de/resource/toWKTPoint">
