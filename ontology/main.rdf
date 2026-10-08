@@ -190,6 +190,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/dwellingsInOneAndTwoFamilyHousesInPercent -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/dwellingsInOneAndTwoFamilyHousesInPercent">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/CityDistrict"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="de">Anteil der Wohnungen in Ein- und Zweifamilienhäusern in Prozent</rdfs:label>
+        <rdfs:label xml:lang="en">dwellings in one and two family houses in percent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://rescue-mate.de/ontology/livingSpacePerResidentInSquareMeters -->
 
     <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/livingSpacePerResidentInSquareMeters">
