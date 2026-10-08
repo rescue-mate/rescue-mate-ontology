@@ -189,6 +189,17 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/numberOfDwellings -->
+
+    <owl:DatatypeProperty rdf:about="http://rescue-mate.de/ontology/numberOfDwellings">
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/CityDistrict"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="de">Anzahl der Wohnungen</rdfs:label>
+        <rdfs:label xml:lang="en">number of dwellings</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
