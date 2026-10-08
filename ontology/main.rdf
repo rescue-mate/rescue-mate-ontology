@@ -280,6 +280,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/CityDistrict -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/CityDistrict">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:comment xml:lang="en">A spatial region that defines an administrative subdivision of a city</rdfs:comment>
+        <rdfs:comment xml:lang="de">Region, die einen Stadtteil als administrative Untergliederung einer Stadt beschreibt</rdfs:comment>
+        <rdfs:label xml:lang="en">City district</rdfs:label>
+        <rdfs:label xml:lang="de">Stadtteil</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/Container -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/Container">
