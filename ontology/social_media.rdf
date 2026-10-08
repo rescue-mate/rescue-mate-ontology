@@ -162,6 +162,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/specialMessageType -->
+
+    <owl:AnnotationProperty rdf:about="http://rescue-mate.de/ontology/specialMessageType">
+        <rdfs:label xml:lang="en">special message type</rdfs:label>
+        <rdfs:label xml:lang="de">Nachrichtenart</rdfs:label>
+        <rdfs:comment xml:lang="de">Art der Nachricht aus der OnSite-App, z. B. Empfangs- und Lesebestätigungen; Nutzernachrichten tragen keinen Wert.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of a message from the OnSite app, e.g. receive and read confirmations; regular user messages carry no value.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://rescue-mate.de/ontology/Message"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
