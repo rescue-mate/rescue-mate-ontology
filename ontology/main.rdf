@@ -656,6 +656,18 @@
     
 
 
+    <!-- http://rescue-mate.de/ontology/PoliceDistrict -->
+
+    <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceDistrict">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:comment xml:lang="de">Region, die das Zuständigkeitsgebiet eines Polizeikommissariats abbildet</rdfs:comment>
+        <rdfs:comment xml:lang="en">Spatial region that defines the area of responsibility of a police station</rdfs:comment>
+        <rdfs:label xml:lang="en">Police district</rdfs:label>
+        <rdfs:label xml:lang="de">Polizeikommissariat-Bezirk</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rescue-mate.de/ontology/PoliceStation -->
 
     <owl:Class rdf:about="http://rescue-mate.de/ontology/PoliceStation">
